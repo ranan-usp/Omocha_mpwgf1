@@ -34,7 +34,9 @@ append XSCHEM_LIBRARY_PATH :${XSCHEM_SHAREDIR}/xschem_library/devices
 # append XSCHEM_LIBRARY_PATH :[file dirname [info script]]
 append XSCHEM_LIBRARY_PATH :$env(PWD)
 # append XSCHEM_LIBRARY_PATH :$env(PDK_ROOT)/sky130A/libs.tech/xschem
-append XSCHEM_LIBRARY_PATH :/home/oe23ranan/pdk/sky130A/libs.tech/xschem
+# append XSCHEM_LIBRARY_PATH :/home/oe23ranan/pdk/sky130A/libs.tech/xschem
+append XSCHEM_LIBRARY_PATH :/tmp/caravel_tutorial/pdk/sky130A/libs.tech/xschem
+append XSCHEM_LIBRARY_PATH :$env(PWD)/xschem/symbols
 #### add ~/.xschem/xschem_library (USER_CONF_DIR is normally ~/.xschem)
 append XSCHEM_LIBRARY_PATH :$USER_CONF_DIR/xschem_library 
 
