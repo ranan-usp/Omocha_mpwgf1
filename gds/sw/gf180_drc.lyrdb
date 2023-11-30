@@ -3,7 +3,7 @@
  <description>DRC Run Report at</description>
  <original-file/>
  <generator>drc: script='/home/oe23ranan/.klayout/macros/gf180drc_drc.lydrc'</generator>
- <top-cell>sw_cap</top-cell>
+ <top-cell>sw_cir</top-cell>
  <tags>
  </tags>
  <categories>
@@ -2904,12 +2904,45 @@
  </categories>
  <cells>
   <cell>
-   <name>sw_cap</name>
+   <name>sw_cir</name>
    <variant/>
    <references>
    </references>
   </cell>
  </cells>
  <items>
+  <item>
+   <tags/>
+   <category>'M1.2a'</category>
+   <cell>sw_cir</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (5.065,12.29;6.935,12.29)|(6.935,12.295;5.065,12.295)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'M2.2a'</category>
+   <cell>sw_cir</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (8.31,16.694;8.31,17.3)|(8.055,17.416;8.055,16.81)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'MT.1'</category>
+   <cell>sw_cir</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <image/>
+   <values>
+    <value>edge-pair: (3.98,14.25;2.94,14.25)|(2.757,14.65;3.98,14.65)</value>
+   </values>
+  </item>
  </items>
 </report-database>

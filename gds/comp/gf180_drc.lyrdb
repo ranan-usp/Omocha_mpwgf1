@@ -3,7 +3,7 @@
  <description>DRC Run Report at</description>
  <original-file/>
  <generator>drc: script='/home/oe23ranan/.klayout/macros/gf180drc_drc.lydrc'</generator>
- <top-cell>sw_cap</top-cell>
+ <top-cell>trim_comp</top-cell>
  <tags>
  </tags>
  <categories>
@@ -2904,7 +2904,7 @@
  </categories>
  <cells>
   <cell>
-   <name>sw_cap</name>
+   <name>trim_comp</name>
    <variant/>
    <references>
    </references>
