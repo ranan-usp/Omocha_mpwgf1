@@ -1,10 +1,4 @@
-# Caravel User Project
+# gf_analog
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![UPRJ_CI](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml) [![Caravel Build](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml)
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
-
-## Please fill in your project documentation in this README.md file 
-
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
+<p>Lorem ipsum dolor sit amet. Quo omnis recusandae quo corrupti corporis vel ipsam dolor qui culpa numquam sed ipsum ullam in quam doloribus. Aut nisi veniam et asperiores error eum rerum molestiae et aperiam laboriosam non tenetur odio et omnis adipisci aut nisi enim. </p><p>Ut provident quis non nulla tempora aut sint porro et fugit cupiditate! Sed alias omnis aut reiciendis eveniet qui animi quaerat hic similique modi. Qui obcaecati autem nam modi molestiae ea quidem quod qui harum odit 33 dignissimos harum id debitis fuga. Est illo harum ut voluptate quas est nihil culpa. </p><p>Et modi eaque et dolorem inventore quo Quis tempore aut animi consectetur. Quo doloremque dignissimos qui tempora error id magni quidem eum galisum natus qui minima rerum et asperiores voluptate vel similique mollitia. Ut repudiandae omnis vel amet illum ut veritatis earum. Eos veniam nostrum et accusamus rerum aut illo vero sit aperiam consequatur qui eaque iure. </p>
