@@ -1,0 +1,570 @@
+* NGSPICE file created from dac.ext - technology: gf180mcuD
+
+.subckt XM3 a_n3152_1140# a_n3064_1048# w_n3314_932# a_n2964_1140# VSUBS
+X0 a_n2964_1140# a_n3064_1048# a_n3152_1140# w_n3314_932# pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 a_n3152_1140# w_n3314_932# 0.008969f
+C1 a_n3064_1048# a_n2964_1140# 0.002993f
+C2 a_n3152_1140# a_n2964_1140# 0.103318f
+C3 a_n3152_1140# a_n3064_1048# 0.002993f
+C4 w_n3314_932# a_n2964_1140# 0.009117f
+C5 w_n3314_932# a_n3064_1048# 0.157732f
+C6 a_n2964_1140# VSUBS 0.100353f
+C7 a_n3152_1140# VSUBS 0.100353f
+C8 a_n3064_1048# VSUBS 0.130702f
+C9 w_n3314_932# VSUBS 1.4688f
+.ends
+
+.subckt XM1 a_912_4129# a_995_4229# a_811_3903# a_1507_3903# a_995_4041#
+X0 a_995_4229# a_912_4129# a_995_4041# a_811_3903# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 a_995_4229# a_995_4041# 0.103318f
+C1 a_912_4129# a_995_4041# 0.002993f
+C2 a_912_4129# a_995_4229# 0.002993f
+C3 a_995_4041# a_811_3903# 0.109266f
+C4 a_912_4129# a_811_3903# 0.288275f
+C5 a_995_4229# a_811_3903# 0.109266f
+.ends
+
+.subckt XMs a_1030_4680# a_1030_4868# a_947_4768# a_846_4542#
+X0 a_1030_4868# a_947_4768# a_1030_4680# a_846_4542# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 a_1030_4680# a_1030_4868# 0.103318f
+C1 a_1030_4680# a_947_4768# 0.002993f
+C2 a_1030_4868# a_947_4768# 0.002993f
+C3 a_1030_4680# a_846_4542# 0.387117f
+C4 a_947_4768# a_846_4542# 0.288368f
+C5 a_1030_4868# a_846_4542# 0.109266f
+.ends
+
+.subckt cap_mim_2p0fF_8JNR63 m4_n3440_n548# m4_n3800_n668# VSUBS
+X0 m4_n3440_n548# m4_n3800_n668# cap_mim_2f0_m4m5_noshield c_width=8u c_length=8u
+C0 m4_n3800_n668# m4_n3440_n548# 0.646322f
+C1 m4_n3440_n548# VSUBS 1.17298f
+C2 m4_n3800_n668# VSUBS 1.64833f
+.ends
+
+.subckt sw_cap_unit in out VSUBS
+Xcap_mim_2p0fF_8JNR63_0 out in VSUBS cap_mim_2p0fF_8JNR63
+C0 out VSUBS 1.17298f
+C1 in VSUBS 1.64833f
+.ends
+
+.subckt sw_cap out in VSUBS
+Xsw_cap_unit_0 in out VSUBS sw_cap_unit
+Xsw_cap_unit_1 in out VSUBS sw_cap_unit
+Xsw_cap_unit_2 in out VSUBS sw_cap_unit
+Xsw_cap_unit_3 in out VSUBS sw_cap_unit
+Xsw_cap_unit_4 in out VSUBS sw_cap_unit
+C0 in out 2.231591f
+C1 out VSUBS 6.064711f
+C2 in VSUBS 7.39096f
+.ends
+
+.subckt XMs1 a_n2529_n616# a_n2717_n616# a_n2629_n699# a_n2855_n800#
+X0 a_n2529_n616# a_n2629_n699# a_n2717_n616# a_n2855_n800# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 a_n2529_n616# a_n2629_n699# 0.002993f
+C1 a_n2529_n616# a_n2717_n616# 0.103318f
+C2 a_n2629_n699# a_n2717_n616# 0.002993f
+C3 a_n2529_n616# a_n2855_n800# 0.109266f
+C4 a_n2717_n616# a_n2855_n800# 0.177295f
+C5 a_n2629_n699# a_n2855_n800# 0.288368f
+.ends
+
+.subckt XM4 a_n2550_442# a_n2362_442# w_n2712_234# a_n2462_359# VSUBS
+X0 a_n2362_442# a_n2462_359# a_n2550_442# w_n2712_234# pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 a_n2550_442# w_n2712_234# 0.058295f
+C1 a_n2462_359# a_n2362_442# 0.002993f
+C2 a_n2550_442# a_n2462_359# 0.002993f
+C3 a_n2550_442# a_n2362_442# 0.103318f
+C4 w_n2712_234# a_n2462_359# 0.173648f
+C5 w_n2712_234# a_n2362_442# 0.008969f
+C6 a_n2362_442# VSUBS 0.100353f
+C7 a_n2550_442# VSUBS 0.119847f
+C8 a_n2462_359# VSUBS 0.147064f
+C9 w_n2712_234# VSUBS 1.4688f
+.ends
+
+.subckt XM2_inv a_n36_120# a_n116_n100# w_n278_n310# VSUBS
+X0 w_n278_n310# a_n36_120# a_n116_n100# w_n278_n310# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 a_n116_n100# w_n278_n310# 0.090564f
+C1 a_n116_n100# a_n36_120# 0.001764f
+C2 w_n278_n310# a_n36_120# 0.138578f
+C3 a_n116_n100# VSUBS 0.043675f
+C4 a_n36_120# VSUBS 0.08816f
+C5 w_n278_n310# VSUBS 1.2321f
+.ends
+
+.subckt XM1_inv a_n36_20# a_n254_n386# a_28_n200#
+X0 a_28_n200# a_n36_20# a_n254_n386# a_n254_n386# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 a_n36_20# a_28_n200# 0.001764f
+C1 a_28_n200# a_n254_n386# 0.134177f
+C2 a_n36_20# a_n254_n386# 0.22667f
+.ends
+
+.subckt inv in vdd out vss
+XXM2_inv_0 in out vdd vss XM2_inv
+XXM1_inv_0 in vss out XM1_inv
+C0 in vss 0.019395f
+C1 vdd vss 0.050184f
+C2 out vss 0.056311f
+C3 vdd in 0.034991f
+C4 out in 0.057341f
+C5 out vdd 0.086562f
+C6 vss 0 0.154858f
+C7 vdd 0 1.342913f
+C8 out 0 0.461919f
+C9 in 0 0.440696f
+.ends
+
+.subckt XM2 a_912_3686# a_811_3460# a_995_3786# a_1507_3460# a_995_3598#
+X0 a_995_3786# a_912_3686# a_995_3598# a_811_3460# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 a_995_3786# a_912_3686# 0.002993f
+C1 a_995_3598# a_995_3786# 0.103318f
+C2 a_995_3598# a_912_3686# 0.002993f
+C3 a_995_3598# a_811_3460# 0.109266f
+C4 a_912_3686# a_811_3460# 0.288275f
+C5 a_995_3786# a_811_3460# 0.109266f
+.ends
+
+.subckt XMs2 a_n3762_561# a_n3988_469# a_n3662_653# a_n3850_653# a_n3988_1165#
+X0 a_n3662_653# a_n3762_561# a_n3850_653# a_n3988_469# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 a_n3762_561# a_n3850_653# 0.002993f
+C1 a_n3662_653# a_n3762_561# 0.002993f
+C2 a_n3662_653# a_n3850_653# 0.103318f
+C3 a_n3662_653# a_n3988_469# 0.109266f
+C4 a_n3850_653# a_n3988_469# 0.109266f
+C5 a_n3762_561# a_n3988_469# 0.288275f
+.ends
+
+.subckt bootstrapped_sw vs vg in vdd vss en enb out vbsh vbsl
+XXM3_0 vbsh vg XM4_0/w_n2712_234# vdd vss XM3
+XXM1_0 vg vbsl vss vss in XM1
+XXMs_0 out in vg vss XMs
+Xsw_cap_0 vbsh vbsl vss sw_cap
+XXMs1_0 vs vg vdd vss XMs1
+XXM4_0 vg vbsh XM4_0/w_n2712_234# enb vss XM4
+Xinv_0 en vdd enb vss inv
+XXM2_0 enb vss vss vss vbsl XM2
+XXMs2_0 enb vss vss vs vss XMs2
+C0 enb XM4_0/w_n2712_234# 0.041524f
+C1 vbsh XM4_0/w_n2712_234# 0.101815f
+C2 vg XM4_0/w_n2712_234# 0.080093f
+C3 vbsh out 0.100712f
+C4 vg out 0.04429f
+C5 en enb 0.029269f
+C6 vdd enb 0.448382f
+C7 vbsh vdd 0.168905f
+C8 vg vdd 0.447812f
+C9 vbsl enb 0.017274f
+C10 vbsl vbsh 0.025766f
+C11 vbsl vg 0.046114f
+C12 in vbsh 0.008752f
+C13 enb vs 0.00376f
+C14 in vg 0.075595f
+C15 vg vs 0.01049f
+C16 out XM4_0/w_n2712_234# 0.005706f
+C17 vdd XM4_0/w_n2712_234# 0.079362f
+C18 vdd out 0.017908f
+C19 vbsl XM4_0/w_n2712_234# 0.009881f
+C20 en vdd 0.065092f
+C21 vbsl out 0.058082f
+C22 vbsl vdd 0.005409f
+C23 vbsl in 0.299565f
+C24 vbsl vs 0.001422f
+C25 vbsh enb 0.052707f
+C26 vg enb 0.612109f
+C27 vg vbsh 0.144325f
+C28 out vss 1.088543f
+C29 vs vss 0.072259f
+C30 enb vss 1.595319f
+C31 vdd vss 3.106074f
+C32 en vss 0.642295f
+C33 XM4_0/w_n2712_234# vss 1.968192f
+C34 vbsh vss 7.100617f
+C35 vbsl vss 8.368301f
+C36 in vss 0.308876f
+C37 vg vss 1.218873f
+.ends
+
+.subckt inv$1 VSS ZN I VDD VNW VPW
+X0 VDD I ZN VNW pfet_06v0 ad=1.2078p pd=4.42u as=0.4575p ps=1.97u w=1.22u l=0.5u
+X1 ZN I VSS VPW nfet_06v0 ad=0.2255p pd=1.37u as=0.5084p ps=2.88u w=0.82u l=0.6u
+X2 VSS I ZN VPW nfet_06v0 ad=0.8118p pd=3.62u as=0.2255p ps=1.37u w=0.82u l=0.6u
+X3 ZN I VDD VNW pfet_06v0 ad=0.4575p pd=1.97u as=0.7564p ps=3.68u w=1.22u l=0.5u
+C0 VSS ZN 0.180794f
+C1 VNW ZN 0.023676f
+C2 VDD ZN 0.271625f
+C3 I ZN 0.58604f
+C4 VNW VSS 0.006277f
+C5 VDD VSS 0.029045f
+C6 VDD VNW 0.082022f
+C7 VSS I 0.091531f
+C8 VNW I 0.285482f
+C9 VDD I 0.074838f
+C10 VSS VPW 0.296769f
+C11 ZN VPW 0.099188f
+C12 VDD VPW 0.238483f
+C13 I VPW 0.610668f
+C14 VNW VPW 1.31158f
+.ends
+
+.subckt dummy VSS ZN I VDD VNW VPW
+X0 VSS I ZN VPW nfet_06v0 ad=0.8118p pd=3.62u as=0.2255p ps=1.37u w=0.82u l=0.6u
+X1 ZN I VSS VPW nfet_06v0 ad=0.2255p pd=1.37u as=0.5084p ps=2.88u w=0.82u l=0.6u
+X2 VDD I ZN VNW pfet_06v0 ad=1.2078p pd=4.42u as=0.4575p ps=1.97u w=1.22u l=0.5u
+X3 ZN I VDD VNW pfet_06v0 ad=0.4575p pd=1.97u as=0.7564p ps=3.68u w=1.22u l=0.5u
+C0 VNW ZN 0.026913f
+C1 VSS ZN 0.180794f
+C2 VDD ZN 0.271625f
+C3 I ZN 0.58604f
+C4 VNW VSS 0.011638f
+C5 VDD VSS 0.035859f
+C6 VDD VNW 0.108083f
+C7 VSS I 0.092168f
+C8 VNW I 0.291591f
+C9 VDD I 0.075475f
+C10 VSS VPW 0.337898f
+C11 ZN VPW 0.095951f
+C12 VDD VPW 0.258911f
+C13 I VPW 0.604559f
+C14 VNW VPW 1.53535f
+.ends
+
+.subckt inv_renketu dummy_1/I inv$1_8/I inv$1_1/I inv$1_3/I dummy_0/ZN inv$1_5/I dummy_0/I
++ inv$1_7/I inv$1_9/ZN inv$1_6/ZN inv$1_0/ZN inv$1_9/VNW inv$1_0/I inv$1_4/ZN inv$1_9/I
++ inv$1_2/I inv$1_10/I inv$1_7/ZN inv$1_1/ZN inv$1_3/ZN inv$1_4/I inv$1_8/ZN inv$1_9/VSS
++ inv$1_9/VDD inv$1_10/ZN VSUBS inv$1_6/I inv$1_2/ZN inv$1_5/ZN
+Xinv$1_10 inv$1_9/VSS inv$1_10/ZN inv$1_10/I inv$1_9/VDD inv$1_9/VNW VSUBS inv$1
+Xinv$1_0 inv$1_9/VSS inv$1_0/ZN inv$1_0/I inv$1_9/VDD inv$1_9/VNW VSUBS inv$1
+Xinv$1_1 inv$1_9/VSS inv$1_1/ZN inv$1_1/I inv$1_9/VDD inv$1_9/VNW VSUBS inv$1
+Xinv$1_2 inv$1_9/VSS inv$1_2/ZN inv$1_2/I inv$1_9/VDD inv$1_9/VNW VSUBS inv$1
+Xinv$1_3 inv$1_9/VSS inv$1_3/ZN inv$1_3/I inv$1_9/VDD inv$1_9/VNW VSUBS inv$1
+Xinv$1_4 inv$1_9/VSS inv$1_4/ZN inv$1_4/I inv$1_9/VDD inv$1_9/VNW VSUBS inv$1
+Xinv$1_5 inv$1_9/VSS inv$1_5/ZN inv$1_5/I inv$1_9/VDD inv$1_9/VNW VSUBS inv$1
+Xinv$1_6 inv$1_9/VSS inv$1_6/ZN inv$1_6/I inv$1_9/VDD inv$1_9/VNW VSUBS inv$1
+Xinv$1_7 inv$1_9/VSS inv$1_7/ZN inv$1_7/I inv$1_9/VDD inv$1_9/VNW VSUBS inv$1
+Xinv$1_8 inv$1_9/VSS inv$1_8/ZN inv$1_8/I inv$1_9/VDD inv$1_9/VNW VSUBS inv$1
+Xinv$1_9 inv$1_9/VSS inv$1_9/ZN inv$1_9/I inv$1_9/VDD inv$1_9/VNW VSUBS inv$1
+Xdummy_0 inv$1_9/VSS dummy_0/ZN dummy_0/I inv$1_9/VDD inv$1_9/VNW VSUBS dummy
+Xdummy_1 inv$1_9/VSS dummy_1/ZN dummy_1/I inv$1_9/VDD inv$1_9/VNW VSUBS dummy
+C0 inv$1_9/I inv$1_8/I 0.084161f
+C1 inv$1_5/I inv$1_4/I 0.084161f
+C2 inv$1_2/ZN inv$1_10/I 0.028928f
+C3 inv$1_3/ZN inv$1_9/VSS 0.003829f
+C4 inv$1_4/ZN inv$1_1/ZN 0.161792f
+C5 inv$1_7/ZN inv$1_9/VSS 0.003829f
+C6 inv$1_6/ZN inv$1_5/ZN 0.161792f
+C7 inv$1_3/ZN inv$1_1/I 0.002086f
+C8 inv$1_9/VNW inv$1_8/ZN 0.006066f
+C9 inv$1_7/ZN inv$1_7/I 0.031424f
+C10 inv$1_9/VNW inv$1_5/I 0.010403f
+C11 inv$1_6/I inv$1_7/ZN 0.028928f
+C12 inv$1_9/VDD inv$1_1/ZN 0.104396f
+C13 inv$1_0/ZN dummy_0/I 0.023262f
+C14 inv$1_9/VNW inv$1_9/ZN 0.006066f
+C15 inv$1_9/VDD inv$1_6/ZN 0.104396f
+C16 inv$1_9/VNW inv$1_10/I 0.010403f
+C17 inv$1_3/I inv$1_1/ZN 0.028928f
+C18 inv$1_5/I inv$1_5/ZN 0.031424f
+C19 inv$1_5/I inv$1_4/ZN 0.002086f
+C20 inv$1_9/ZN inv$1_10/ZN 0.161792f
+C21 inv$1_9/VSS inv$1_7/I 0.104553f
+C22 inv$1_1/I inv$1_9/VSS 0.104553f
+C23 inv$1_10/I inv$1_10/ZN 0.031424f
+C24 inv$1_6/I inv$1_9/VSS 0.104553f
+C25 inv$1_9/VDD inv$1_8/ZN 0.104396f
+C26 inv$1_9/VDD inv$1_5/I 0.00333f
+C27 inv$1_8/ZN inv$1_9/I 0.002086f
+C28 inv$1_9/VNW inv$1_2/ZN 0.008692f
+C29 inv$1_6/I inv$1_7/I 0.084161f
+C30 inv$1_7/ZN inv$1_8/I 0.002086f
+C31 inv$1_9/VDD inv$1_9/ZN 0.104396f
+C32 inv$1_9/VNW inv$1_4/I 0.010403f
+C33 inv$1_9/I inv$1_9/ZN 0.031424f
+C34 inv$1_9/VDD inv$1_10/I 0.00333f
+C35 inv$1_9/I inv$1_10/I 0.084161f
+C36 inv$1_2/I inv$1_10/I 0.084161f
+C37 inv$1_3/ZN inv$1_1/ZN 0.161793f
+C38 inv$1_2/ZN inv$1_10/ZN 0.161793f
+C39 inv$1_5/ZN inv$1_4/I 0.028928f
+C40 inv$1_9/VNW inv$1_0/I 0.011179f
+C41 inv$1_7/ZN inv$1_6/ZN 0.161793f
+C42 inv$1_4/ZN inv$1_4/I 0.031424f
+C43 inv$1_9/VDD inv$1_2/ZN 0.107277f
+C44 inv$1_9/VSS inv$1_8/I 0.104553f
+C45 inv$1_9/VNW inv$1_5/ZN 0.006066f
+C46 inv$1_7/I inv$1_8/I 0.084161f
+C47 inv$1_9/VNW inv$1_10/ZN 0.006066f
+C48 inv$1_2/I inv$1_2/ZN 0.031424f
+C49 inv$1_9/VDD inv$1_4/I 0.00333f
+C50 inv$1_9/VNW inv$1_4/ZN 0.006066f
+C51 inv$1_9/VNW dummy_0/ZN -0.002275f
+C52 inv$1_1/ZN inv$1_9/VSS 0.003829f
+C53 inv$1_9/VDD inv$1_9/VNW -0.157887f
+C54 inv$1_7/ZN inv$1_8/ZN 0.161792f
+C55 inv$1_9/VNW inv$1_9/I 0.010403f
+C56 inv$1_0/ZN inv$1_9/VNW 0.008403f
+C57 inv$1_0/I dummy_0/ZN 0.002409f
+C58 inv$1_1/ZN inv$1_1/I 0.031424f
+C59 inv$1_6/ZN inv$1_9/VSS 0.003829f
+C60 inv$1_2/I inv$1_9/VNW 0.011789f
+C61 inv$1_4/ZN inv$1_5/ZN 0.161793f
+C62 inv$1_9/VDD inv$1_0/I 0.00333f
+C63 inv$1_3/I inv$1_9/VNW 0.010403f
+C64 inv$1_6/ZN inv$1_7/I 0.002086f
+C65 inv$1_0/ZN inv$1_0/I 0.031424f
+C66 inv$1_6/I inv$1_6/ZN 0.031424f
+C67 inv$1_9/VDD inv$1_5/ZN 0.104396f
+C68 inv$1_9/VDD inv$1_10/ZN 0.104396f
+C69 inv$1_9/I inv$1_10/ZN 0.028928f
+C70 inv$1_3/I inv$1_0/I 0.084161f
+C71 inv$1_9/VDD inv$1_4/ZN 0.104396f
+C72 inv$1_9/VDD dummy_0/ZN 0.001671f
+C73 inv$1_2/I inv$1_10/ZN 0.002086f
+C74 inv$1_0/ZN dummy_0/ZN 0.0229f
+C75 inv$1_9/VSS inv$1_8/ZN 0.003829f
+C76 inv$1_5/I inv$1_9/VSS 0.104553f
+C77 inv$1_9/VDD inv$1_9/I 0.00333f
+C78 inv$1_8/ZN inv$1_7/I 0.028928f
+C79 inv$1_9/VDD inv$1_0/ZN 0.107658f
+C80 inv$1_6/I inv$1_5/I 0.084161f
+C81 inv$1_9/VSS inv$1_9/ZN 0.003829f
+C82 inv$1_2/I inv$1_9/VDD 0.00333f
+C83 inv$1_9/VSS inv$1_10/I 0.104553f
+C84 inv$1_9/VDD inv$1_3/I 0.00333f
+C85 inv$1_3/I inv$1_0/ZN 0.002086f
+C86 inv$1_3/ZN inv$1_9/VNW 0.006066f
+C87 inv$1_7/ZN inv$1_9/VNW 0.006066f
+C88 inv$1_3/ZN inv$1_0/I 0.028928f
+C89 inv$1_2/ZN dummy_1/I 0.003027f
+C90 inv$1_2/ZN inv$1_9/VSS 0.003829f
+C91 inv$1_9/VSS inv$1_4/I 0.104553f
+C92 inv$1_8/ZN inv$1_8/I 0.031424f
+C93 inv$1_1/I inv$1_4/I 0.084161f
+C94 inv$1_9/ZN inv$1_8/I 0.028928f
+C95 inv$1_9/VNW inv$1_9/VSS -0.005361f
+C96 inv$1_3/ZN inv$1_9/VDD 0.104396f
+C97 inv$1_2/ZN dummy_1/ZN 0.022956f
+C98 inv$1_3/ZN inv$1_0/ZN 0.161792f
+C99 inv$1_9/VDD inv$1_7/ZN 0.104396f
+C100 inv$1_9/VNW inv$1_7/I 0.010403f
+C101 inv$1_9/VNW inv$1_1/I 0.010403f
+C102 inv$1_6/I inv$1_9/VNW 0.010403f
+C103 inv$1_0/I inv$1_9/VSS 0.108299f
+C104 inv$1_3/ZN inv$1_3/I 0.031424f
+C105 inv$1_6/ZN inv$1_5/I 0.028928f
+C106 inv$1_5/ZN inv$1_9/VSS 0.003829f
+C107 inv$1_9/VSS inv$1_10/ZN 0.003829f
+C108 inv$1_9/VNW dummy_1/ZN -0.001925f
+C109 inv$1_6/I inv$1_5/ZN 0.002086f
+C110 inv$1_4/ZN inv$1_9/VSS 0.003829f
+C111 inv$1_9/VSS dummy_0/ZN 0.001445f
+C112 inv$1_4/ZN inv$1_1/I 0.028928f
+C113 inv$1_9/VDD inv$1_9/VSS -0.006814f
+C114 inv$1_9/VSS inv$1_9/I 0.104553f
+C115 inv$1_0/ZN inv$1_9/VSS 0.003829f
+C116 inv$1_9/VDD inv$1_7/I 0.00333f
+C117 inv$1_9/VDD inv$1_1/I 0.00333f
+C118 inv$1_9/VDD inv$1_6/I 0.00333f
+C119 inv$1_2/I dummy_1/I 0.021288f
+C120 inv$1_2/I inv$1_9/VSS 0.107646f
+C121 inv$1_9/VNW inv$1_8/I 0.010403f
+C122 inv$1_3/I inv$1_9/VSS 0.104553f
+C123 inv$1_8/ZN inv$1_9/ZN 0.161793f
+C124 inv$1_3/I inv$1_1/I 0.084161f
+C125 inv$1_1/ZN inv$1_4/I 0.002086f
+C126 inv$1_9/VDD dummy_1/ZN 0.010249f
+C127 inv$1_9/ZN inv$1_10/I 0.002086f
+C128 inv$1_9/VNW inv$1_1/ZN 0.006066f
+C129 inv$1_2/I dummy_1/ZN 0.027478f
+C130 inv$1_9/VNW inv$1_6/ZN 0.006066f
+C131 inv$1_0/I dummy_0/I 0.017781f
+C132 inv$1_9/VDD inv$1_8/I 0.00333f
+C133 dummy_1/ZN VSUBS 0.095951f
+C134 dummy_1/I VSUBS 0.604559f
+C135 dummy_0/ZN VSUBS 0.095951f
+C136 dummy_0/I VSUBS 0.604559f
+C137 inv$1_9/ZN VSUBS 0.260352f
+C138 inv$1_9/I VSUBS 0.670517f
+C139 inv$1_8/ZN VSUBS 0.260352f
+C140 inv$1_8/I VSUBS 0.670517f
+C141 inv$1_7/ZN VSUBS 0.260352f
+C142 inv$1_7/I VSUBS 0.670517f
+C143 inv$1_6/ZN VSUBS 0.260352f
+C144 inv$1_6/I VSUBS 0.670517f
+C145 inv$1_5/ZN VSUBS 0.260352f
+C146 inv$1_5/I VSUBS 0.670517f
+C147 inv$1_4/ZN VSUBS 0.260352f
+C148 inv$1_4/I VSUBS 0.670517f
+C149 inv$1_3/ZN VSUBS 0.260352f
+C150 inv$1_3/I VSUBS 0.670517f
+C151 inv$1_9/VSS VSUBS 2.848055f
+C152 inv$1_2/ZN VSUBS 0.398879f
+C153 inv$1_9/VDD VSUBS 2.113035f
+C154 inv$1_2/I VSUBS 0.741957f
+C155 inv$1_9/VNW VSUBS 14.066851f
+C156 inv$1_1/ZN VSUBS 0.260352f
+C157 inv$1_1/I VSUBS 0.670517f
+C158 inv$1_0/ZN VSUBS 0.398674f
+C159 inv$1_0/I VSUBS 0.735921f
+C160 inv$1_10/ZN VSUBS 0.260352f
+C161 inv$1_10/I VSUBS 0.670517f
+.ends
+
+.subckt dac in vss vdd dum ctl1 ctl2 ctl3 ctl4 ctl5 ctl6 ctl7 ctl8 ctl9 ctl10 out
++ sample ndum n1 n2 n3 n4 n5 n6 n7 n8 n9 n0
+Xbootstrapped_sw_0 bootstrapped_sw_0/vs bootstrapped_sw_0/vg in vdd vss sample bootstrapped_sw_0/enb
++ out bootstrapped_sw_0/vbsh bootstrapped_sw_0/vbsl bootstrapped_sw
+Xinv_renketu_0 inv_renketu_0/dummy_1/I ctl7 ctl2 ctl1 inv_renketu_0/dummy_0/ZN ctl4
++ inv_renketu_0/dummy_0/I ctl6 n8 n5 ndum inv_renketu_0/inv$1_9/VNW dum n3 ctl8 ctl10
++ ctl9 n6 n2 n1 ctl3 n7 inv_renketu_0/inv$1_9/VSS inv_renketu_0/inv$1_9/VDD n9 vss
++ ctl5 n0 n4 inv_renketu
+C0 ctl9 inv_renketu_0/inv$1_9/VSS 0.002242f
+C1 n0 inv_renketu_0/inv$1_9/VDD 0.008798f
+C2 n3 n4 25.8929f
+C3 n7 n9 29.51607f
+C4 ctl3 ctl2 0.076437f
+C5 sample inv_renketu_0/dummy_0/ZN 0.007127f
+C6 n2 out 6.640605f
+C7 n9 ndum 0.127951f
+C8 n2 n1 16.604633f
+C9 n2 n6 0.207962f
+C10 n3 out 13.201303f
+C11 n9 n4 3.740571f
+C12 n5 n8 5.60732f
+C13 n3 n1 0.144232f
+C14 n3 n6 0.336612f
+C15 n5 n0 0.025424f
+C16 n7 ndum 0.06073f
+C17 ctl1 ctl2 0.076437f
+C18 n7 n4 1.70387f
+C19 ctl3 inv_renketu_0/inv$1_9/VSS 0.002242f
+C20 out n9 0.846161p
+C21 n1 n9 0.349226f
+C22 n9 n6 14.716781f
+C23 n4 ndum 0.025424f
+C24 ctl5 inv_renketu_0/inv$1_9/VSS 0.002242f
+C25 ctl7 inv_renketu_0/inv$1_9/VSS 0.002242f
+C26 n8 n2 0.770199f
+C27 n7 out 0.210032p
+C28 n7 n1 0.212006f
+C29 n8 n3 1.46111f
+C30 n7 n6 34.326103f
+C31 ctl10 ctl9 0.076437f
+C32 n0 n2 0.099287f
+C33 ctl1 inv_renketu_0/inv$1_9/VSS 0.002242f
+C34 ctl2 inv_renketu_0/inv$1_9/VSS 0.002242f
+C35 out ndum 1.640173f
+C36 n1 ndum 8.161696f
+C37 n3 n0 0.051666f
+C38 n6 ndum 0.025424f
+C39 out n4 26.32268f
+C40 n1 n4 0.141659f
+C41 n5 inv_renketu_0/inv$1_9/VDD 0.001148f
+C42 n6 n4 0.614078f
+C43 n8 n9 87.10266f
+C44 n0 n9 0.184985f
+C45 ctl3 ctl4 0.076437f
+C46 n1 out 3.367623f
+C47 sample ndum 0.046157f
+C48 out n6 0.105055p
+C49 ctl5 ctl4 0.076437f
+C50 n8 n7 50.178104f
+C51 bootstrapped_sw_0/vbsl out 0.061234f
+C52 n1 n6 0.141395f
+C53 ctl1 dum 0.076437f
+C54 sample inv_renketu_0/dummy_0/I 0.008276f
+C55 n0 n7 0.06073f
+C56 n8 ndum 0.097254f
+C57 n2 inv_renketu_0/inv$1_9/VDD 0.001148f
+C58 n0 inv_renketu_0/dummy_1/I 0.001307f
+C59 n8 n4 2.84323f
+C60 n3 inv_renketu_0/inv$1_9/VDD 0.001148f
+C61 sample inv_renketu_0/inv$1_9/VSS 0.011446f
+C62 n0 n4 0.040502f
+C63 ctl8 ctl9 0.076437f
+C64 ctl5 ctl6 0.076437f
+C65 n8 out 0.420152p
+C66 dum inv_renketu_0/inv$1_9/VSS 0.002242f
+C67 ctl6 ctl7 0.076437f
+C68 n8 n1 0.285054f
+C69 n9 inv_renketu_0/inv$1_9/VDD 0.001148f
+C70 n8 n6 11.2161f
+C71 n0 out 1.745294f
+C72 n5 n2 0.208084f
+C73 n0 n1 8.476098f
+C74 ctl4 inv_renketu_0/inv$1_9/VSS 0.002242f
+C75 n0 n6 0.025424f
+C76 n5 n3 0.346757f
+C77 n7 inv_renketu_0/inv$1_9/VDD 0.001148f
+C78 ctl10 inv_renketu_0/inv$1_9/VSS 0.002242f
+C79 bootstrapped_sw_0/vbsh out 0.137967f
+C80 sample dum 0.00183f
+C81 inv_renketu_0/inv$1_9/VDD ndum 0.001148f
+C82 n5 n9 7.39935f
+C83 n4 inv_renketu_0/inv$1_9/VDD 0.001148f
+C84 inv_renketu_0/inv$1_9/VNW out 0.003912f
+C85 ctl6 inv_renketu_0/inv$1_9/VSS 0.002242f
+C86 ctl8 ctl7 0.076437f
+C87 n3 n2 22.840685f
+C88 n8 n0 0.097254f
+C89 n5 n7 3.36878f
+C90 out inv_renketu_0/inv$1_9/VDD 0.007958f
+C91 n1 inv_renketu_0/inv$1_9/VDD 0.001148f
+C92 n5 ndum 0.025424f
+C93 n6 inv_renketu_0/inv$1_9/VDD 0.001148f
+C94 n5 n4 27.491999f
+C95 n2 n9 0.996653f
+C96 sample inv_renketu_0/inv$1_9/VNW 0.008949f
+C97 n3 n9 1.911225f
+C98 ctl8 inv_renketu_0/inv$1_9/VSS 0.002242f
+C99 sample inv_renketu_0/inv$1_9/VDD 0.013129f
+C100 n7 n2 0.485327f
+C101 n5 out 52.565495f
+C102 n5 n1 0.141538f
+C103 n0 inv_renketu_0/inv$1_9/VNW 0.002542f
+C104 n3 n7 0.891504f
+C105 n5 n6 28.589401f
+C106 n2 ndum 0.041162f
+C107 n8 inv_renketu_0/inv$1_9/VDD 0.001148f
+C108 n2 n4 0.213181f
+C109 n3 ndum 0.025424f
+C110 inv_renketu_0/dummy_1/ZN vss 0.095951f
+C111 inv_renketu_0/dummy_1/I vss 0.604559f
+C112 inv_renketu_0/dummy_0/ZN vss 0.095951f
+C113 inv_renketu_0/dummy_0/I vss 0.604559f
+C114 ctl8 vss 0.863789f
+C115 ctl7 vss 0.863789f
+C116 ctl6 vss 0.863789f
+C117 ctl5 vss 0.863789f
+C118 ctl4 vss 0.863789f
+C119 ctl3 vss 0.863789f
+C120 ctl1 vss 0.863789f
+C121 inv_renketu_0/inv$1_9/VSS vss 2.848055f
+C122 n0 vss 16.391445f
+C123 inv_renketu_0/inv$1_9/VDD vss 2.113035f
+C124 ctl10 vss 1.029175f
+C125 inv_renketu_0/inv$1_9/VNW vss 14.066851f
+C126 ctl2 vss 0.863789f
+C127 ndum vss 13.878879f
+C128 dum vss 1.023139f
+C129 ctl9 vss 0.863789f
+C130 n4 vss 39.311863f
+C131 n5 vss 46.818295f
+C132 n9 vss 13.888219f
+C133 out vss -0.683569p
+C134 n8 vss 39.718468f
+C135 n7 vss 56.49731f
+C136 n6 vss 52.773506f
+C137 n2 vss 29.56848f
+C138 n1 vss 15.759438f
+C139 n3 vss 33.050888f
+C140 bootstrapped_sw_0/vs vss 0.065021f
+C141 bootstrapped_sw_0/enb vss 1.523612f
+C142 vdd vss 3.098478f
+C143 sample vss 20.462025f
+C144 bootstrapped_sw_0/XM4_0/w_n2712_234# vss 1.968192f
+C145 bootstrapped_sw_0/vbsh vss 7.079245f
+C146 bootstrapped_sw_0/vbsl vss 8.446682f
+C147 in vss 0.297821f
+C148 bootstrapped_sw_0/vg vss 1.1621f
+.ends
+

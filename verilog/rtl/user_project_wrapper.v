@@ -70,6 +70,7 @@ module user_project_wrapper #(
 /* User project is instantiated  here   */
 /*--------------------------------------*/
 
+/*
 user_proj_example mprj (
 `ifdef USE_POWER_PINS
 	.vdd(vdd),	// User area 1 1.8V power
@@ -104,6 +105,28 @@ user_proj_example mprj (
 
     // IRQ
     .irq(user_irq)
+);
+
+anan_logo anan_logo (
+`ifdef USE_POWER_PINS
+    .vdd(vdd),
+    .vss(vss)
+`endif
+);
+*/
+saradc saradc (
+`ifdef USE_POWER_PINS
+	.vdd(vdd),	// User area 1 1.8V power
+	.vss(vss),	// User area 1 digital ground
+`endif
+    .vinp(io_in[30]),
+    .vinn(io_in[32]),
+    .result(io_out[3:12]),
+    .valid(io_out[2]),
+    .cal(io_in[3]),
+    .en(io_in[2]),
+    .clk(io_in[1]),
+    .rstn(io_in[0])
 );
 
 endmodule	// user_project_wrapper
