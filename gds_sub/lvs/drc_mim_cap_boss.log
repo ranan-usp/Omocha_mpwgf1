@@ -1,0 +1,39 @@
+
+Magic 8.3 revision 450 - Compiled on Thu Nov 23 13:43:11 JST 2023.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "run_drc.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "cap_mim_2p0fF_RCWXT2$2".
+Reading "cap_mim_2p0fF_DMYL6H$1".
+Reading "cap_mim_2p0fF_DMYL6H".
+Reading "cap_mim_2p0fF_RCWXT2$1".
+Reading "cap_mim_2p0fF_RCWXT2".
+Reading "mim_cap_30_30$1".
+Reading "mim_cap_100_100$1".
+Reading "mim_cap_100_100".
+Reading "mim_cap_30_30_flip".
+Reading "mim_cap_30_30".
+Reading "mim_cap2".
+Reading "mim_cap1".
+Reading "mim_cap_boss".
+
+DRC START
+Loading DRC CIF style.
+Cell mim_cap_boss has 2064 error tiles.
+Total DRC errors found: 0
+Error area #2:
+See error definition in the subcell
+See error definition in the subcell
+DRC FINISH!!

@@ -1,0 +1,82 @@
+timestamp 1530084124
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use mim_cap2 mim_cap2_0 1 0 -12000 0 1 -83966
+use mim_cap1 mim_cap1_0 1 0 0 0 1 1250
+port "vdd" 3 130500 -111966 145500 -105966 m5
+port "vdd" 3 -145500 59750 -130500 74750 m5
+port "vss" 5 -168000 -100994 -158000 -64946 m4
+node "vdd" 0 1.53639e+06 -145500 59750 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9863620000 1332864
+node "vss" 0 430963 -168000 -100994 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2126832000 190096 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "vdd" "vss" 636110
+cap "vss" "vdd" -4.15057
+cap "vdd" "vss" 2094.77
+cap "vdd" "vss" 2094.77
+cap "mim_cap2_0/vdd" "vss" 2094.77
+cap "vss" "mim_cap2_0/vdd" 2094.77
+cap "vss" "mim_cap2_0/vdd" 1594.25
+cap "vss" "vdd" -56.3909
+cap "vdd" "vss" 1928.2
+cap "vdd" "vss" 1928.2
+cap "mim_cap2_0/vdd" "vss" 1928.2
+cap "vss" "mim_cap2_0/vdd" 1928.2
+cap "vss" "mim_cap2_0/vdd" 1432.61
+cap "vss" "vdd" -1.73382
+cap "vdd" "vss" 2012.14
+cap "vdd" "vss" 2012.14
+cap "vss" "mim_cap2_0/vdd" 2012.14
+cap "vss" "mim_cap2_0/vdd" 2012.14
+cap "vss" "mim_cap2_0/vdd" 1532.85
+merge "mim_cap1_0/m5_108270_51500#" "mim_cap1_0/m5_101130_51500#" -195054 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -778620220 -617623
+merge "mim_cap1_0/m5_101130_51500#" "mim_cap1_0/m5_93270_51500#"
+merge "mim_cap1_0/m5_93270_51500#" "mim_cap1_0/m5_86130_51500#"
+merge "mim_cap1_0/m5_86130_51500#" "mim_cap1_0/m5_78270_51500#"
+merge "mim_cap1_0/m5_78270_51500#" "mim_cap1_0/m5_71130_51500#"
+merge "mim_cap1_0/m5_71130_51500#" "mim_cap1_0/m5_63270_51500#"
+merge "mim_cap1_0/m5_63270_51500#" "mim_cap1_0/m5_56130_51500#"
+merge "mim_cap1_0/m5_56130_51500#" "mim_cap1_0/m5_48270_51500#"
+merge "mim_cap1_0/m5_48270_51500#" "mim_cap1_0/m5_41130_51500#"
+merge "mim_cap1_0/m5_41130_51500#" "mim_cap1_0/m5_33270_51500#"
+merge "mim_cap1_0/m5_33270_51500#" "mim_cap1_0/m5_26130_51500#"
+merge "mim_cap1_0/m5_26130_51500#" "mim_cap1_0/m5_18270_51500#"
+merge "mim_cap1_0/m5_18270_51500#" "mim_cap1_0/m5_11130_51500#"
+merge "mim_cap1_0/m5_11130_51500#" "mim_cap1_0/m5_3270_51500#"
+merge "mim_cap1_0/m5_3270_51500#" "mim_cap1_0/m5_n3870_51500#"
+merge "mim_cap1_0/m5_n3870_51500#" "mim_cap1_0/m5_n11730_51500#"
+merge "mim_cap1_0/m5_n11730_51500#" "mim_cap1_0/m5_n18870_51500#"
+merge "mim_cap1_0/m5_n18870_51500#" "mim_cap1_0/m5_n26730_51500#"
+merge "mim_cap1_0/m5_n26730_51500#" "mim_cap1_0/m5_n33870_51500#"
+merge "mim_cap1_0/m5_n33870_51500#" "mim_cap1_0/m5_n41730_51500#"
+merge "mim_cap1_0/m5_n41730_51500#" "mim_cap1_0/m5_n48870_51500#"
+merge "mim_cap1_0/m5_n48870_51500#" "mim_cap1_0/m5_n56730_51500#"
+merge "mim_cap1_0/m5_n56730_51500#" "mim_cap1_0/m5_n63870_51500#"
+merge "mim_cap1_0/m5_n63870_51500#" "mim_cap1_0/m5_n71730_51500#"
+merge "mim_cap1_0/m5_n71730_51500#" "mim_cap1_0/m5_n78870_51500#"
+merge "mim_cap1_0/m5_n78870_51500#" "mim_cap1_0/m5_n86730_51500#"
+merge "mim_cap1_0/m5_n86730_51500#" "mim_cap1_0/m5_n93870_51500#"
+merge "mim_cap1_0/m5_n93870_51500#" "mim_cap1_0/m5_n101730_51500#"
+merge "mim_cap1_0/m5_n101730_51500#" "mim_cap1_0/m5_n108870_51500#"
+merge "mim_cap1_0/m5_n108870_51500#" "mim_cap2_0/vdd"
+merge "mim_cap2_0/vdd" "vdd"
+merge "mim_cap1_0/m5_104520_n66196#" "mim_cap1_0/m5_89520_n66196#" -165826 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -710193828 -154745 -51432848 -66746
+merge "mim_cap1_0/m5_89520_n66196#" "mim_cap1_0/m5_74520_n66196#"
+merge "mim_cap1_0/m5_74520_n66196#" "mim_cap1_0/m5_59520_n66196#"
+merge "mim_cap1_0/m5_59520_n66196#" "mim_cap1_0/m5_44520_n66196#"
+merge "mim_cap1_0/m5_44520_n66196#" "mim_cap1_0/m5_29520_n66196#"
+merge "mim_cap1_0/m5_29520_n66196#" "mim_cap1_0/m5_14520_n66196#"
+merge "mim_cap1_0/m5_14520_n66196#" "mim_cap1_0/m5_n480_n66196#"
+merge "mim_cap1_0/m5_n480_n66196#" "mim_cap1_0/m5_n15480_n66196#"
+merge "mim_cap1_0/m5_n15480_n66196#" "mim_cap1_0/m5_n30480_n66196#"
+merge "mim_cap1_0/m5_n30480_n66196#" "mim_cap1_0/m5_n45480_n66196#"
+merge "mim_cap1_0/m5_n45480_n66196#" "mim_cap1_0/m5_n60480_n66196#"
+merge "mim_cap1_0/m5_n60480_n66196#" "mim_cap1_0/m5_n75480_n66196#"
+merge "mim_cap1_0/m5_n75480_n66196#" "mim_cap1_0/m5_n90480_n66196#"
+merge "mim_cap1_0/m5_n90480_n66196#" "mim_cap1_0/m5_n105480_n66196#"
+merge "mim_cap1_0/m5_n105480_n66196#" "mim_cap2_0/vss"
+merge "mim_cap2_0/vss" "vss"
+merge "mim_cap1_0/VSUBS" "mim_cap2_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "mim_cap2_0/VSUBS" "VSUBS"

@@ -48,8 +48,8 @@ docker_mounts = \
 	-v $(CARAVEL_ROOT):$(CARAVEL_ROOT) \
 	-v $(OPENLANE_ROOT):$(OPENLANE_ROOT)  # -v $(OPENLANE_ROOT):/openlane
 
-
-
+git remote add ef-repo ssh://git@repositories.efabless.com/ranan/gf_analog.git
+git push -u ef-repo main
 
 
 

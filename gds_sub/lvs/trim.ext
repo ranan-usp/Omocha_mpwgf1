@@ -1,0 +1,195 @@
+timestamp 1530038811
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use trim_switch trim_switch_0 1 0 188 0 1 4693
+use trim_cap_array trim_cap_array_0 1 0 -2464 0 1 -903
+port "drain" 14 2100 -1091 2200 -991 m2
+port "d_4" 16 1455 3940 1531 4040 m2
+port "d_1" 18 169 3953 245 4053 m2
+port "d_0" 20 -259 3953 -183 4053 m2
+port "d_2" 22 -1045 3940 -969 4040 m2
+port "d_3" 24 -2245 3940 -2169 4040 m2
+port "n4" 3 1936 2874 1996 2934 m1
+port "n1" 5 123 2874 183 2934 m1
+port "n0" 7 -197 2874 -137 2934 m1
+port "n2" 9 -1190 2874 -1130 2934 m1
+port "n3" 11 -2550 2874 -2490 2934 m1
+node "drain" 4 1663.59 2100 -1091 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 440000 9000 0 0 0 0 0 0
+node "m2_1864_1020#" 1 200.775 1864 1020 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46960 1334 0 0 0 0 0 0
+node "m2_n2703_1162#" 1 343.983 -2703 1162 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78480 2122 0 0 0 0 0 0
+node "d_4" 0 56.8177 1455 3940 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7600 352 0 0 0 0 0 0
+node "d_1" 0 44.9538 169 3953 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7600 352 0 0 0 0 0 0
+node "d_0" 0 42.6462 -259 3953 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7600 352 0 0 0 0 0 0
+node "d_2" 0 48.8405 -1045 3940 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7600 352 0 0 0 0 0 0
+node "d_3" 0 55.788 -2245 3940 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7600 352 0 0 0 0 0 0
+node "n4" 14 2684.49 1936 2874 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 386520 12492 251520 7712 0 0 0 0 0 0
+node "n1" 3 465.846 123 2874 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45720 1448 133680 3520 0 0 0 0 0 0
+node "n0" 3 452.564 -197 2874 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48240 1476 133680 3520 0 0 0 0 0 0
+node "n2" 8 1524.08 -1190 2874 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 195120 6496 190880 5128 0 0 0 0 0 0
+node "n3" 12 2340.84 -2550 2874 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 345840 11392 253760 7056 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "d_0" "d_1" 11.6259
+cap "n4" "n1" 137.954
+cap "n4" "n2" 482.89
+cap "n1" "n3" 87.8071
+cap "n1" "d_1" 0.214469
+cap "n3" "n2" 585.236
+cap "n0" "n4" 137.954
+cap "d_4" "d_1" 3.22701
+cap "n0" "n3" 87.8071
+cap "n4" "m2_n2703_1162#" 53.4814
+cap "n0" "d_0" 0.214469
+cap "d_3" "d_2" 3.98092
+cap "n3" "m2_n2703_1162#" 8.01477
+cap "m2_1864_1020#" "n4" 68.7389
+cap "n1" "n2" 81.0594
+cap "n4" "n3" 1379.98
+cap "d_0" "d_2" 5.35004
+cap "n0" "n1" 527.181
+cap "n0" "n2" 102.028
+cap "trim_cap_array_0/trim_cap_17/out" "trim_cap_array_0/trim_cap_16/in" 4.54747e-13
+cap "trim_cap_array_0/trim_cap_15/out" "trim_cap_array_0/trim_cap_15/in" 1.13687e-13
+cap "trim_cap_array_0/trim_cap_15/out" "trim_cap_array_0/trim_cap_14/in" 4.54747e-13
+cap "trim_cap_array_0/trim_cap_17/out" "trim_cap_array_0/trim_cap_15/in" 0.29522
+cap "trim_cap_array_0/trim_cap_16/in" "trim_cap_array_0/trim_cap_17/in" 3.26518
+cap "trim_cap_array_0/trim_cap_17/in" "trim_cap_array_0/trim_cap_15/in" 11.4967
+cap "trim_cap_array_0/trim_cap_16/in" "trim_cap_array_0/trim_cap_15/in" -6.65787
+cap "trim_cap_array_0/trim_cap_17/out" "trim_cap_array_0/trim_cap_17/in" 8.30862
+cap "trim_cap_array_0/trim_cap_17/out" "trim_cap_array_0/trim_cap_16/in" 3.14331
+cap "trim_cap_array_0/trim_cap_17/out" "trim_cap_array_0/trim_cap_16/in" 10.5286
+cap "trim_cap_array_0/trim_cap_13/in" "trim_cap_array_0/trim_cap_17/out" 0.362391
+cap "trim_cap_array_0/trim_cap_17/out" "trim_cap_array_0/trim_cap_15/in" 0.640572
+cap "trim_cap_array_0/trim_cap_13/in" "trim_cap_array_0/trim_cap_16/in" -9.55207
+cap "trim_cap_array_0/trim_cap_8/in" "trim_cap_array_0/trim_cap_9/in" -2.8942
+cap "trim_cap_array_0/trim_cap_15/in" "trim_cap_array_0/trim_cap_16/in" -12.4463
+cap "trim_cap_array_0/trim_cap_17/in" "trim_cap_array_0/trim_cap_15/in" 0.0597265
+cap "trim_cap_array_0/trim_cap_9/in" "trim_cap_array_0/trim_cap_16/in" -3.76367
+cap "trim_cap_array_0/trim_cap_14/in" "trim_cap_array_0/trim_cap_8/in" -3.76367
+cap "trim_cap_array_0/trim_cap_14/in" "trim_cap_array_0/trim_cap_15/out" 10.2539
+cap "trim_cap_array_0/trim_cap_15/in" "trim_cap_array_0/trim_cap_15/out" 0.623861
+cap "trim_cap_array_0/trim_cap_8/in" "trim_cap_array_0/trim_cap_9/in" -2.8942
+cap "trim_cap_array_0/trim_cap_15/in" "trim_cap_array_0/trim_cap_0/in" 0.0895898
+cap "trim_cap_array_0/trim_cap_15/out" "trim_cap_array_0/trim_cap_13/in" 0.202207
+cap "trim_cap_array_0/trim_cap_14/in" "trim_cap_array_0/trim_cap_15/in" -13.6392
+cap "trim_cap_array_0/trim_cap_14/in" "trim_cap_array_0/trim_cap_13/in" -9.55207
+cap "trim_cap_array_0/trim_cap_0/in" "trim_cap_array_0/trim_cap_9/out" 8.30862
+cap "trim_cap_array_0/trim_cap_9/out" "trim_cap_array_0/trim_cap_7/in" 3.61701
+cap "trim_cap_array_0/trim_cap_0/in" "trim_cap_array_0/trim_cap_7/in" 23.4812
+cap "trim_cap_array_0/trim_cap_0/in" "trim_cap_array_0/trim_cap_6/in" 17.1077
+cap "trim_cap_array_0/trim_cap_6/in" "trim_cap_array_0/trim_cap_7/in" -5.4611
+cap "trim_cap_array_0/trim_cap_15/in" "trim_cap_array_0/trim_cap_17/out" 0.502217
+cap "trim_cap_array_0/trim_cap_15/in" "trim_cap_array_0/trim_cap_17/in" 93.8836
+cap "trim_cap_array_0/trim_cap_17/in" "trim_cap_array_0/trim_cap_13/in" 6.3
+cap "trim_cap_array_0/trim_cap_15/in" "trim_cap_array_0/trim_cap_17/out" 0.502217
+cap "trim_cap_array_0/trim_cap_15/in" "trim_cap_array_0/trim_cap_13/in" -0.94214
+cap "trim_cap_array_0/trim_cap_17/in" "trim_cap_array_0/trim_cap_15/in" 1.67567
+cap "trim_cap_array_0/trim_cap_9/in" "trim_cap_array_0/trim_cap_8/in" -14.1792
+cap "trim_cap_array_0/trim_cap_9/in" "trim_cap_array_0/trim_cap_17/in" 4.54929
+cap "trim_cap_array_0/trim_cap_8/in" "trim_switch_0/m1_n149_n1117#" 0.0395502
+cap "trim_cap_array_0/trim_cap_9/in" "trim_switch_0/m1_n447_n1117#" 2.13993
+cap "trim_cap_array_0/trim_cap_13/in" "trim_cap_array_0/trim_cap_17/in" 17.5556
+cap "trim_cap_array_0/trim_cap_13/in" "trim_switch_0/m1_n447_n1117#" 1.34416
+cap "trim_cap_array_0/trim_cap_13/in" "trim_cap_array_0/trim_cap_15/in" -0.923833
+cap "trim_cap_array_0/trim_cap_9/in" "trim_cap_array_0/trim_cap_13/in" 1.34028
+cap "trim_cap_array_0/trim_cap_8/in" "trim_cap_array_0/trim_cap_17/in" 0.12857
+cap "trim_cap_array_0/trim_cap_13/in" "trim_switch_0/m1_n149_n1117#" 0.70461
+cap "trim_cap_array_0/trim_cap_8/in" "trim_cap_array_0/trim_cap_9/in" -14.1792
+cap "trim_switch_0/m1_n149_n1117#" "trim_cap_array_0/trim_cap_13/in" 0.934429
+cap "trim_cap_array_0/trim_cap_15/in" "trim_cap_array_0/trim_cap_14/in" 16.7523
+cap "trim_cap_array_0/trim_cap_14/in" "trim_cap_array_0/trim_cap_13/in" 4.26481
+cap "trim_cap_array_0/trim_cap_0/in" "trim_cap_array_0/trim_cap_15/in" 2.74276
+cap "trim_cap_array_0/trim_cap_8/in" "trim_cap_array_0/trim_cap_13/in" 0.0342022
+cap "trim_switch_0/m1_n149_n1117#" "trim_cap_array_0/trim_cap_8/in" 1.54668
+cap "trim_cap_array_0/trim_cap_13/in" "trim_switch_0/m1_711_n1117#" 1.71199
+cap "trim_cap_array_0/trim_cap_0/in" "trim_cap_array_0/trim_cap_13/in" 17.4428
+cap "trim_cap_array_0/trim_cap_8/in" "trim_cap_array_0/trim_cap_14/in" 3.04984
+cap "trim_cap_array_0/trim_cap_8/in" "trim_cap_array_0/trim_cap_0/in" 4.21843
+cap "trim_cap_array_0/trim_cap_7/in" "trim_cap_array_0/trim_cap_0/in" 33.4978
+cap "trim_cap_array_0/trim_cap_4/in" "trim_cap_array_0/trim_cap_0/in" 7.57534
+cap "trim_cap_array_0/trim_cap_7/in" "trim_cap_array_0/trim_cap_6/in" 0.767282
+cap "trim_cap_array_0/trim_cap_0/in" "trim_cap_array_0/trim_cap_6/in" 7.40859
+cap "trim_switch_0/XM3$1_0/a_n640_n791#" "trim_switch_0/XM0_0/a_n484_399#" 5.90687
+cap "trim_switch_0/m1_n1309_n1117#" "trim_switch_0/m1_n2669_n1117#" -1.99046
+cap "trim_switch_0/m1_n2669_n1117#" "trim_switch_0/XM3$1_0/a_n640_n791#" 0.0669258
+cap "trim_switch_0/m1_n1309_n1117#" "trim_switch_0/m1_n2669_n1117#" -1.99046
+cap "trim_switch_0/m1_n447_n1117#" "trim_switch_0/XM3$1_0/a_n640_n791#" 0.0167314
+cap "trim_switch_0/XM2$1_0/a_n237_n932#" "trim_switch_0/XM0_0/a_n484_399#" 5.00694
+cap "trim_switch_0/XM0_0/a_n346_583#" "trim_switch_0/m1_n447_n1117#" 1.78459
+cap "trim_switch_0/XM1$1_0/a_n202_583#" "trim_switch_0/XM0_0/a_n484_399#" 0.11412
+cap "trim_switch_0/XM2$1_0/a_n237_n932#" "trim_switch_0/m1_n149_n1117#" 0.546864
+cap "trim_switch_0/XM3$1_0/a_n640_n791#" "trim_switch_0/XM0_0/a_n484_399#" 2.22502
+cap "trim_switch_0/XM1$1_0/a_n202_583#" "trim_switch_0/m1_n149_n1117#" 0.0488852
+cap "trim_switch_0/XM3$1_0/a_n640_n791#" "trim_switch_0/m1_n149_n1117#" 0.00896328
+cap "trim_switch_0/XM0_0/a_n346_583#" "trim_switch_0/XM0_0/a_n484_399#" 6.99234
+cap "trim_switch_0/XM2$1_0/a_n237_n932#" "trim_switch_0/m1_n1309_n1117#" 0.0730352
+cap "trim_switch_0/m1_n447_n1117#" "trim_switch_0/m1_n149_n1117#" -5.81294
+cap "trim_switch_0/m1_n1309_n1117#" "trim_switch_0/XM3$1_0/a_n640_n791#" 0.0334629
+cap "trim_switch_0/XM0_0/a_n346_583#" "trim_switch_0/XM1$1_0/a_n202_583#" -2.10662
+cap "trim_switch_0/m1_n447_n1117#" "trim_switch_0/XM2$1_0/a_n237_n932#" 1.28745
+cap "trim_switch_0/m1_n447_n1117#" "trim_switch_0/m1_n1309_n1117#" -5.35004
+cap "trim_switch_0/XM2$1_0/a_n237_n932#" "trim_switch_0/m1_711_n1117#" 1.40844
+cap "trim_switch_0/m1_711_n1117#" "n3" 0.0761843
+cap "trim_switch_0/XM2$1_0/a_n237_n932#" "trim_switch_0/XM0_0/a_n484_399#" 3.07392
+cap "trim_switch_0/m1_n149_n1117#" "trim_switch_0/m1_n447_n1117#" -5.81294
+cap "n3" "trim_switch_0/XM0_0/a_n484_399#" 2.77579
+cap "trim_switch_0/m1_n149_n1117#" "trim_switch_0/XM1$1_0/a_n202_583#" 1.24958
+cap "trim_switch_0/XM0_0/a_n346_583#" "trim_switch_0/XM1$1_0/a_n202_583#" -2.10662
+cap "trim_switch_0/m1_n149_n1117#" "trim_switch_0/m1_711_n1117#" -3.22701
+cap "trim_switch_0/XM4$1_0/a_2314_n916#" "trim_switch_0/XM0_0/a_n484_399#" -1.13687e-13
+cap "trim_switch_0/XM2$1_0/a_n237_n932#" "trim_switch_0/m1_n149_n1117#" 0.951582
+cap "trim_switch_0/XM1$1_0/a_n202_583#" "trim_switch_0/XM0_0/a_n484_399#" 6.67672
+cap "trim_switch_0/m1_n149_n1117#" "n3" 0.00776817
+cap "trim_switch_0/XM4$1_0/a_2314_n916#" "trim_switch_0/XM0_0/a_n484_399#" 3.94184
+merge "trim_switch_0/m1_n2669_n1117#" "d_3" -55.788 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7600 -352 0 0 0 0 0 0
+merge "trim_switch_0/XM4$1_0/a_2314_n916#" "trim_cap_array_0/trim_cap_1/in" -294.491 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3600 -240 -12096 -1328 0 0 0 0 0 0
+merge "trim_cap_array_0/trim_cap_1/in" "trim_cap_array_0/trim_cap_3/in"
+merge "trim_cap_array_0/trim_cap_3/in" "trim_cap_array_0/trim_cap_5/in"
+merge "trim_cap_array_0/trim_cap_5/in" "trim_cap_array_0/trim_cap_7/in"
+merge "trim_cap_array_0/trim_cap_7/in" "trim_cap_array_0/trim_cap_10/in"
+merge "trim_cap_array_0/trim_cap_10/in" "trim_cap_array_0/trim_cap_12/in"
+merge "trim_cap_array_0/trim_cap_12/in" "trim_cap_array_0/trim_cap_14/in"
+merge "trim_cap_array_0/trim_cap_14/in" "trim_cap_array_0/trim_cap_16/in"
+merge "trim_cap_array_0/trim_cap_16/in" "n4"
+merge "trim_cap_array_0/VSUBS" "trim_switch_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trim_switch_0/VSUBS" "VSUBS"
+merge "trim_switch_0/XM2$1_0/a_n237_n932#" "trim_cap_array_0/trim_cap_4/in" -203.969 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3600 -240 -3024 -332 0 0 0 0 0 0
+merge "trim_cap_array_0/trim_cap_4/in" "trim_cap_array_0/trim_cap_13/in"
+merge "trim_cap_array_0/trim_cap_13/in" "n2"
+merge "trim_cap_array_0/trim_cap_0/out" "trim_cap_array_0/trim_cap_7/out" -1489.59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -228928 -8288 0 0 0 0 0 0
+merge "trim_cap_array_0/trim_cap_7/out" "trim_cap_array_0/trim_cap_6/out"
+merge "trim_cap_array_0/trim_cap_6/out" "trim_cap_array_0/trim_cap_5/out"
+merge "trim_cap_array_0/trim_cap_5/out" "trim_cap_array_0/trim_cap_4/out"
+merge "trim_cap_array_0/trim_cap_4/out" "trim_cap_array_0/trim_cap_3/out"
+merge "trim_cap_array_0/trim_cap_3/out" "trim_cap_array_0/trim_cap_2/out"
+merge "trim_cap_array_0/trim_cap_2/out" "trim_cap_array_0/trim_cap_1/out"
+merge "trim_cap_array_0/trim_cap_1/out" "trim_cap_array_0/trim_cap_16/out"
+merge "trim_cap_array_0/trim_cap_16/out" "trim_cap_array_0/trim_cap_15/out"
+merge "trim_cap_array_0/trim_cap_15/out" "trim_cap_array_0/trim_cap_14/out"
+merge "trim_cap_array_0/trim_cap_14/out" "trim_cap_array_0/trim_cap_13/out"
+merge "trim_cap_array_0/trim_cap_13/out" "trim_cap_array_0/trim_cap_12/out"
+merge "trim_cap_array_0/trim_cap_12/out" "trim_cap_array_0/trim_cap_11/out"
+merge "trim_cap_array_0/trim_cap_11/out" "trim_cap_array_0/trim_cap_10/out"
+merge "trim_cap_array_0/trim_cap_10/out" "trim_cap_array_0/trim_cap_9/out"
+merge "trim_cap_array_0/trim_cap_9/out" "trim_cap_array_0/trim_cap_8/out"
+merge "trim_cap_array_0/trim_cap_8/out" "trim_cap_array_0/trim_cap_17/out"
+merge "trim_cap_array_0/trim_cap_17/out" "drain"
+merge "trim_cap_array_0/trim_cap_0/in" "trim_cap_array_0/trim_cap_17/in" -341.391 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15504 -964 0 0 0 0 0 0
+merge "trim_cap_array_0/trim_cap_17/in" "m2_1864_1020#"
+merge "m2_1864_1020#" "trim_switch_0/m1_n2891_n1340#"
+merge "trim_switch_0/m1_n2891_n1340#" "m2_n2703_1162#"
+merge "trim_switch_0/m1_n447_n1117#" "d_0" -48.1562 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7600 -352 0 0 0 0 0 0
+merge "trim_switch_0/m1_n149_n1117#" "d_1" -50.245 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7600 -352 0 0 0 0 0 0
+merge "trim_switch_0/XM0_0/a_n346_583#" "trim_cap_array_0/trim_cap_9/in" -123.094 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12060 -522 -1512 -166 0 0 0 0 0 0
+merge "trim_cap_array_0/trim_cap_9/in" "n0"
+merge "trim_switch_0/m1_n1309_n1117#" "d_2" -48.8405 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7600 -352 0 0 0 0 0 0
+merge "trim_switch_0/XM1$1_0/a_n202_583#" "trim_cap_array_0/trim_cap_8/in" -123.964 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12060 -522 -1512 -166 0 0 0 0 0 0
+merge "trim_cap_array_0/trim_cap_8/in" "n1"
+merge "trim_switch_0/XM3$1_0/a_n640_n791#" "trim_cap_array_0/trim_cap_2/in" -268.206 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3600 -240 -6048 -664 0 0 0 0 0 0
+merge "trim_cap_array_0/trim_cap_2/in" "trim_cap_array_0/trim_cap_6/in"
+merge "trim_cap_array_0/trim_cap_6/in" "trim_cap_array_0/trim_cap_11/in"
+merge "trim_cap_array_0/trim_cap_11/in" "trim_cap_array_0/trim_cap_15/in"
+merge "trim_cap_array_0/trim_cap_15/in" "n3"
+merge "trim_switch_0/m1_711_n1117#" "d_4" -59.6381 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7600 -352 0 0 0 0 0 0
