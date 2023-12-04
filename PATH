@@ -1,7 +1,0 @@
-export PDK_ROOT=/home/oe23ranan/pdk
-export PDK=gf180mcuD
-export PROJECT_ROOT=/home/oe23ranan/gf_analog
-export OPENLANE_ROOT=${PROJECT_ROOT}/openlane
-export OPENLANE_PDK=/home/oe23ranan/pdk
-export CARAVEL_ROOT=${PROJECT_ROOT}/caravel
-export PRECHECK_ROOT=${PROJECT_ROOT}/precheck
