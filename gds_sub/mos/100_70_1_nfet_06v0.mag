@@ -1,0 +1,64 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1701762771
+<< checkpaint >>
+rect -2334 -2356 2334 2356
+<< pwell >>
+rect -334 -356 334 356
+<< mvnmos >>
+rect -70 -100 70 100
+<< mvndiff >>
+rect -158 87 -70 100
+rect -158 -87 -145 87
+rect -99 -87 -70 87
+rect -158 -100 -70 -87
+rect 70 87 158 100
+rect 70 -87 99 87
+rect 145 -87 158 87
+rect 70 -100 158 -87
+<< mvndiffc >>
+rect -145 -87 -99 87
+rect 99 -87 145 87
+<< mvpsubdiff >>
+rect -302 252 302 324
+rect -302 208 -230 252
+rect -302 -208 -289 208
+rect -243 -208 -230 208
+rect 230 208 302 252
+rect -302 -252 -230 -208
+rect 230 -208 243 208
+rect 289 -208 302 208
+rect 230 -252 302 -208
+rect -302 -324 302 -252
+<< mvpsubdiffcont >>
+rect -289 -208 -243 208
+rect 243 -208 289 208
+<< polysilicon >>
+rect -70 179 70 192
+rect -70 133 -57 179
+rect 57 133 70 179
+rect -70 100 70 133
+rect -70 -183 70 -100
+<< polycontact >>
+rect -57 133 57 179
+<< metal1 >>
+rect -289 208 -243 204
+rect 243 208 289 204
+rect -68 133 -57 179
+rect 57 133 68 179
+rect -145 87 -99 83
+rect -145 -98 -99 -102
+rect 99 87 145 83
+rect 99 -98 145 -102
+rect -289 -219 -243 -223
+rect 243 -219 289 -223
+<< labels >>
+flabel metal1 -24 -1 -24 -1 0 FreeSans 240 0 0 0 D
+flabel metal1 0 31 0 31 0 FreeSans 240 0 0 0 G
+flabel metal1 24 -1 24 -1 0 FreeSans 240 0 0 0 S
+<< properties >>
+string FIXED_BBOX -266 -288 266 288
+<< end >>
+
+

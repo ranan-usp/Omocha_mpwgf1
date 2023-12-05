@@ -1,0 +1,26 @@
+** sch_path: /home/oe23ranan/pdk/gf180mcuD/libs.tech/xschem/tests/test_nfet_06v0.sch
+**.subckt test_nfet_06v0
+XM1 D G S B nfet_06v0 L=0.70u W=0.30u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+**** begin user architecture code
+
+.include /tmp/caravel_tutorial/pdk/models/ngspice/design.ngspice
+.lib /tmp/caravel_tutorial/pdk/models/ngspice/sm141064.ngspice typical
+
+
+
+vg g 0 0
+vd d 0 0
+vs s 0 0
+vb b 0 0
+.control
+save all
+dc vd 0 6 0.01 vg 0 6 1
+write test_nfet_06v0.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.end
