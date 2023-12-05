@@ -1,0 +1,156 @@
+* NGSPICE file created from comparator.ext - technology: gf180mcuD
+
+.subckt XM0_trim_right G D a_n484_399# a_n484_895# S
+X0 S G D a_n484_399# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM1_trim_right G D a_n484_399# a_n484_895# S
+X0 D G S a_n484_399# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM2_trim_right G D a_n375_n620# a_n375_n1116# S
+X0 D G S a_n375_n1116# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X1 S G D a_n375_n1116# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM3_trim_right G D a_n778_n975# S
+X0 D G S a_n778_n975# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X1 S G D a_n778_n975# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X2 D G S a_n778_n975# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X3 S G D a_n778_n975# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM4_trim_right G D a_1072_n1100# S
+X0 S G D a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X1 S G D a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X2 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X3 S G D a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X4 S G D a_1072_n1100# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X5 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X6 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X7 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt trim_switch_right XM3_trim_right_0/D XM0_trim_right_0/G XM4_trim_right_0/G
++ XM0_trim_right_0/D XM4_trim_right_0/D XM1_trim_right_0/G XM1_trim_right_0/D XM2_trim_right_0/G
++ XM2_trim_right_0/D XM3_trim_right_0/G VSUBS
+XXM0_trim_right_0 XM0_trim_right_0/G XM0_trim_right_0/D VSUBS VSUBS VSUBS XM0_trim_right
+XXM1_trim_right_0 XM1_trim_right_0/G XM1_trim_right_0/D VSUBS VSUBS VSUBS XM1_trim_right
+XXM2_trim_right_0 XM2_trim_right_0/G XM2_trim_right_0/D VSUBS VSUBS VSUBS XM2_trim_right
+XXM3_trim_right_0 XM3_trim_right_0/G XM3_trim_right_0/D VSUBS VSUBS XM3_trim_right
+XXM4_trim_right_0 XM4_trim_right_0/G XM4_trim_right_0/D VSUBS VSUBS XM4_trim_right
+.ends
+
+.subckt trim_right d_4 d_1 d_0 d_2 d_3 VSUBS ip
+Xtrim_switch_right_0 trim_switch_right_0/XM3_trim_right_0/D d_0 d_4 trim_switch_right_0/XM0_trim_right_0/D
++ trim_switch_right_0/XM4_trim_right_0/D d_1 trim_switch_right_0/XM1_trim_right_0/D
++ d_2 trim_switch_right_0/XM2_trim_right_0/D d_3 VSUBS trim_switch_right
+.ends
+
+.subckt XMdiff_com G D a_439_n1281# S
+X0 D G S a_439_n1281# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X1 S G D a_439_n1281# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt XMinp_com a_251_n1284# G D a_251_n788# S
+X0 D G S a_251_n1284# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XMl4_com G D S w_n198_790#
+X0 D G S w_n198_790# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM4_com G D w_1022_790# S
+X0 D G S w_1022_790# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XMinn_com G a_719_n1284# D S a_719_n788#
+X0 S G D a_719_n1284# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XMl3_com G D w_n634_790# S
+X0 S G D w_n634_790# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM3_com G D w_n509_n1092# S
+X0 S G D w_n509_n1092# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM4_trim_left G D a_1072_n1100# S
+X0 S G D a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X1 S G D a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X2 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X3 S G D a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X4 S G D a_1072_n1100# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X5 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X6 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X7 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+.ends
+
+.subckt XM3_trim_left G D a_n778_n975# S
+X0 D G S a_n778_n975# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X1 S G D a_n778_n975# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X2 D G S a_n778_n975# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X3 S G D a_n778_n975# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM2_trim_left G D a_n375_n620# a_n375_n1116# S
+X0 D G S a_n375_n1116# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X1 S G D a_n375_n1116# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM1_trim_left G D a_n484_399# a_n484_895# S
+X0 D G S a_n484_399# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM0_trim_left G D a_n484_399# a_n484_895# S
+X0 S G D a_n484_399# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt trim_switch_left n1 n0 n2 n3 XM0_trim_left_0/G XM3_trim_left_0/G XM1_trim_left_0/G
++ XM4_trim_left_0/G n4 XM2_trim_left_0/G VSUBS
+XXM4_trim_left_0 XM4_trim_left_0/G n4 VSUBS VSUBS XM4_trim_left
+XXM3_trim_left_0 XM3_trim_left_0/G n3 VSUBS VSUBS XM3_trim_left
+XXM2_trim_left_0 XM2_trim_left_0/G n2 VSUBS VSUBS VSUBS XM2_trim_left
+XXM1_trim_left_0 XM1_trim_left_0/G n1 VSUBS VSUBS VSUBS XM1_trim_left
+XXM0_trim_left_0 XM0_trim_left_0/G n0 VSUBS VSUBS VSUBS XM0_trim_left
+.ends
+
+.subckt trim_left in d_4 d_1 d_0 d_2 d_3 VSUBS
+Xtrim_switch_left_0 trim_switch_left_0/n1 trim_switch_left_0/n0 trim_switch_left_0/n2
++ trim_switch_left_0/n3 d_0 d_3 d_1 d_4 trim_switch_left_0/n4 d_2 VSUBS trim_switch_left
+.ends
+
+.subckt XMl2_com G D S a_n249_n1284#
+X0 D G S a_n249_n1284# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM2_com G D w_n237_n1121# S
+X0 D G S w_n237_n1121# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM1_com G D S w_n1578_790#
+X0 S G D w_n1578_790# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XMl1_com G D a_1224_n1284# S
+X0 S G D a_1224_n1284# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt comparator vss vdd outp outn vp vn trim4 trim1 trim0 trim2 trim3 trimb4 trimb1
++ trimb0 trimb2 trimb3 diff in ip clkc
+Xtrim_right_0 trimb4 trimb1 trimb0 trimb2 trimb3 vss ip trim_right
+XXMdiff_com_0 clkc diff vss vss XMdiff_com
+XXMinp_com_0 vss vp ip vss diff XMinp_com
+XXMl4_com_0 outn outp vdd vdd XMl4_com
+XXM4_com_0 clkc ip vdd vdd XM4_com
+XXMinn_com_0 vn vss in diff vss XMinn_com
+XXMl3_com_0 outp outn vdd vdd XMl3_com
+XXM3_com_0 clkc outp vdd vdd XM3_com
+Xtrim_left_0 in trim4 trim1 trim0 trim2 trim3 vss trim_left
+XXMl2_com_0 outn outp ip vss XMl2_com
+XXM2_com_0 clkc outn vdd vdd XM2_com
+XXM1_com_0 clkc in vdd vdd XM1_com
+XXMl1_com_0 outp outn vss in XMl1_com
+.ends
+

@@ -1,0 +1,71 @@
+* NGSPICE file created from latch.ext - technology: gf180mcuD
+
+.subckt XM2_latch_x4 G D S
+X0 S G D S pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM1_latch_x4 G D S
+X0 D G S S nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt x4_latch in out VSUBS XM2_latch_x4_0/S
+XXM2_latch_x4_0 in out XM2_latch_x4_0/S XM2_latch_x4
+XXM1_latch_x4_0 in out VSUBS XM1_latch_x4
+.ends
+
+.subckt XM2_latch_x3 G D S
+X0 S G D S pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM1_latch_x3 G D S
+X0 D G S S nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt x3_latch in out XM2_latch_x3_0/S VSUBS
+XXM2_latch_x3_0 in out XM2_latch_x3_0/S XM2_latch_x3
+XXM1_latch_x3_0 in out VSUBS XM1_latch_x3
+.ends
+
+.subckt XM4_latch G D a_258_n1293# S
+X0 S G D S nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM2_latch_x2 G D S
+X0 S G D S pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM1_latch_x2 G D S
+X0 D G S S nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt x2_latch in out XM2_latch_x2_0/S VSUBS
+XXM2_latch_x2_0 in out XM2_latch_x2_0/S XM2_latch_x2
+XXM1_latch_x2_0 in out VSUBS XM1_latch_x2
+.ends
+
+.subckt XM3_latch G D a_n349_n1268# S
+X0 D G S S nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM2_latch_x1 G D S
+X0 S G D S pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt XM1_latch_x1 G D S a_n254_114#
+X0 D G S S nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+.ends
+
+.subckt x1_latch in out VSUBS XM1_latch_x1_0/a_n254_114# XM2_latch_x1_0/S
+XXM2_latch_x1_0 in out XM2_latch_x1_0/S XM2_latch_x1
+XXM1_latch_x1_0 in out VSUBS XM1_latch_x1_0/a_n254_114# XM1_latch_x1
+.ends
+
+.subckt latch tutyuu1 tutyuu2 Qn Q S R vss vdd
+Xx4_latch_0 S tutyuu1 vss vdd x4_latch
+Xx3_latch_0 R tutyuu2 vdd vss x3_latch
+XXM4_latch_0 tutyuu2 Q vss vss XM4_latch
+Xx2_latch_0 Q Qn vdd vss x2_latch
+XXM3_latch_0 tutyuu1 Qn vss vss XM3_latch
+Xx1_latch_0 Qn Q vss vss vdd x1_latch
+.ends
+

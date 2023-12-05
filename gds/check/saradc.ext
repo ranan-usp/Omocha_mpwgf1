@@ -1,0 +1,1667 @@
+timestamp 1530351782
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use latch latch_0 0 1 46661 -1 0 1444
+use buffer buffer_0 1 0 46256 0 1 -1800
+use dacn dacn_0 1 0 -100183 0 -1 -13823
+use dacp dacp_0 1 0 -100183 0 1 13823
+use mim_cap_boss mim_cap_boss_0 1 0 -132 0 -1 -113347
+use mim_cap_boss mim_cap_boss_1 1 0 -132 0 1 113347
+use sarlogic sarlogic_0 1 0 57556 0 1 -13000
+use comparator comparator_0 0 -1 35987 1 0 0
+port "rstn" 39 164716 -11880 165516 -11768 m3
+port "clk" 37 164716 -10312 165516 -10200 m3
+port "en" 35 164716 -8744 165516 -8632 m3
+port "cal" 33 164716 -7176 165516 -7064 m3
+port "valid" 31 164716 -5608 165516 -5496 m3
+port "result[0]" 11 164716 -2472 165516 -2360 m3
+port "result[1]" 13 164716 -904 165516 -792 m3
+port "result[2]" 15 164716 664 165516 776 m3
+port "result[3]" 17 164716 2232 165516 2344 m3
+port "result[4]" 19 164716 3800 165516 3912 m3
+port "result[5]" 21 164716 5368 165516 5480 m3
+port "result[6]" 23 164716 6936 165516 7048 m3
+port "result[7]" 25 164716 8504 165516 8616 m3
+port "result[8]" 27 164716 10072 165516 10184 m3
+port "result[9]" 29 164716 11640 165516 11752 m3
+port "vinn" 9 -167980 -16668 -166984 -16348 m3
+port "vinp" 7 -167980 16348 -166984 16668 m3
+port "vdd" 1 -145328 195240 -130328 210240 m4
+port "vdd" 1 -145328 -10000 -130328 10000 m5
+port "vss" 4 -167980 -10000 -152380 10000 m4
+port "vss" 4 -167980 217140 -152380 232740 m4
+node "m5_158680_n100000#" 0 32315.3 158680 -100000 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 600000000 406000
+node "m5_121216_n195240#" 0 81361.7 121216 -195240 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 327600000 224400
+node "m5_n124784_n195240#" 0 81361.7 -124784 -195240 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 327600000 224400
+node "m5_121216_86040#" 0 81361.7 121216 86040 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 327600000 224400
+node "m5_n124784_86040#" 0 81361.7 -124784 86040 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 327600000 224400
+node "m5_n161680_n100000#" 0 32315.3 -161680 -100000 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 600000000 406000
+node "rstn" 0 20952.2 164716 -11880 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "clk" 0 16542.7 164716 -10312 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "en" 0 16542.7 164716 -8744 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "cal" 0 16542.7 164716 -7176 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "valid" 0 20941.6 164716 -5608 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "result[0]" 0 20941.6 164716 -2472 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "result[1]" 0 16542.7 164716 -904 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "result[2]" 0 16542.7 164716 664 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "result[3]" 0 16542.7 164716 2232 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "result[4]" 0 16542.7 164716 3800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "result[5]" 0 16542.7 164716 5368 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "result[6]" 0 16542.7 164716 6936 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "result[7]" 0 16542.7 164716 8504 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "result[8]" 0 16542.7 164716 10072 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "result[9]" 0 20952.2 164716 11640 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8651328 154712 0 0 0 0
+node "m2_30817_n18766#" 0 19211.7 30817 -18766 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5598352 134930 0 0 0 0 0 0
+node "m2_30817_n18094#" 0 13077.5 30817 -18094 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5236368 126418 0 0 0 0 0 0
+node "m2_30817_n17422#" 0 12165.8 30817 -17422 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4874384 117906 0 0 0 0 0 0
+node "m2_30817_n16750#" 0 11254 30817 -16750 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4512400 109394 0 0 0 0 0 0
+node "vinn" 2 27242.7 -167980 -16668 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 316564 5118 22033920 138352 0 0 0 0
+node "m2_30817_n16078#" 0 10342.3 30817 -16078 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4150416 100882 0 0 0 0 0 0
+node "m2_30817_n15406#" 0 9430.61 30817 -15406 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3788432 92370 0 0 0 0 0 0
+node "m2_30817_n14734#" 0 8518.89 30817 -14734 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3426448 83858 0 0 0 0 0 0
+node "m2_30817_n14062#" 0 7607.17 30817 -14062 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3064464 75346 0 0 0 0 0 0
+node "m2_30817_n13390#" 0 6695.45 30817 -13390 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2702480 66834 0 0 0 0 0 0
+node "m2_30817_n12718#" 0 7723.85 30817 -12718 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2291440 57446 0 0 0 0 0 0
+node "m2_39086_n8850#" 15 5833.01 39086 -8850 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2597400 41944 100000 1400 0 0 0 0
+node "m2_39086_n8550#" 15 2978.58 39086 -8550 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2164200 38512 100000 1400 0 0 0 0
+node "m2_39086_n8250#" 16 3123.97 39086 -8250 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2253000 39400 100000 1400 0 0 0 0
+node "m2_39086_n7950#" 15 3888.17 39086 -7950 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2686200 42832 100000 1400 0 0 0 0
+node "m2_39086_n7650#" 15 6835.06 39086 -7650 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3119400 46264 100000 1400 0 0 0 0
+node "m2_24657_n11219#" 14 6960.94 24657 -11219 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2211280 36824 0 0 0 0 0 0
+node "m2_39086_7550#" 0 6876.97 39086 7550 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3145000 46520 100000 1400 0 0 0 0
+node "m2_39086_7850#" 15 3919.76 39086 7850 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2711800 43088 100000 1400 0 0 0 0
+node "m2_39086_8150#" 16 3165.89 39086 8150 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2278600 39656 100000 1400 0 0 0 0
+node "m2_39086_8450#" 15 2936.67 39086 8450 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2138600 38256 100000 1400 0 0 0 0
+node "m2_39086_8750#" 15 5801.55 39086 8750 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2571800 41688 100000 1400 0 0 0 0
+node "m2_24657_1830#" 14 6960.94 24657 1830 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2211280 36824 0 0 0 0 0 0
+node "m2_30316_12638#" 0 7870.57 30316 12638 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2331520 58448 0 0 0 0 0 0
+node "m2_30316_13310#" 0 6787.05 30316 13310 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2742560 67836 0 0 0 0 0 0
+node "m2_30316_13982#" 0 7698.77 30316 13982 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3104544 76348 0 0 0 0 0 0
+node "m2_30316_14654#" 0 8610.49 30316 14654 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3466528 84860 0 0 0 0 0 0
+node "m2_30316_15326#" 0 9522.21 30316 15326 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3828512 93372 0 0 0 0 0 0
+node "m2_30316_15998#" 0 10433.9 30316 15998 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4190496 101884 0 0 0 0 0 0
+node "vinp" 2 27242.7 -167980 16348 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 316564 5118 22033920 138352 0 0 0 0
+node "m2_30316_16670#" 0 11345.6 30316 16670 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4552480 110396 0 0 0 0 0 0
+node "m2_30316_17342#" 0 12257.4 30316 17342 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4914464 118908 0 0 0 0 0 0
+node "m2_30316_18014#" 0 13169.1 30316 18014 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5276448 127420 0 0 0 0 0 0
+node "m2_30316_18686#" 0 19303.3 30316 18686 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5638432 135932 0 0 0 0 0 0
+node "m2_93056_n21305#" 0 64396.1 93056 -21305 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8642000 86820 26795600 269156 0 0 0 0
+node "m1_46996_n1838#" 13 5647.37 46996 -1838 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 948360 22972 100000 1400 100000 1400 0 0 0 0
+node "m1_44380_n660#" 9 2731.77 44380 -660 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 164060 4270 462380 12130 0 0 0 0 0 0
+node "m1_38036_n1834#" 11 4154 38036 -1834 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 690240 18728 0 0 0 0 0 0 0 0
+node "m1_46934_904#" 12 5359.2 46934 904 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 909760 21644 100000 1400 100000 1400 0 0 0 0
+node "m1_44356_540#" 11 3585.64 44356 540 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 304094 7874 460556 12082 0 0 0 0 0 0
+node "vdd" 5 4.52382e+06 -145328 -10000 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5869792 51320 6395616 55702 6216192 37488 15648368976 2826924 7284000000 1854400
+node "vss" 12 5.42006e+06 -167980 217140 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6801504 59352 4865080 46244 3912192 21168 25016550080 4640378 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "result[2]" "result[1]" 3508.5
+cap "m2_30316_18014#" "m2_30316_17342#" 3947.95
+cap "m2_39086_n8850#" "m2_39086_n8550#" 2978.39
+cap "m2_93056_n21305#" "result[6]" 159.895
+cap "m2_30316_16670#" "m2_30316_17342#" 3687.05
+cap "vss" "m2_30316_18014#" 1351.91
+cap "m1_44356_540#" "m1_44380_n660#" 244.265
+cap "m2_30817_n14062#" "m2_30817_n13390#" 2346.05
+cap "vss" "m2_30316_16670#" 1275.34
+cap "vdd" "result[5]" 3379.24
+cap "m2_30817_n14062#" "vdd" 393.337
+cap "m5_158680_n100000#" "vss" 686501
+cap "vdd" "m2_30817_n16078#" 464.997
+cap "cal" "vdd" 3379.24
+cap "vdd" "result[8]" 3379.24
+cap "m2_93056_n21305#" "result[3]" 159.895
+cap "vss" "m2_30817_n18094#" 1351.18
+cap "m2_30817_n17422#" "m2_30817_n18094#" 3911.48
+cap "vdd" "vinn" 4862.6
+cap "vdd" "m2_39086_n8850#" 164.537
+cap "vss" "m2_30316_13982#" 1187.7
+cap "m2_93056_n21305#" "clk" 159.895
+cap "m2_30316_16670#" "m2_30316_15998#" 3426.14
+cap "m2_93056_n21305#" "vdd" 5488.24
+cap "result[4]" "vss" 8402.78
+cap "vss" "result[1]" 8402.78
+cap "m2_39086_n8250#" "m2_39086_n7950#" 3006.06
+cap "m2_93056_n21305#" "result[0]" 169.724
+cap "m2_30316_13310#" "m2_30316_13982#" 2382.52
+cap "vdd" "m2_30316_18014#" 1107.48
+cap "vss" "m1_38036_n1834#" 796.635
+cap "vdd" "m1_46996_n1838#" 183.115
+cap "vss" "en" 8402.78
+cap "vdd" "m2_30316_16670#" 602.681
+cap "m2_30817_n18766#" "vss" 1856.94
+cap "vdd" "m5_121216_n195240#" 1182.82
+cap "rstn" "vss" 8430.05
+cap "m2_30817_n15406#" "m2_30817_n16078#" 3128.76
+cap "m2_39086_n7650#" "m2_39086_n7950#" 2944.74
+cap "m2_39086_7550#" "m2_39086_7850#" 2952.72
+cap "vdd" "m5_121216_86040#" 1182.82
+cap "m2_39086_n8850#" "m2_30817_n12718#" 94.8963
+cap "m2_39086_n8250#" "vss" 676.597
+cap "result[4]" "result[3]" 3508.5
+cap "vdd" "m2_30817_n18094#" 1107.48
+cap "vinp" "vss" 13325
+cap "vdd" "m2_24657_1830#" 281.095
+cap "vdd" "m2_30316_13982#" 393.337
+cap "m2_30316_13982#" "m2_30316_14654#" 2643.42
+cap "vss" "result[2]" 8402.78
+cap "result[4]" "vdd" 3379.24
+cap "m2_39086_n8250#" "m2_39086_n8550#" 3116.36
+cap "m2_39086_7550#" "vss" 1070.47
+cap "vdd" "result[1]" 3379.24
+cap "m2_24657_n11219#" "vdd" 281.095
+cap "m2_30817_n14734#" "vss" 1207.07
+cap "m2_39086_n7650#" "vss" 1070.47
+cap "result[0]" "result[1]" 3508.5
+cap "result[9]" "vss" 8430.05
+cap "vss" "m2_39086_n7950#" 676.597
+cap "vss" "result[7]" 8402.78
+cap "m2_39086_8450#" "vss" 676.597
+cap "clk" "en" 3508.5
+cap "m2_30817_n18766#" "vdd" 871.38
+cap "vdd" "en" 3379.24
+cap "m2_93056_n21305#" "result[5]" 159.895
+cap "m2_30316_12638#" "vss" 1309.71
+cap "result[6]" "result[7]" 3508.5
+cap "rstn" "vdd" 3413.56
+cap "rstn" "clk" 3508.5
+cap "vss" "m2_39086_7850#" 676.597
+cap "cal" "m2_93056_n21305#" 159.895
+cap "m2_93056_n21305#" "result[8]" 159.895
+cap "m2_30316_18686#" "vss" 1857.67
+cap "vdd" "m2_39086_n8250#" 113.951
+cap "result[3]" "result[2]" 3508.5
+cap "vss" "m2_30316_17342#" 1526.39
+cap "vss" "m2_30817_n16750#" 1274.61
+cap "vinp" "vdd" 4862.6
+cap "m2_30316_12638#" "m2_30316_13310#" 2121.61
+cap "m2_30817_n17422#" "m2_30817_n16750#" 3650.58
+cap "m1_44380_n660#" "m1_38036_n1834#" 56.3443
+cap "vdd" "result[2]" 3379.24
+cap "valid" "vss" 8423.3
+cap "vdd" "m2_39086_7550#" 164.537
+cap "m2_30817_n17422#" "vss" 1525.66
+cap "m2_30817_n14734#" "vdd" 419.665
+cap "m2_39086_8450#" "m2_39086_8750#" 2970.42
+cap "result[6]" "vss" 8402.78
+cap "vdd" "m2_39086_n7650#" 164.537
+cap "vss" "m2_39086_n8550#" 676.597
+cap "vss" "m2_30316_13310#" 1122.19
+cap "result[9]" "vdd" 3413.56
+cap "m2_30316_12638#" "m2_39086_8750#" 87.0917
+cap "vdd" "m2_39086_n7950#" 113.951
+cap "m2_39086_8450#" "vdd" 113.951
+cap "vdd" "result[7]" 3379.24
+cap "result[4]" "result[5]" 3508.5
+cap "m2_30316_12638#" "vdd" 357.034
+cap "vss" "m2_30316_15998#" 1287.43
+cap "m5_n124784_86040#" "vdd" 1182.82
+cap "vdd" "m2_39086_7850#" 113.951
+cap "m2_39086_8450#" "m2_39086_8150#" 3116.36
+cap "m2_30316_15326#" "vss" 1201.35
+cap "m2_30316_18686#" "vdd" 907.851
+cap "vss" "m2_30817_n13390#" 1121.46
+cap "vss" "result[3]" 8402.78
+cap "m2_39086_8750#" "vss" 1070.47
+cap "m2_39086_8150#" "m2_39086_7850#" 3014.04
+cap "vdd" "m2_30316_17342#" 541.57
+cap "vdd" "m2_30817_n16750#" 602.681
+cap "result[4]" "m2_93056_n21305#" 159.895
+cap "vss" "clk" 8409.52
+cap "vss" "m2_30316_14654#" 1207.8
+cap "vdd" "vss" 712877
+cap "vdd" "valid" 3413.56
+cap "m2_93056_n21305#" "result[1]" 159.895
+cap "m2_30817_n17422#" "vdd" 541.57
+cap "m2_30817_n14734#" "m2_30817_n15406#" 2867.86
+cap "cal" "en" 3508.5
+cap "m5_n161680_n100000#" "vss" 686501
+cap "vdd" "result[6]" 3379.24
+cap "vss" "result[0]" 8423.3
+cap "vss" "m2_39086_8150#" 676.597
+cap "m2_30316_15326#" "m2_30316_15998#" 3165.24
+cap "vdd" "m2_39086_n8550#" 113.951
+cap "vdd" "m2_30316_13310#" 449.017
+cap "m2_93056_n21305#" "en" 159.895
+cap "rstn" "m2_93056_n21305#" 160.218
+cap "vdd" "m2_30316_15998#" 464.997
+cap "m1_46934_904#" "vss" 0.197457
+cap "m1_44380_n660#" "vss" 1392.12
+cap "m1_44356_540#" "vss" 1608.55
+cap "m2_30316_15326#" "m2_30316_14654#" 2904.33
+cap "vdd" "m2_30316_15326#" 474.034
+cap "m1_46996_n1838#" "m1_38036_n1834#" 1.87402
+cap "m2_30817_n14734#" "m2_30817_n14062#" 2606.95
+cap "vdd" "m2_30817_n13390#" 449.017
+cap "vdd" "result[3]" 3379.24
+cap "vdd" "m2_39086_8750#" 164.537
+cap "vdd" "m5_n124784_n195240#" 1182.82
+cap "vss" "m2_30817_n12718#" 1308.98
+cap "m2_93056_n21305#" "result[2]" 159.895
+cap "vss" "m2_30817_n15406#" 1200.62
+cap "vdd" "clk" 3379.24
+cap "vdd" "m2_30316_14654#" 419.665
+cap "result[9]" "result[8]" 3508.5
+cap "result[7]" "result[8]" 3508.5
+cap "m2_30817_n18766#" "m2_30817_n18094#" 4172.39
+cap "vdd" "result[0]" 3413.56
+cap "vdd" "m2_39086_8150#" 113.951
+cap "m2_93056_n21305#" "result[9]" 160.218
+cap "m2_93056_n21305#" "result[7]" 159.895
+cap "vss" "result[5]" 8402.78
+cap "m2_30817_n16750#" "m2_30817_n16078#" 3389.67
+cap "m2_30817_n14062#" "vss" 1186.97
+cap "m2_30817_n13390#" "m2_30817_n12718#" 2085.14
+cap "vdd" "m1_46934_904#" 268.342
+cap "m1_44356_540#" "vdd" 1.15898
+cap "vss" "m2_30817_n16078#" 1286.7
+cap "vdd" "m1_44380_n660#" 57.2042
+cap "result[6]" "result[5]" 3508.5
+cap "cal" "vss" 8402.78
+cap "cal" "valid" 3508.5
+cap "vss" "result[8]" 8409.52
+cap "vss" "vinn" 13325
+cap "m2_39086_n8850#" "vss" 1070.47
+cap "vdd" "m2_30817_n12718#" 357.034
+cap "m2_93056_n21305#" "vss" 12029.5
+cap "m2_93056_n21305#" "valid" 169.724
+cap "vdd" "m2_30817_n15406#" 474.034
+cap "m2_30316_18686#" "m2_30316_18014#" 4208.86
+cap "vdd" "vss" 204.912
+cap "vdd" "vss" 125.792
+cap "vss" "vdd" 51.8892
+cap "vdd" "vss" 73.9028
+cap "vss" "vdd" 114.785
+cap "vdd" "vss" 11.0068
+cap "vss" "vdd" 125.792
+cap "vdd" "vss" 20.4412
+cap "vss" "vdd" 105.351
+cap "vss" "vdd" 83.3372
+cap "vss" "vdd" 42.4548
+cap "vdd" "vss" 125.792
+cap "vdd" "vss" 125.792
+cap "vdd" "vss" 51.8892
+cap "vss" "vdd" 73.9028
+cap "vdd" "vss" 114.785
+cap "vdd" "vss" 11.0068
+cap "vdd" "vss" 125.792
+cap "vss" "vdd" 20.4412
+cap "vdd" "vss" 105.351
+cap "vss" "vdd" 83.3372
+cap "vdd" "vss" 42.4548
+cap "vss" "vdd" 125.792
+cap "vss" "vdd" 125.792
+cap "vss" "vdd" 51.8892
+cap "vdd" "vss" 113.11
+cap "vss" "vdd" 114.785
+cap "vss" "vdd" 11.0068
+cap "vss" "vdd" 125.792
+cap "vss" "vdd" 125.792
+cap "vdd" "vss" 33.0204
+cap "vss" "vdd" 92.7717
+cap "vdd" "vss" 95.9165
+cap "vdd" "vss" 29.8756
+cap "vdd" "vss" 125.792
+cap "vss" "vdd" 1.5724
+cap "vdd" "vss" 124.22
+cap "vss" "vdd" 64.4684
+cap "vss" "vdd" 61.3236
+cap "dacn_0/vss" "dacn_0/bootstrapped_sw_n_0/en" 66.6443
+cap "dacn_0/vdd" "dacn_0/bootstrapped_sw_n_0/en" 56.4573
+cap "dacn_0/vdd" "dacn_0/bootstrapped_sw_n_0/en" 434.552
+cap "dacn_0/vdd" "dacn_0/sample" -0.430276
+cap "dacn_0/inv_renketu_n_0/inv_n_0/ZN" "dacn_0/sample" 0.19445
+cap "dacn_0/sample" "dacn_0/vdd" 17.4919
+cap "dacn_0/inv_renketu_n_0/inv_n_0/I" "dacn_0/sample" 1.20094
+cap "dacn_0/inv_renketu_n_0/inv_n_0/ZN" "dacn_0/sample" 1.34881
+cap "dacn_0/vss" "dacn_0/vdd" -38.4988
+cap "dacn_0/vss" "dacn_0/vdd" -38.4988
+cap "dacn_0/inv_renketu_n_0/inv_n_0/ZN" "m2_93056_n21305#" 0.586984
+cap "m2_93056_n21305#" "dacn_0/vss" 3.57513
+cap "dacn_0/dum" "m2_93056_n21305#" 0.704754
+cap "dacn_0/vss" "dacn_0/bootstrapped_sw_n_0/en" 15.481
+cap "dacn_0/vdd" "dacn_0/bootstrapped_sw_n_0/en" 6.31168
+cap "dacn_0/vss" "dacn_0/vdd" 1.46082
+cap "dacn_0/vdd" "dacn_0/bootstrapped_sw_n_0/enb" 5.88279
+cap "dacn_0/inv_renketu_n_0/inv_n_0/ZN" "dacn_0/sample" 0.145313
+cap "dacn_0/inv_renketu_n_0/inv_n_0/I" "dacn_0/sample" 0.166166
+cap "dacn_0/inv_renketu_n_0/inv_n_0/ZN" "dacn_0/sample" 0.512894
+cap "dacn_0/vdd" "dacn_0/inv_renketu_n_0/inv_n_0/I" 0.0172769
+cap "dacn_0/vss" "dacn_0/vdd" -43.3615
+cap "dacn_0/vss" "dacn_0/vdd" -43.3615
+cap "dacn_0/dum" "m2_93056_n21305#" 0.082597
+cap "dacn_0/vss" "dacn_0/dum" -0.0183109
+cap "dacn_0/inv_renketu_n_0/inv_n_0/ZN" "m2_93056_n21305#" 0.159728
+cap "dacn_0/vss" "dacn_0/ctl1" -0.0355877
+cap "dacn_0/ctl2" "dacn_0/ctl1" -7.27975
+cap "dacn_0/vss" "dacn_0/ctl1" -0.0528197
+cap "dacn_0/vss" "dacn_0/dum" -0.0528197
+cap "dacn_0/ctl1" "dacn_0/dum" -14.5595
+cap "dacn_0/vss" "dacn_0/vdd" 1.65227
+cap "dacn_0/bootstrapped_sw_n_0/vbsh" "dacn_0/bootstrapped_sw_n_0/enb" -5.68434e-14
+cap "dacn_0/vdd" "dacn_0/bootstrapped_sw_n_0/out" 1.7035
+cap "dacn_0/bootstrapped_sw_n_0/vbsh" "dacn_0/vdd" 26.7569
+cap "dacn_0/vdd" "dacn_0/bootstrapped_sw_n_0/enb" 19.7738
+cap "dacn_0/vdd" "dacn_0/bootstrapped_sw_n_0/vg" 20.7574
+cap "dacn_0/vdd" "dacn_0/bootstrapped_sw_n_0/vs" 0.0372331
+cap "dacn_0/bootstrapped_sw_n_0/out" "dacn_0/vdd" 1.1336
+cap "dacn_0/inv_renketu_n_0/inv_n_6/VDD" "dacn_0/inv_renketu_n_0/inv_n_6/VSS" -43.3615
+cap "dacn_0/inv_renketu_n_0/inv_n_6/VDD" "dacn_0/inv_renketu_n_0/inv_n_6/VSS" -43.3615
+cap "dacn_0/ctl2" "dacn_0/inv_renketu_n_0/inv_n_6/VSS" -0.0355877
+cap "dacn_0/ctl3" "dacn_0/inv_renketu_n_0/inv_n_6/VSS" -0.0355877
+cap "dacn_0/inv_renketu_n_0/inv_n_6/VSS" "dacn_0/ctl3" -0.0528197
+cap "dacn_0/ctl3" "dacn_0/ctl2" -14.5595
+cap "dacn_0/inv_renketu_n_0/inv_n_6/VSS" "dacn_0/ctl2" -0.0528197
+cap "dacn_0/ctl4" "dacn_0/ctl3" -7.27975
+cap "dacn_0/ctl2" "dacn_0/ctl1" -7.27975
+cap "dacn_0/in" "dacn_0/bootstrapped_sw_n_0/vbsl" 1.9626
+cap "dacn_0/in" "dacn_0/bootstrapped_sw_n_0/vbsl" 10.8472
+cap "dacn_0/bootstrapped_sw_n_0/enb" "dacn_0/bootstrapped_sw_n_0/XMs1_bs$1_0/G" 0.113047
+cap "dacn_0/bootstrapped_sw_n_0/XMs2_bs$1_0/D" "dacn_0/in" 0.0316091
+cap "dacn_0/bootstrapped_sw_n_0/vg" "dacn_0/bootstrapped_sw_n_0/XMs1_bs$1_0/G" 0.226095
+cap "dacn_0/bootstrapped_sw_n_0/vg" "dacn_0/in" 0.0272365
+cap "dacn_0/bootstrapped_sw_n_0/vg" "dacn_0/bootstrapped_sw_n_0/vbsl" -0.00663744
+cap "dacn_0/bootstrapped_sw_n_0/XMs_bs$1_0/D" "dacn_0/bootstrapped_sw_n_0/XMs1_bs$1_0/G" 0.087161
+cap "dacn_0/bootstrapped_sw_n_0/vbsl" "dacn_0/bootstrapped_sw_n_0/XMs1_bs$1_0/G" 5.62361
+cap "dacn_0/bootstrapped_sw_n_0/vbsh" "dacn_0/bootstrapped_sw_n_0/out" -4.49206
+cap "dacn_0/bootstrapped_sw_n_0/enb" "dacn_0/bootstrapped_sw_n_0/XMs1_bs$1_0/G" 2.26094
+cap "dacn_0/bootstrapped_sw_n_0/vbsh" "dacn_0/in" 8.88178e-16
+cap "dacn_0/bootstrapped_sw_n_0/vbsh" "dacn_0/bootstrapped_sw_n_0/XMs1_bs$1_0/G" 190.021
+cap "dacn_0/bootstrapped_sw_n_0/vg" "dacn_0/bootstrapped_sw_n_0/XMs1_bs$1_0/G" 5.80898
+cap "dacn_0/bootstrapped_sw_n_0/vs" "dacn_0/bootstrapped_sw_n_0/XMs1_bs$1_0/G" 0.0783319
+cap "dacn_0/bootstrapped_sw_n_0/XMs2_bs$1_0/D" "dacn_0/bootstrapped_sw_n_0/XMs1_bs$1_0/G" 1.60524
+cap "dacn_0/bootstrapped_sw_n_0/out" "dacn_0/bootstrapped_sw_n_0/XMs1_bs$1_0/G" 15.1243
+cap "dacn_0/bootstrapped_sw_n_0/out" "dacn_0/bootstrapped_sw_n_0/vbsl" -0.386882
+cap "dacn_0/bootstrapped_sw_n_0/XM3_bs$1_0/D" "dacn_0/bootstrapped_sw_n_0/out" 112.159
+cap "dacn_0/inv_renketu_n_0/inv_n_9/VSS" "dacn_0/inv_renketu_n_0/inv_n_9/VDD" -43.3615
+cap "dacn_0/ctl5" "dacn_0/inv_renketu_n_0/inv_n_9/VSS" -0.0355877
+cap "dacn_0/ctl4" "dacn_0/inv_renketu_n_0/inv_n_9/VSS" -0.0355877
+cap "dacn_0/inv_renketu_n_0/inv_n_9/VDD" "dacn_0/inv_renketu_n_0/inv_n_9/VSS" -43.3615
+cap "dacn_0/ctl5" "dacn_0/ctl4" -14.5595
+cap "dacn_0/ctl6" "dacn_0/ctl5" -7.27975
+cap "dacn_0/ctl5" "dacn_0/inv_renketu_n_0/inv_n_9/VSS" -0.0528197
+cap "dacn_0/ctl4" "dacn_0/ctl3" -7.27975
+cap "dacn_0/inv_renketu_n_0/inv_n_9/VSS" "dacn_0/ctl4" -0.0528197
+cap "dacn_0/bootstrapped_sw_n_0/vbsh" "dacn_0/bootstrapped_sw_n_0/out" -16.8019
+cap "dacn_0/bootstrapped_sw_n_0/out" "dacn_0/bootstrapped_sw_n_0/vbsl" -13.5409
+cap "dacn_0/bootstrapped_sw_n_0/vbsh" "dacn_0/bootstrapped_sw_n_0/XM3_bs$1_0/D" 110.981
+cap "dacn_0/bootstrapped_sw_n_0/vbsl" "dacn_0/bootstrapped_sw_n_0/XM3_bs$1_0/D" 192.781
+cap "dacn_0/bootstrapped_sw_n_0/XM3_bs$1_0/D" "dacn_0/bootstrapped_sw_n_0/out" 204.054
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VDD" "dacn_0/inv_renketu_n_0/inv_n_2/VSS" -43.3615
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VSS" "dacn_0/ctl7" -0.0355877
+cap "dacn_0/ctl6" "dacn_0/inv_renketu_n_0/inv_n_2/VSS" -0.0355877
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VDD" "dacn_0/inv_renketu_n_0/inv_n_2/VSS" -43.3615
+cap "dacn_0/ctl6" "dacn_0/ctl5" -7.27975
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VSS" "dacn_0/ctl7" -0.0528197
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VSS" "dacn_0/ctl6" -0.0528197
+cap "dacn_0/ctl7" "dacn_0/ctl6" -14.5595
+cap "dacn_0/ctl8" "dacn_0/ctl7" -7.27975
+cap "dacn_0/bootstrapped_sw_n_0/out" "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/in" -8.12453
+cap "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/in" "vdd" 115.669
+cap "dacn_0/bootstrapped_sw_n_0/out" "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/out" -16.8019
+cap "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/out" "vdd" 122.932
+cap "dacn_0/carray_n_0/cap_unit_n_66/in" "vdd" 6.82749
+cap "dacn_0/carray_n_0/cap_unit_n_63/out" "vdd" 0.387247
+cap "dacn_0/carray_n_0/cap_unit_n_67/in" "vdd" 7.38728
+cap "dacn_0/carray_n_0/cap_unit_n_64/in" "vdd" 8.39917
+cap "dacn_0/bootstrapped_sw_n_0/out" "vdd" 204.054
+cap "dacn_0/carray_n_0/cap_unit_n_67/out" "vdd" 0.286445
+cap "dacn_0/carray_n_0/cap_unit_n_64/out" "vdd" 0.546383
+cap "dacn_0/carray_n_0/cap_unit_n_66/in" "vdd" 7.01399
+cap "dacn_0/carray_n_0/cap_unit_n_67/in" "dacn_0/bootstrapped_sw_n_0/out" -0.532977
+cap "dacn_0/carray_n_0/cap_unit_n_67/in" "vdd" 8.52464
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VSS" "dacn_0/inv_renketu_n_0/inv_n_2/VNW" -43.3615
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VSS" "dacn_0/ctl8" -0.0355877
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VSS" "dacn_0/inv_renketu_n_0/inv_n_2/VNW" -43.3615
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VSS" "dacn_0/ctl9" -0.0355877
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VSS" "dacn_0/ctl9" -0.0528197
+cap "dacn_0/ctl8" "dacn_0/ctl7" -7.27975
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VSS" "dacn_0/ctl8" -0.0528197
+cap "dacn_0/ctl9" "dacn_0/ctl8" -14.5595
+cap "dacn_0/ctl10" "dacn_0/ctl9" -7.27975
+cap "m2_30817_n13390#" "sarlogic_0/ctln[0]" 10.4634
+cap "dacn_0/carray_n_0/cap_unit_n_32/out" "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_3/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" -13.5409
+cap "dacn_0/carray_n_0/cap_unit_n_32/out" "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_2/out" -16.8019
+cap "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_3/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" "vdd" 192.781
+cap "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_2/out" "vdd" 110.981
+cap "dacn_0/carray_n_0/cap_unit_n_32/out" "vdd" 238.889
+cap "dacn_0/carray_n_0/cap_unit_n_67/in" "vdd" 2.33175
+cap "dacn_0/carray_n_0/cap_unit_n_66/in" "vdd" 1.75696
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VNW" "dacn_0/inv_renketu_n_0/inv_n_2/VSS" -31.1583
+cap "dacn_0/ctl10" "dacn_0/inv_renketu_n_0/inv_n_2/VSS" -0.0355877
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VSS" "dacn_0/inv_renketu_n_0/inv_n_2/VNW" -31.1583
+cap "dacn_0/ctl10" "dacn_0/ctl9" -7.27975
+cap "dacn_0/inv_renketu_n_0/inv_n_2/VSS" "dacn_0/ctl10" -0.0528197
+cap "sarlogic_0/trim[3]" "sarlogic_0/ctln[0]" 0.637723
+cap "sarlogic_0/trim[3]" "sarlogic_0/ctln[0]" 0.645137
+cap "sarlogic_0/ctln[0]" "m2_30817_n13390#" -4.07666
+cap "sarlogic_0/ctln[9]" "vdd" 37.7641
+cap "sarlogic_0/ctln[8]" "vss" 4.44497
+cap "sarlogic_0/ctln[7]" "vdd" 4.53871
+cap "sarlogic_0/ctln[7]" "vdd" 1.55945
+cap "vdd" "sarlogic_0/ctln[4]" 1.55945
+cap "vdd" "sarlogic_0/ctln[4]" 4.53871
+cap "sarlogic_0/ctln[3]" "vss" 16.6117
+cap "vdd" "sarlogic_0/ctln[2]" 39.1402
+cap "sarlogic_0/ctln[1]" "vss" 14.7019
+cap "sarlogic_0/rstn" "sarlogic_0/ctln[1]" 0.716798
+cap "sarlogic_0/ctln[1]" "vss" 5.36703
+cap "sarlogic_0/rstn" "sarlogic_0/clk" -10.0835
+cap "sarlogic_0/rstn" "vss" 167.357
+cap "vss" "m2_93056_n21305#" -0.383991
+cap "sarlogic_0/rstn" "sarlogic_0/clk" -8.08493
+cap "sarlogic_0/rstn" "m2_93056_n21305#" 1.1079
+cap "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_2/out" "vdd" 122.932
+cap "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_2/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" "vdd" 115.669
+cap "dacn_0/carray_n_0/cap_unit_n_32/out" "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_2/out" -6.59524
+cap "dacn_0/carray_n_0/cap_unit_n_63/in" "vdd" 0.461907
+cap "dacn_0/carray_n_0/cap_unit_n_44/in" "vdd" 1.48399
+cap "dacn_0/carray_n_0/n9" "vdd" 0.38807
+cap "dacn_0/carray_n_0/cap_unit_n_43/in" "vdd" 1.11818
+cap "dacn_0/carray_n_0/cap_unit_n_32/out" "vdd" 182.893
+cap "dacn_0/carray_n_0/n8" "vdd" 0.292409
+cap "dacn_0/carray_n_0/cap_unit_n_64/in" "vdd" 0.667621
+cap "sarlogic_0/ctln[0]" "sarlogic_0/trim[3]" 0.622304
+cap "sarlogic_0/ctln[0]" "sarlogic_0/trim[3]" 1.07425
+cap "sarlogic_0/TAP_TAPCELL_ROW_0_50/VDD" "sarlogic_0/ctln[9]" 90.8749
+cap "sarlogic_0/ctln[8]" "sarlogic_0/output15/VSS" 9.42873
+cap "sarlogic_0/fanout50/VNW" "sarlogic_0/ctln[7]" 9.62758
+cap "sarlogic_0/FILLER_0_0_96/VNW" "sarlogic_0/ctln[7]" 3.30793
+cap "sarlogic_0/_448_/VNW" "sarlogic_0/ctln[4]" 3.30793
+cap "sarlogic_0/_448_/VNW" "sarlogic_0/ctln[4]" 9.62758
+cap "sarlogic_0/TAP_TAPCELL_ROW_0_55/VSS" "sarlogic_0/ctln[3]" 35.2369
+cap "sarlogic_0/FILLER_0_1_256/VNW" "sarlogic_0/ctln[2]" 23.5634
+cap "sarlogic_0/FILLER_0_0_266/VSS" "sarlogic_0/ctln[1]" 30.3289
+cap "sarlogic_0/clk" "sarlogic_0/ANTENNA_fanout58_I/VSS" 147.899
+cap "sarlogic_0/rstn" "sarlogic_0/ANTENNA_fanout58_I/VSS" 2.97406
+cap "sarlogic_0/ctln[1]" "sarlogic_0/ANTENNA_fanout58_I/VSS" 12.4401
+cap "sarlogic_0/en" "sarlogic_0/clk" -10.0835
+cap "sarlogic_0/rstn" "sarlogic_0/clk" -10.0835
+cap "sarlogic_0/clk" "sarlogic_0/en" -8.08493
+cap "sarlogic_0/clk" "sarlogic_0/rstn" -8.08493
+cap "sarlogic_0/input2/VSS" "m2_93056_n21305#" -0.383991
+cap "sarlogic_0/clk" "m2_93056_n21305#" 3.32934
+cap "vdd" "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_2/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" 137.701
+cap "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_1/out" "vdd" 119.518
+cap "vdd" "dacn_0/carray_n_0/cap_unit_n_44/in" 8.62311
+cap "dacn_0/carray_n_0/cap_unit_n_43/in" "vdd" 1.45577
+cap "dacn_0/carray_n_0/cap_unit_n_32/out" "vdd" 39.2965
+cap "vdd" "dacn_0/carray_n_0/cap_unit_n_43/in" 0.0319511
+cap "dacn_0/carray_n_0/cap_unit_n_44/in" "vdd" 8.84851
+cap "comparator_0/trim_left_0/d_3" "vdd" 93.5958
+cap "comparator_0/trim2" "comparator_0/trim3" -9.44067
+cap "comparator_0/trim3" "comparator_0/vss" 30.917
+cap "sarlogic_0/trim[2]" "sarlogic_0/FILLER_0_0_2/VNW" 2.30717
+cap "sarlogic_0/trim[2]" "sarlogic_0/FILLER_0_0_2/VNW" 0.342534
+cap "sarlogic_0/TAP_TAPCELL_ROW_0_50/VDD" "sarlogic_0/_447_/CLK" 0.660547
+cap "sarlogic_0/TAP_TAPCELL_ROW_0_50/VDD" "sarlogic_0/_239_/I" 0.109609
+cap "sarlogic_0/TAP_TAPCELL_ROW_0_50/VSS" "sarlogic_0/TAP_TAPCELL_ROW_0_50/VDD" 12.1387
+cap "sarlogic_0/TAP_TAPCELL_ROW_0_50/VDD" "sarlogic_0/output16/I" 1.18236
+cap "sarlogic_0/TAP_TAPCELL_ROW_0_50/VDD" "sarlogic_0/output16/Z" 16.3057
+cap "sarlogic_0/FILLER_0_1_72/VSS" "sarlogic_0/output15/I" 6.63978
+cap "sarlogic_0/output15/Z" "sarlogic_0/FILLER_0_1_72/VSS" 2.37355
+cap "sarlogic_0/fanout50/VNW" "sarlogic_0/output14/Z" 1.4854
+cap "sarlogic_0/output14/Z" "sarlogic_0/FILLER_0_0_96/VNW" 8.67773
+cap "sarlogic_0/FILLER_0_0_96/VSS" "sarlogic_0/FILLER_0_0_96/VNW" 14.7135
+cap "sarlogic_0/ANTENNA_output14_I/I" "sarlogic_0/FILLER_0_0_96/VNW" 5.26859
+cap "sarlogic_0/output13/Z" "sarlogic_0/_442_/VSS" 1.79493
+cap "sarlogic_0/output13/a_224_472#" "sarlogic_0/_442_/VSS" 6.7525
+cap "sarlogic_0/_448_/VNW" "sarlogic_0/output12/a_224_472#" 6.18244
+cap "sarlogic_0/_448_/VNW" "sarlogic_0/ctln[4]" 0.510366
+cap "sarlogic_0/_448_/VSS" "sarlogic_0/_448_/VNW" 14.7135
+cap "sarlogic_0/_448_/VNW" "sarlogic_0/ctln[4]" 1.4854
+cap "sarlogic_0/FILLER_0_1_204/VSS" "sarlogic_0/output11/a_224_472#" 6.84708
+cap "sarlogic_0/FILLER_0_1_204/VSS" "sarlogic_0/ctln[3]" 5.43654
+cap "sarlogic_0/FILLER_0_1_204/VSS" "sarlogic_0/_200_/ZN" 1.25767
+cap "sarlogic_0/output10/a_224_472#" "sarlogic_0/FILLER_0_1_256/VNW" 6.33475
+cap "sarlogic_0/output9/Z" "sarlogic_0/FILLER_0_1_256/VNW" 3.63549
+cap "sarlogic_0/FILLER_0_1_256/VSS" "sarlogic_0/FILLER_0_1_256/VNW" 14.7135
+cap "sarlogic_0/ctln[1]" "sarlogic_0/FILLER_0_1_256/VNW" 6.1151
+cap "m2_93056_n21305#" "sarlogic_0/clk" 0.0667906
+cap "sarlogic_0/en" "sarlogic_0/ANTENNA_input1_I/I" -0.000789684
+cap "m2_93056_n21305#" "sarlogic_0/ANTENNA_input1_I/I" 0.0220555
+cap "m2_93056_n21305#" "sarlogic_0/ANTENNA_fanout58_I/VSS" 10.4379
+cap "sarlogic_0/ANTENNA_fanout58_I/VSS" "sarlogic_0/clk" -1.00964
+cap "sarlogic_0/input5/I" "sarlogic_0/ANTENNA_fanout58_I/VSS" 0.458855
+cap "sarlogic_0/en" "sarlogic_0/ANTENNA_fanout58_I/VNW" -0.00495512
+cap "m2_93056_n21305#" "sarlogic_0/input2/a_36_113#" 0.143555
+cap "m2_93056_n21305#" "sarlogic_0/ANTENNA_fanout58_I/VNW" 1.3826
+cap "sarlogic_0/ctln[1]" "sarlogic_0/ANTENNA_fanout58_I/VSS" 1.91934
+cap "sarlogic_0/en" "sarlogic_0/clk" -10.0835
+cap "sarlogic_0/en" "sarlogic_0/ANTENNA_fanout58_I/VSS" 0.018994
+cap "m2_93056_n21305#" "sarlogic_0/clk" 0.059725
+cap "m2_93056_n21305#" "sarlogic_0/input2/VSS" 9.25151
+cap "sarlogic_0/input1/a_36_113#" "m2_93056_n21305#" 0.366391
+cap "sarlogic_0/input1/I" "m2_93056_n21305#" 0.201411
+cap "sarlogic_0/en" "sarlogic_0/clk" -8.08493
+cap "sarlogic_0/input2/VNW" "m2_93056_n21305#" 8.57379
+cap "sarlogic_0/clk" "m2_93056_n21305#" 7.8616
+cap "m2_93056_n21305#" "sarlogic_0/input2/a_36_113#" 0.616085
+cap "vdd" "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_1/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" 170.749
+cap "vdd" "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_0/out" 114.395
+cap "vdd" "dacn_0/carray_n_0/cap_unit_n_43/in" 6.30291
+cap "dacn_0/carray_n_0/cap_unit_n_43/in" "vdd" 6.98204
+cap "comparator_0/trim_left_0/d_2" "vdd" 7.21914
+cap "vdd" "comparator_0/trim_left_0/d_3" 177.72
+cap "comparator_0/trim_left_0/d_2" "vdd" 9.30444
+cap "comparator_0/trim0" "comparator_0/vss" 8.62977
+cap "comparator_0/trim1" "comparator_0/vss" 8.62977
+cap "comparator_0/trim2" "comparator_0/vss" 8.62977
+cap "comparator_0/trim1" "comparator_0/trim4" -18.8813
+cap "comparator_0/trim2" "comparator_0/trim3" -9.44067
+cap "comparator_0/vss" "comparator_0/trim4" 20.4542
+cap "comparator_0/trim0" "comparator_0/trim1" -18.8813
+cap "comparator_0/trim0" "comparator_0/trim2" -18.8813
+cap "comparator_0/vss" "comparator_0/trim4" -2.84217e-14
+cap "sarlogic_0/TAP_TAPCELL_ROW_0_50/VDD" "sarlogic_0/_447_/CLK" 0.230077
+cap "sarlogic_0/FILLER_0_0_96/VNW" "sarlogic_0/_442_/RN" 0.211041
+cap "sarlogic_0/_448_/VNW" "sarlogic_0/ANTENNA__448__RN/I" 0.0561792
+cap "sarlogic_0/FILLER_0_1_256/VNW" "sarlogic_0/_197_/I" 0.177201
+cap "m2_93056_n21305#" "sarlogic_0/cal" 0.0447351
+cap "sarlogic_0/cal" "sarlogic_0/en" -0.0213215
+cap "m2_93056_n21305#" "sarlogic_0/PHY_EDGE_ROW_2_Right_2/VDD" 1.07453
+cap "sarlogic_0/en" "sarlogic_0/cal" -10.0835
+cap "m2_93056_n21305#" "sarlogic_0/en" 12.2418
+cap "m2_93056_n21305#" "sarlogic_0/ANTENNA_fanout58_I/I" 0.0138931
+cap "m2_93056_n21305#" "sarlogic_0/ANTENNA_fanout58_I/VNW" 0.110024
+cap "m2_93056_n21305#" "sarlogic_0/input1/a_36_113#" 0.143555
+cap "sarlogic_0/ANTENNA_fanout58_I/VNW" "sarlogic_0/en" -0.0743268
+cap "m2_93056_n21305#" "sarlogic_0/ANTENNA_fanout58_I/VSS" 12.583
+cap "sarlogic_0/en" "sarlogic_0/input1/a_36_113#" -0.0713962
+cap "sarlogic_0/ANTENNA_fanout58_I/VSS" "sarlogic_0/en" 0.639934
+cap "m2_93056_n21305#" "sarlogic_0/input4/a_36_68#" 0.143555
+cap "m2_93056_n21305#" "sarlogic_0/cal" 0.0277861
+cap "sarlogic_0/en" "sarlogic_0/cal" -8.08493
+cap "sarlogic_0/fanout58/a_36_160#" "m2_93056_n21305#" 0.188301
+cap "m2_93056_n21305#" "sarlogic_0/en" 13.6136
+cap "m2_93056_n21305#" "sarlogic_0/input1/a_36_113#" 0.00736665
+cap "sarlogic_0/input2/VNW" "m2_93056_n21305#" 1.02232
+cap "m2_93056_n21305#" "sarlogic_0/input4/a_36_68#" 0.446835
+cap "sarlogic_0/fanout58/I" "m2_93056_n21305#" 0.14692
+cap "sarlogic_0/input2/VSS" "m2_93056_n21305#" 11.6412
+cap "m2_93056_n21305#" "sarlogic_0/cal" 0.012102
+cap "sarlogic_0/PHY_EDGE_ROW_2_Right_2/VDD" "m2_93056_n21305#" 6.32406
+cap "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_1/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" "vdd" 82.6206
+cap "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_0/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" "vdd" 33.0483
+cap "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_0/out" "vdd" 122.932
+cap "vdd" "comparator_0/trim_left_0/trim_switch_left_0/XM3_trim_left_0/S" 102.861
+cap "vdd" "comparator_0/trim_left_0/trim_switch_left_0/XM3_trim_left_0/S" 204.124
+cap "vdd" "comparator_0/trim_left_0/d_3" 129.622
+cap "vdd" "comparator_0/trim_left_0/trim_switch_left_0/n2" 7.53499
+cap "vdd" "comparator_0/trim_left_0/d_2" 4.4786
+cap "vdd" "comparator_0/trim_left_0/trim_switch_left_0/n3" 95.534
+cap "comparator_0/trim_left_0/trim_switch_left_0/XM3_trim_left_0/S" "vdd" 0.344807
+cap "vdd" "comparator_0/trim_left_0/d_2" 4.87113
+cap "comparator_0/trim_left_0/trim_switch_left_0/XM4_trim_left_0/S" "comparator_0/trim4" 0.568342
+cap "comparator_0/trim_left_0/trim_switch_left_0/XM4_trim_left_0/S" "comparator_0/trim_left_0/trim_switch_left_0/n4" 1.352
+cap "sarlogic_0/PHY_EDGE_ROW_2_Left_27/VDD" "sarlogic_0/trim[0]" 1.7118
+cap "sarlogic_0/PHY_EDGE_ROW_2_Left_27/VDD" "sarlogic_0/trim[0]" 0.147843
+cap "sarlogic_0/cal" "sarlogic_0/PHY_EDGE_ROW_2_Right_2/VDD" -0.079282
+cap "m2_93056_n21305#" "sarlogic_0/_412_/Q" 1.9031
+cap "sarlogic_0/cal" "sarlogic_0/_194_/VSS" 0.531833
+cap "m2_93056_n21305#" "sarlogic_0/fanout58/a_36_160#" 0.143555
+cap "m2_93056_n21305#" "sarlogic_0/PHY_EDGE_ROW_4_Right_4/VDD" 0.754503
+cap "sarlogic_0/en" "sarlogic_0/cal" -10.0835
+cap "m2_93056_n21305#" "sarlogic_0/fanout58/I" 0.141189
+cap "m2_93056_n21305#" "sarlogic_0/_412_/a_2665_112#" 0.0774698
+cap "m2_93056_n21305#" "sarlogic_0/PHY_EDGE_ROW_2_Right_2/VDD" 0.418093
+cap "sarlogic_0/cal" "sarlogic_0/fanout58/a_36_160#" -0.0713962
+cap "m2_93056_n21305#" "sarlogic_0/_194_/VSS" 12.5527
+cap "sarlogic_0/valid" "sarlogic_0/cal" -10.0835
+cap "sarlogic_0/fanout58/I" "sarlogic_0/cal" -0.0334993
+cap "sarlogic_0/cal" "sarlogic_0/valid" -8.08493
+cap "sarlogic_0/en" "sarlogic_0/cal" -8.08493
+cap "sarlogic_0/input1/VSS" "m2_93056_n21305#" 11.6968
+cap "sarlogic_0/PHY_EDGE_ROW_2_Right_2/VDD" "m2_93056_n21305#" 2.97809
+cap "sarlogic_0/_412_/a_2665_112#" "m2_93056_n21305#" 0.0124461
+cap "sarlogic_0/_412_/Q" "m2_93056_n21305#" 2.40389
+cap "sarlogic_0/PHY_EDGE_ROW_4_Right_4/VDD" "m2_93056_n21305#" 4.55884
+cap "sarlogic_0/cal" "m2_93056_n21305#" 1.08858
+cap "sarlogic_0/fanout58/a_36_160#" "m2_93056_n21305#" 0.418573
+cap "sarlogic_0/fanout58/I" "m2_93056_n21305#" 16.9526
+cap "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_0/out" "vdd" 110.981
+cap "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_0/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" "vdd" 192.781
+cap "dacn_0/carray_n_0/n0" "m2_24657_n11219#" 5.5082
+cap "dacn_0/carray_n_0/n0" "m2_24657_n11219#" 2.18986
+cap "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_17/in" "vdd" 152.296
+cap "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_16/in" "vdd" 14.5066
+cap "comparator_0/trim_left_0/trim_switch_left_0/n3" "vdd" 131.847
+cap "comparator_0/trim_left_0/trim_switch_left_0/n2" "vdd" 14.7655
+cap "comparator_0/trim_left_0/trim_switch_left_0/n2" "vdd" 7.5014
+cap "comparator_0/trim_left_0/trim_switch_left_0/n4" "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_0/in" 4.66961
+cap "sarlogic_0/PHY_EDGE_ROW_3_Left_28/VSS" "sarlogic_0/trim[1]" 0.887469
+cap "sarlogic_0/trim[1]" "sarlogic_0/PHY_EDGE_ROW_3_Left_28/VSS" 0.342534
+cap "sarlogic_0/sample" "sarlogic_0/fanout59/a_36_160#" 0.0180597
+cap "sarlogic_0/valid" "sarlogic_0/fanout59/a_36_160#" -0.00554061
+cap "sarlogic_0/sample" "sarlogic_0/PHY_EDGE_ROW_3_Right_3/VSS" 12.5527
+cap "sarlogic_0/valid" "sarlogic_0/fanout58/I" -0.0251278
+cap "sarlogic_0/sample" "sarlogic_0/fanout58/I" 0.0760265
+cap "sarlogic_0/sample" "sarlogic_0/PHY_EDGE_ROW_6_Right_6/VDD" 0.432763
+cap "sarlogic_0/cal" "sarlogic_0/valid" -10.0835
+cap "sarlogic_0/valid" "sarlogic_0/PHY_EDGE_ROW_4_Right_4/VDD" -0.079282
+cap "sarlogic_0/valid" "sarlogic_0/PHY_EDGE_ROW_3_Right_3/VSS" 0.531833
+cap "sarlogic_0/sample" "sarlogic_0/PHY_EDGE_ROW_4_Right_4/VDD" 0.738124
+cap "sarlogic_0/PHY_EDGE_ROW_6_Right_6/VDD" "sarlogic_0/sample" 3.84424
+cap "sarlogic_0/sample" "sarlogic_0/PHY_EDGE_ROW_3_Right_3/VSS" 12.1005
+cap "sarlogic_0/sample" "sarlogic_0/valid" -3.43419
+cap "sarlogic_0/PHY_EDGE_ROW_4_Right_4/VDD" "sarlogic_0/sample" 5.394
+cap "sarlogic_0/sample" "sarlogic_0/fanout59/a_36_160#" 0.0566127
+cap "sarlogic_0/cal" "sarlogic_0/valid" -8.08493
+cap "sarlogic_0/sample" "sarlogic_0/fanout58/I" 4.68553
+cap "vdd" "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_0/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" 27.5402
+cap "vdd" "dacn_0/bootstrapped_sw_n_0/sw_cap$1_0/sw_cap_unit$1_0/out" 11.3359
+cap "dacn_0/carray_n_0/n1" "m2_24657_n11219#" 0.00821826
+cap "dacn_0/carray_n_0/n0" "m2_24657_n11219#" 6.01051
+cap "m2_24657_n11219#" "dacn_0/carray_n_0/n0" 2.38955
+cap "m2_24657_n11219#" "dacn_0/carray_n_0/n1" 0.00614152
+cap "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_17/in" "comparator_0/vdd" 26.9487
+cap "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_16/in" "comparator_0/vdd" 34.0561
+cap "comparator_0/trim_left_0/trim_switch_left_0/n3" "comparator_0/vdd" 13.4434
+cap "comparator_0/vdd" "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_17/out" 139.279
+cap "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_17/in" "comparator_0/vdd" 199.91
+cap "comparator_0/vdd" "comparator_0/trim_left_0/trim_switch_left_0/n2" 4.69421
+cap "comparator_0/trim_left_0/trim_switch_left_0/n4" "vss" 0.00223286
+cap "vss" "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_0/in" 2.53205
+cap "comparator_0/in" "vss" 5.00499
+cap "sarlogic_0/trim[4]" "sarlogic_0/PHY_EDGE_ROW_8_Left_33/VDD" 0.874405
+cap "sarlogic_0/PHY_EDGE_ROW_8_Left_33/VDD" "sarlogic_0/trim[4]" 0.0657079
+cap "sarlogic_0/fanout65/I" "sarlogic_0/sample" 0.0446794
+cap "sarlogic_0/sample" "sarlogic_0/PHY_EDGE_ROW_8_Right_8/VDD" 0.124694
+cap "sarlogic_0/sample" "sarlogic_0/PHY_EDGE_ROW_6_Right_6/VDD" 0.886151
+cap "sarlogic_0/sample" "sarlogic_0/PHY_EDGE_ROW_6_Right_6/VSS" 11.1529
+cap "sarlogic_0/sample" "sarlogic_0/fanout65/a_36_113#" 0.0721583
+cap "sarlogic_0/sample" "sarlogic_0/fanout65/I" 0.0277861
+cap "sarlogic_0/sample" "sarlogic_0/result[0]" -4.5421
+cap "sarlogic_0/sample" "sarlogic_0/PHY_EDGE_ROW_8_Right_8/VDD" 1.47981
+cap "sarlogic_0/sample" "sarlogic_0/PHY_EDGE_ROW_6_Right_6/VDD" 9.36502
+cap "sarlogic_0/sample" "sarlogic_0/valid" -4.5421
+cap "sarlogic_0/sample" "sarlogic_0/fanout65/I" 0.890068
+cap "sarlogic_0/sample" "sarlogic_0/PHY_EDGE_ROW_6_Right_6/VSS" 14.1791
+cap "sarlogic_0/sample" "sarlogic_0/fanout65/a_36_113#" 1.29298
+cap "m2_24657_n11219#" "dacn_0/carray_n_0/n0" 1.52135
+cap "dacn_0/carray_n_0/n0" "m2_24657_n11219#" 0.880428
+cap "comparator_0/vdd" "comparator_0/vn" 5.52814
+cap "comparator_0/vdd" "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_11/in" 1.28038
+cap "comparator_0/vdd" "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_17/in" 26.1842
+cap "comparator_0/vdd" "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_15/in" 5.90255
+cap "comparator_0/vdd" "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_16/in" 15.4125
+cap "comparator_0/vdd" "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_13/in" 2.50811
+cap "comparator_0/vdd" "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_17/out" 236.815
+cap "m1_38036_n1834#" "comparator_0/in" 1.35136
+cap "comparator_0/in" "m1_38036_n1834#" 1.35136
+cap "vss" "comparator_0/in" 5.42711
+cap "comparator_0/outn" "m1_38036_n1834#" 0.439428
+cap "comparator_0/outn" "m1_38036_n1834#" 0.0710283
+cap "buffer_0/middle" "buffer_0/vss" 6.58191
+cap "buffer_0/out" "buffer_0/in" -0.937012
+cap "buffer_0/out" "latch_0/R" 1.52192
+cap "buffer_0/out" "buffer_0/vss" 9.22086
+cap "buffer_0/in" "buffer_0/vss" 1.81054
+cap "buffer_0/middle" "buffer_0/in" 0.219547
+cap "latch_0/R" "buffer_0/middle" 4.51044
+cap "buffer_0/vdd" "buffer_0/in" 4.61707
+cap "buffer_0/in" "latch_0/x3_latch_0/XM2_latch_x3_0/S" 1.92157
+cap "buffer_0/vdd" "buffer_0/vss" 11.9937
+cap "buffer_0/middle" "buffer_0/vss" 45.6183
+cap "buffer_0/out" "buffer_0/in" -0.937012
+cap "latch_0/R" "buffer_0/out" 2.66336
+cap "buffer_0/vdd" "buffer_0/middle" 7.94532
+cap "buffer_0/middle" "latch_0/x3_latch_0/XM2_latch_x3_0/S" 0.462633
+cap "buffer_0/out" "buffer_0/vss" 49.8002
+cap "buffer_0/buffer_inv1_0/XM2_buffer_inv1_0/w_n90_n162#" "buffer_0/vss" 2.04537
+cap "buffer_0/vdd" "buffer_0/out" 0.612487
+cap "buffer_0/in" "buffer_0/vss" 14.0161
+cap "buffer_0/vdd" "buffer_0/in" 3.38139
+cap "buffer_0/vdd" "buffer_0/vss" 7.9551
+cap "buffer_0/vdd" "buffer_0/middle" 3.45079
+cap "sarlogic_0/PHY_EDGE_ROW_8_Left_33/VDD" "sarlogic_0/trim[4]" 1.78234
+cap "sarlogic_0/trim[4]" "sarlogic_0/PHY_EDGE_ROW_8_Left_33/VDD" 0.208075
+cap "sarlogic_0/FILLER_0_9_290/a_124_375#" "sarlogic_0/result[0]" -0.0113786
+cap "sarlogic_0/sample" "sarlogic_0/FILLER_0_9_290/a_124_375#" 0.0227407
+cap "sarlogic_0/result[0]" "sarlogic_0/PHY_EDGE_ROW_7_Right_7/VSS" 0.531833
+cap "sarlogic_0/PHY_EDGE_ROW_8_Right_8/VDD" "sarlogic_0/sample" 1.36793
+cap "sarlogic_0/_415_/a_2665_112#" "sarlogic_0/sample" 0.0227714
+cap "sarlogic_0/_415_/Q" "sarlogic_0/sample" 1.78621
+cap "sarlogic_0/PHY_EDGE_ROW_7_Right_7/VSS" "sarlogic_0/sample" 12.5527
+cap "sarlogic_0/result[0]" "sarlogic_0/PHY_EDGE_ROW_8_Right_8/VDD" -0.079282
+cap "sarlogic_0/result[1]" "sarlogic_0/result[0]" -10.0835
+cap "sarlogic_0/PHY_EDGE_ROW_7_Right_7/VSS" "sarlogic_0/sample" 11.7165
+cap "sarlogic_0/_415_/Q" "sarlogic_0/sample" 1.80036
+cap "sarlogic_0/sample" "sarlogic_0/result[0]" -3.43419
+cap "sarlogic_0/result[1]" "sarlogic_0/result[0]" -8.08493
+cap "sarlogic_0/FILLER_0_9_290/a_124_375#" "sarlogic_0/sample" 0.145943
+cap "sarlogic_0/_415_/a_2665_112#" "sarlogic_0/sample" 0.117036
+cap "sarlogic_0/PHY_EDGE_ROW_8_Right_8/VDD" "sarlogic_0/sample" 10.1467
+cap "comparator_0/vn" "comparator_0/vdd" -2.33265
+cap "comparator_0/vdd" "comparator_0/XM1_com_0/G" 8.92261
+cap "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_17/out" "comparator_0/vdd" -1.44122
+cap "comparator_0/vdd" "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_17/in" -0.541922
+cap "comparator_0/XM1_com_0/D" "comparator_0/vdd" 16.137
+cap "comparator_0/vdd" "comparator_0/XMl3_com_0/D" 27.7581
+cap "comparator_0/in" "comparator_0/clkc" 6.92931
+cap "comparator_0/clkc" "comparator_0/vss" 0.0463284
+cap "comparator_0/in" "comparator_0/clkc" 6.92931
+cap "comparator_0/clkc" "comparator_0/outn" 71.9874
+cap "comparator_0/clkc" "comparator_0/vss" -1.63382
+cap "comparator_0/clkc" "comparator_0/outn" -0.42715
+cap "comparator_0/outp" "comparator_0/outn" -4.45863
+cap "comparator_0/vss" "comparator_0/clkc" -0.625219
+cap "comparator_0/vss" "comparator_0/outn" -23.0257
+cap "comparator_0/vss" "comparator_0/outn" -2.84217e-14
+cap "buffer_0/in" "latch_0/x2_latch_0/vss" 1.07005
+cap "buffer_0/middle" "latch_0/x2_latch_0/vss" 3.25511
+cap "buffer_0/buffer_inv1_0/XM2_buffer_inv1_0/w_n90_n162#" "latch_0/x2_latch_0/vss" 0.764284
+cap "latch_0/x2_latch_0/vss" "latch_0/x2_latch_0/vdd" 1.65236
+cap "latch_0/R" "buffer_0/out" 1.52192
+cap "buffer_0/out" "latch_0/x2_latch_0/vss" 4.1242
+cap "latch_0/x2_latch_0/vss" "buffer_0/vdd" 17.3397
+cap "latch_0/R" "latch_0/x2_latch_0/vss" 8.3533
+cap "latch_0/R" "latch_0/x2_latch_0/vdd" 64.4948
+cap "buffer_0/middle" "latch_0/x2_latch_0/vss" 5.45266
+cap "buffer_0/out" "latch_0/x2_latch_0/vdd" 21.4452
+cap "latch_0/Q" "latch_0/x2_latch_0/vdd" 7.46919
+cap "latch_0/tutyuu2" "buffer_0/middle" 0.023339
+cap "latch_0/R" "buffer_0/out" 3.00539
+cap "latch_0/tutyuu2" "buffer_0/in" 0.0390394
+cap "latch_0/R" "latch_0/Q" 0.958636
+cap "buffer_0/middle" "latch_0/x2_latch_0/vdd" 41.092
+cap "buffer_0/in" "latch_0/x2_latch_0/vdd" 112.998
+cap "latch_0/R" "buffer_0/middle" 3.08756
+cap "buffer_0/out" "buffer_0/in" 0.0845303
+cap "buffer_0/middle" "latch_0/Q" 0.00164378
+cap "buffer_0/buffer_inv1_0/XM2_buffer_inv1_0/w_n90_n162#" "latch_0/x2_latch_0/vdd" 3.58486
+cap "latch_0/x2_latch_0/vss" "latch_0/x2_latch_0/vdd" 27.0962
+cap "latch_0/tutyuu2" "latch_0/x2_latch_0/vdd" 44.5634
+cap "latch_0/R" "latch_0/x2_latch_0/vss" 46.0373
+cap "buffer_0/out" "latch_0/x2_latch_0/vss" 19.3795
+cap "buffer_0/middle" "buffer_0/in" 3.49022
+cap "latch_0/tutyuu2" "latch_0/R" 0.46526
+cap "buffer_0/in" "buffer_0/buffer_inv1_0/XM2_buffer_inv1_0/w_n90_n162#" 1.37842
+cap "latch_0/R" "latch_0/x2_latch_0/vdd" 0.352673
+cap "buffer_0/middle" "latch_0/x2_latch_0/vdd" 1.44824
+cap "buffer_0/in" "latch_0/x2_latch_0/vdd" 1.55221
+cap "buffer_0/buffer_inv1_0/XM2_buffer_inv1_0/w_n90_n162#" "latch_0/x2_latch_0/vdd" 1.01456
+cap "latch_0/x2_latch_0/vss" "latch_0/x2_latch_0/vdd" 0.226761
+cap "sarlogic_0/clkc" "sarlogic_0/PHY_EDGE_ROW_10_Left_35/VDD" 6.25382
+cap "sarlogic_0/PHY_EDGE_ROW_10_Left_35/VDD" "sarlogic_0/clkc" 2.87727
+cap "sarlogic_0/fanout62/a_36_160#" "m2_93056_n21305#" 0.0180597
+cap "sarlogic_0/result[1]" "sarlogic_0/fanout62/a_36_160#" -0.00554061
+cap "sarlogic_0/result[1]" "sarlogic_0/fanout62/Z" -0.0251278
+cap "m2_93056_n21305#" "sarlogic_0/fanout62/Z" 0.0440876
+cap "sarlogic_0/PHY_EDGE_ROW_10_Right_10/VDD" "m2_93056_n21305#" 1.49263
+cap "sarlogic_0/PHY_EDGE_ROW_10_Right_10/VDD" "sarlogic_0/result[1]" -0.079282
+cap "sarlogic_0/result[2]" "sarlogic_0/result[1]" -10.0835
+cap "m2_93056_n21305#" "sarlogic_0/_415_/a_2665_112#" 0.0546984
+cap "sarlogic_0/vss" "sarlogic_0/result[1]" 0.531833
+cap "sarlogic_0/vss" "m2_93056_n21305#" 12.329
+cap "sarlogic_0/_415_/Q" "m2_93056_n21305#" 0.116888
+cap "sarlogic_0/_416_/CLK" "m2_93056_n21305#" 0.00284176
+cap "sarlogic_0/result[1]" "sarlogic_0/result[0]" -10.0835
+cap "sarlogic_0/_415_/Q" "m2_93056_n21305#" 0.603527
+cap "m2_93056_n21305#" "sarlogic_0/_416_/CLK" 0.00322844
+cap "sarlogic_0/result[1]" "m2_93056_n21305#" 1.08858
+cap "sarlogic_0/fanout62/Z" "m2_93056_n21305#" 6.90693
+cap "m2_93056_n21305#" "sarlogic_0/PHY_EDGE_ROW_10_Right_10/VDD" 10.1627
+cap "sarlogic_0/result[1]" "sarlogic_0/result[0]" -8.08493
+cap "sarlogic_0/result[1]" "sarlogic_0/result[2]" -8.08493
+cap "m2_93056_n21305#" "sarlogic_0/vss" 11.4842
+cap "sarlogic_0/_415_/a_2665_112#" "m2_93056_n21305#" 0.417651
+cap "comparator_0/XMl3_com_0/G" "comparator_0/vdd" 39.1629
+cap "comparator_0/XMl3_com_0/D" "comparator_0/vdd" 13.248
+cap "comparator_0/vss" "comparator_0/clkc" 0.000791938
+cap "comparator_0/outn" "comparator_0/clkc" -0.398094
+cap "comparator_0/outp" "comparator_0/clkc" 0.0278008
+cap "comparator_0/vss" "comparator_0/clkc" 19.1942
+cap "comparator_0/clkc" "comparator_0/vss" 0.0420694
+cap "comparator_0/outp" "comparator_0/outn" -4.45863
+cap "comparator_0/outp" "comparator_0/vss" -17.0772
+cap "comparator_0/outn" "comparator_0/vss" 5.94847
+cap "latch_0/S" "latch_0/vss" 20.9608
+cap "latch_0/tutyuu2" "latch_0/vss" 5.5261
+cap "latch_0/vss" "latch_0/vdd" 5.01474
+cap "latch_0/R" "latch_0/vss" 6.14517
+cap "latch_0/Qn" "latch_0/Q" -2.27374e-13
+cap "latch_0/R" "latch_0/vdd" 7.43942
+cap "latch_0/Q" "latch_0/vdd" 28.7601
+cap "latch_0/R" "latch_0/Q" 0.904637
+cap "latch_0/tutyuu2" "latch_0/vss" 12.6623
+cap "latch_0/Qn" "latch_0/vss" 22.9552
+cap "buffer_0/out" "latch_0/R" 0.00565361
+cap "latch_0/vss" "latch_0/vdd" 22.0175
+cap "buffer_0/in" "latch_0/vdd" 0.827722
+cap "latch_0/R" "buffer_0/middle" 2.23046
+cap "latch_0/R" "latch_0/vss" 21.9842
+cap "latch_0/tutyuu2" "latch_0/vdd" 29.2838
+cap "latch_0/Q" "latch_0/S" 0.039576
+cap "latch_0/Qn" "latch_0/vdd" 22.1179
+cap "buffer_0/in" "latch_0/R" 0.00119999
+cap "latch_0/Q" "latch_0/vss" 40.1848
+cap "latch_0/tutyuu2" "latch_0/R" 4.07586
+cap "latch_0/Q" "latch_0/vdd" -2.17761
+cap "latch_0/R" "latch_0/vdd" 2.46038
+cap "latch_0/tutyuu2" "latch_0/vdd" 3.72046
+cap "latch_0/vss" "latch_0/vdd" 1.05126
+cap "latch_0/Q" "latch_0/vdd" 8.88178e-16
+cap "sarlogic_0/PHY_EDGE_ROW_11_Left_36/VSS" "sarlogic_0/comp" 3.14984
+cap "sarlogic_0/PHY_EDGE_ROW_11_Left_36/VSS" "sarlogic_0/comp" 2.44568
+cap "sarlogic_0/_416_/CLK" "m2_93056_n21305#" 0.0476481
+cap "sarlogic_0/FILLER_0_13_290/a_124_375#" "m2_93056_n21305#" 0.0227407
+cap "sarlogic_0/FILLER_0_13_290/a_124_375#" "sarlogic_0/result[2]" -0.0113786
+cap "sarlogic_0/_416_/VNW" "sarlogic_0/result[2]" -0.079282
+cap "sarlogic_0/result[3]" "sarlogic_0/result[2]" -10.0835
+cap "sarlogic_0/_416_/VNW" "m2_93056_n21305#" 1.49263
+cap "sarlogic_0/vss" "sarlogic_0/result[2]" 0.531833
+cap "m2_93056_n21305#" "sarlogic_0/_416_/CLK" 0.0565701
+cap "sarlogic_0/_416_/a_36_151#" "m2_93056_n21305#" 0.062928
+cap "sarlogic_0/vss" "m2_93056_n21305#" 10.3317
+cap "sarlogic_0/result[2]" "sarlogic_0/result[1]" -10.0835
+cap "sarlogic_0/result[3]" "sarlogic_0/result[2]" -8.08493
+cap "m2_93056_n21305#" "sarlogic_0/_416_/CLK" 0.120827
+cap "sarlogic_0/result[2]" "sarlogic_0/result[1]" -8.08493
+cap "m2_93056_n21305#" "sarlogic_0/vss" 10.095
+cap "m2_93056_n21305#" "sarlogic_0/_416_/a_36_151#" 0.240217
+cap "m2_93056_n21305#" "sarlogic_0/_416_/VNW" 10.4744
+cap "m2_93056_n21305#" "sarlogic_0/_416_/a_36_151#" 0.193819
+cap "m2_93056_n21305#" "sarlogic_0/result[2]" 1.08858
+cap "m2_93056_n21305#" "sarlogic_0/fanout62/Z" 20.3706
+cap "comparator_0/vdd" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_12/in" 0.290227
+cap "comparator_0/vdd" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_16/in" 1.47664
+cap "comparator_0/vdd" "comparator_0/XM4_com_0/D" 16.137
+cap "comparator_0/vdd" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_11/in" 0.212087
+cap "comparator_0/vdd" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_15/in" 0.977723
+cap "comparator_0/vdd" "comparator_0/XM4_com_0/G" 8.92261
+cap "comparator_0/vdd" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_17/out" 140.579
+cap "comparator_0/vdd" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_10/in" 0.160891
+cap "comparator_0/vdd" "comparator_0/XMl3_com_0/G" 0.834121
+cap "comparator_0/vdd" "comparator_0/vp" 3.19549
+cap "comparator_0/vdd" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_13/in" 0.415453
+cap "comparator_0/vdd" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_14/in" 0.62524
+cap "comparator_0/vdd" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_17/in" 6.05663
+cap "comparator_0/vss" "comparator_0/ip" 1.97189
+cap "latch_0/vss" "latch_0/vdd" 6.6671
+cap "latch_0/S" "latch_0/vss" 67.0398
+cap "latch_0/tutyuu1" "latch_0/vss" 5.5261
+cap "latch_0/Q" "latch_0/vss" 11.6925
+cap "latch_0/tutyuu1" "latch_0/S" 5.22834
+cap "latch_0/Qn" "latch_0/vdd" 22.6382
+cap "latch_0/vdd" "latch_0/S" 1.05049
+cap "latch_0/Q" "latch_0/vdd" 12.4706
+cap "latch_0/Qn" "latch_0/S" 2.01946
+cap "latch_0/tutyuu1" "latch_0/vss" 12.6027
+cap "latch_0/vss" "latch_0/vdd" 23.2341
+cap "latch_0/Qn" "latch_0/vss" 28.8637
+cap "latch_0/tutyuu1" "latch_0/vdd" 0.978083
+cap "latch_0/vss" "latch_0/S" 83.9628
+cap "latch_0/vdd" "latch_0/S" 2.81305
+cap "latch_0/vdd" "latch_0/vss" 1.27802
+cap "latch_0/vdd" "latch_0/tutyuu1" 3.72046
+cap "sarlogic_0/result[3]" "sarlogic_0/FILLER_0_15_290/a_124_375#" -0.0113786
+cap "sarlogic_0/FILLER_0_15_290/a_124_375#" "m2_93056_n21305#" 0.0227407
+cap "sarlogic_0/result[4]" "sarlogic_0/result[3]" -10.0835
+cap "sarlogic_0/result[3]" "sarlogic_0/net62" -0.14752
+cap "sarlogic_0/net62" "m2_93056_n21305#" 5.78791
+cap "sarlogic_0/result[3]" "sarlogic_0/PHY_EDGE_ROW_14_Right_14/VDD" -0.079282
+cap "m2_93056_n21305#" "sarlogic_0/PHY_EDGE_ROW_14_Right_14/VDD" 1.49263
+cap "sarlogic_0/result[3]" "sarlogic_0/vss" 0.531833
+cap "m2_93056_n21305#" "sarlogic_0/vss" 12.238
+cap "sarlogic_0/result[3]" "sarlogic_0/result[2]" -10.0835
+cap "sarlogic_0/net62" "m2_93056_n21305#" 19.6662
+cap "sarlogic_0/PHY_EDGE_ROW_14_Right_14/VDD" "m2_93056_n21305#" 10.32
+cap "sarlogic_0/result[3]" "sarlogic_0/result[2]" -8.08493
+cap "m2_93056_n21305#" "sarlogic_0/vss" 11.3381
+cap "sarlogic_0/result[4]" "sarlogic_0/result[3]" -8.08493
+cap "m2_93056_n21305#" "sarlogic_0/result[3]" 1.03414
+cap "dacp_0/carray_p_0/n1" "m2_24657_1830#" 0.00821826
+cap "m2_24657_1830#" "dacp_0/carray_p_0/n0" 4.61247
+cap "m2_24657_1830#" "dacp_0/carray_p_0/n1" 0.00614152
+cap "m2_24657_1830#" "dacp_0/carray_p_0/n0" 2.10934
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_17/in" "comparator_0/vdd" 40.3234
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_17/out" "comparator_0/vdd" 195.166
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_15/in" "comparator_0/vdd" 12.3388
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_13/in" "comparator_0/vdd" 4.30841
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_16/in" "comparator_0/vdd" 26.4755
+cap "vss" "comparator_0/ip" 7.11369
+cap "sarlogic_0/PHY_EDGE_ROW_13_Left_38/VSS" "sarlogic_0/trimb[4]" 0.287192
+cap "sarlogic_0/PHY_EDGE_ROW_16_Left_41/VDD" "sarlogic_0/trimb[4]" 0.575861
+cap "sarlogic_0/PHY_EDGE_ROW_13_Left_38/VSS" "sarlogic_0/trimb[4]" 0.0793971
+cap "m2_93056_n21305#" "sarlogic_0/_417_/CLK" 0.0476481
+cap "sarlogic_0/result[4]" "sarlogic_0/net62" -0.0790285
+cap "sarlogic_0/result[4]" "sarlogic_0/result[3]" -10.0835
+cap "sarlogic_0/result[4]" "sarlogic_0/FILLER_0_13_294/VSS" 0.28491
+cap "m2_93056_n21305#" "sarlogic_0/_417_/VNW" 1.48529
+cap "m2_93056_n21305#" "sarlogic_0/fanout60/I" 0.0530462
+cap "m2_93056_n21305#" "sarlogic_0/_417_/CLK" 0.0594119
+cap "m2_93056_n21305#" "sarlogic_0/net62" 20.709
+cap "m2_93056_n21305#" "sarlogic_0/FILLER_0_13_294/VSS" 12.9137
+cap "m2_93056_n21305#" "sarlogic_0/_417_/a_36_151#" 0.062928
+cap "sarlogic_0/result[4]" "sarlogic_0/_417_/VNW" -0.0743268
+cap "sarlogic_0/result[4]" "sarlogic_0/fanout60/I" -0.017946
+cap "sarlogic_0/net62" "m2_93056_n21305#" 20.709
+cap "sarlogic_0/result[4]" "m2_93056_n21305#" 0.590938
+cap "sarlogic_0/result[4]" "sarlogic_0/result[3]" -8.08493
+cap "m2_93056_n21305#" "sarlogic_0/FILLER_0_13_294/VSS" 11.6994
+cap "sarlogic_0/_417_/VNW" "m2_93056_n21305#" 8.26299
+cap "vdd" "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_0/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" 126.685
+cap "vdd" "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_0/out" 68.4117
+cap "m2_24657_1830#" "dacp_0/carray_p_0/n0" 6.01051
+cap "dacp_0/carray_p_0/n0" "m2_24657_1830#" 2.38955
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_17/in" "vdd" 105.273
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_17/in" "vdd" 179.172
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_12/out" "vdd" 0.484509
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_14/out" "vdd" 0.994245
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_13/in" "vdd" 5.64552
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_11/out" "vdd" 0.361081
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_16/out" "vdd" 2.39055
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_16/in" "vdd" 34.9467
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_17/out" "vdd" 29.1476
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_15/in" "vdd" 106.162
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_13/out" "vdd" 0.677484
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_15/out" "vdd" 1.53093
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_17/out" "vdd" 3.32174
+cap "vdd" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_13/in" 3.29294
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_0/out" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_0/in" 1.34652
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_1/in" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_0/in" 2.32055
+cap "sarlogic_0/trimb[1]" "sarlogic_0/PHY_EDGE_ROW_18_Left_43/VDD" 2.30717
+cap "sarlogic_0/trimb[1]" "sarlogic_0/PHY_EDGE_ROW_18_Left_43/VDD" 0.342534
+cap "sarlogic_0/_418_/CLK" "m2_93056_n21305#" 0.0476481
+cap "m2_93056_n21305#" "sarlogic_0/FILLER_0_15_290/VSS" 13.0074
+cap "sarlogic_0/fanout61/I" "m2_93056_n21305#" 20.709
+cap "m2_93056_n21305#" "sarlogic_0/_418_/CLK" 0.0594119
+cap "sarlogic_0/_417_/VNW" "m2_93056_n21305#" 0.00733496
+cap "sarlogic_0/result[4]" "sarlogic_0/FILLER_0_15_290/VSS" 0.246922
+cap "sarlogic_0/fanout60/I" "m2_93056_n21305#" 0.0700968
+cap "sarlogic_0/fanout61/I" "sarlogic_0/result[4]" -0.0684914
+cap "m2_93056_n21305#" "sarlogic_0/_418_/a_36_151#" 0.062928
+cap "sarlogic_0/fanout60/a_36_160#" "m2_93056_n21305#" 0.143555
+cap "sarlogic_0/result[4]" "sarlogic_0/_417_/VNW" -0.00495512
+cap "m2_93056_n21305#" "sarlogic_0/_418_/VNW" 1.17722
+cap "sarlogic_0/fanout60/I" "sarlogic_0/result[4]" -0.0155532
+cap "sarlogic_0/result[4]" "sarlogic_0/fanout60/a_36_160#" -0.0713962
+cap "sarlogic_0/result[5]" "sarlogic_0/result[4]" -10.0835
+cap "m2_93056_n21305#" "sarlogic_0/_417_/VNW" 0.414239
+cap "sarlogic_0/FILLER_0_15_290/VSS" "m2_93056_n21305#" 11.8606
+cap "m2_93056_n21305#" "sarlogic_0/fanout61/I" 20.709
+cap "m2_93056_n21305#" "sarlogic_0/_418_/VNW" 6.51494
+cap "sarlogic_0/result[4]" "m2_93056_n21305#" 0.443204
+cap "sarlogic_0/result[5]" "sarlogic_0/result[4]" -8.08493
+cap "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_0/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" "vdd" 126.685
+cap "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_0/out" "vdd" 121.225
+cap "dacp_0/carray_p_0/n0" "m2_24657_1830#" 2.41708
+cap "dacp_0/carray_p_0/n0" "m2_24657_1830#" 0.960942
+cap "vdd" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_17/in" 152.62
+cap "vdd" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_17/in" 191.677
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_13/in" "vdd" 18.0928
+cap "vdd" "comparator_0/trim_right_0/d_3" 13.2871
+cap "vdd" "comparator_0/trim_right_0/d_2" 0.898868
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_15/in" "vdd" 118.613
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_17/in" "vdd" 0.344807
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_13/in" "vdd" 4.20846
+cap "comparator_0/trim_right_0/d_2" "vdd" 0.0319721
+cap "comparator_0/trimb4" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_0/in" 0.242828
+cap "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_1/in" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_0/in" 3.7033
+cap "sarlogic_0/fanout61/I" "m2_93056_n21305#" 0.0667906
+cap "m2_93056_n21305#" "sarlogic_0/fanout78/a_36_113#" 0.0227407
+cap "sarlogic_0/result[5]" "sarlogic_0/fanout78/a_36_113#" -0.0113786
+cap "sarlogic_0/fanout61/I" "sarlogic_0/result[5]" -0.14752
+cap "sarlogic_0/fanout61/a_36_113#" "m2_93056_n21305#" 0.143555
+cap "sarlogic_0/result[5]" "sarlogic_0/result[4]" -10.0835
+cap "sarlogic_0/_418_/VNW" "sarlogic_0/result[5]" -0.079282
+cap "sarlogic_0/fanout61/I" "m2_93056_n21305#" 12.3531
+cap "sarlogic_0/FILLER_0_17_282/VSS" "sarlogic_0/result[5]" 0.531833
+cap "sarlogic_0/FILLER_0_20_287/VNW" "m2_93056_n21305#" 0.869155
+cap "sarlogic_0/result[6]" "sarlogic_0/result[5]" -10.0835
+cap "sarlogic_0/fanout60/I" "m2_93056_n21305#" 0.0319389
+cap "sarlogic_0/_418_/VNW" "m2_93056_n21305#" 0.315403
+cap "sarlogic_0/FILLER_0_17_282/VSS" "m2_93056_n21305#" 12.5527
+cap "sarlogic_0/_418_/VNW" "m2_93056_n21305#" 2.16229
+cap "sarlogic_0/result[6]" "sarlogic_0/result[5]" -8.08493
+cap "sarlogic_0/PHY_EDGE_ROW_20_Right_20/VDD" "m2_93056_n21305#" 5.39679
+cap "sarlogic_0/result[5]" "m2_93056_n21305#" 1.03414
+cap "sarlogic_0/PHY_EDGE_ROW_17_Right_17/VSS" "m2_93056_n21305#" 11.6412
+cap "m2_93056_n21305#" "sarlogic_0/fanout61/I" 12.7333
+cap "sarlogic_0/result[5]" "sarlogic_0/result[4]" -8.08493
+cap "m2_93056_n21305#" "sarlogic_0/fanout61/a_36_113#" 0.437952
+cap "vdd" "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_1/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" 181.765
+cap "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_0/out" "vdd" 112.688
+cap "vdd" "comparator_0/trim_right_0/trim_switch_right_0/XM3_trim_right_0/S" 24.2136
+cap "vdd" "comparator_0/trim_right_0/d_2" 6.58298
+cap "comparator_0/trim_right_0/trim_switch_right_0/XM2_trim_right_0/D" "vdd" 1.04062
+cap "vdd" "comparator_0/trim_right_0/trim_switch_right_0/XM3_trim_right_0/S" 12.4477
+cap "vdd" "comparator_0/trim_right_0/trim_switch_right_0/XM3_trim_right_0/D" 9.70307
+cap "vdd" "comparator_0/trim_right_0/d_3" 207.734
+cap "comparator_0/trim_right_0/d_2" "vdd" 10.3757
+cap "comparator_0/vss" "comparator_0/trimb4" 0.325514
+cap "comparator_0/vss" "comparator_0/trimb4" 20.4542
+cap "comparator_0/vss" "comparator_0/trimb1" 8.62977
+cap "comparator_0/trimb0" "comparator_0/trimb1" -9.44067
+cap "comparator_0/trimb4" "comparator_0/trimb1" -18.8813
+cap "comparator_0/trimb4" "comparator_0/vss" -2.84217e-14
+cap "sarlogic_0/PHY_EDGE_ROW_20_Left_45/VDD" "sarlogic_0/trimb[0]" 1.7118
+cap "sarlogic_0/PHY_EDGE_ROW_20_Left_45/VDD" "sarlogic_0/trimb[0]" 0.147843
+cap "m2_93056_n21305#" "sarlogic_0/_419_/CLK" 0.0447351
+cap "sarlogic_0/result[6]" "sarlogic_0/FILLER_0_21_286/a_572_375#" -0.0113786
+cap "m2_93056_n21305#" "sarlogic_0/FILLER_0_21_286/a_572_375#" 0.0227407
+cap "sarlogic_0/_420_/a_36_151#" "m2_93056_n21305#" 0.062928
+cap "sarlogic_0/result[6]" "sarlogic_0/result[5]" -10.0835
+cap "sarlogic_0/result[6]" "sarlogic_0/FILLER_0_20_287/VNW" -0.079282
+cap "sarlogic_0/result[6]" "sarlogic_0/fanout78/VSS" 0.531833
+cap "m2_93056_n21305#" "sarlogic_0/_420_/VNW" 0.535452
+cap "sarlogic_0/fanout77/Z" "m2_93056_n21305#" 0.0594119
+cap "sarlogic_0/result[7]" "sarlogic_0/result[6]" -10.0835
+cap "m2_93056_n21305#" "sarlogic_0/FILLER_0_20_287/VNW" 0.623472
+cap "m2_93056_n21305#" "sarlogic_0/fanout78/VSS" 12.5527
+cap "sarlogic_0/_420_/VNW" "m2_93056_n21305#" 3.83014
+cap "m2_93056_n21305#" "sarlogic_0/_420_/a_36_151#" 0.272759
+cap "m2_93056_n21305#" "sarlogic_0/_420_/a_36_151#" 0.214434
+cap "sarlogic_0/PHY_EDGE_ROW_20_Right_20/VDD" "m2_93056_n21305#" 5.27442
+cap "sarlogic_0/FILLER_0_19_294/VSS" "m2_93056_n21305#" 11.7165
+cap "sarlogic_0/result[6]" "sarlogic_0/result[5]" -8.08493
+cap "m2_93056_n21305#" "sarlogic_0/result[6]" 1.1079
+cap "m2_93056_n21305#" "sarlogic_0/FILLER_0_21_286/a_572_375#" 0.145943
+cap "m2_93056_n21305#" "sarlogic_0/_420_/CLK" 0.517958
+cap "sarlogic_0/result[7]" "sarlogic_0/result[6]" -8.08493
+cap "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_1/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" "vdd" 71.6046
+cap "vdd" "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_2/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" 44.0643
+cap "vdd" "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_1/out" 122.932
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_32/in" 14.0812
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_31/out" 0.507897
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_32/out" 0.716612
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_44/out" 0.375689
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_44/in" 7.49054
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_43/in" 6.9053
+cap "dacp_0/carray_p_0/cap_unit_p_43/in" "vdd" 7.01399
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_44/in" 8.84851
+cap "vdd" "comparator_0/trim_right_0/d_3" 179.917
+cap "vdd" "comparator_0/trim_right_0/d_2" 4.21589
+cap "comparator_0/trim_right_0/d_2" "vdd" 3.76792
+cap "comparator_0/vss" "comparator_0/trimb2" 8.62977
+cap "comparator_0/vss" "comparator_0/trimb0" 8.62977
+cap "comparator_0/trimb1" "comparator_0/trimb0" -9.44067
+cap "comparator_0/trimb2" "comparator_0/trimb0" -18.8813
+cap "comparator_0/vss" "comparator_0/trimb3" 30.917
+cap "comparator_0/trimb3" "comparator_0/trimb2" -18.8813
+cap "sarlogic_0/PHY_EDGE_ROW_21_Left_46/VSS" "sarlogic_0/trimb[2]" 0.887469
+cap "sarlogic_0/trimb[2]" "sarlogic_0/PHY_EDGE_ROW_21_Left_46/VSS" 0.342534
+cap "sarlogic_0/FILLER_0_20_15/VDD" "sarlogic_0/ANTENNA_output17_I/I" 0.101458
+cap "sarlogic_0/FILLER_0_20_15/VDD" "sarlogic_0/_240_/I" 0.239238
+cap "sarlogic_0/FILLER_0_23_60/VSS" "sarlogic_0/_215_/I" 0.29769
+cap "sarlogic_0/FILLER_0_23_60/VSS" "sarlogic_0/output25/a_224_472#" 2.4734
+cap "sarlogic_0/FILLER_0_23_60/VSS" "sarlogic_0/_213_/A1" 0.122119
+cap "sarlogic_0/FILLER_0_20_93/VNW" "sarlogic_0/_353_/ZN" 0.181785
+cap "sarlogic_0/_436_/a_36_151#" "sarlogic_0/FILLER_0_20_93/VNW" 0.574105
+cap "sarlogic_0/FILLER_0_20_93/VNW" "sarlogic_0/_212_/I" 2.26844
+cap "sarlogic_0/FILLER_0_21_142/VSS" "sarlogic_0/_436_/Q" 0.0561792
+cap "sarlogic_0/FILLER_0_21_142/VSS" "sarlogic_0/output23/a_224_472#" 3.48813
+cap "sarlogic_0/FILLER_0_20_173/VNW" "sarlogic_0/output22/a_224_472#" 2.25143
+cap "sarlogic_0/FILLER_0_20_173/VNW" "sarlogic_0/mask\[7\]" 0.219217
+cap "sarlogic_0/output33/VSS" "sarlogic_0/output21/a_224_472#" 2.15198
+cap "sarlogic_0/output33/VSS" "sarlogic_0/_204_/A2" 0.161655
+cap "sarlogic_0/output33/VSS" "sarlogic_0/mask\[7\]" 0.15083
+cap "sarlogic_0/output18/VNW" "sarlogic_0/_298_/A2" 0.101458
+cap "sarlogic_0/output18/VNW" "sarlogic_0/ANTENNA_output20_I/I" 2.47463
+cap "sarlogic_0/FILLER_0_24_290/a_124_375#" "m2_93056_n21305#" 0.0227407
+cap "sarlogic_0/FILLER_0_23_290/a_124_375#" "sarlogic_0/result[7]" -0.0113786
+cap "sarlogic_0/FILLER_0_23_290/a_124_375#" "m2_93056_n21305#" 0.0227407
+cap "sarlogic_0/_420_/CLK" "m2_93056_n21305#" 0.00291298
+cap "sarlogic_0/ANTENNA_output18_I/VSS" "sarlogic_0/result[7]" 0.658928
+cap "sarlogic_0/result[8]" "sarlogic_0/result[7]" -10.0835
+cap "m2_93056_n21305#" "sarlogic_0/_420_/VNW" 0.957175
+cap "sarlogic_0/ANTENNA_output18_I/VSS" "m2_93056_n21305#" 12.5527
+cap "sarlogic_0/result[7]" "sarlogic_0/_420_/VNW" -0.079282
+cap "m2_93056_n21305#" "sarlogic_0/FILLER_0_24_274/VDD" 0.227384
+cap "sarlogic_0/result[7]" "sarlogic_0/result[6]" -10.0835
+cap "m2_93056_n21305#" "sarlogic_0/FILLER_0_23_290/a_124_375#" 0.145943
+cap "sarlogic_0/result[8]" "sarlogic_0/result[7]" -8.08493
+cap "sarlogic_0/FILLER_0_24_290/a_124_375#" "m2_93056_n21305#" 0.145943
+cap "sarlogic_0/result[7]" "sarlogic_0/result[6]" -8.08493
+cap "m2_93056_n21305#" "sarlogic_0/_420_/CLK" 0.012102
+cap "m2_93056_n21305#" "sarlogic_0/FILLER_0_21_294/VSS" 11.7165
+cap "sarlogic_0/FILLER_0_24_290/VDD" "m2_93056_n21305#" 2.2349
+cap "m2_93056_n21305#" "sarlogic_0/result[7]" 1.1079
+cap "sarlogic_0/_420_/VNW" "m2_93056_n21305#" 7.01401
+cap "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_2/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" "vdd" 192.781
+cap "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_1/out" "vdd" 110.981
+cap "dacp_0/carray_p_0/cap_unit_p_32/out" "vdd" 48.6193
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_43/in" 1.75696
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_44/in" 2.33175
+cap "sarlogic_0/output26/Z" "sarlogic_0/ANTENNA__237__I/VNW" 138.085
+cap "sarlogic_0/ANTENNA__237__I/VNW" "sarlogic_0/output26/I" 1.13621
+cap "sarlogic_0/output26/Z" "sarlogic_0/ANTENNA__237__I/VNW" 4.80682
+cap "sarlogic_0/output25/a_224_472#" "sarlogic_0/FILLER_0_23_60/VSS" 2.5539
+cap "sarlogic_0/output25/Z" "sarlogic_0/FILLER_0_23_60/VSS" 60.4799
+cap "sarlogic_0/FILLER_0_23_60/VSS" "sarlogic_0/output25/VNW" 17.0888
+cap "sarlogic_0/output24/Z" "sarlogic_0/_301_/VNW" 7.31696
+cap "sarlogic_0/FILLER_0_22_86/VDD" "sarlogic_0/output24/Z" 5.2493
+cap "sarlogic_0/FILLER_0_22_86/VDD" "sarlogic_0/_212_/I" 2.50661
+cap "sarlogic_0/_210_/VSS" "sarlogic_0/output23/a_224_472#" 2.36472
+cap "sarlogic_0/_210_/VSS" "sarlogic_0/output23/VNW" 19.8412
+cap "sarlogic_0/FILLER_0_22_172/VNW" "sarlogic_0/output22/a_224_472#" 4.20921
+cap "sarlogic_0/ctlp[4]" "sarlogic_0/FILLER_0_22_172/VNW" 2.51402
+cap "sarlogic_0/ctlp[4]" "sarlogic_0/FILLER_0_22_177/VDD" 7.31696
+cap "sarlogic_0/result[8]" "sarlogic_0/_295_/VSS" 2.39466
+cap "sarlogic_0/_295_/VSS" "sarlogic_0/result[8]" 151.331
+cap "sarlogic_0/_295_/VSS" "sarlogic_0/output21/a_224_472#" 3.95806
+cap "sarlogic_0/_295_/VSS" "sarlogic_0/output21/VNW" 18.9033
+cap "sarlogic_0/_295_/VSS" "sarlogic_0/ctlp[3]" 25.3705
+cap "sarlogic_0/result[8]" "sarlogic_0/output19/VNW" 150.999
+cap "sarlogic_0/ctlp[2]" "sarlogic_0/output19/VNW" 66.4248
+cap "sarlogic_0/result[9]" "sarlogic_0/output19/VNW" 2.48844
+cap "sarlogic_0/output19/VNW" "sarlogic_0/ANTENNA_output20_I/I" 2.19684
+cap "sarlogic_0/result[9]" "sarlogic_0/_422_/VNW" 1.45371
+cap "sarlogic_0/ctlp[1]" "sarlogic_0/_298_/VSS" 24.5357
+cap "sarlogic_0/FILLER_0_23_282/VSS" "m2_93056_n21305#" 2.54617
+cap "sarlogic_0/result[8]" "sarlogic_0/result[7]" -10.0835
+cap "sarlogic_0/FILLER_0_24_274/VDD" "m2_93056_n21305#" 0.641772
+cap "sarlogic_0/FILLER_0_23_282/VSS" "sarlogic_0/ctlp[1]" 8.95691
+cap "sarlogic_0/result[8]" "sarlogic_0/result[9]" -10.0835
+cap "sarlogic_0/FILLER_0_23_282/VSS" "sarlogic_0/result[8]" 147.378
+cap "sarlogic_0/FILLER_0_23_282/VSS" "sarlogic_0/FILLER_0_24_274/VDD" 9.70687
+cap "sarlogic_0/result[8]" "m2_93056_n21305#" 1.1079
+cap "sarlogic_0/result[8]" "sarlogic_0/result[9]" -8.08493
+cap "sarlogic_0/FILLER_0_24_290/VDD" "m2_93056_n21305#" 4.5079
+cap "m2_93056_n21305#" "sarlogic_0/FILLER_0_23_290/VSS" 1.91995
+cap "sarlogic_0/result[8]" "sarlogic_0/result[7]" -8.08493
+cap "dacp_0/carray_p_0/cap_unit_p_32/out" "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_2/out" -15.2362
+cap "vdd" "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_2/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" 16.5241
+cap "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_3/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" "vdd" 99.1448
+cap "vdd" "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_2/out" 122.932
+cap "dacp_0/carray_p_0/cap_unit_p_32/out" "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_3/cap_mim_2p0fF_8JNR63_0/m4_n3800_n668#" -6.96388
+cap "dacp_0/carray_p_0/cap_unit_p_32/in" "vdd" 0.461688
+cap "dacp_0/carray_p_0/cap_unit_p_67/in" "vdd" 1.58726
+cap "vdd" "dacp_0/carray_p_0/n9" 0.284807
+cap "dacp_0/carray_p_0/cap_unit_p_31/in" "vdd" 0.319429
+cap "dacp_0/carray_p_0/cap_unit_p_66/in" "vdd" 1.19599
+cap "vdd" "dacp_0/carray_p_0/n8" 0.2146
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_32/out" 281.095
+cap "dacp_0/inv_renketu_p_0/inv_p_2/VNW" "dacp_0/inv_renketu_p_0/inv_p_2/VSS" -10.097
+cap "dacp_0/inv_renketu_p_0/inv_p_2/VSS" "dacp_0/inv_renketu_p_0/inv_p_2/VNW" -10.097
+cap "sarlogic_0/ctlp[0]" "sarlogic_0/trimb[3]" 0.283501
+cap "sarlogic_0/ctlp[0]" "sarlogic_0/trimb[3]" 0.211699
+cap "sarlogic_0/FILLER_0_24_31/VNW" "sarlogic_0/ctlp[9]" 81.9033
+cap "sarlogic_0/ctlp[8]" "sarlogic_0/vss" 102.459
+cap "sarlogic_0/output25/VNW" "sarlogic_0/ctlp[7]" 9.21497
+cap "sarlogic_0/ctlp[7]" "sarlogic_0/output25/VNW" 3.16616
+cap "sarlogic_0/ctlp[4]" "sarlogic_0/FILLER_0_24_168/VNW" 3.16616
+cap "sarlogic_0/ctlp[4]" "sarlogic_0/output22/VNW" 9.21497
+cap "sarlogic_0/ctlp[3]" "sarlogic_0/vss" 33.7267
+cap "sarlogic_0/ctlp[2]" "sarlogic_0/ANTENNA_output20_I/VNW" 81.9033
+cap "sarlogic_0/result[9]" "sarlogic_0/ANTENNA_output20_I/VNW" 2.56257
+cap "sarlogic_0/ANTENNA_output20_I/VNW" "sarlogic_0/result[9]" 1.65385
+cap "sarlogic_0/ctlp[1]" "sarlogic_0/result[9]" 0.463135
+cap "sarlogic_0/vss" "sarlogic_0/ctlp[1]" 31.2538
+cap "sarlogic_0/result[9]" "sarlogic_0/vss" 167.123
+cap "sarlogic_0/result[9]" "sarlogic_0/result[8]" -10.0835
+cap "sarlogic_0/vss" "sarlogic_0/ctlp[1]" 11.4094
+cap "sarlogic_0/vss" "m2_93056_n21305#" -0.383991
+cap "m2_93056_n21305#" "sarlogic_0/result[9]" 1.1079
+cap "sarlogic_0/result[9]" "sarlogic_0/result[8]" -8.08493
+cap "dacp_0/carray_p_0/cap_unit_p_32/out" "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_2/out" -16.8019
+cap "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_2/out" "vdd" 116.956
+cap "dacp_0/carray_p_0/cap_unit_p_32/out" "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_2/in" -10.8327
+cap "dacp_0/bootstrapped_sw_p_0/sw_cap_0/sw_cap_unit_2/in" "vdd" 154.225
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_32/out" 230.593
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_67/in" 8.51984
+cap "vdd" "dacp_0/carray_p_0/cap_unit_p_66/in" 1.45577
+cap "dacp_0/carray_p_0/cap_unit_p_66/in" "vdd" 0.11808
+cap "dacp_0/carray_p_0/cap_unit_p_67/in" "vdd" 8.52464
+cap "dacp_0/carray_p_0/cap_unit_p_67/in" "dacp_0/carray_p_0/cap_unit_p_32/out" -0.532977
+cap "dacp_0/inv_renketu_p_0/inv_p_2/VSS" "dacp_0/inv_renketu_p_0/inv_p_2/VNW" -43.3615
+cap "dacp_0/inv_renketu_p_0/inv_p_2/VSS" "dacp_0/ctl9" -0.463165
+cap "dacp_0/inv_renketu_p_0/inv_p_2/VSS" "dacp_0/inv_renketu_p_0/inv_p_2/VNW" -43.3615
+cap "dacp_0/inv_renketu_p_0/inv_p_2/VSS" "dacp_0/ctl10" -0.463165
+cap "dacp_0/ctl10" "dacp_0/inv_renketu_p_0/inv_p_2/VSS" -0.355154
+cap "dacp_0/ctl8" "dacp_0/ctl9" -25.5155
+cap "dacp_0/ctl10" "dacp_0/ctl9" -51.0311
+cap "dacp_0/inv_renketu_p_0/inv_p_2/VSS" "dacp_0/ctl9" -0.355154
+cap "sarlogic_0/ctlp[0]" "sarlogic_0/trimb[3]" 0.211861
+cap "sarlogic_0/ctlp[0]" "m2_30316_13310#" 6.38677
+cap "sarlogic_0/trimb[3]" "sarlogic_0/ctlp[0]" 0.158203
+cap "vss" "sarlogic_0/ctlp[8]" 12.4033
+cap "dacp_0/bootstrapped_sw_p_0/vbsh" "dacp_0/bootstrapped_sw_p_0/out" -16.8019
+cap "dacp_0/bootstrapped_sw_p_0/vbsl" "vdd" 154.225
+cap "dacp_0/bootstrapped_sw_p_0/vbsh" "vdd" 116.956
+cap "dacp_0/bootstrapped_sw_p_0/vbsl" "dacp_0/bootstrapped_sw_p_0/out" -10.8327
+cap "dacp_0/carray_p_0/cap_unit_p_66/in" "vdd" 6.2251
+cap "dacp_0/bootstrapped_sw_p_0/out" "vdd" 204.054
+cap "dacp_0/carray_p_0/cap_unit_p_66/in" "vdd" 6.89591
+cap "dacp_0/inv_renketu_p_0/inv_p_2/VSS" "dacp_0/inv_renketu_p_0/inv_p_2/VNW" -43.3615
+cap "dacp_0/ctl7" "dacp_0/inv_renketu_p_0/inv_p_2/VSS" -0.463165
+cap "dacp_0/inv_renketu_p_0/inv_p_2/VSS" "dacp_0/inv_renketu_p_0/inv_p_2/VNW" -43.3615
+cap "dacp_0/ctl8" "dacp_0/inv_renketu_p_0/inv_p_2/VSS" -0.463165
+cap "dacp_0/ctl7" "dacp_0/ctl8" -51.0311
+cap "dacp_0/inv_renketu_p_0/inv_p_2/VSS" "dacp_0/ctl7" -0.355154
+cap "dacp_0/ctl9" "dacp_0/ctl8" -25.5155
+cap "dacp_0/ctl7" "dacp_0/ctl6" -25.5155
+cap "dacp_0/inv_renketu_p_0/inv_p_2/VSS" "dacp_0/ctl8" -0.355154
+cap "dacp_0/bootstrapped_sw_p_0/vbsl" "dacp_0/in" 0.773185
+cap "dacp_0/bootstrapped_sw_p_0/XMs_bs_0/D" "dacp_0/bootstrapped_sw_p_0/XMs1_bs_0/G" 0.087161
+cap "dacp_0/bootstrapped_sw_p_0/vbsl" "dacp_0/in" 0.892297
+cap "dacp_0/bootstrapped_sw_p_0/vg" "dacp_0/bootstrapped_sw_p_0/XMs1_bs_0/G" 0.113047
+cap "dacp_0/bootstrapped_sw_p_0/out" "dacp_0/bootstrapped_sw_p_0/XMs1_bs_0/G" 15.1243
+cap "dacp_0/bootstrapped_sw_p_0/XMs2_bs_0/D" "dacp_0/bootstrapped_sw_p_0/XMs1_bs_0/G" 0.508423
+cap "dacp_0/bootstrapped_sw_p_0/vbsh" "dacp_0/bootstrapped_sw_p_0/XMs1_bs_0/G" 167.205
+cap "dacp_0/bootstrapped_sw_p_0/vbsl" "dacp_0/bootstrapped_sw_p_0/XMs1_bs_0/G" 99.1448
+cap "dacp_0/bootstrapped_sw_p_0/vbsl" "dacp_0/bootstrapped_sw_p_0/out" -6.96388
+cap "dacp_0/bootstrapped_sw_p_0/out" "dacp_0/bootstrapped_sw_p_0/vbsh" -12.653
+cap "dacp_0/bootstrapped_sw_p_0/XM3_bs_0/D" "dacp_0/bootstrapped_sw_p_0/out" 211.271
+cap "dacp_0/inv_renketu_p_0/inv_p_10/VDD" "dacp_0/inv_renketu_p_0/inv_p_10/VSS" -43.3615
+cap "dacp_0/ctl6" "dacp_0/inv_renketu_p_0/inv_p_10/VSS" -0.463165
+cap "dacp_0/ctl5" "dacp_0/inv_renketu_p_0/inv_p_10/VSS" -0.463165
+cap "dacp_0/inv_renketu_p_0/inv_p_10/VDD" "dacp_0/inv_renketu_p_0/inv_p_10/VSS" -43.3615
+cap "dacp_0/ctl5" "dacp_0/ctl6" -51.0311
+cap "dacp_0/ctl6" "dacp_0/inv_renketu_p_0/inv_p_10/VSS" -0.355154
+cap "dacp_0/ctl5" "dacp_0/inv_renketu_p_0/inv_p_10/VSS" -0.355154
+cap "dacp_0/ctl6" "dacp_0/ctl7" -25.5155
+cap "dacp_0/ctl4" "dacp_0/ctl5" -25.5155
+cap "dacp_0/bootstrapped_sw_p_0/vbsl" "dacp_0/in" 1.19592
+cap "dacp_0/bootstrapped_sw_p_0/vg" "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vdd" 0.113047
+cap "dacp_0/bootstrapped_sw_p_0/vbsl" "dacp_0/in" 9.31781
+cap "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vdd" "dacp_0/bootstrapped_sw_p_0/enb" 0.113047
+cap "dacp_0/bootstrapped_sw_p_0/vs" "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vdd" 0.115565
+cap "dacp_0/bootstrapped_sw_p_0/vbsl" "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vdd" 0.115565
+cap "dacp_0/bootstrapped_sw_p_0/enb" "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vdd" 17.6337
+cap "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vdd" "dacp_0/bootstrapped_sw_p_0/vbsh" 103.477
+cap "dacp_0/bootstrapped_sw_p_0/vg" "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vdd" 26.5664
+cap "dacp_0/bootstrapped_sw_p_0/enb" "dacp_0/bootstrapped_sw_p_0/vbsh" -5.68434e-14
+cap "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vdd" "dacp_0/bootstrapped_sw_p_0/out" 1.7035
+cap "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vss" "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vdd" 2.74908
+cap "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vdd" "dacp_0/bootstrapped_sw_p_0/out" 1.1336
+cap "dacp_0/inv_renketu_p_0/inv_p_7/VDD" "dacp_0/inv_renketu_p_0/inv_p_7/VSS" -43.3615
+cap "dacp_0/inv_renketu_p_0/inv_p_7/VDD" "dacp_0/inv_renketu_p_0/inv_p_7/VSS" -43.3615
+cap "dacp_0/inv_renketu_p_0/inv_p_7/VSS" "dacp_0/ctl4" -0.463165
+cap "dacp_0/inv_renketu_p_0/inv_p_7/VSS" "dacp_0/ctl3" -0.463165
+cap "dacp_0/ctl4" "dacp_0/ctl5" -25.5155
+cap "dacp_0/ctl3" "dacp_0/ctl4" -51.0311
+cap "dacp_0/ctl3" "dacp_0/inv_renketu_p_0/inv_p_7/VSS" -0.355154
+cap "dacp_0/ctl2" "dacp_0/ctl3" -25.5155
+cap "dacp_0/ctl4" "dacp_0/inv_renketu_p_0/inv_p_7/VSS" -0.355154
+cap "dacp_0/vss" "dacp_0/vdd" 0.900693
+cap "dacp_0/vdd" "dacp_0/bootstrapped_sw_p_0/en" 3.02223
+cap "dacp_0/vdd" "dacp_0/bootstrapped_sw_p_0/enb" 10.2838
+cap "dacp_0/inv_renketu_p_0/vss" "dacp_0/inv_renketu_p_0/vdd" -43.3615
+cap "dacp_0/ctl2" "dacp_0/inv_renketu_p_0/vss" -0.463165
+cap "dacp_0/ctl1" "dacp_0/inv_renketu_p_0/vss" -0.463165
+cap "dacp_0/inv_renketu_p_0/vss" "dacp_0/inv_renketu_p_0/vdd" -43.3615
+cap "dacp_0/ctl2" "dacp_0/ctl3" -25.5155
+cap "dacp_0/inv_renketu_p_0/vss" "dacp_0/ctl2" -0.355154
+cap "dacp_0/ctl1" "dacp_0/dum" -25.5155
+cap "dacp_0/ctl1" "dacp_0/ctl2" -51.0311
+cap "dacp_0/ctl1" "dacp_0/inv_renketu_p_0/vss" -0.355154
+cap "dacp_0/bootstrapped_sw_p_0/en" "dacp_0/vss" 50.6429
+cap "dacp_0/vss" "dacp_0/vdd" 0.560127
+cap "dacp_0/bootstrapped_sw_p_0/en" "dacp_0/vdd" 7.49118
+cap "dacp_0/inv_renketu_p_0/inv_p_0/ZN" "dacp_0/sample" 0.145313
+cap "dacp_0/vdd" "dacp_0/sample" 2.08206
+cap "dacp_0/inv_renketu_p_0/inv_p_0/I" "dacp_0/sample" 0.166166
+cap "dacp_0/vdd" "dacp_0/inv_renketu_p_0/inv_p_0/I" 0.0172769
+cap "dacp_0/inv_renketu_p_0/inv_p_0/ZN" "dacp_0/sample" 0.512894
+cap "dacp_0/vss" "dacp_0/vdd" -43.3615
+cap "dacp_0/vss" "m2_93056_n21305#" 1.09002
+cap "dacp_0/vss" "dacp_0/dum" -0.445888
+cap "dacp_0/inv_renketu_p_0/inv_p_0/ZN" "m2_93056_n21305#" 0.159728
+cap "dacp_0/dum" "m2_93056_n21305#" 0.082597
+cap "dacp_0/vss" "dacp_0/vdd" -43.3615
+cap "dacp_0/vss" "dacp_0/dum" -0.355154
+cap "dacp_0/dum" "dacp_0/ctl1" -25.5155
+cap "dacp_0/bootstrapped_sw_p_0/en" "dacp_0/vss" 31.4824
+cap "vdd" "dacp_0/bootstrapped_sw_p_0/en" 52.2556
+cap "dacp_0/bootstrapped_sw_p_0/en" "vdd" 434.552
+cap "dacp_0/inv_renketu_p_0/inv_p_0/ZN" "dacp_0/sample" 0.19445
+cap "dacp_0/vdd" "dacp_0/sample" -0.430276
+cap "dacp_0/vdd" "dacp_0/sample" 15.4099
+cap "dacp_0/vss" "dacp_0/vdd" -16.1986
+cap "dacp_0/inv_renketu_p_0/inv_p_0/ZN" "dacp_0/sample" 1.34881
+cap "dacp_0/inv_renketu_p_0/inv_p_0/I" "dacp_0/sample" 1.20094
+cap "dacp_0/vss" "dacp_0/vdd" -16.1986
+cap "dacp_0/dum" "m2_93056_n21305#" 0.704754
+cap "dacp_0/vss" "m2_93056_n21305#" 2.48511
+cap "dacp_0/inv_renketu_p_0/inv_p_0/ZN" "m2_93056_n21305#" 0.586984
+cap "vdd" "vss" 204.912
+cap "vss" "vdd" 125.792
+cap "vdd" "vss" 51.8892
+cap "vss" "vdd" 73.9028
+cap "vdd" "vss" 114.785
+cap "vss" "vdd" 11.0068
+cap "vdd" "vss" 125.792
+cap "vdd" "vss" 20.4412
+cap "vdd" "vss" 105.351
+cap "vss" "vdd" 83.3372
+cap "vdd" "vss" 42.4548
+cap "vss" "vdd" 125.792
+cap "vdd" "vss" 125.792
+cap "vdd" "vss" 51.8892
+cap "vss" "vdd" 73.9028
+cap "vss" "vdd" 114.785
+cap "vss" "vdd" 11.0068
+cap "vss" "vdd" 125.792
+cap "vdd" "vss" 20.4412
+cap "vdd" "vss" 105.351
+cap "vdd" "vss" 83.3372
+cap "vss" "vdd" 42.4548
+cap "vdd" "vss" 125.792
+cap "vdd" "vss" 125.792
+cap "vdd" "vss" 51.8892
+cap "vdd" "vss" 113.11
+cap "vss" "vdd" 114.785
+cap "vdd" "vss" 11.0068
+cap "vss" "vdd" 125.792
+cap "vss" "vdd" 125.792
+cap "vdd" "vss" 33.0204
+cap "vss" "vdd" 92.7717
+cap "vdd" "vss" 95.9165
+cap "vss" "vdd" 29.8756
+cap "vdd" "vss" 125.792
+cap "vss" "vdd" 1.5724
+cap "vdd" "vss" 124.22
+cap "vss" "vdd" 64.4684
+cap "vdd" "vss" 61.3236
+merge "sarlogic_0/ctlp[0]" "dacp_0/ctl10" -878.696 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -244640 -6516 0 0 0 0 0 0
+merge "dacp_0/ctl10" "dacp_0/inv_renketu_p_0/inv_p_2/I"
+merge "dacp_0/inv_renketu_p_0/inv_p_2/I" "m2_30316_12638#"
+merge "latch_0/R" "comparator_0/outn" -722.512 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 -114912 -3176 0 0 0 0 0 0
+merge "comparator_0/outn" "m1_44380_n660#"
+merge "dacp_0/ctl9" "dacp_0/inv_renketu_p_0/inv_p_10/I" -1829.67 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -661280 -16356 0 0 0 0 0 0
+merge "dacp_0/inv_renketu_p_0/inv_p_10/I" "sarlogic_0/output26/Z"
+merge "sarlogic_0/output26/Z" "sarlogic_0/ctlp[9]"
+merge "sarlogic_0/ctlp[9]" "m2_30316_13310#"
+merge "sarlogic_0/result[2]" "result[2]" -205.048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "mim_cap_boss_1/m4_130960_n30403#" "mim_cap_boss_1/mim_cap2_0/vdd" -1.87658e+06 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4645648 -41300 -4370440 -42858 -3154624 -19030 -640911316 -12054170 -990830732 -3231081
+merge "mim_cap_boss_1/mim_cap2_0/vdd" "mim_cap_boss_1/vdd"
+merge "mim_cap_boss_1/vdd" "dacp_0/inv_renketu_p_0/inv_p_0/I"
+merge "dacp_0/inv_renketu_p_0/inv_p_0/I" "dacp_0/inv_renketu_p_0/vdd"
+merge "dacp_0/inv_renketu_p_0/vdd" "dacp_0/vdd"
+merge "dacp_0/vdd" "dacp_0/dum"
+merge "dacp_0/dum" "dacp_0/inv_renketu_p_0/inv_p_7/VDD"
+merge "dacp_0/inv_renketu_p_0/inv_p_7/VDD" "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vdd"
+merge "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vdd" "dacp_0/inv_renketu_p_0/inv_p_10/VDD"
+merge "dacp_0/inv_renketu_p_0/inv_p_10/VDD" "dacp_0/bootstrapped_sw_p_0/vdd"
+merge "dacp_0/bootstrapped_sw_p_0/vdd" "dacp_0/bootstrapped_sw_p_0/XM3_bs_0/D"
+merge "dacp_0/bootstrapped_sw_p_0/XM3_bs_0/D" "dacp_0/bootstrapped_sw_p_0/XMs1_bs_0/G"
+merge "dacp_0/bootstrapped_sw_p_0/XMs1_bs_0/G" "sarlogic_0/ANTENNA_output20_I/VNW"
+merge "sarlogic_0/ANTENNA_output20_I/VNW" "sarlogic_0/output22/VNW"
+merge "sarlogic_0/output22/VNW" "sarlogic_0/FILLER_0_24_168/VNW"
+merge "sarlogic_0/FILLER_0_24_168/VNW" "sarlogic_0/output23/VNW"
+merge "sarlogic_0/output23/VNW" "sarlogic_0/output24/VNW"
+merge "sarlogic_0/output24/VNW" "sarlogic_0/output25/VNW"
+merge "sarlogic_0/output25/VNW" "sarlogic_0/FILLER_0_24_31/VNW"
+merge "sarlogic_0/FILLER_0_24_31/VNW" "dacp_0/inv_renketu_p_0/inv_p_2/VNW"
+merge "dacp_0/inv_renketu_p_0/inv_p_2/VNW" "sarlogic_0/_422_/VNW"
+merge "sarlogic_0/_422_/VNW" "sarlogic_0/output19/VNW"
+merge "sarlogic_0/output19/VNW" "sarlogic_0/FILLER_0_22_177/VDD"
+merge "sarlogic_0/FILLER_0_22_177/VDD" "sarlogic_0/FILLER_0_22_172/VNW"
+merge "sarlogic_0/FILLER_0_22_172/VNW" "sarlogic_0/_208_/VNW"
+merge "sarlogic_0/_208_/VNW" "sarlogic_0/FILLER_0_22_104/VNW"
+merge "sarlogic_0/FILLER_0_22_104/VNW" "sarlogic_0/FILLER_0_22_86/VDD"
+merge "sarlogic_0/FILLER_0_22_86/VDD" "sarlogic_0/_301_/VNW"
+merge "sarlogic_0/_301_/VNW" "sarlogic_0/ANTENNA__237__I/VNW"
+merge "sarlogic_0/ANTENNA__237__I/VNW" "dacp_0/inv_renketu_p_0/dummy_inv_p2_0/VNW"
+merge "dacp_0/inv_renketu_p_0/dummy_inv_p2_0/VNW" "sarlogic_0/FILLER_0_20_93/VNW"
+merge "sarlogic_0/FILLER_0_20_93/VNW" "sarlogic_0/FILLER_0_20_15/VNW"
+merge "sarlogic_0/FILLER_0_20_15/VNW" "sarlogic_0/_419_/VNW"
+merge "sarlogic_0/_419_/VNW" "sarlogic_0/output18/VNW"
+merge "sarlogic_0/output18/VNW" "sarlogic_0/FILLER_0_20_177/VDD"
+merge "sarlogic_0/FILLER_0_20_177/VDD" "sarlogic_0/FILLER_0_20_173/VNW"
+merge "sarlogic_0/FILLER_0_20_173/VNW" "sarlogic_0/_346_/VNW"
+merge "sarlogic_0/_346_/VNW" "sarlogic_0/FILLER_0_20_104/VNW"
+merge "sarlogic_0/FILLER_0_20_104/VNW" "sarlogic_0/FILLER_0_20_98/VNW"
+merge "sarlogic_0/FILLER_0_20_98/VNW" "sarlogic_0/ANTENNA__303__A2/VNW"
+merge "sarlogic_0/ANTENNA__303__A2/VNW" "sarlogic_0/FILLER_0_20_31/VNW"
+merge "sarlogic_0/FILLER_0_20_31/VNW" "sarlogic_0/FILLER_0_20_15/VDD"
+merge "sarlogic_0/FILLER_0_20_15/VDD" "sarlogic_0/FILLER_0_18_260/VNW"
+merge "sarlogic_0/FILLER_0_18_260/VNW" "sarlogic_0/TAP_TAPCELL_ROW_18_129/VDD"
+merge "sarlogic_0/TAP_TAPCELL_ROW_18_129/VDD" "sarlogic_0/FILLER_0_18_230/VNW"
+merge "sarlogic_0/FILLER_0_18_230/VNW" "sarlogic_0/FILLER_0_18_177/VDD"
+merge "sarlogic_0/FILLER_0_18_177/VDD" "sarlogic_0/FILLER_0_18_171/VNW"
+merge "sarlogic_0/FILLER_0_18_171/VNW" "sarlogic_0/FILLER_0_18_155/VNW"
+merge "sarlogic_0/FILLER_0_18_155/VNW" "sarlogic_0/FILLER_0_18_104/VNW"
+merge "sarlogic_0/FILLER_0_18_104/VNW" "sarlogic_0/ANTENNA__356__B/VNW"
+merge "sarlogic_0/ANTENNA__356__B/VNW" "sarlogic_0/FILLER_0_18_76/VDD"
+merge "sarlogic_0/FILLER_0_18_76/VDD" "sarlogic_0/FILLER_0_18_34/VNW"
+merge "sarlogic_0/FILLER_0_18_34/VNW" "sarlogic_0/FILLER_0_16_255/VNW"
+merge "sarlogic_0/FILLER_0_16_255/VNW" "sarlogic_0/_287_/VNW"
+merge "sarlogic_0/_287_/VNW" "sarlogic_0/FILLER_0_16_192/VDD"
+merge "sarlogic_0/FILLER_0_16_192/VDD" "sarlogic_0/ANTENNA_fanout56_I/VNW"
+merge "sarlogic_0/ANTENNA_fanout56_I/VNW" "sarlogic_0/FILLER_0_16_107/VNW"
+merge "sarlogic_0/FILLER_0_16_107/VNW" "sarlogic_0/FILLER_0_16_34/VNW"
+merge "sarlogic_0/FILLER_0_16_34/VNW" "sarlogic_0/FILLER_0_14_263/VNW"
+merge "sarlogic_0/FILLER_0_14_263/VNW" "sarlogic_0/ANTENNA__280__A1/VDD"
+merge "sarlogic_0/ANTENNA__280__A1/VDD" "sarlogic_0/_280_/VNW"
+merge "sarlogic_0/_280_/VNW" "sarlogic_0/TAP_TAPCELL_ROW_14_111/VDD"
+merge "sarlogic_0/TAP_TAPCELL_ROW_14_111/VDD" "sarlogic_0/FILLER_0_14_99/VNW"
+merge "sarlogic_0/FILLER_0_14_99/VNW" "sarlogic_0/FILLER_0_14_32/VNW"
+merge "sarlogic_0/FILLER_0_14_32/VNW" "sarlogic_0/_405_/VNW"
+merge "sarlogic_0/_405_/VNW" "latch_0/x1_latch_0/vdd"
+merge "latch_0/x1_latch_0/vdd" "latch_0/vdd"
+merge "latch_0/vdd" "latch_0/x2_latch_0/vdd"
+merge "latch_0/x2_latch_0/vdd" "sarlogic_0/_316_/VDD"
+merge "sarlogic_0/_316_/VDD" "sarlogic_0/TAP_TAPCELL_ROW_6_81/VDD"
+merge "sarlogic_0/TAP_TAPCELL_ROW_6_81/VDD" "sarlogic_0/FILLER_0_6_177/VDD"
+merge "sarlogic_0/FILLER_0_6_177/VDD" "sarlogic_0/ANTENNA__385__A2/VNW"
+merge "sarlogic_0/ANTENNA__385__A2/VNW" "sarlogic_0/TAP_TAPCELL_ROW_6_79/VDD"
+merge "sarlogic_0/TAP_TAPCELL_ROW_6_79/VDD" "sarlogic_0/ANTENNA__358__I/VNW"
+merge "sarlogic_0/ANTENNA__358__I/VNW" "sarlogic_0/FILLER_0_6_34/VNW"
+merge "sarlogic_0/FILLER_0_6_34/VNW" "buffer_0/buffer_inv1_0/vdd"
+merge "buffer_0/buffer_inv1_0/vdd" "buffer_0/buffer_inv2_0/vdd"
+merge "buffer_0/buffer_inv2_0/vdd" "buffer_0/vdd"
+merge "buffer_0/vdd" "sarlogic_0/_265_/VDD"
+merge "sarlogic_0/_265_/VDD" "sarlogic_0/_263_/VNW"
+merge "sarlogic_0/_263_/VNW" "sarlogic_0/FILLER_0_4_177/VDD"
+merge "sarlogic_0/FILLER_0_4_177/VDD" "sarlogic_0/FILLER_0_4_174/VNW"
+merge "sarlogic_0/FILLER_0_4_174/VNW" "sarlogic_0/TAP_TAPCELL_ROW_4_71/VDD"
+merge "sarlogic_0/TAP_TAPCELL_ROW_4_71/VDD" "sarlogic_0/FILLER_0_4_34/VNW"
+merge "sarlogic_0/FILLER_0_4_34/VNW" "comparator_0/vdd"
+merge "comparator_0/vdd" "sarlogic_0/FILLER_0_2_247/VDD"
+merge "sarlogic_0/FILLER_0_2_247/VDD" "sarlogic_0/FILLER_0_2_171/VDD"
+merge "sarlogic_0/FILLER_0_2_171/VDD" "sarlogic_0/FILLER_0_2_111/VDD"
+merge "sarlogic_0/FILLER_0_2_111/VDD" "sarlogic_0/FILLER_0_2_101/VDD"
+merge "sarlogic_0/FILLER_0_2_101/VDD" "sarlogic_0/FILLER_0_2_32/VDD"
+merge "sarlogic_0/FILLER_0_2_32/VDD" "sarlogic_0/FILLER_0_2_258/VNW"
+merge "sarlogic_0/FILLER_0_2_258/VNW" "sarlogic_0/output8/VNW"
+merge "sarlogic_0/output8/VNW" "sarlogic_0/FILLER_0_2_177/VDD"
+merge "sarlogic_0/FILLER_0_2_177/VDD" "sarlogic_0/FILLER_0_2_171/VNW"
+merge "sarlogic_0/FILLER_0_2_171/VNW" "sarlogic_0/ANTENNA__206__I/VNW"
+merge "sarlogic_0/ANTENNA__206__I/VNW" "sarlogic_0/FILLER_0_2_111/VNW"
+merge "sarlogic_0/FILLER_0_2_111/VNW" "sarlogic_0/FILLER_0_2_101/VNW"
+merge "sarlogic_0/FILLER_0_2_101/VNW" "sarlogic_0/FILLER_0_2_32/VNW"
+merge "sarlogic_0/FILLER_0_2_32/VNW" "sarlogic_0/FILLER_0_1_256/VNW"
+merge "sarlogic_0/FILLER_0_1_256/VNW" "sarlogic_0/FILLER_0_0_232/VNW"
+merge "sarlogic_0/FILLER_0_0_232/VNW" "sarlogic_0/_448_/VNW"
+merge "sarlogic_0/_448_/VNW" "sarlogic_0/FILLER_0_1_104/VNW"
+merge "sarlogic_0/FILLER_0_1_104/VNW" "sarlogic_0/FILLER_0_0_96/VNW"
+merge "sarlogic_0/FILLER_0_0_96/VNW" "sarlogic_0/fanout50/VNW"
+merge "sarlogic_0/fanout50/VNW" "sarlogic_0/TAP_TAPCELL_ROW_0_50/VDD"
+merge "sarlogic_0/TAP_TAPCELL_ROW_0_50/VDD" "sarlogic_0/vdd"
+merge "sarlogic_0/vdd" "sarlogic_0/FILLER_0_0_4/VNW"
+merge "sarlogic_0/FILLER_0_0_4/VNW" "dacn_0/inv_renketu_n_0/inv_n_2/VNW"
+merge "dacn_0/inv_renketu_n_0/inv_n_2/VNW" "dacn_0/inv_renketu_n_0/inv_n_2/VDD"
+merge "dacn_0/inv_renketu_n_0/inv_n_2/VDD" "dacn_0/inv_renketu_n_0/inv_n_9/VDD"
+merge "dacn_0/inv_renketu_n_0/inv_n_9/VDD" "dacn_0/bootstrapped_sw_n_0/XM3_bs$1_0/D"
+merge "dacn_0/bootstrapped_sw_n_0/XM3_bs$1_0/D" "dacn_0/bootstrapped_sw_n_0/XMs1_bs$1_0/G"
+merge "dacn_0/bootstrapped_sw_n_0/XMs1_bs$1_0/G" "dacn_0/inv_renketu_n_0/inv_n_6/VDD"
+merge "dacn_0/inv_renketu_n_0/inv_n_6/VDD" "dacn_0/bootstrapped_sw_n_0/vdd"
+merge "dacn_0/bootstrapped_sw_n_0/vdd" "dacn_0/dum"
+merge "dacn_0/dum" "dacn_0/inv_renketu_n_0/vdd"
+merge "dacn_0/inv_renketu_n_0/vdd" "dacn_0/vdd"
+merge "dacn_0/vdd" "mim_cap_boss_0/mim_cap2_0/vdd"
+merge "mim_cap_boss_0/mim_cap2_0/vdd" "mim_cap_boss_0/m4_130960_n30403#"
+merge "mim_cap_boss_0/m4_130960_n30403#" "mim_cap_boss_0/vdd"
+merge "mim_cap_boss_0/vdd" "vdd"
+merge "mim_cap_boss_1/VSUBS" "dacp_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dacp_0/VSUBS" "latch_0/VSUBS"
+merge "latch_0/VSUBS" "buffer_0/VSUBS"
+merge "buffer_0/VSUBS" "comparator_0/VSUBS"
+merge "comparator_0/VSUBS" "sarlogic_0/VSUBS"
+merge "sarlogic_0/VSUBS" "dacn_0/VSUBS"
+merge "dacn_0/VSUBS" "mim_cap_boss_0/VSUBS"
+merge "mim_cap_boss_0/VSUBS" "VSUBS"
+merge "mim_cap_boss_1/m4_109122_n78851#" "mim_cap_boss_1/vss" -1.42598e+06 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5587216 -49348 -3817376 -37112 -2952192 -13888 -1518418521 -2130387 0 0
+merge "mim_cap_boss_1/vss" "dacp_0/inv_renketu_p_0/vss"
+merge "dacp_0/inv_renketu_p_0/vss" "dacp_0/bootstrapped_sw_p_0/vss"
+merge "dacp_0/bootstrapped_sw_p_0/vss" "dacp_0/vss"
+merge "dacp_0/vss" "dacp_0/inv_renketu_p_0/inv_p_7/VSS"
+merge "dacp_0/inv_renketu_p_0/inv_p_7/VSS" "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vss"
+merge "dacp_0/bootstrapped_sw_p_0/bs_inv_0/vss" "dacp_0/inv_renketu_p_0/inv_p_10/VSS"
+merge "dacp_0/inv_renketu_p_0/inv_p_10/VSS" "dacp_0/inv_renketu_p_0/inv_p_2/VSS"
+merge "dacp_0/inv_renketu_p_0/inv_p_2/VSS" "sarlogic_0/FILLER_0_23_290/VSS"
+merge "sarlogic_0/FILLER_0_23_290/VSS" "sarlogic_0/FILLER_0_23_282/VSS"
+merge "sarlogic_0/FILLER_0_23_282/VSS" "sarlogic_0/_298_/VSS"
+merge "sarlogic_0/_298_/VSS" "sarlogic_0/_295_/VSS"
+merge "sarlogic_0/_295_/VSS" "sarlogic_0/_210_/VSS"
+merge "sarlogic_0/_210_/VSS" "sarlogic_0/TAP_TAPCELL_ROW_23_146/VSS"
+merge "sarlogic_0/TAP_TAPCELL_ROW_23_146/VSS" "sarlogic_0/ANTENNA_output17_I/VSS"
+merge "sarlogic_0/ANTENNA_output17_I/VSS" "dacp_0/inv_renketu_p_0/dummy_inv_p2_0/VSS"
+merge "dacp_0/inv_renketu_p_0/dummy_inv_p2_0/VSS" "sarlogic_0/FILLER_0_21_294/VSS"
+merge "sarlogic_0/FILLER_0_21_294/VSS" "sarlogic_0/ANTENNA_output18_I/VSS"
+merge "sarlogic_0/ANTENNA_output18_I/VSS" "sarlogic_0/_421_/VSS"
+merge "sarlogic_0/_421_/VSS" "sarlogic_0/output33/VSS"
+merge "sarlogic_0/output33/VSS" "sarlogic_0/FILLER_0_21_142/VSS"
+merge "sarlogic_0/FILLER_0_21_142/VSS" "sarlogic_0/_302_/VSS"
+merge "sarlogic_0/_302_/VSS" "sarlogic_0/FILLER_0_23_60/VSS"
+merge "sarlogic_0/FILLER_0_23_60/VSS" "sarlogic_0/FILLER_0_21_28/VSS"
+merge "sarlogic_0/FILLER_0_21_28/VSS" "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_0/in"
+merge "comparator_0/trim_right_0/trim_cap_array_right_0/trim_cap_right_0/in" "latch_0/x1_latch_0/vss"
+merge "latch_0/x1_latch_0/vss" "latch_0/x4_latch_0/vss"
+merge "latch_0/x4_latch_0/vss" "latch_0/vss"
+merge "latch_0/vss" "latch_0/x3_latch_0/vss"
+merge "latch_0/x3_latch_0/vss" "latch_0/x2_latch_0/vss"
+merge "latch_0/x2_latch_0/vss" "buffer_0/buffer_inv1_0/vss"
+merge "buffer_0/buffer_inv1_0/vss" "buffer_0/buffer_inv2_0/vss"
+merge "buffer_0/buffer_inv2_0/vss" "buffer_0/vss"
+merge "buffer_0/vss" "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_0/in"
+merge "comparator_0/trim_left_0/trim_cap_array_left_0/trim_cap_left_0/in" "comparator_0/trim_left_0/trim_switch_left_0/XM4_trim_left_0/S"
+merge "comparator_0/trim_left_0/trim_switch_left_0/XM4_trim_left_0/S" "sarlogic_0/FILLER_0_1_208/VSS"
+merge "sarlogic_0/FILLER_0_1_208/VSS" "sarlogic_0/FILLER_0_1_266/VSS"
+merge "sarlogic_0/FILLER_0_1_266/VSS" "sarlogic_0/ANTENNA__200__I/VSS"
+merge "sarlogic_0/ANTENNA__200__I/VSS" "sarlogic_0/FILLER_0_1_204/VSS"
+merge "sarlogic_0/FILLER_0_1_204/VSS" "sarlogic_0/FILLER_0_1_192/VSS"
+merge "sarlogic_0/FILLER_0_1_192/VSS" "sarlogic_0/_209_/VSS"
+merge "sarlogic_0/_209_/VSS" "sarlogic_0/_442_/VSS"
+merge "sarlogic_0/_442_/VSS" "sarlogic_0/FILLER_0_1_72/VSS"
+merge "sarlogic_0/FILLER_0_1_72/VSS" "sarlogic_0/input2/VSS"
+merge "sarlogic_0/input2/VSS" "sarlogic_0/ANTENNA_fanout58_I/VSS"
+merge "sarlogic_0/ANTENNA_fanout58_I/VSS" "sarlogic_0/FILLER_0_0_266/VSS"
+merge "sarlogic_0/FILLER_0_0_266/VSS" "sarlogic_0/output11/VSS"
+merge "sarlogic_0/output11/VSS" "sarlogic_0/TAP_TAPCELL_ROW_0_55/VSS"
+merge "sarlogic_0/TAP_TAPCELL_ROW_0_55/VSS" "sarlogic_0/FILLER_0_0_198/VSS"
+merge "sarlogic_0/FILLER_0_0_198/VSS" "sarlogic_0/output13/VSS"
+merge "sarlogic_0/output13/VSS" "sarlogic_0/FILLER_0_0_130/VSS"
+merge "sarlogic_0/FILLER_0_0_130/VSS" "sarlogic_0/output15/VSS"
+merge "sarlogic_0/output15/VSS" "sarlogic_0/vss"
+merge "sarlogic_0/vss" "sarlogic_0/output16/VSS"
+merge "sarlogic_0/output16/VSS" "comparator_0/vss"
+merge "comparator_0/vss" "dacn_0/inv_renketu_n_0/inv_n_2/VSS"
+merge "dacn_0/inv_renketu_n_0/inv_n_2/VSS" "dacn_0/inv_renketu_n_0/inv_n_9/VSS"
+merge "dacn_0/inv_renketu_n_0/inv_n_9/VSS" "dacn_0/inv_renketu_n_0/inv_n_6/VSS"
+merge "dacn_0/inv_renketu_n_0/inv_n_6/VSS" "dacn_0/bootstrapped_sw_n_0/vss"
+merge "dacn_0/bootstrapped_sw_n_0/vss" "dacn_0/inv_renketu_n_0/vss"
+merge "dacn_0/inv_renketu_n_0/vss" "dacn_0/vss"
+merge "dacn_0/vss" "mim_cap_boss_0/m4_109122_n78851#"
+merge "mim_cap_boss_0/m4_109122_n78851#" "mim_cap_boss_0/vss"
+merge "mim_cap_boss_0/vss" "vss"
+merge "comparator_0/clkc" "buffer_0/out" -1277.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -162864 -5100 0 0 0 0 0 0 0 0
+merge "buffer_0/out" "m1_38036_n1834#"
+merge "sarlogic_0/clkc" "buffer_0/in" -215.937 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4080 -256 0 0 0 -224 0 0 0 0
+merge "buffer_0/in" "m1_46996_n1838#"
+merge "dacp_0/ctl8" "dacp_0/inv_renketu_p_0/inv_p_9/I" -2719.12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -773280 -19156 0 0 0 0 0 0
+merge "dacp_0/inv_renketu_p_0/inv_p_9/I" "sarlogic_0/output25/Z"
+merge "sarlogic_0/output25/Z" "sarlogic_0/ctlp[8]"
+merge "sarlogic_0/ctlp[8]" "m2_30316_13982#"
+merge "sarlogic_0/result[1]" "result[1]" -205.048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "sarlogic_0/trim[4]" "comparator_0/trim4" -93.5591 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10100 -402 0 -224 0 0 0 0
+merge "comparator_0/trim4" "m2_39086_n7650#"
+merge "dacp_0/ctl7" "dacp_0/inv_renketu_p_0/inv_p_8/I" -492.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -145680 -3386 0 0 0 0 0 0
+merge "dacp_0/inv_renketu_p_0/inv_p_8/I" "sarlogic_0/output24/Z"
+merge "sarlogic_0/output24/Z" "sarlogic_0/ctlp[7]"
+merge "sarlogic_0/ctlp[7]" "m2_30316_14654#"
+merge "sarlogic_0/result[0]" "result[0]" -239.306 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "sarlogic_0/ctln[0]" "dacn_0/ctl10" -739.27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -204560 -5514 0 0 0 0 0 0
+merge "dacn_0/ctl10" "m2_30817_n12718#"
+merge "dacp_0/ctl6" "dacp_0/inv_renketu_p_0/inv_p_7/I" -492.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -145680 -3386 0 0 0 0 0 0
+merge "dacp_0/inv_renketu_p_0/inv_p_7/I" "sarlogic_0/output23/Z"
+merge "sarlogic_0/output23/Z" "sarlogic_0/ctlp[6]"
+merge "sarlogic_0/ctlp[6]" "m2_30316_15326#"
+merge "sarlogic_0/input1/I" "sarlogic_0/cal" -205.048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "sarlogic_0/cal" "sarlogic_0/ANTENNA_input1_I/I"
+merge "sarlogic_0/ANTENNA_input1_I/I" "cal"
+merge "comparator_0/trim3" "sarlogic_0/trim[3]" -94.9102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10100 -402 0 -224 0 0 0 0
+merge "sarlogic_0/trim[3]" "m2_39086_n8850#"
+merge "sarlogic_0/valid" "valid" -239.306 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "sarlogic_0/clk" "clk" -205.131 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "sarlogic_0/en" "en" -241.237 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "sarlogic_0/trim[2]" "comparator_0/trim2" -79.8667 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10100 -402 0 -224 0 0 0 0
+merge "comparator_0/trim2" "m2_39086_n8550#"
+merge "dacp_0/ctl5" "dacp_0/inv_renketu_p_0/inv_p_6/I" -492.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -145680 -3386 0 0 0 0 0 0
+merge "dacp_0/inv_renketu_p_0/inv_p_6/I" "sarlogic_0/output22/Z"
+merge "sarlogic_0/output22/Z" "sarlogic_0/ctlp[5]"
+merge "sarlogic_0/ctlp[5]" "m2_30316_15998#"
+merge "dacp_0/ctl4" "dacp_0/inv_renketu_p_0/inv_p_5/I" -492.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -145680 -3386 0 0 0 0 0 0
+merge "dacp_0/inv_renketu_p_0/inv_p_5/I" "sarlogic_0/output21/Z"
+merge "sarlogic_0/output21/Z" "sarlogic_0/ctlp[4]"
+merge "sarlogic_0/ctlp[4]" "m2_30316_16670#"
+merge "sarlogic_0/trim[1]" "comparator_0/trim1" -78.4391 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10100 -402 0 -224 0 0 0 0
+merge "comparator_0/trim1" "m2_39086_n7950#"
+merge "sarlogic_0/ctln[3]" "dacn_0/ctl3" -400.641 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -105600 -2384 0 0 0 0 0 0
+merge "dacn_0/ctl3" "m2_30817_n17422#"
+merge "dacn_0/bootstrapped_sw_n_0/in" "dacn_0/in" -169.598 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -29600 -948 0 0 0 0 0 0
+merge "dacn_0/in" "vinn"
+merge "sarlogic_0/comp" "latch_0/Q" -175.038 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14820 -614 0 0 0 -224 0 0 0 0
+merge "latch_0/Q" "m1_46934_904#"
+merge "sarlogic_0/trim[0]" "comparator_0/trim0" -78.805 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10100 -402 0 -224 0 0 0 0
+merge "comparator_0/trim0" "m2_39086_n8250#"
+merge "dacp_0/ctl3" "dacp_0/inv_renketu_p_0/inv_p_4/I" -492.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -145680 -3386 0 0 0 0 0 0
+merge "dacp_0/inv_renketu_p_0/inv_p_4/I" "sarlogic_0/output20/Z"
+merge "sarlogic_0/output20/Z" "sarlogic_0/ctlp[3]"
+merge "sarlogic_0/ctlp[3]" "m2_30316_17342#"
+merge "dacp_0/sample" "sarlogic_0/sample" -14443 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5000400 -50404 -2326400 -24464 0 0 0 0
+merge "sarlogic_0/sample" "dacn_0/sample"
+merge "dacn_0/sample" "m2_93056_n21305#"
+merge "dacp_0/inv_renketu_p_0/inv_p_1/I" "dacp_0/ctl2" -492.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -145680 -3386 0 0 0 0 0 0
+merge "dacp_0/ctl2" "sarlogic_0/ctlp[2]"
+merge "sarlogic_0/ctlp[2]" "m2_30316_18014#"
+merge "sarlogic_0/ctln[5]" "dacn_0/ctl5" -400.641 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -105600 -2384 0 0 0 0 0 0
+merge "dacn_0/ctl5" "m2_30817_n16078#"
+merge "sarlogic_0/ctln[1]" "dacn_0/ctl1" -400.641 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -105600 -2384 0 0 0 0 0 0
+merge "dacn_0/ctl1" "m2_30817_n18766#"
+merge "latch_0/S" "comparator_0/outp" -298.52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -240 -8512 -376 0 0 0 0 0 0
+merge "comparator_0/outp" "m1_44356_540#"
+merge "sarlogic_0/rstn" "rstn" -252.411 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "dacp_0/ctl1" "dacp_0/inv_renketu_p_0/inv_p_3/I" -492.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -145680 -3386 0 0 0 0 0 0
+merge "dacp_0/inv_renketu_p_0/inv_p_3/I" "sarlogic_0/ctlp[1]"
+merge "sarlogic_0/ctlp[1]" "m2_30316_18686#"
+merge "sarlogic_0/ctln[2]" "dacn_0/ctl2" -400.641 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -105600 -2384 0 0 0 0 0 0
+merge "dacn_0/ctl2" "m2_30817_n18094#"
+merge "sarlogic_0/ctln[9]" "dacn_0/ctl9" -1480.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -509200 -12554 0 0 0 0 0 0
+merge "dacn_0/ctl9" "m2_30817_n13390#"
+merge "sarlogic_0/ctln[4]" "dacn_0/ctl4" -400.641 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -105600 -2384 0 0 0 0 0 0
+merge "dacn_0/ctl4" "m2_30817_n16750#"
+merge "dacp_0/bootstrapped_sw_p_0/in" "dacp_0/in" -170.216 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30400 -952 0 0 0 0 0 0
+merge "dacp_0/in" "vinp"
+merge "sarlogic_0/ctln[6]" "dacn_0/ctl6" -400.641 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -105600 -2384 0 0 0 0 0 0
+merge "dacn_0/ctl6" "m2_30817_n15406#"
+merge "sarlogic_0/ctln[8]" "dacn_0/ctl8" -2627.53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -733200 -18154 0 0 0 0 0 0
+merge "dacn_0/ctl8" "m2_30817_n14062#"
+merge "comparator_0/trimb4" "sarlogic_0/trimb[4]" -91.5866 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10100 -402 0 -224 0 0 0 0
+merge "sarlogic_0/trimb[4]" "m2_39086_7550#"
+merge "sarlogic_0/ctln[7]" "dacn_0/ctl7" -400.641 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -105600 -2384 0 0 0 0 0 0
+merge "dacn_0/ctl7" "m2_30817_n14734#"
+merge "sarlogic_0/result[9]" "result[9]" -251.857 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "comparator_0/trimb1" "sarlogic_0/trimb[1]" -79.8667 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10100 -402 0 -224 0 0 0 0
+merge "sarlogic_0/trimb[1]" "m2_39086_7850#"
+merge "sarlogic_0/result[8]" "result[8]" -205.048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "dacp_0/out" "comparator_0/vp" -5234.21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1942800 -27058 0 0 0 0 0 0
+merge "comparator_0/vp" "m2_24657_1830#"
+merge "sarlogic_0/result[7]" "result[7]" -205.048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "sarlogic_0/result[6]" "result[6]" -205.048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "sarlogic_0/result[5]" "result[5]" -205.048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "comparator_0/vn" "dacn_0/out" -7208.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2471040 -37724 0 0 0 0 0 0
+merge "dacn_0/out" "m2_24657_n11219#"
+merge "sarlogic_0/result[4]" "result[4]" -205.048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "sarlogic_0/result[3]" "result[3]" -205.048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -89600 -1824 0 0 0 0
+merge "sarlogic_0/trimb[0]" "comparator_0/trimb0" -78.805 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10100 -402 0 -224 0 0 0 0
+merge "comparator_0/trimb0" "m2_39086_8150#"
+merge "sarlogic_0/trimb[2]" "comparator_0/trimb2" -78.4391 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10100 -402 0 -224 0 0 0 0
+merge "comparator_0/trimb2" "m2_39086_8450#"
+merge "sarlogic_0/trimb[3]" "comparator_0/trimb3" -91.9408 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10100 -402 0 -224 0 0 0 0
+merge "comparator_0/trimb3" "m2_39086_8750#"

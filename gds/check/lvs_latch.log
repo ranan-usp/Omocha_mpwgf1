@@ -1,0 +1,18 @@
+Netgen 1.5.263 compiled on Wed Nov 22 11:27:24 JST 2023
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file latch.lvs.spice
+Call to undefined subcircuit pfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit nfet_03v3
+Creating placeholder cell definition.
+Reading netlist file CELL_NAME.spice
+-1
+    while executing
+"netgen::readnet $file2"
+    (procedure "lvs" line 75)
+    invoked from within
+"lvs {latch.lvs.spice latch} {CELL_NAME.spice latch} /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/netgen/gf180mcuD/_setup.tcl"
+    ("eval" body line 1)
+    invoked from within
+"eval $argv"

@@ -1,0 +1,933 @@
+timestamp 1530351782
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use mim_cap_100_100 mim_cap_100_100_4 1 0 9083 0 1 0
+use mim_cap_30_30$1 mim_cap_30_30$1_18 0 -1 -84000 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_17 0 -1 -76000 1 0 -23330
+use mim_cap_100_100$1 mim_cap_100_100$1_4 -1 0 51043 0 -1 20240
+use mim_cap_30_30$1 mim_cap_30_30$1_15 0 -1 -68000 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_14 0 -1 -60000 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_13 0 -1 -52000 1 0 -23330
+use mim_cap_100_100 mim_cap_100_100_3 1 0 52083 0 1 0
+use mim_cap_30_30$1 mim_cap_30_30$1_12 0 -1 -44000 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_11 0 -1 -36000 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_10 0 -1 -28000 1 0 -23330
+use mim_cap_100_100$1 mim_cap_100_100$1_3 -1 0 94043 0 -1 20240
+use mim_cap_30_30$1 mim_cap_30_30$1_9 0 -1 -20000 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_8 0 -1 -12000 1 0 -23330
+use mim_cap_100_100 mim_cap_100_100_2 1 0 95083 0 1 0
+use mim_cap_30_30$1 mim_cap_30_30$1_7 0 -1 -4000 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_6 0 -1 4000 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_5 0 -1 12000 1 0 -23330
+use mim_cap_100_100$1 mim_cap_100_100$1_2 -1 0 137043 0 -1 20240
+use mim_cap_30_30$1 mim_cap_30_30$1_4 0 -1 20000 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_3 0 -1 28000 1 0 -23330
+use mim_cap_100_100 mim_cap_100_100_1 1 0 138083 0 1 0
+use mim_cap_30_30$1 mim_cap_30_30$1_16 0 -1 52000 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_2 0 -1 36000 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_1 0 -1 44000 1 0 -23330
+use mim_cap_100_100$1 mim_cap_100_100$1_1 -1 0 180043 0 -1 20240
+use mim_cap_30_30$1 mim_cap_30_30$1_19 0 -1 63120 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_0 0 -1 71120 1 0 -23330
+use mim_cap_100_100 mim_cap_100_100_0 1 0 181083 0 1 0
+use mim_cap_30_30$1 mim_cap_30_30$1_22 0 -1 95120 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_21 0 -1 87120 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_20 0 -1 79120 1 0 -23330
+use mim_cap_100_100$1 mim_cap_100_100$1_0 -1 0 223043 0 -1 20240
+use mim_cap_30_30$1 mim_cap_30_30$1_24 0 -1 111120 1 0 -23330
+use mim_cap_30_30$1 mim_cap_30_30$1_23 0 -1 103120 1 0 -23330
+port "vdd" 3 -133318 -11480 -118318 -7580 m5
+port "vss" 5 -97000 12780 -91000 19020 m5
+node "vdd" 0 1.08618e+06 -133318 -11480 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6424668320 1660464
+node "vss" 0 546944 -97000 12780 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 432576000 168192 2499269500 1142422
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "vdd" "vss" 272667
+cap "mim_cap_30_30$1_18/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_18/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 139.112
+cap "mim_cap_30_30$1_18/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_18/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 138.011
+cap "mim_cap_30_30$1_17/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_17/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 277.123
+cap "mim_cap_30_30$1_15/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_15/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 277.123
+cap "mim_cap_30_30$1_14/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_14/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 84.0533
+cap "mim_cap_30_30$1_14/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_14/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 193.069
+cap "mim_cap_30_30$1_13/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_13/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 194.171
+cap "mim_cap_30_30$1_13/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_13/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 82.9521
+cap "mim_cap_30_30$1_12/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_12/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 277.123
+cap "mim_cap_30_30$1_11/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_11/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 28.9947
+cap "mim_cap_30_30$1_11/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_11/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 248.128
+cap "mim_cap_30_30$1_10/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_10/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 139.112
+cap "mim_cap_30_30$1_10/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_10/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 138.011
+cap "mim_cap_30_30$1_9/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_9/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 277.123
+cap "mim_cap_30_30$1_8/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_8/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 277.123
+cap "mim_cap_30_30$1_7/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_7/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 84.0533
+cap "mim_cap_30_30$1_7/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_7/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 193.069
+cap "mim_cap_30_30$1_6/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_6/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 194.171
+cap "mim_cap_30_30$1_6/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_6/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 82.9521
+cap "mim_cap_30_30$1_5/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_5/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 277.123
+cap "mim_cap_30_30$1_4/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_4/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 28.9947
+cap "mim_cap_30_30$1_4/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_4/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 248.128
+cap "mim_cap_30_30$1_3/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_3/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 139.112
+cap "mim_cap_30_30$1_3/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_3/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 138.011
+cap "mim_cap_30_30$1_2/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_2/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 277.123
+cap "mim_cap_30_30$1_1/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_1/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 277.123
+cap "mim_cap_30_30$1_16/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_16/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 84.0533
+cap "mim_cap_30_30$1_16/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_16/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 193.069
+cap "mim_cap_30_30$1_19/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_19/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 106.077
+cap "mim_cap_30_30$1_19/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_19/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 171.046
+cap "mim_cap_30_30$1_0/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_0/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 216.194
+cap "mim_cap_30_30$1_0/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_0/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 60.9287
+cap "mim_cap_30_30$1_20/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_20/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 277.123
+cap "mim_cap_30_30$1_21/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_21/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 51.0181
+cap "mim_cap_30_30$1_21/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_21/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 226.105
+cap "mim_cap_30_30$1_22/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_22/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 161.135
+cap "mim_cap_30_30$1_22/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_22/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 115.987
+cap "mim_cap_30_30$1_23/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_23/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" 277.123
+cap "mim_cap_30_30$1_24/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_24/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" 277.123
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 246.025
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 270.355
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 23.113
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 352.352
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 0.769595
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 145.818
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 15.3442
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 356.142
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 15.3442
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 0.769595
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 162.689
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 97.7202
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 394.534
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 0.769595
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 27.347
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 80.8491
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 30.6883
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 52.5721
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 207.837
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 310.994
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 0.769595
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 15.3442
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 0.769595
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 190.966
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 15.3442
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 349.258
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -52.5488
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 349.111
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 0.769595
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 15.3442
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 200.877
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 301.084
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 15.3442
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 0.769595
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 385.41
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 217.748
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 42.6615
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 385.41
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 90.7596
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -562.252
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -562.252
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -281.126
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -562.252
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -562.252
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -555.826
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -277.913
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -277.913
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -555.826
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -555.826
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 93.3993
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -555.826
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -555.826
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -277.913
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -277.913
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -277.913
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -277.913
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 46.6997
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -555.826
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" -555.826
+cap "vss" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 218.888
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 36.4973
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 50.6736
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 47.9351
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 3.58692
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 57.5233
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 23.3222
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 6.00424
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 134.719
+cap "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 6.00424
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.9755
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 311.381
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 50.6736
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 33.4569
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 24.9148
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 327.313
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 59.5176
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 12.0085
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 80.148
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 14.7801
+cap "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 38.6389
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 18.9787
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 39.393
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 273.459
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 45.0394
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 6.00424
+cap "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 6.00424
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 172.641
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 29.2582
+cap "vss" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "vss" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 55.1742
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 53.8711
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 50.6736
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 180.965
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 30.5613
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 6.00424
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 43.7364
+cap "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 6.00424
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 265.134
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "vss" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "vss" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "vss" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "vss" 50.6736
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "vss" 323.726
+cap "vss" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "vss" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 323.726
+cap "vss" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 50.6736
+cap "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" 50.6736
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" 40.696
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 17.6757
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 50.6736
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "vss" 323.726
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 323.726
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" 50.6736
+cap "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "vss" 16.0831
+cap "vss" "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" 88.4723
+merge "mim_cap_100_100$1_0/VSUBS" "mim_cap_100_100_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "mim_cap_100_100_0/VSUBS" "mim_cap_100_100$1_1/VSUBS"
+merge "mim_cap_100_100$1_1/VSUBS" "mim_cap_100_100_1/VSUBS"
+merge "mim_cap_100_100_1/VSUBS" "mim_cap_100_100$1_2/VSUBS"
+merge "mim_cap_100_100$1_2/VSUBS" "mim_cap_100_100_2/VSUBS"
+merge "mim_cap_100_100_2/VSUBS" "mim_cap_100_100$1_3/VSUBS"
+merge "mim_cap_100_100$1_3/VSUBS" "mim_cap_100_100_3/VSUBS"
+merge "mim_cap_100_100_3/VSUBS" "mim_cap_100_100$1_4/VSUBS"
+merge "mim_cap_100_100$1_4/VSUBS" "mim_cap_100_100_4/VSUBS"
+merge "mim_cap_100_100_4/VSUBS" "mim_cap_30_30$1_24/VSUBS"
+merge "mim_cap_30_30$1_24/VSUBS" "mim_cap_30_30$1_23/VSUBS"
+merge "mim_cap_30_30$1_23/VSUBS" "mim_cap_30_30$1_22/VSUBS"
+merge "mim_cap_30_30$1_22/VSUBS" "mim_cap_30_30$1_21/VSUBS"
+merge "mim_cap_30_30$1_21/VSUBS" "mim_cap_30_30$1_20/VSUBS"
+merge "mim_cap_30_30$1_20/VSUBS" "mim_cap_30_30$1_0/VSUBS"
+merge "mim_cap_30_30$1_0/VSUBS" "mim_cap_30_30$1_19/VSUBS"
+merge "mim_cap_30_30$1_19/VSUBS" "mim_cap_30_30$1_16/VSUBS"
+merge "mim_cap_30_30$1_16/VSUBS" "mim_cap_30_30$1_1/VSUBS"
+merge "mim_cap_30_30$1_1/VSUBS" "mim_cap_30_30$1_2/VSUBS"
+merge "mim_cap_30_30$1_2/VSUBS" "mim_cap_30_30$1_3/VSUBS"
+merge "mim_cap_30_30$1_3/VSUBS" "mim_cap_30_30$1_4/VSUBS"
+merge "mim_cap_30_30$1_4/VSUBS" "mim_cap_30_30$1_5/VSUBS"
+merge "mim_cap_30_30$1_5/VSUBS" "mim_cap_30_30$1_6/VSUBS"
+merge "mim_cap_30_30$1_6/VSUBS" "mim_cap_30_30$1_7/VSUBS"
+merge "mim_cap_30_30$1_7/VSUBS" "mim_cap_30_30$1_8/VSUBS"
+merge "mim_cap_30_30$1_8/VSUBS" "mim_cap_30_30$1_9/VSUBS"
+merge "mim_cap_30_30$1_9/VSUBS" "mim_cap_30_30$1_10/VSUBS"
+merge "mim_cap_30_30$1_10/VSUBS" "mim_cap_30_30$1_11/VSUBS"
+merge "mim_cap_30_30$1_11/VSUBS" "mim_cap_30_30$1_12/VSUBS"
+merge "mim_cap_30_30$1_12/VSUBS" "mim_cap_30_30$1_13/VSUBS"
+merge "mim_cap_30_30$1_13/VSUBS" "mim_cap_30_30$1_14/VSUBS"
+merge "mim_cap_30_30$1_14/VSUBS" "mim_cap_30_30$1_15/VSUBS"
+merge "mim_cap_30_30$1_15/VSUBS" "mim_cap_30_30$1_17/VSUBS"
+merge "mim_cap_30_30$1_17/VSUBS" "mim_cap_30_30$1_18/VSUBS"
+merge "mim_cap_30_30$1_18/VSUBS" "VSUBS"
+merge "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" -707397 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30688635 -959085
+merge "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#"
+merge "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#"
+merge "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#"
+merge "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#"
+merge "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#"
+merge "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#"
+merge "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#"
+merge "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#"
+merge "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#" "mim_cap_30_30$1_24/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_24/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_23/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_23/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_22/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_22/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_21/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_21/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_20/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_20/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_0/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_0/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_19/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_19/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_16/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_16/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_1/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_1/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_2/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_2/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_3/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_3/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_4/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_4/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_5/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_5/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_6/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_6/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_7/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_7/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_8/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_8/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_9/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_9/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_10/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_10/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_11/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_11/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_12/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_12/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_13/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_13/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_14/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_14/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_15/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_15/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_17/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_17/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "mim_cap_30_30$1_18/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#"
+merge "mim_cap_30_30$1_18/cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#" "vdd"
+merge "mim_cap_100_100$1_0/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" -204096 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -611733349 -1075452
+merge "mim_cap_100_100_0/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#"
+merge "mim_cap_100_100$1_1/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#"
+merge "mim_cap_100_100_1/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#"
+merge "mim_cap_100_100$1_2/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#"
+merge "mim_cap_100_100_2/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#"
+merge "mim_cap_100_100$1_3/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#"
+merge "mim_cap_100_100_3/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#"
+merge "mim_cap_100_100$1_4/cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660#" "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#"
+merge "mim_cap_100_100_4/cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580#" "mim_cap_30_30$1_24/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_24/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_23/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_23/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_22/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_22/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_21/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_21/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_20/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_20/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_0/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_0/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_19/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_19/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_16/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_16/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_1/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_1/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_2/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_2/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_3/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_3/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_4/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_4/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_5/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_5/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_6/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_6/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_7/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_7/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_8/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_8/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_9/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_9/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_10/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_10/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_11/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_11/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_12/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_12/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_13/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_13/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_14/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_14/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_15/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_15/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_17/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_17/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "mim_cap_30_30$1_18/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#"
+merge "mim_cap_30_30$1_18/cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#" "vss"

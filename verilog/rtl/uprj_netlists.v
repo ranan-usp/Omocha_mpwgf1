@@ -22,9 +22,7 @@
     `default_nettype wire
     `include "gl/user_project_wrapper.v"
     `include "rtl/saradc.v"
-    // `include "rtl/anan_logo.v"
 `else
     `include "user_project_wrapper.v"
     `include "saradc.v"
-    // `include "anan_logo.v"
 `endif

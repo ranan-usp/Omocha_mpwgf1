@@ -1,0 +1,119 @@
+timestamp 1530351782
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use XM0_trim_left XM0_trim_left_0 1 0 350 0 1 -683
+use XM1_trim_left XM1_trim_left_0 1 0 510 0 1 -683
+use XM2_trim_left XM2_trim_left_0 1 0 -759 0 1 832
+use XM4_trim_left XM4_trim_left_0 1 0 -186 0 1 816
+use XM3_trim_left XM3_trim_left_0 1 0 -1716 0 1 691
+port "n4" 3 2143 -569 2203 -509 m1
+port "n1" 5 330 -569 390 -509 m1
+port "n0" 7 10 -569 70 -509 m1
+port "n2" 9 -983 -569 -923 -509 m1
+port "n3" 11 -2343 -569 -2283 -509 m1
+node "n4" 2 382.038 2143 -569 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60360 2132 0 0 0 0 0 0 0 0
+node "n1" 0 36.3357 330 -569 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 240 0 0 0 0 0 0 0 0
+node "n0" 0 35.5949 10 -569 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 240 0 0 0 0 0 0 0 0
+node "n2" 1 156.861 -983 -569 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21960 852 0 0 0 0 0 0 0 0
+node "n3" 1 275.299 -2343 -569 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41160 1492 0 0 0 0 0 0 0 0
+node "m1_n2496_n90#" 13 3065.93 -2496 -90 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 150480 5632 560828 14308 0 0 0 0 0 0
+node "m1_1106_133#" 3 666.414 1106 133 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 68328 2828 31768 988 0 0 0 0 0 0
+node "m1_246_133#" 1 247.175 246 133 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26874 890 31768 988 0 0 0 0 0 0
+node "m1_n914_133#" 1 262.794 -914 133 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24168 908 31768 988 0 0 0 0 0 0
+node "m1_n2274_133#" 2 422.608 -2274 133 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38888 1548 31768 988 0 0 0 0 0 0
+node "m1_n52_133#" 1 232.447 -52 133 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26874 890 31768 988 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_n2274_133#" "n3" 25.3841
+cap "m1_n2496_n90#" "m1_n52_133#" 11.6361
+cap "m1_n2496_n90#" "m1_n914_133#" 23.0637
+cap "m1_n2496_n90#" "n2" 30.1747
+cap "m1_1106_133#" "n4" 49.8708
+cap "n3" "n2" 3.66072
+cap "m1_n2496_n90#" "n1" 1.85772
+cap "m1_1106_133#" "m1_n52_133#" 0.0125647
+cap "m1_n2274_133#" "m1_n914_133#" 25.5098
+cap "m1_n52_133#" "m1_n914_133#" 38.4394
+cap "n4" "n1" 3.04984
+cap "m1_n914_133#" "n2" 9.74339
+cap "m1_n2496_n90#" "m1_246_133#" 11.6361
+cap "m1_n2496_n90#" "n0" 1.85772
+cap "m1_1106_133#" "m1_246_133#" 24.043
+cap "m1_n2496_n90#" "n3" 69.1451
+cap "m1_n52_133#" "m1_246_133#" 102.564
+cap "m1_n52_133#" "n0" 3.84608
+cap "m1_246_133#" "m1_n914_133#" 0.0548319
+cap "n0" "n2" 3.93958
+cap "m1_1106_133#" "m1_n2496_n90#" 58.7338
+cap "m1_246_133#" "n1" 3.84608
+cap "n1" "n0" 9.72288
+cap "m1_n2496_n90#" "n4" 92.5763
+cap "m1_n2496_n90#" "m1_n2274_133#" 37.4556
+cap "XM2_trim_left_0/D" "XM3_trim_left_0/a_n778_n975#" 0.602937
+cap "XM2_trim_left_0/D" "XM3_trim_left_0/G" 0.0564679
+cap "XM2_trim_left_0/D" "XM3_trim_left_0/D" 18.2316
+cap "XM3_trim_left_0/G" "XM3_trim_left_0/a_n778_n975#" 163.977
+cap "XM2_trim_left_0/G" "XM3_trim_left_0/a_n778_n975#" 0.349551
+cap "XM3_trim_left_0/D" "XM3_trim_left_0/a_n778_n975#" 348.006
+cap "XM3_trim_left_0/G" "XM2_trim_left_0/G" 1.17928
+cap "XM3_trim_left_0/D" "XM3_trim_left_0/G" 66.6778
+cap "XM3_trim_left_0/D" "XM3_trim_left_0/a_n778_n975#" 0.160058
+cap "XM2_trim_left_0/G" "XM3_trim_left_0/D" 0.0564679
+cap "XM0_trim_left_0/G" "XM0_trim_left_0/D" 67.1141
+cap "XM2_trim_left_0/D" "XM0_trim_left_0/G" 0.0623947
+cap "XM0_trim_left_0/G" "XM1_trim_left_0/G" 21.0181
+cap "XM3_trim_left_0/G" "XM3_trim_left_0/a_n778_n975#" 0.0299081
+cap "XM2_trim_left_0/G" "XM3_trim_left_0/G" 1.2598
+cap "XM2_trim_left_0/D" "XM0_trim_left_0/D" 39.3824
+cap "XM0_trim_left_0/G" "XM3_trim_left_0/a_n778_n975#" 36.7591
+cap "XM0_trim_left_0/G" "XM2_trim_left_0/G" 2.5783
+cap "XM1_trim_left_0/D" "XM0_trim_left_0/D" 13.6931
+cap "XM2_trim_left_0/D" "XM3_trim_left_0/a_n778_n975#" 179.264
+cap "XM2_trim_left_0/G" "XM0_trim_left_0/D" 0.0814324
+cap "XM2_trim_left_0/D" "XM2_trim_left_0/G" 4.29058
+cap "XM2_trim_left_0/G" "XM1_trim_left_0/G" 0.00121063
+cap "XM0_trim_left_0/D" "XM3_trim_left_0/a_n778_n975#" 98.6036
+cap "XM1_trim_left_0/G" "XM3_trim_left_0/a_n778_n975#" 6.81378
+cap "XM1_trim_left_0/D" "XM3_trim_left_0/a_n778_n975#" 63.3591
+cap "XM2_trim_left_0/G" "XM3_trim_left_0/a_n778_n975#" 100.805
+cap "XM2_trim_left_0/D" "XM3_trim_left_0/D" 18.2316
+cap "XM1_trim_left_0/G" "XM4_trim_left_0/G" 2.58672
+cap "XM1_trim_left_0/G" "XM1_trim_left_0/D" 67.1141
+cap "XM4_trim_left_0/D" "XM4_trim_left_0/a_1072_n1100#" 255.218
+cap "XM4_trim_left_0/a_1072_n1100#" "XM4_trim_left_0/G" 101.24
+cap "XM1_trim_left_0/D" "XM4_trim_left_0/a_1072_n1100#" 122.375
+cap "XM4_trim_left_0/D" "XM4_trim_left_0/G" 111.124
+cap "XM4_trim_left_0/D" "XM1_trim_left_0/D" 8.59037
+cap "XM1_trim_left_0/D" "XM4_trim_left_0/G" 0.0774213
+cap "XM0_trim_left_0/D" "XM1_trim_left_0/D" 13.6931
+cap "XM1_trim_left_0/G" "XM4_trim_left_0/a_1072_n1100#" 37.8979
+cap "XM0_trim_left_0/G" "XM4_trim_left_0/G" 0.00061164
+cap "XM4_trim_left_0/a_1072_n1100#" "XM4_trim_left_0/D" 268.925
+cap "XM4_trim_left_0/D" "XM4_trim_left_0/G" 111.124
+cap "XM4_trim_left_0/a_1072_n1100#" "XM4_trim_left_0/G" 149.057
+merge "XM4_trim_left_0/S" "XM4_trim_left_0/a_1072_n1100#" -1153.16 0 0 0 0 -14400 -544 -50112 -2544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60996 -3756 0 0 0 0 0 0 0 0
+merge "XM4_trim_left_0/a_1072_n1100#" "XM3_trim_left_0/S"
+merge "XM3_trim_left_0/S" "XM3_trim_left_0/a_n778_n975#"
+merge "XM3_trim_left_0/a_n778_n975#" "XM2_trim_left_0/S"
+merge "XM2_trim_left_0/S" "XM1_trim_left_0/S"
+merge "XM1_trim_left_0/S" "XM0_trim_left_0/S"
+merge "XM0_trim_left_0/S" "m1_n2496_n90#"
+merge "m1_n2496_n90#" "XM2_trim_left_0/a_n375_n1116#"
+merge "XM2_trim_left_0/a_n375_n1116#" "XM2_trim_left_0/a_n375_n620#"
+merge "XM2_trim_left_0/a_n375_n620#" "XM1_trim_left_0/a_n484_399#"
+merge "XM1_trim_left_0/a_n484_399#" "XM1_trim_left_0/a_n484_895#"
+merge "XM1_trim_left_0/a_n484_895#" "XM0_trim_left_0/a_n484_895#"
+merge "XM0_trim_left_0/a_n484_895#" "XM0_trim_left_0/a_n484_399#"
+merge "XM0_trim_left_0/a_n484_399#" "VSUBS"
+merge "XM2_trim_left_0/D" "n2" -131.791 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -184 0 0 0 0 0 0 0 0
+merge "XM0_trim_left_0/G" "m1_n52_133#" -111.327 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3128 -228 0 0 0 0 0 0 0 0
+merge "XM2_trim_left_0/G" "m1_n914_133#" -131.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6256 -456 0 0 0 0 0 0 0 0
+merge "XM1_trim_left_0/G" "m1_246_133#" -114.833 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3128 -228 0 0 0 0 0 0 0 0
+merge "XM0_trim_left_0/D" "n0" -105.851 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0
+merge "XM1_trim_left_0/D" "n1" -121.608 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0
+merge "XM4_trim_left_0/D" "n4" -171.971 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -368 0 0 0 0 0 0 0 0
+merge "XM3_trim_left_0/D" "n3" -127.211 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -276 0 0 0 0 0 0 0 0
+merge "XM4_trim_left_0/G" "m1_1106_133#" -389.964 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25024 -1824 0 0 0 0 0 0 0 0
+merge "XM3_trim_left_0/G" "m1_n2274_133#" -213.577 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12512 -912 0 0 0 0 0 0 0 0

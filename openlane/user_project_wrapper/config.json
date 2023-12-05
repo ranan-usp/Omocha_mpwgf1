@@ -17,7 +17,7 @@
 	"EXTRA_GDS_FILES": "dir::../../gds/saradc.gds",
 	"EXTRA_LIBS": [],
 	"EXTRA_SPEFS": [],
-	"FP_PDN_MACRO_HOOKS": "saradc vdd vss vdd vss",
+	"FP_PDN_MACRO_HOOKS": ["saradc vdd vss vdd vss"],
 	"QUIT_ON_SYNTH_CHECKS": 0,
 	"FP_PDN_CHECK_NODES": 0,
 	"SYNTH_ELABORATE_ONLY": 1,

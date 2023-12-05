@@ -1,0 +1,513 @@
+* NGSPICE file created from comparator.ext - technology: gf180mcuD
+
+.subckt XM0_trim_right G D a_n484_399# a_n484_895# S
+X0 S G D a_n484_399# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 S G 0.005902f
+C1 S D 0.14243f
+C2 D G 0.011845f
+C3 S a_n484_399# 0.098801f
+C4 D a_n484_399# 0.215099f
+C5 G a_n484_399# 0.21851f
+.ends
+
+.subckt XM1_trim_right G D a_n484_399# a_n484_895# S
+X0 D G S a_n484_399# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 D G 0.011845f
+C1 D S 0.075352f
+C2 S G 0.001764f
+C3 D a_n484_399# 0.24117f
+C4 S a_n484_399# 0.057381f
+C5 G a_n484_399# 0.21851f
+.ends
+
+.subckt XM2_trim_right G D a_n375_n620# a_n375_n1116# S
+X0 D G S a_n375_n1116# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X1 S G D a_n375_n1116# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+C0 D G 0.011804f
+C1 D S 0.263094f
+C2 S G 0.011804f
+C3 D a_n375_n1116# 0.365155f
+C4 S a_n375_n1116# 0.043869f
+C5 G a_n375_n1116# 0.382504f
+.ends
+
+.subckt XM3_trim_right G D a_n778_n975# S
+X0 D G S a_n778_n975# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X1 S G D a_n778_n975# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X2 D G S a_n778_n975# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X3 S G D a_n778_n975# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+C0 G S 0.023608f
+C1 D S 0.526188f
+C2 G D 0.023608f
+C3 D a_n778_n975# 0.557521f
+C4 S a_n778_n975# 0.087739f
+C5 G a_n778_n975# 0.718155f
+.ends
+
+.subckt XM4_trim_right G D a_1072_n1100# S
+X0 S G D a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X1 S G D a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X2 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X3 S G D a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X4 S G D a_1072_n1100# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X5 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X6 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X7 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+C0 G D 0.047215f
+C1 S D 1.052376f
+C2 G S 0.047215f
+C3 S a_1072_n1100# 0.425359f
+C4 D a_1072_n1100# 0.448822f
+C5 G a_1072_n1100# 1.37423f
+.ends
+
+.subckt trim_switch_right XM3_trim_right_0/D XM0_trim_right_0/G XM4_trim_right_0/G
++ XM0_trim_right_0/D XM4_trim_right_0/D XM1_trim_right_0/G XM1_trim_right_0/D XM2_trim_right_0/G
++ XM2_trim_right_0/D XM3_trim_right_0/G VSUBS
+XXM0_trim_right_0 XM0_trim_right_0/G XM0_trim_right_0/D VSUBS VSUBS VSUBS XM0_trim_right
+XXM1_trim_right_0 XM1_trim_right_0/G XM1_trim_right_0/D VSUBS VSUBS VSUBS XM1_trim_right
+XXM2_trim_right_0 XM2_trim_right_0/G XM2_trim_right_0/D VSUBS VSUBS VSUBS XM2_trim_right
+XXM3_trim_right_0 XM3_trim_right_0/G XM3_trim_right_0/D VSUBS VSUBS XM3_trim_right
+XXM4_trim_right_0 XM4_trim_right_0/G XM4_trim_right_0/D VSUBS VSUBS XM4_trim_right
+C0 XM4_trim_right_0/D XM1_trim_right_0/D 0.00859f
+C1 XM1_trim_right_0/G XM0_trim_right_0/G 0.123582f
+C2 XM2_trim_right_0/D XM3_trim_right_0/D 0.040124f
+C3 XM0_trim_right_0/G XM2_trim_right_0/G 0.041018f
+C4 XM3_trim_right_0/G XM2_trim_right_0/G 0.027949f
+C5 XM1_trim_right_0/G XM1_trim_right_0/D 0.07096f
+C6 XM0_trim_right_0/D XM0_trim_right_0/G 0.07096f
+C7 XM4_trim_right_0/D XM4_trim_right_0/G 0.272119f
+C8 XM2_trim_right_0/D XM2_trim_right_0/G 0.014034f
+C9 XM2_trim_right_0/D XM0_trim_right_0/D 0.039382f
+C10 XM0_trim_right_0/D XM1_trim_right_0/D 0.027386f
+C11 XM3_trim_right_0/G XM3_trim_right_0/D 0.092062f
+C12 XM1_trim_right_0/G XM4_trim_right_0/G 0.02663f
+C13 XM4_trim_right_0/D VSUBS 1.278621f
+C14 XM4_trim_right_0/G VSUBS 1.959711f
+C15 XM3_trim_right_0/D VSUBS 1.12292f
+C16 XM3_trim_right_0/G VSUBS 1.128649f
+C17 XM2_trim_right_0/D VSUBS 0.604021f
+C18 XM2_trim_right_0/G VSUBS 0.637566f
+C19 XM1_trim_right_0/D VSUBS 0.42776f
+C20 XM1_trim_right_0/G VSUBS 0.407201f
+C21 XM0_trim_right_0/D VSUBS 0.314559f
+C22 XM0_trim_right_0/G VSUBS 0.388025f
+.ends
+
+.subckt trim_right d_4 d_1 d_0 d_2 d_3 trim_switch_right_0/XM2_trim_right_0/D trim_switch_right_0/XM4_trim_right_0/D
++ VSUBS ip
+Xtrim_switch_right_0 trim_switch_right_0/XM3_trim_right_0/D d_0 d_4 trim_switch_right_0/XM0_trim_right_0/D
++ trim_switch_right_0/XM4_trim_right_0/D d_1 trim_switch_right_0/XM1_trim_right_0/D
++ d_2 trim_switch_right_0/XM2_trim_right_0/D d_3 VSUBS trim_switch_right
+C0 trim_switch_right_0/XM4_trim_right_0/D trim_switch_right_0/XM2_trim_right_0/D 0.596682f
+C1 d_1 trim_switch_right_0/XM1_trim_right_0/D 0.003099f
+C2 trim_switch_right_0/XM0_trim_right_0/D trim_switch_right_0/XM2_trim_right_0/D 0.103369f
+C3 trim_switch_right_0/XM4_trim_right_0/D trim_switch_right_0/XM0_trim_right_0/D 0.166348f
+C4 d_1 trim_switch_right_0/XM2_trim_right_0/D 0.003137f
+C5 d_0 trim_switch_right_0/XM2_trim_right_0/D 0.002632f
+C6 ip trim_switch_right_0/XM1_trim_right_0/D 1.60623f
+C7 trim_switch_right_0/XM3_trim_right_0/D ip 6.427485f
+C8 trim_switch_right_0/XM3_trim_right_0/D trim_switch_right_0/XM1_trim_right_0/D 0.087807f
+C9 ip trim_switch_right_0/XM2_trim_right_0/D 3.213024f
+C10 trim_switch_right_0/XM0_trim_right_0/D d_0 0.004139f
+C11 trim_switch_right_0/XM1_trim_right_0/D trim_switch_right_0/XM2_trim_right_0/D 0.081094f
+C12 trim_switch_right_0/XM3_trim_right_0/D trim_switch_right_0/XM2_trim_right_0/D 0.58337f
+C13 trim_switch_right_0/XM4_trim_right_0/D ip 12.877382f
+C14 ip trim_switch_right_0/XM0_trim_right_0/D 1.60623f
+C15 d_4 trim_switch_right_0/XM2_trim_right_0/D 0.00312f
+C16 trim_switch_right_0/XM4_trim_right_0/D trim_switch_right_0/XM1_trim_right_0/D 0.169398f
+C17 trim_switch_right_0/XM0_trim_right_0/D trim_switch_right_0/XM1_trim_right_0/D 0.520979f
+C18 trim_switch_right_0/XM3_trim_right_0/D trim_switch_right_0/XM4_trim_right_0/D 1.600475f
+C19 trim_switch_right_0/XM3_trim_right_0/D trim_switch_right_0/XM0_trim_right_0/D 0.087807f
+C20 d_4 VSUBS 1.64786f
+C21 d_3 VSUBS 0.927186f
+C22 d_2 VSUBS 0.513348f
+C23 d_1 VSUBS 0.345562f
+C24 d_0 VSUBS 0.33412f
+C25 trim_switch_right_0/XM0_trim_right_0/D VSUBS 0.689164f
+C26 trim_switch_right_0/XM1_trim_right_0/D VSUBS 0.727243f
+C27 trim_switch_right_0/XM2_trim_right_0/D VSUBS 2.037146f
+C28 trim_switch_right_0/XM4_trim_right_0/D VSUBS 4.36705f
+C29 ip VSUBS -5.906306f
+C30 trim_switch_right_0/XM3_trim_right_0/D VSUBS 3.463846f
+.ends
+
+.subckt XMdiff_com G D a_439_n1281# S
+X0 D G S a_439_n1281# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X1 S G D a_439_n1281# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+C0 D S 0.137081f
+C1 S G 0.003527f
+C2 D G 0.003527f
+C3 S a_439_n1281# 0.230614f
+C4 D a_439_n1281# 0.02923f
+C5 G a_439_n1281# 0.382694f
+.ends
+
+.subckt XMinp_com a_251_n1284# G D a_251_n788# S
+X0 D G S a_251_n1284# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 G S 0.001764f
+C1 D G 0.001764f
+C2 D S 0.06854f
+C3 D a_251_n1284# 0.057707f
+C4 S a_251_n1284# 0.057707f
+C5 G a_251_n1284# 0.21851f
+.ends
+
+.subckt XMl4_com G D S w_n198_790# VSUBS
+X0 D G S w_n198_790# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 G S 0.001764f
+C1 D G 0.001764f
+C2 S w_n198_790# 0.008358f
+C3 D w_n198_790# 0.010275f
+C4 D S 0.06854f
+C5 G w_n198_790# 0.131025f
+C6 D VSUBS 0.047486f
+C7 S VSUBS 0.049403f
+C8 G VSUBS 0.087507f
+C9 w_n198_790# VSUBS 1.54752f
+.ends
+
+.subckt XM4_com G D w_1022_790# S VSUBS
+X0 D G S w_1022_790# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 G S 0.001764f
+C1 D G 0.001764f
+C2 S w_1022_790# 0.021497f
+C3 D w_1022_790# 0.022441f
+C4 D S 0.06854f
+C5 G w_1022_790# 0.132558f
+C6 D VSUBS 0.043675f
+C7 S VSUBS 0.043675f
+C8 G VSUBS 0.08816f
+C9 w_1022_790# VSUBS 1.17557f
+.ends
+
+.subckt XMl3_com G D w_n634_790# S VSUBS
+X0 S G D w_n634_790# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 G D 0.001764f
+C1 S G 0.001764f
+C2 D w_n634_790# 0.024248f
+C3 S w_n634_790# 0.021497f
+C4 S D 0.06854f
+C5 G w_n634_790# 0.139286f
+C6 S VSUBS 0.043675f
+C7 D VSUBS 0.041759f
+C8 G VSUBS 0.081314f
+C9 w_n634_790# VSUBS 1.68331f
+.ends
+
+.subckt XM3_com G D w_n509_n1092# S VSUBS
+X0 S G D w_n509_n1092# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 G D 0.001764f
+C1 S G 0.001764f
+C2 D w_n509_n1092# 0.010275f
+C3 S w_n509_n1092# 0.008358f
+C4 S D 0.06854f
+C5 G w_n509_n1092# 0.131025f
+C6 S VSUBS 0.049403f
+C7 D VSUBS 0.047486f
+C8 G VSUBS 0.087507f
+C9 w_n509_n1092# VSUBS 1.54752f
+.ends
+
+.subckt XMinn_com G a_719_n1284# D S a_719_n788#
+X0 S G D a_719_n1284# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 G D 0.001764f
+C1 S G 0.001764f
+C2 S D 0.06854f
+C3 S a_719_n1284# 0.057707f
+C4 D a_719_n1284# 0.057707f
+C5 G a_719_n1284# 0.21851f
+.ends
+
+.subckt XM4_trim_left G D a_1072_n1100# S
+X0 S G D a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X1 S G D a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X2 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X3 S G D a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X4 S G D a_1072_n1100# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X5 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+X6 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X7 D G S a_1072_n1100# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+C0 D S 1.052376f
+C1 S G 0.047215f
+C2 D G 0.047215f
+C3 S a_1072_n1100# 0.425359f
+C4 D a_1072_n1100# 0.448822f
+C5 G a_1072_n1100# 1.37423f
+.ends
+
+.subckt XM3_trim_left G D a_n778_n975# S
+X0 D G S a_n778_n975# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X1 S G D a_n778_n975# nfet_03v3 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.28u
+X2 D G S a_n778_n975# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X3 S G D a_n778_n975# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+C0 S D 0.526188f
+C1 D G 0.023608f
+C2 S G 0.023608f
+C3 D a_n778_n975# 0.557521f
+C4 S a_n778_n975# 0.087739f
+C5 G a_n778_n975# 0.718155f
+.ends
+
+.subckt XM2_trim_left G D a_n375_n620# a_n375_n1116# S
+X0 D G S a_n375_n1116# nfet_03v3 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.28u
+X1 S G D a_n375_n1116# nfet_03v3 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.28u
+C0 G S 0.011804f
+C1 D G 0.011804f
+C2 D S 0.263094f
+C3 D a_n375_n1116# 0.365155f
+C4 S a_n375_n1116# 0.043869f
+C5 G a_n375_n1116# 0.382504f
+.ends
+
+.subckt XM1_trim_left G D a_n484_399# a_n484_895# S
+X0 D G S a_n484_399# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 G S 0.001764f
+C1 D G 0.011845f
+C2 D S 0.075352f
+C3 D a_n484_399# 0.24117f
+C4 S a_n484_399# 0.057381f
+C5 G a_n484_399# 0.21851f
+.ends
+
+.subckt XM0_trim_left G D a_n484_399# a_n484_895# S
+X0 S G D a_n484_399# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 G D 0.011845f
+C1 S G 0.005902f
+C2 S D 0.14243f
+C3 S a_n484_399# 0.098801f
+C4 D a_n484_399# 0.215099f
+C5 G a_n484_399# 0.21851f
+.ends
+
+.subckt trim_switch_left n1 n0 n2 n3 XM0_trim_left_0/G XM3_trim_left_0/G XM1_trim_left_0/G
++ XM4_trim_left_0/G n4 XM2_trim_left_0/G VSUBS
+XXM4_trim_left_0 XM4_trim_left_0/G n4 VSUBS VSUBS XM4_trim_left
+XXM3_trim_left_0 XM3_trim_left_0/G n3 VSUBS VSUBS XM3_trim_left
+XXM2_trim_left_0 XM2_trim_left_0/G n2 VSUBS VSUBS VSUBS XM2_trim_left
+XXM1_trim_left_0 XM1_trim_left_0/G n1 VSUBS VSUBS VSUBS XM1_trim_left
+XXM0_trim_left_0 XM0_trim_left_0/G n0 VSUBS VSUBS VSUBS XM0_trim_left
+C0 n0 n1 0.037109f
+C1 XM0_trim_left_0/G XM2_trim_left_0/G 0.041018f
+C2 n2 XM2_trim_left_0/G 0.014034f
+C3 n1 XM1_trim_left_0/G 0.07096f
+C4 n4 n1 0.01164f
+C5 XM0_trim_left_0/G n0 0.07096f
+C6 n0 n2 0.043322f
+C7 XM3_trim_left_0/G n3 0.092062f
+C8 XM0_trim_left_0/G XM1_trim_left_0/G 0.123582f
+C9 XM3_trim_left_0/G XM2_trim_left_0/G 0.027949f
+C10 XM1_trim_left_0/G XM4_trim_left_0/G 0.02663f
+C11 n4 XM4_trim_left_0/G 0.272119f
+C12 n2 n3 0.040124f
+C13 n0 VSUBS 0.245304f
+C14 XM0_trim_left_0/G VSUBS 0.388025f
+C15 n1 VSUBS 0.34349f
+C16 XM1_trim_left_0/G VSUBS 0.4072f
+C17 n2 VSUBS 0.600267f
+C18 XM2_trim_left_0/G VSUBS 0.637566f
+C19 n3 VSUBS 1.12292f
+C20 XM3_trim_left_0/G VSUBS 1.128649f
+C21 n4 VSUBS 1.275608f
+C22 XM4_trim_left_0/G VSUBS 1.959711f
+.ends
+
+.subckt trim_left in d_4 d_1 d_0 d_2 d_3 trim_switch_left_0/n2 trim_switch_left_0/n4
++ VSUBS
+Xtrim_switch_left_0 trim_switch_left_0/n1 trim_switch_left_0/n0 trim_switch_left_0/n2
++ trim_switch_left_0/n3 d_0 d_3 d_1 d_4 trim_switch_left_0/n4 d_2 VSUBS trim_switch_left
+C0 trim_switch_left_0/n0 trim_switch_left_0/n3 0.087807f
+C1 in trim_switch_left_0/n1 1.60623f
+C2 trim_switch_left_0/n3 trim_switch_left_0/n4 1.600475f
+C3 in trim_switch_left_0/n2 3.213024f
+C4 trim_switch_left_0/n0 trim_switch_left_0/n4 0.166348f
+C5 in trim_switch_left_0/n3 6.427485f
+C6 in trim_switch_left_0/n0 1.60623f
+C7 trim_switch_left_0/n2 d_0 0.002632f
+C8 in trim_switch_left_0/n4 12.877382f
+C9 trim_switch_left_0/n1 trim_switch_left_0/n2 0.081094f
+C10 d_4 trim_switch_left_0/n2 0.00312f
+C11 trim_switch_left_0/n1 trim_switch_left_0/n3 0.087807f
+C12 trim_switch_left_0/n1 d_1 0.003099f
+C13 trim_switch_left_0/n0 d_0 0.004139f
+C14 trim_switch_left_0/n3 trim_switch_left_0/n2 0.58337f
+C15 trim_switch_left_0/n0 trim_switch_left_0/n1 0.511256f
+C16 d_1 trim_switch_left_0/n2 0.003137f
+C17 trim_switch_left_0/n1 trim_switch_left_0/n4 0.166348f
+C18 trim_switch_left_0/n0 trim_switch_left_0/n2 0.09943f
+C19 trim_switch_left_0/n2 trim_switch_left_0/n4 0.596682f
+C20 trim_switch_left_0/n0 VSUBS 0.60229f
+C21 trim_switch_left_0/n1 VSUBS 0.624612f
+C22 trim_switch_left_0/n2 VSUBS 2.037146f
+C23 trim_switch_left_0/n4 VSUBS 4.36705f
+C24 in VSUBS -5.906306f
+C25 trim_switch_left_0/n3 VSUBS 3.463846f
+C26 d_0 VSUBS 0.33412f
+C27 d_1 VSUBS 0.345561f
+C28 d_2 VSUBS 0.513348f
+C29 d_3 VSUBS 0.927186f
+C30 d_4 VSUBS 1.64786f
+.ends
+
+.subckt XM2_com G D w_n237_n1121# S VSUBS
+X0 D G S w_n237_n1121# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 w_n237_n1121# D 0.010275f
+C1 S G 0.001764f
+C2 S w_n237_n1121# 0.008358f
+C3 w_n237_n1121# G 0.131025f
+C4 S D 0.06854f
+C5 G D 0.001764f
+C6 D VSUBS 0.047486f
+C7 S VSUBS 0.049403f
+C8 G VSUBS 0.087507f
+C9 w_n237_n1121# VSUBS 1.54752f
+.ends
+
+.subckt XMl2_com G D S a_n249_n1284#
+X0 D G S a_n249_n1284# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 D S 0.06854f
+C1 D G 0.001764f
+C2 G S 0.001764f
+C3 D a_n249_n1284# 0.066395f
+C4 S a_n249_n1284# 0.057707f
+C5 G a_n249_n1284# 0.218606f
+.ends
+
+.subckt XM1_com G D S w_n1578_790# VSUBS
+X0 S G D w_n1578_790# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 w_n1578_790# S 0.021497f
+C1 D G 0.001764f
+C2 D w_n1578_790# 0.022441f
+C3 w_n1578_790# G 0.132558f
+C4 D S 0.06854f
+C5 G S 0.001764f
+C6 S VSUBS 0.043675f
+C7 D VSUBS 0.043675f
+C8 G VSUBS 0.08816f
+C9 w_n1578_790# VSUBS 1.17557f
+.ends
+
+.subckt XMl1_com G D a_1224_n1284# S
+X0 S G D a_1224_n1284# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 S D 0.06854f
+C1 S G 0.001764f
+C2 G D 0.001764f
+C3 S a_1224_n1284# 0.057707f
+C4 D a_1224_n1284# 0.066395f
+C5 G a_1224_n1284# 0.218606f
+.ends
+
+.subckt comparator vss vdd outp outn vp vn trim4 trim1 trim0 trim2 trim3 trimb4 trimb1
++ trimb0 trimb2 trimb3 diff in ip clkc
+Xtrim_right_0 trimb4 trimb1 trimb0 trimb2 trimb3 trim_right_0/trim_switch_right_0/XM2_trim_right_0/D
++ trim_right_0/trim_switch_right_0/XM4_trim_right_0/D vss ip trim_right
+XXMdiff_com_0 clkc diff vss vss XMdiff_com
+XXMinp_com_0 vss vp ip vss diff XMinp_com
+XXMl4_com_0 outn outp vdd vdd vss XMl4_com
+XXM4_com_0 clkc ip vdd vdd vss XM4_com
+XXMl3_com_0 outp outn vdd vdd vss XMl3_com
+XXM3_com_0 clkc outp vdd vdd vss XM3_com
+XXMinn_com_0 vn vss in diff vss XMinn_com
+Xtrim_left_0 in trim4 trim1 trim0 trim2 trim3 trim_left_0/trim_switch_left_0/n2 trim_left_0/trim_switch_left_0/n4
++ vss trim_left
+XXM2_com_0 clkc outn vdd vdd vss XM2_com
+XXMl2_com_0 outn outp ip vss XMl2_com
+XXM1_com_0 clkc in vdd vdd vss XM1_com
+XXMl1_com_0 outp outn vss in XMl1_com
+C0 clkc vp 0.104887f
+C1 trim_left_0/trim_switch_left_0/n1 trim_left_0/trim_switch_left_0/n4 0.032158f
+C2 trim_left_0/trim_switch_left_0/n1 in 1.606993f
+C3 trim_right_0/trim_switch_right_0/XM1_trim_right_0/D trim_right_0/trim_switch_right_0/XM4_trim_right_0/D 0.032158f
+C4 outp ip 0.120151f
+C5 trim_right_0/trim_switch_right_0/XM3_trim_right_0/D ip 6.427209f
+C6 outn diff 0.003297f
+C7 trim0 trim4 0.001193f
+C8 trimb2 trimb3 0.919951f
+C9 trim_left_0/trim_switch_left_0/n1 trim_left_0/trim_switch_left_0/n0 0.032158f
+C10 ip trim_right_0/trim_switch_right_0/XM0_trim_right_0/D 1.606993f
+C11 trim_left_0/trim_switch_left_0/n2 trim_left_0/trim_switch_left_0/n4 0.128631f
+C12 trim_left_0/trim_switch_left_0/n2 in 3.21681f
+C13 trim4 trim_left_0/trim_switch_left_0/n4 0.002224f
+C14 vn diff 0.004194f
+C15 trim_right_0/trim_switch_right_0/XM1_trim_right_0/D ip 1.606993f
+C16 ip outn 0.016739f
+C17 in diff 0.133902f
+C18 trimb4 trimb1 0.420884f
+C19 trim0 trim1 0.720503f
+C20 outp outn 1.248977f
+C21 trim_right_0/trim_switch_right_0/XM4_trim_right_0/D trim_right_0/trim_switch_right_0/XM2_trim_right_0/D 0.128631f
+C22 vp diff 0.004194f
+C23 trimb1 trim_right_0/trim_switch_right_0/XM4_trim_right_0/D 0.001374f
+C24 trim_right_0/trim_switch_right_0/XM1_trim_right_0/D trim_right_0/trim_switch_right_0/XM0_trim_right_0/D 0.032158f
+C25 clkc diff 0.071648f
+C26 trim_left_0/trim_switch_left_0/n4 trim1 0.001374f
+C27 vdd ip 0.088929f
+C28 vn outp 0.238674f
+C29 vdd outp 0.441033f
+C30 outp in 0.016739f
+C31 vp ip 0.542294f
+C32 trim_left_0/trim_switch_left_0/n3 trim_left_0/trim_switch_left_0/n4 0.241184f
+C33 trimb4 trim_right_0/trim_switch_right_0/XM4_trim_right_0/D 0.002224f
+C34 clkc ip 0.46748f
+C35 trim_left_0/trim_switch_left_0/n3 in 6.427209f
+C36 vp outp 0.245635f
+C37 ip trim_right_0/trim_switch_right_0/XM2_trim_right_0/D 3.21681f
+C38 trim3 trim2 0.919951f
+C39 trimb2 trimb0 0.78245f
+C40 clkc outp 0.22388f
+C41 vn outn 0.198266f
+C42 vdd outn 0.464524f
+C43 outn in 0.120156f
+C44 vp outn 0.212506f
+C45 clkc outn 0.223756f
+C46 trimb1 trimb0 0.720503f
+C47 vn vdd 0.059928f
+C48 vn in 0.542295f
+C49 in trim_left_0/trim_switch_left_0/n4 12.853658f
+C50 ip trim_right_0/trim_switch_right_0/XM4_trim_right_0/D 12.853658f
+C51 vdd in 0.088929f
+C52 vn vp 0.217155f
+C53 trim4 trim1 0.420884f
+C54 trim_right_0/trim_switch_right_0/XM3_trim_right_0/D trim_right_0/trim_switch_right_0/XM4_trim_right_0/D 0.241184f
+C55 ip diff 0.133902f
+C56 vdd vp 0.059928f
+C57 vn clkc 0.104888f
+C58 trim0 trim2 0.78245f
+C59 trim_left_0/trim_switch_left_0/n0 trim_left_0/trim_switch_left_0/n4 0.032158f
+C60 vdd clkc 0.233505f
+C61 outp diff 0.006112f
+C62 clkc in 0.467511f
+C63 trim_right_0/trim_switch_right_0/XM0_trim_right_0/D trim_right_0/trim_switch_right_0/XM4_trim_right_0/D 0.032158f
+C64 trimb4 trimb0 0.001193f
+C65 trim_left_0/trim_switch_left_0/n0 in 1.606993f
+C66 outn vss 2.441227f
+C67 outp vss 2.475127f
+C68 vdd vss 7.878819f
+C69 trim_left_0/trim_switch_left_0/n0 vss 0.59175f
+C70 trim_left_0/trim_switch_left_0/n1 vss 0.614476f
+C71 trim_left_0/trim_switch_left_0/n2 vss 1.980191f
+C72 trim_left_0/trim_switch_left_0/n4 vss 4.199547f
+C73 in vss -4.381556f
+C74 trim_left_0/trim_switch_left_0/n3 vss 3.310533f
+C75 trim0 vss 0.985146f
+C76 trim1 vss 0.998489f
+C77 trim2 vss 1.41065f
+C78 trim3 vss 2.983196f
+C79 trim4 vss 2.263372f
+C80 diff vss 0.21339f
+C81 vn vss 1.131511f
+C82 vp vss 1.115711f
+C83 clkc vss 4.18047f
+C84 trimb4 vss 2.263372f
+C85 trimb3 vss 2.983196f
+C86 trimb2 vss 1.41065f
+C87 trimb1 vss 0.99849f
+C88 trimb0 vss 0.985146f
+C89 trim_right_0/trim_switch_right_0/XM0_trim_right_0/D vss 0.677622f
+C90 trim_right_0/trim_switch_right_0/XM1_trim_right_0/D vss 0.716105f
+C91 trim_right_0/trim_switch_right_0/XM2_trim_right_0/D vss 1.980191f
+C92 trim_right_0/trim_switch_right_0/XM4_trim_right_0/D vss 4.199547f
+C93 ip vss -4.381578f
+C94 trim_right_0/trim_switch_right_0/XM3_trim_right_0/D vss 3.310533f
+.ends
+

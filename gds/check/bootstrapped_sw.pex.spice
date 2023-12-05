@@ -1,0 +1,171 @@
+* NGSPICE file created from bootstrapped_sw.ext - technology: gf180mcuD
+
+.subckt XM1_bs G D a_811_3903# S a_1507_3903#
+X0 D G S a_811_3903# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 S D 0.103318f
+C1 S G 0.002993f
+C2 D G 0.002993f
+C3 S a_811_3903# 0.109266f
+C4 G a_811_3903# 0.288275f
+C5 D a_811_3903# 0.109266f
+.ends
+
+.subckt XM4_bs G D S VSUBS
+X0 D G S S pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 G D 0.002993f
+C1 G S 0.180042f
+C2 D S 0.127372f
+C3 D VSUBS 0.094602f
+C4 G VSUBS 0.124463f
+C5 S VSUBS 1.66703f
+.ends
+
+.subckt XMs1_bs G D S a_n2855_n800#
+X0 D G S a_n2855_n800# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 S D 0.103318f
+C1 S G 0.002993f
+C2 D G 0.002993f
+C3 D a_n2855_n800# 0.109266f
+C4 S a_n2855_n800# 0.177295f
+C5 G a_n2855_n800# 0.288368f
+.ends
+
+.subckt cap_mim_2p0fF_8JNR63 m4_n3440_n548# m4_n3800_n668# VSUBS
+X0 m4_n3440_n548# m4_n3800_n668# cap_mim_2f0fF c_width=8u c_length=8u
+C0 m4_n3440_n548# m4_n3800_n668# 0.646322f
+C1 m4_n3440_n548# VSUBS 1.17298f
+C2 m4_n3800_n668# VSUBS 1.64833f
+.ends
+
+.subckt sw_cap_unit in out VSUBS
+Xcap_mim_2p0fF_8JNR63_0 out in VSUBS cap_mim_2p0fF_8JNR63
+C0 out VSUBS 1.17298f
+C1 in VSUBS 1.64833f
+.ends
+
+.subckt sw_cap out in VSUBS
+Xsw_cap_unit_0 in out VSUBS sw_cap_unit
+Xsw_cap_unit_1 in out VSUBS sw_cap_unit
+Xsw_cap_unit_2 in out VSUBS sw_cap_unit
+Xsw_cap_unit_3 in out VSUBS sw_cap_unit
+Xsw_cap_unit_4 in out VSUBS sw_cap_unit
+C0 out in 2.231591f
+C1 out VSUBS 6.064711f
+C2 in VSUBS 7.39096f
+.ends
+
+.subckt XM3_bs G D S VSUBS
+X0 S G D S pfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 S D 0.127372f
+C1 S G 0.175929f
+C2 G D 0.002993f
+C3 D VSUBS 0.094602f
+C4 G VSUBS 0.124463f
+C5 S VSUBS 1.68221f
+.ends
+
+.subckt XMs_bs G D S a_846_4542#
+X0 S G D a_846_4542# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 S D 0.103318f
+C1 S G 0.002993f
+C2 G D 0.002993f
+C3 D a_846_4542# 0.387117f
+C4 G a_846_4542# 0.288368f
+C5 S a_846_4542# 0.109266f
+.ends
+
+.subckt XM1_bs_inv G D S
+X0 D G S S nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 G D 0.001764f
+C1 D S 0.134177f
+C2 G S 0.22667f
+.ends
+
+.subckt XM2_bs_inv G D S VSUBS
+X0 S G D S pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.28u
+C0 S D 0.090564f
+C1 S G 0.138578f
+C2 G D 0.001764f
+C3 D VSUBS 0.043675f
+C4 G VSUBS 0.08816f
+C5 S VSUBS 1.2321f
+.ends
+
+.subckt bs_inv in vdd out vss
+XXM1_bs_inv_0 in out vss XM1_bs_inv
+XXM2_bs_inv_0 in out vdd vss XM2_bs_inv
+C0 out vdd 0.086562f
+C1 vdd in 0.034991f
+C2 out vss 0.056311f
+C3 vss in 0.019395f
+C4 vss vdd 0.050184f
+C5 out in 0.057341f
+C6 vss 0 0.154858f
+C7 vdd 0 1.342913f
+C8 out 0 0.461919f
+C9 in 0 0.440696f
+.ends
+
+.subckt XM2_bs G D a_811_3460# a_1507_3460# S
+X0 S G D a_811_3460# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 S G 0.002993f
+C1 G D 0.002993f
+C2 S D 0.103318f
+C3 D a_811_3460# 0.109266f
+C4 G a_811_3460# 0.288275f
+C5 S a_811_3460# 0.109266f
+.ends
+
+.subckt XMs2_bs B G D a_n3988_469# S a_n3988_1165#
+X0 D G S a_n3988_469# nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.5u
+C0 G S 0.002993f
+C1 S D 0.103318f
+C2 G D 0.002993f
+C3 D a_n3988_469# 0.109266f
+C4 S a_n3988_469# 0.109266f
+C5 G a_n3988_469# 0.288275f
+.ends
+
+.subckt bootstrapped_sw vbsl vbsh vs vg in vdd vss en enb out
+XXM1_bs_0 vg vbsl vss in vss XM1_bs
+XXM4_bs_0 enb vg vbsh vss XM4_bs
+XXMs1_bs_0 vdd vs vg vss XMs1_bs
+Xsw_cap_0 vbsh vbsl vss sw_cap
+XXM3_bs_0 vg vdd vbsh vss XM3_bs
+XXMs_bs_0 vg out in vss XMs_bs
+Xbs_inv_0 en vdd enb vss bs_inv
+XXM2_bs_0 enb vbsl vss vss vss XM2_bs
+XXMs2_bs_0 XMs2_bs_0/B enb vss vss vs vss XMs2_bs
+C0 vg vbsl 0.046114f
+C1 enb vdd 0.448382f
+C2 vs vbsl 0.001422f
+C3 out vdd 0.017908f
+C4 enb vbsl 0.017274f
+C5 vbsl in 0.299565f
+C6 vs vg 0.01049f
+C7 out vbsl 0.058082f
+C8 enb vg 0.612108f
+C9 vg in 0.075595f
+C10 vs enb 0.00376f
+C11 vg out 0.04429f
+C12 en vdd 0.062309f
+C13 vbsh vdd 0.216342f
+C14 vbsh vbsl 0.035648f
+C15 enb en 0.025502f
+C16 vg vbsh 0.225467f
+C17 vbsl vdd 0.005409f
+C18 enb vbsh 0.079647f
+C19 vbsh in 0.008752f
+C20 out vbsh 0.106418f
+C21 vg vdd 0.447811f
+C22 out vss 1.088543f
+C23 vs vss 0.072259f
+C24 enb vss 1.595622f
+C25 vdd vss 3.10752f
+C26 en vss 0.636177f
+C27 vg vss 1.218874f
+C28 vbsh vss 9.044386f
+C29 vbsl vss 8.368301f
+C30 in vss 0.308876f
+.ends
+
