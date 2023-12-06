@@ -1,0 +1,118 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1701784929
+<< checkpaint >>
+rect -2700 -2356 2700 2356
+<< pwell >>
+rect -700 -356 700 356
+<< mvnmos >>
+rect -436 -100 -296 100
+rect -192 -100 -52 100
+rect 52 -100 192 100
+rect 296 -100 436 100
+<< mvndiff >>
+rect -524 87 -436 100
+rect -524 -87 -511 87
+rect -465 -87 -436 87
+rect -524 -100 -436 -87
+rect -296 87 -192 100
+rect -296 -87 -267 87
+rect -221 -87 -192 87
+rect -296 -100 -192 -87
+rect -52 87 52 100
+rect -52 -87 -23 87
+rect 23 -87 52 87
+rect -52 -100 52 -87
+rect 192 87 296 100
+rect 192 -87 221 87
+rect 267 -87 296 87
+rect 192 -100 296 -87
+rect 436 87 524 100
+rect 436 -87 465 87
+rect 511 -87 524 87
+rect 436 -100 524 -87
+<< mvndiffc >>
+rect -511 -87 -465 87
+rect -267 -87 -221 87
+rect -23 -87 23 87
+rect 221 -87 267 87
+rect 465 -87 511 87
+<< mvpsubdiff >>
+rect -668 252 668 324
+rect -668 208 -596 252
+rect -668 -208 -655 208
+rect -609 -208 -596 208
+rect 596 208 668 252
+rect -668 -252 -596 -208
+rect 596 -208 609 208
+rect 655 -208 668 208
+rect 596 -252 668 -208
+rect -668 -324 668 -252
+<< mvpsubdiffcont >>
+rect -655 -208 -609 208
+rect 609 -208 655 208
+<< polysilicon >>
+rect -436 179 -296 192
+rect -436 133 -423 179
+rect -309 133 -296 179
+rect -436 100 -296 133
+rect -192 179 -52 192
+rect -192 133 -179 179
+rect -65 133 -52 179
+rect -192 100 -52 133
+rect 52 179 192 192
+rect 52 133 65 179
+rect 179 133 192 179
+rect 52 100 192 133
+rect 296 179 436 192
+rect 296 133 309 179
+rect 423 133 436 179
+rect 296 100 436 133
+rect -436 -183 -296 -100
+rect -192 -183 -52 -100
+rect 52 -183 192 -100
+rect 296 -183 436 -100
+<< polycontact >>
+rect -423 133 -309 179
+rect -179 133 -65 179
+rect 65 133 179 179
+rect 309 133 423 179
+<< metal1 >>
+rect -655 208 -609 204
+rect 609 208 655 204
+rect -434 133 -423 179
+rect -309 133 -298 179
+rect -190 133 -179 179
+rect -65 133 -54 179
+rect 54 133 65 179
+rect 179 133 190 179
+rect 298 133 309 179
+rect 423 133 434 179
+rect -511 87 -465 83
+rect -511 -98 -465 -102
+rect -267 87 -221 83
+rect -267 -98 -221 -102
+rect -23 87 23 83
+rect -23 -98 23 -102
+rect 221 87 267 83
+rect 221 -98 267 -102
+rect 465 87 511 83
+rect 465 -98 511 -102
+rect -655 -219 -609 -223
+rect 609 -219 655 -223
+<< labels >>
+flabel metal1 -97 -1 -97 -1 0 FreeSans 240 0 0 0 D
+flabel metal1 -73 31 -73 31 0 FreeSans 240 0 0 0 G
+flabel metal1 -48 -1 -48 -1 0 FreeSans 240 0 0 0 S
+flabel metal1 -24 31 -24 31 0 FreeSans 240 0 0 0 G
+flabel metal1 0 -1 0 -1 0 FreeSans 240 0 0 0 D
+flabel metal1 24 31 24 31 0 FreeSans 240 0 0 0 G
+flabel metal1 48 -1 48 -1 0 FreeSans 240 0 0 0 S
+flabel metal1 73 31 73 31 0 FreeSans 240 0 0 0 G
+flabel metal1 97 -1 97 -1 0 FreeSans 240 0 0 0 D
+<< properties >>
+string FIXED_BBOX -632 -288 632 288
+<< end >>
+
+

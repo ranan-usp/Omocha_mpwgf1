@@ -2911,16 +2911,5 @@
   </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'M1.2a'</category>
-   <cell>bootstrapped_sw</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <image/>
-   <values>
-    <value>edge-pair: (10.065,17.625;11.935,17.625)|(11.935,17.85;10.017,17.85)</value>
-   </values>
-  </item>
  </items>
 </report-database>

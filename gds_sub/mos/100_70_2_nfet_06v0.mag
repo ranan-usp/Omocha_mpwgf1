@@ -1,0 +1,82 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1701784928
+<< checkpaint >>
+rect -2456 -2356 2456 2356
+<< pwell >>
+rect -456 -356 456 356
+<< mvnmos >>
+rect -192 -100 -52 100
+rect 52 -100 192 100
+<< mvndiff >>
+rect -280 87 -192 100
+rect -280 -87 -267 87
+rect -221 -87 -192 87
+rect -280 -100 -192 -87
+rect -52 87 52 100
+rect -52 -87 -23 87
+rect 23 -87 52 87
+rect -52 -100 52 -87
+rect 192 87 280 100
+rect 192 -87 221 87
+rect 267 -87 280 87
+rect 192 -100 280 -87
+<< mvndiffc >>
+rect -267 -87 -221 87
+rect -23 -87 23 87
+rect 221 -87 267 87
+<< mvpsubdiff >>
+rect -424 252 424 324
+rect -424 208 -352 252
+rect -424 -208 -411 208
+rect -365 -208 -352 208
+rect 352 208 424 252
+rect -424 -252 -352 -208
+rect 352 -208 365 208
+rect 411 -208 424 208
+rect 352 -252 424 -208
+rect -424 -324 424 -252
+<< mvpsubdiffcont >>
+rect -411 -208 -365 208
+rect 365 -208 411 208
+<< polysilicon >>
+rect -192 179 -52 192
+rect -192 133 -179 179
+rect -65 133 -52 179
+rect -192 100 -52 133
+rect 52 179 192 192
+rect 52 133 65 179
+rect 179 133 192 179
+rect 52 100 192 133
+rect -192 -183 -52 -100
+rect 52 -183 192 -100
+<< polycontact >>
+rect -179 133 -65 179
+rect 65 133 179 179
+<< metal1 >>
+rect -411 208 -365 204
+rect 365 208 411 204
+rect -190 133 -179 179
+rect -65 133 -54 179
+rect 54 133 65 179
+rect 179 133 190 179
+rect -267 87 -221 83
+rect -267 -98 -221 -102
+rect -23 87 23 83
+rect -23 -98 23 -102
+rect 221 87 267 83
+rect 221 -98 267 -102
+rect -411 -219 -365 -223
+rect 365 -219 411 -223
+<< labels >>
+flabel metal1 -48 -1 -48 -1 0 FreeSans 240 0 0 0 D
+flabel metal1 -24 31 -24 31 0 FreeSans 240 0 0 0 G
+flabel metal1 0 -1 0 -1 0 FreeSans 240 0 0 0 S
+flabel metal1 24 31 24 31 0 FreeSans 240 0 0 0 G
+flabel metal1 48 -1 48 -1 0 FreeSans 240 0 0 0 D
+<< properties >>
+string FIXED_BBOX -388 -288 388 288
+<< end >>
+
+
