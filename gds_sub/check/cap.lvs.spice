@@ -1,0 +1,5 @@
+* NGSPICE file created from cap.ext - technology: gf180mcuD
+
+.subckt cap cap_in cap_out
+.ends
+

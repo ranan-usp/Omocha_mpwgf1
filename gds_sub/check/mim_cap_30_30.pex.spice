@@ -1,0 +1,17 @@
+* NGSPICE file created from mim_cap_30_30.ext - technology: gf180mcuD
+
+.subckt cap_mim_2p0fF_RCWXT2 VSUBS
+X0 m4_n3120_n3000# m4_n3240_n3120# cap_mim_2f0fF c_width=30u c_length=30u
+C0 m4_n3240_n3120# m4_n3120_n3000# 2.57661f
+C1 m4_n3120_n3000# VSUBS 9.60519f
+C2 m4_n3240_n3120# VSUBS 5.38044f
+.ends
+
+
+* Top level circuit mim_cap_30_30
+
+Xcap_mim_2p0fF_RCWXT2_0 VSUBS cap_mim_2p0fF_RCWXT2
+C0 cap_mim_2p0fF_RCWXT2_0/m4_n3120_n3000# VSUBS 9.60519f $ **FLOATING
+C1 cap_mim_2p0fF_RCWXT2_0/m4_n3240_n3120# VSUBS 5.38044f $ **FLOATING
+.end
+

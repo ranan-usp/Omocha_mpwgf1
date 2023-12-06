@@ -1,0 +1,16 @@
+Netgen 1.5.263 compiled on Thu Nov 23 13:43:20 JST 2023
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file mim_cap_30_30.lvs.spice
+Call to undefined subcircuit cap_mim_2f0fF
+Creating placeholder cell definition.
+Reading netlist file mim_cap_30_30.spice
+-1
+    while executing
+"netgen::readnet $file2"
+    (procedure "lvs" line 75)
+    invoked from within
+"lvs {mim_cap_30_30.lvs.spice mim_cap_30_30} {mim_cap_30_30.spice mim_cap_30_30} /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/netgen/gf180mcuD/_setup...."
+    ("eval" body line 1)
+    invoked from within
+"eval $argv"

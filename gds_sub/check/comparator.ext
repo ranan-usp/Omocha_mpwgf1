@@ -1,0 +1,530 @@
+timestamp 1530469471
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+use trim trim_0 0 1 3300 -1 0 325
+use trim trim_1 0 -1 -3300 -1 0 325
+use XMl4_cmp XMl4_cmp_0 1 0 107 0 -1 1900
+use XM2_cmp XM2_cmp_0 1 0 -1133 0 -1 1900
+use XM1_cmp XM1_cmp_0 -1 0 -1347 0 -1 1900
+use XM4_cmp XM4_cmp_0 1 0 1347 0 -1 1900
+use XM3_cmp XM3_cmp_0 -1 0 1133 0 -1 1900
+use XMl3_cmp XMl3_cmp_0 -1 0 -107 0 -1 1900
+use XMl2_cmp XMl2_cmp_0 1 0 366 0 1 -200
+use XMinp_cmp XMinp_cmp_0 1 0 122 0 1 -200
+use XMinn_cmp XMinn_cmp_0 -1 0 -122 0 1 -200
+use XMl1_cmp XMl1_cmp_0 -1 0 -366 0 1 -200
+use XMdiff_cmp XMdiff_cmp_0 1 0 0 0 -1 -1200
+port "trimb4" 13 7550 -3076 7650 -2976 m2
+port "trimb1" 15 7850 -3076 7950 -2976 m2
+port "trimb0" 17 8150 -3076 8250 -2976 m2
+port "trimb2" 19 8450 -3076 8550 -2976 m2
+port "trimb3" 21 8750 -3076 8850 -2976 m2
+port "trim4" 11 -7650 -3076 -7550 -2976 m2
+port "trim1" 3 -7950 -3076 -7850 -2976 m2
+port "trim0" 5 -8250 -3076 -8150 -2976 m2
+port "trim2" 7 -8550 -3076 -8450 -2976 m2
+port "trim3" 9 -8850 -3076 -8750 -2976 m2
+port "vss" 33 -9200 -3300 -9000 -3076 m4
+port "vp" 23 1830 3100 1910 3200 m2
+port "vn" 25 -1910 3100 -1830 3200 m2
+port "clkc" 31 -52 -2600 48 -2500 m1
+port "outp" 27 672 -2400 748 -2300 m2
+port "outn" 29 -748 -2400 -672 -2300 m2
+port "vdd" 35 -1580 2344 -1500 2456 m3
+node "trimb4" 2 492.225 7550 -3076 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224292 4838 0 0 0 0 0 0
+node "trimb1" 4 685.949 7850 -3076 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 388904 8268 0 0 0 0 0 0
+node "trimb0" 5 638.097 8150 -3076 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 455892 9758 0 0 0 0 0 0
+node "trimb2" 5 854.954 8450 -3076 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 548292 11750 0 0 0 0 0 0
+node "trimb3" 7 2003.81 8750 -3076 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 686692 14662 0 0 0 0 0 0
+node "trim4" 2 492.225 -7650 -3076 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224292 4838 0 0 0 0 0 0
+node "trim1" 4 685.949 -7950 -3076 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 388904 8268 0 0 0 0 0 0
+node "trim0" 5 638.097 -8250 -3076 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 455892 9758 0 0 0 0 0 0
+node "trim2" 5 854.954 -8550 -3076 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 548292 11750 0 0 0 0 0 0
+node "trim3" 7 2003.81 -8850 -3076 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 686692 14662 0 0 0 0 0 0
+node "m1_n23_n1287#" 2 303.384 -23 -1287 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54004 2440 0 0 0 0 0 0 0 0
+node "vss" 19 8661.39 -9200 -3300 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 104832 2624 803408 18078 137088 2568 4121600 37248 0 0
+node "vp" 6 1602.31 1830 3100 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 83036 2734 308608 7972 0 0 0 0 0 0
+node "vn" 6 1617.14 -1910 3100 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 83036 2734 308608 7972 0 0 0 0 0 0
+node "clkc" 11 4149.88 -52 -2600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 982816 20314 203840 4336 0 0 0 0 0 0
+node "m1_221_n742#" 8 1960.27 221 -742 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 339028 11042 13680 512 0 0 0 0 0 0
+node "outp" 13 2496.08 672 -2400 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 316822 8286 533824 14352 0 0 0 0 0 0
+node "outn" 13 2483.38 -748 -2400 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 316822 8286 533824 14352 0 0 0 0 0 0
+node "m1_n2297_n802#" 8 1960.27 -2297 -802 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 339028 11042 13680 512 0 0 0 0 0 0
+node "vdd" 9 2712.77 -1580 2344 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 116802 4830 280000 5800 358400 6624 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "outp" "m1_n2297_n802#" 2.93239
+cap "trim2" "vss" 36.2313
+cap "trimb1" "vss" 36.5319
+cap "clkc" "vss" 479.69
+cap "clkc" "outn" 285.098
+cap "clkc" "vdd" 142.271
+cap "trim3" "vss" 39.5359
+cap "trim1" "trim4" 387.729
+cap "vss" "vp" 3.84908
+cap "outn" "vp" 116.429
+cap "vdd" "vp" 19.2205
+cap "trim2" "trim3" 906.561
+cap "m1_n2297_n802#" "vn" 133.542
+cap "outp" "m1_221_n742#" 90.2149
+cap "clkc" "vp" 118.448
+cap "outp" "vn" 151.989
+cap "trimb4" "vss" 122.741
+cap "trimb2" "trimb3" 906.561
+cap "trim4" "vss" 122.741
+cap "m1_n2297_n802#" "m1_n23_n1287#" 111.408
+cap "vss" "trimb3" 39.5359
+cap "trimb1" "trimb4" 387.729
+cap "m1_n2297_n802#" "vss" 168.975
+cap "outp" "m1_n23_n1287#" 14.6574
+cap "m1_n2297_n802#" "outn" 90.1962
+cap "m1_n2297_n802#" "vdd" 51.3449
+cap "outp" "vss" 386.332
+cap "trimb0" "trimb2" 792.919
+cap "outp" "outn" 1289.38
+cap "outp" "vdd" 116.777
+cap "clkc" "m1_n2297_n802#" 479.877
+cap "trimb0" "vss" 36.3022
+cap "m1_221_n742#" "m1_n23_n1287#" 111.408
+cap "trim0" "trim1" 722.258
+cap "outp" "clkc" 285.13
+cap "trimb1" "trimb0" 722.258
+cap "m1_221_n742#" "vss" 169.101
+cap "m1_221_n742#" "outn" 2.92892
+cap "m1_221_n742#" "vdd" 51.3449
+cap "vss" "vn" 3.84908
+cap "vn" "outn" 192.285
+cap "trim1" "vss" 36.5319
+cap "vn" "vdd" 19.2205
+cap "outp" "vp" 247.747
+cap "m1_221_n742#" "clkc" 479.877
+cap "trim0" "vss" 36.3022
+cap "clkc" "vn" 118.448
+cap "vss" "m1_n23_n1287#" 96.5837
+cap "outn" "m1_n23_n1287#" 12.3367
+cap "trimb2" "vss" 36.2313
+cap "m1_221_n742#" "vp" 133.542
+cap "trim2" "trim0" 792.919
+cap "vss" "outn" 386.778
+cap "vn" "vp" 96.8871
+cap "clkc" "m1_n23_n1287#" 58.6064
+cap "vdd" "outn" 126.376
+cap "trim_1/d_4" "trim1" 0.74203
+cap "trim0" "trim_1/trim_switch_0/m1_n3220_n554#" 0.0807729
+cap "trim_1/d_4" "trim_1/trim_switch_0/m1_n3220_n554#" 17.0798
+cap "trim_1/n4" "trim0" 0.0434427
+cap "trim_1/n4" "trim_1/d_4" 1.29796
+cap "trim_1/d_4" "trim2" 0.297832
+cap "trim_1/d_4" "trim0" 0.449309
+cap "trim1" "trim_1/trim_switch_0/m1_n3220_n554#" 0.137504
+cap "trim_1/n4" "trim1" 0.0713521
+cap "trim2" "trim_1/trim_switch_0/m1_n3220_n554#" 0.0359483
+cap "trim_1/n4" "trim_1/trim_switch_0/m1_n3220_n554#" 8.43338
+cap "trim_1/n4" "trim2" 0.00215896
+cap "trim_1/n4" "trim_1/d_4" 0.0312152
+cap "trim_1/n4" "trim1" 0.0106775
+cap "trim_1/n4" "trim_1/vss" 6.04138
+cap "trim_1/drain" "trim_1/vss" 1.12452
+cap "trim_1/n4" "trim_1/vss" 0.846534
+cap "vss" "trim_1/drain" 3.48827
+cap "vss" "trim_1/vss" 1.5593
+cap "trim_0/drain" "vss" 3.11155
+cap "vss" "trim_0/vss" 1.30006
+cap "trim_0/vss" "vss" 10.5161
+cap "vss" "trim_0/drain" 1.50124
+cap "trim_0/n4" "vss" 0.478608
+cap "trim_0/vss" "trim_0/n4" 2.57548
+cap "trim_0/trim_switch_0/m1_n3220_n554#" "trim_0/d_4" 17.0798
+cap "trim_0/d_4" "trimb2" 0.297832
+cap "trim_0/trim_switch_0/m1_n3220_n554#" "trimb0" 0.0807729
+cap "trimb1" "trim_0/n4" 0.0820295
+cap "trim_0/d_4" "trim_0/n4" 1.32917
+cap "trim_0/trim_switch_0/m1_n3220_n554#" "trimb2" 0.0359483
+cap "trimb0" "trim_0/n4" 0.0434427
+cap "trimb1" "trim_0/d_4" 0.74203
+cap "trim_0/trim_switch_0/m1_n3220_n554#" "trim_0/n4" 12.2672
+cap "trim_0/n4" "trimb2" 0.00215896
+cap "trim_0/trim_switch_0/m1_n3220_n554#" "trimb1" 0.137504
+cap "trimb0" "trim_0/d_4" 0.449309
+cap "trim_1/d_4" "trim_1/d_1" 7.11007
+cap "trim_1/n4" "trim_1/d_1" 0.947522
+cap "trim_1/trim_switch_0/XM1_trims_0/S" "trim_1/d_1" 18.7286
+cap "trim_1/d_4" "trim2" 1.26237
+cap "trim_1/d_1" "trim_1/d_4" 1.73041
+cap "trim_1/trim_switch_0/XM1_trims_0/S" "trim_1/d_4" 14.2299
+cap "trim_1/n4" "trim_1/d_4" 1.57493
+cap "trim_1/d_4" "trim_1/d_0" 1.91912
+cap "trim_1/trim_switch_0/XM1_trims_0/S" "trim_1/d_1" 13.4664
+cap "trim_1/n4" "trim_1/vss" 2.82503
+cap "trim_1/vss" "trim_1/n4" 0.773794
+cap "trim_1/vss" "trim_1/drain" 1.97063
+cap "trim_1/drain" "trim_1/trim_cap_array_0/trim_cap_4/in" 5.32445
+cap "trim_1/drain" "clkc" 14.6829
+cap "trim_1/drain" "vss" 4.66466
+cap "trim_1/drain" "outn" 10.4081
+cap "XMdiff_cmp_0/a_192_n100#" "XMdiff_cmp_0/a_52_n183#" 6.82869
+cap "XMdiff_cmp_0/a_52_n183#" "trim_1/trim_cap_array_0/trim_cap_1/in" 0.266434
+cap "XMdiff_cmp_0/a_n52_n100#" "XMdiff_cmp_0/a_52_n183#" -1.54331
+cap "trim_1/drain" "XMdiff_cmp_0/a_52_n183#" 14.6118
+cap "XMdiff_cmp_0/a_52_n183#" "trim_1/trim_cap_array_0/trim_cap_0/in" 0.266434
+cap "trim_1/drain" "XMdiff_cmp_0/a_192_n100#" 0.103039
+cap "XMdiff_cmp_0/a_52_n183#" "trim_1/trim_cap_array_0/trim_cap_2/in" 0.266434
+cap "XMinn_cmp_0/G" "XMdiff_cmp_0/a_192_n100#" 1.38316
+cap "XMl1_cmp_0/D" "XMdiff_cmp_0/a_52_n183#" 0.0704786
+cap "XMinp_cmp_0/G" "XMinp_cmp_0/D" -0.645096
+cap "XMinn_cmp_0/G" "XMdiff_cmp_0/a_52_n183#" 3.03219
+cap "trim_1/drain" "XMdiff_cmp_0/a_192_n100#" 44.7405
+cap "trim_1/drain" "XMdiff_cmp_0/a_52_n183#" 0.10895
+cap "XMinp_cmp_0/G" "XMdiff_cmp_0/a_192_n100#" 1.38316
+cap "trim_1/drain" "XMl1_cmp_0/G" 3.78488
+cap "XMl1_cmp_0/D" "trim_1/drain" 4.04195
+cap "XMl2_cmp_0/G" "XMinp_cmp_0/D" 3.78488
+cap "XMinp_cmp_0/G" "XMdiff_cmp_0/a_52_n183#" 3.03219
+cap "XMinn_cmp_0/G" "trim_1/drain" -0.645096
+cap "XMdiff_cmp_0/a_n52_n100#" "XMdiff_cmp_0/a_192_n100#" -21.2493
+cap "XMinp_cmp_0/D" "XMdiff_cmp_0/a_192_n100#" 27.4855
+cap "XMdiff_cmp_0/a_n52_n100#" "XMdiff_cmp_0/a_52_n183#" 20.6332
+cap "XMl2_cmp_0/G" "XMdiff_cmp_0/a_192_n100#" 0.669441
+cap "XMinp_cmp_0/D" "XMdiff_cmp_0/a_52_n183#" 0.10895
+cap "XMdiff_cmp_0/a_n52_n100#" "XMl1_cmp_0/G" -0.310377
+cap "XMinp_cmp_0/D" "XMl1_cmp_0/G" -2.89371
+cap "XMl1_cmp_0/D" "XMdiff_cmp_0/a_n52_n100#" -0.310377
+cap "XMdiff_cmp_0/a_52_n183#" "XMdiff_cmp_0/a_192_n100#" 116.619
+cap "XMdiff_cmp_0/a_192_n100#" "XMl1_cmp_0/G" 1.40525
+cap "XMl1_cmp_0/D" "XMdiff_cmp_0/a_192_n100#" 2.47389
+cap "XMdiff_cmp_0/a_52_n183#" "XMl1_cmp_0/G" 0.0704786
+cap "XMdiff_cmp_0/a_192_n100#" "XMl1_cmp_0/G" 1.74753
+cap "XMdiff_cmp_0/a_52_n183#" "trim_0/trim_cap_array_0/trim_cap_2/in" 0.266434
+cap "trim_0/drain" "XMdiff_cmp_0/a_52_n183#" 14.6118
+cap "XMdiff_cmp_0/a_192_n100#" "XMdiff_cmp_0/a_52_n183#" 6.87953
+cap "XMdiff_cmp_0/a_52_n183#" "XMl1_cmp_0/G" -2.84217e-14
+cap "XMdiff_cmp_0/a_52_n183#" "trim_0/trim_cap_array_0/trim_cap_1/in" 0.266434
+cap "XMdiff_cmp_0/a_52_n183#" "trim_0/trim_cap_array_0/trim_cap_0/in" 0.266434
+cap "XMdiff_cmp_0/a_n52_n100#" "XMdiff_cmp_0/a_52_n183#" -1.54331
+cap "XMdiff_cmp_0/a_192_n100#" "trim_0/drain" 17.358
+cap "trim_0/drain" "XMl1_cmp_0/G" 6.93566
+cap "clkc" "trim_0/drain" 14.6829
+cap "vss" "trim_0/drain" 4.00448
+cap "trim_0/drain" "trim_0/trim_cap_array_0/trim_cap_4/in" 5.32445
+cap "XMl2_cmp_0/D" "trim_0/drain" 10.4081
+cap "trim_0/n4" "vss" 0.315928
+cap "trim_0/drain" "vss" 2.63081
+cap "vss" "trim_0/vss" 0.49657
+cap "trim_0/n4" "trim_0/vss" 3.20506
+cap "trim_0/n4" "trim_0/trim_switch_0/XM1_trims_0/S" 0.0778372
+cap "trim_0/d_4" "trimb2" 1.26237
+cap "trim_0/n4" "trim_0/d_4" 1.57493
+cap "trim_0/trim_switch_0/XM1_trims_0/S" "trim_0/d_1" 13.4664
+cap "trim_0/d_4" "trim_0/d_0" 1.91912
+cap "trim_0/d_4" "trim_0/d_1" 1.73041
+cap "trim_0/d_4" "trim_0/trim_switch_0/XM1_trims_0/S" 14.2299
+cap "trim_0/n4" "trim_0/d_1" 0.947522
+cap "trim_0/trim_switch_0/XM1_trims_0/S" "trim_0/d_1" 18.7286
+cap "trim_0/d_1" "trim_0/d_4" 7.11007
+cap "trim_1/d_0" "trim_1/d_1" 1.22732
+cap "trim_1/trim_switch_0/XM0_trims_0/a_n5334_252#" "trim_1/d_0" 1.16808
+cap "trim_1/d_2" "trim_1/n0" 0.0106389
+cap "trim_1/d_0" "trim_1/trim_switch_0/XM1_trims_0/S" 1.62384
+cap "trim_1/d_1" "trim_1/d_4" 1.67071
+cap "trim_1/trim_switch_0/XM0_trims_0/a_n5334_252#" "trim_1/d_2" 0.707776
+cap "trim_1/trim_switch_0/XM0_trims_0/a_n5334_252#" "trim_1/d_1" 2.89766
+cap "trim_1/d_1" "trim_1/trim_switch_0/XM1_trims_0/S" 9.80167
+cap "trim_1/d_1" "trim_1/n1" 0.204024
+cap "trim_1/d_1" "trim_1/n4" 0.687226
+cap "trim_1/d_1" "trim_1/n1" 0.0257331
+cap "trim_1/d_1" "trim_1/d_2" 0.20032
+cap "trim_1/trim_switch_0/XM1_trims_0/S" "trim_1/d_2" 0.00215896
+cap "trim_1/d_0" "trim_1/d_4" 0.159011
+cap "trim_1/d_2" "trim_1/n4" 0.00215896
+cap "trim_1/d_1" "trim_1/d_4" -1.22419
+cap "trim_1/n1" "trim_1/d_2" 0.00061014
+cap "trim_1/n0" "trim_1/d_2" 0.00061014
+cap "trim_1/d_2" "trim_1/d_4" 0.106252
+cap "trim_1/d_1" "trim_1/d_0" -9.93655
+cap "trim_1/d_0" "trim_1/trim_switch_0/XM1_trims_0/S" 1.23643
+cap "trim_1/d_0" "trim_1/n4" 0.0434427
+cap "trim_1/d_1" "trim_1/trim_switch_0/XM1_trims_0/S" 9.80167
+cap "trim_1/n1" "trim_1/d_0" 0.0122773
+cap "trim_1/d_0" "trim_1/d_2" -3.3572
+cap "trim_1/d_1" "trim_1/n4" 0.0713521
+cap "trim_1/d_1" "trim_1/n4" 0.0106775
+cap "trim_1/drain" "XM2_cmp_0/D" 7.48518
+cap "trim_1/drain" "vn" 42.7186
+cap "XM1_cmp_0/G" "trim_1/drain" 8.05584
+cap "trim_1/drain" "XMdiff_cmp_0/a_192_n100#" 0.457369
+cap "XM1_cmp_0/G" "XMdiff_cmp_0/a_192_n100#" 4.01254
+cap "XM1_cmp_0/G" "XMl3_cmp_0/D" 0.169387
+cap "trim_1/trim_cap_array_0/trim_cap_7/in" "trim_1/drain" 0.639214
+cap "XM1_cmp_0/G" "XMinp_cmp_0/G" 0.099466
+cap "trim_1/trim_cap_array_0/trim_cap_11/in" "trim_1/drain" 0.490825
+cap "XMl3_cmp_0/D" "XMinn_cmp_0/G" 0.179841
+cap "trim_1/trim_cap_array_0/trim_cap_6/in" "trim_1/drain" 0.639214
+cap "XMl3_cmp_0/w_n319_n356#" "XMinn_cmp_0/G" 6.74301
+cap "XM1_cmp_0/G" "trim_1/drain" 6.76786
+cap "XM1_cmp_0/G" "XMdiff_cmp_0/a_n52_n100#" 0.0248212
+cap "trim_1/trim_cap_array_0/trim_cap_10/in" "trim_1/drain" 0.639214
+cap "trim_1/drain" "XMinn_cmp_0/G" 42.8356
+cap "trim_1/trim_cap_array_0/trim_cap_5/in" "trim_1/drain" 0.639214
+cap "XM1_cmp_0/G" "XMinn_cmp_0/G" 1.11197
+cap "XM1_cmp_0/G" "XMinp_cmp_0/D" 0.0173127
+cap "XM1_cmp_0/G" "XMl3_cmp_0/G" 0.848286
+cap "trim_1/trim_cap_array_0/trim_cap_8/in" "trim_1/drain" 0.639214
+cap "trim_1/trim_cap_array_0/trim_cap_9/in" "trim_1/drain" 0.639214
+cap "trim_1/drain" "XMdiff_cmp_0/a_n52_n100#" -13.0918
+cap "XM4_cmp_0/D" "XMinp_cmp_0/G" 11.2138
+cap "XMl3_cmp_0/D" "XM4_cmp_0/D" 11.7106
+cap "XMl3_cmp_0/G" "XMinn_cmp_0/G" 42.0188
+cap "XMl3_cmp_0/G" "XMinp_cmp_0/G" 3.54787
+cap "XMl3_cmp_0/G" "XMl3_cmp_0/D" 10.0447
+cap "XM4_cmp_0/D" "XMdiff_cmp_0/a_192_n100#" 4.94353
+cap "XMl3_cmp_0/G" "XMdiff_cmp_0/a_192_n100#" 28.9807
+cap "XMl3_cmp_0/G" "XMl3_cmp_0/w_n319_n356#" 2.66572
+cap "XM4_cmp_0/D" "XMdiff_cmp_0/a_n52_n100#" -13.0918
+cap "XMinn_cmp_0/G" "XMinp_cmp_0/G" 28.9902
+cap "XMl3_cmp_0/D" "XMinn_cmp_0/G" 6.10602
+cap "XMl3_cmp_0/G" "XMdiff_cmp_0/a_n52_n100#" -10.0026
+cap "XMl3_cmp_0/D" "XMinp_cmp_0/G" 42.8697
+cap "XMl3_cmp_0/G" "trim_1/drain" 10.8712
+cap "XM3_cmp_0/G" "XMl3_cmp_0/G" 0.451686
+cap "XMdiff_cmp_0/a_192_n100#" "XMinp_cmp_0/G" 17.5126
+cap "XMinn_cmp_0/G" "XMdiff_cmp_0/a_192_n100#" 21.625
+cap "XMl3_cmp_0/w_n319_n356#" "XMinp_cmp_0/G" 0.0393475
+cap "XMinn_cmp_0/G" "XMl3_cmp_0/w_n319_n356#" 0.372385
+cap "XMl3_cmp_0/D" "XMdiff_cmp_0/a_192_n100#" 67.6639
+cap "XMl3_cmp_0/D" "XMl3_cmp_0/w_n319_n356#" 0.0393475
+cap "XMinp_cmp_0/G" "XMdiff_cmp_0/a_n52_n100#" 9.14159
+cap "XMinn_cmp_0/G" "XMdiff_cmp_0/a_n52_n100#" 9.14159
+cap "trim_1/drain" "XMinn_cmp_0/G" 11.2138
+cap "XMl3_cmp_0/D" "XMdiff_cmp_0/a_n52_n100#" -9.47486
+cap "XMl3_cmp_0/G" "XM4_cmp_0/D" -15.8885
+cap "XMl3_cmp_0/D" "trim_1/drain" -9.66691
+cap "XM3_cmp_0/G" "XMinn_cmp_0/G" 3.01229
+cap "XM3_cmp_0/G" "XMinp_cmp_0/G" 3.01229
+cap "XM3_cmp_0/G" "XMl3_cmp_0/D" 0.451686
+cap "XMdiff_cmp_0/a_192_n100#" "XMdiff_cmp_0/a_n52_n100#" 3.97743
+cap "trim_1/drain" "XMdiff_cmp_0/a_192_n100#" 5.73655
+cap "XM3_cmp_0/G" "XMdiff_cmp_0/a_192_n100#" -0.0702454
+cap "XMdiff_cmp_0/a_192_n100#" "XMl3_cmp_0/G" 40.0259
+cap "trim_0/trim_cap_array_0/trim_cap_6/in" "trim_0/drain" 0.639214
+cap "trim_0/trim_cap_array_0/trim_cap_11/in" "trim_0/drain" 0.490825
+cap "XMdiff_cmp_0/a_n52_n100#" "XMl3_cmp_0/G" 1.02825
+cap "XMinp_cmp_0/G" "XM3_cmp_0/G" 1.11197
+cap "trim_0/trim_cap_array_0/trim_cap_9/in" "trim_0/drain" 0.639214
+cap "XMinn_cmp_0/G" "XMl3_cmp_0/G" 2.96593
+cap "XMinp_cmp_0/G" "XMl3_cmp_0/w_n319_n356#" 7.07605
+cap "XMdiff_cmp_0/a_192_n100#" "trim_0/drain" 1.25039
+cap "XMl3_cmp_0/G" "trim_0/drain" 6.22158
+cap "XMl3_cmp_0/G" "XMl3_cmp_0/D" 8.2459
+cap "trim_0/trim_cap_array_0/trim_cap_5/in" "trim_0/drain" 0.639214
+cap "trim_0/trim_cap_array_0/trim_cap_10/in" "trim_0/drain" 0.639214
+cap "XMl1_cmp_0/S" "XM3_cmp_0/G" 0.0173127
+cap "trim_0/trim_cap_array_0/trim_cap_8/in" "trim_0/drain" 0.639214
+cap "XMdiff_cmp_0/a_192_n100#" "XMinp_cmp_0/G" 4.11234
+cap "XMinp_cmp_0/G" "XMl3_cmp_0/G" 4.85306
+cap "XMdiff_cmp_0/a_192_n100#" "XM3_cmp_0/G" 4.18936
+cap "XMl3_cmp_0/G" "XM3_cmp_0/G" 0.169387
+cap "XMdiff_cmp_0/a_n52_n100#" "XM3_cmp_0/G" 0.0248212
+cap "XMinp_cmp_0/G" "trim_0/drain" 42.8356
+cap "XMl3_cmp_0/w_n319_n356#" "XMl3_cmp_0/G" 0.964789
+cap "trim_0/trim_cap_array_0/trim_cap_7/in" "trim_0/drain" 0.639214
+cap "XMinn_cmp_0/G" "XM3_cmp_0/G" 0.099466
+cap "XMl1_cmp_0/S" "XMl3_cmp_0/G" 0.839461
+cap "XM3_cmp_0/G" "trim_0/drain" 6.76786
+cap "XMl3_cmp_0/D" "XM3_cmp_0/G" 0.848286
+cap "trim_0/drain" "XM3_cmp_0/G" 8.05584
+cap "XM3_cmp_0/D" "trim_0/drain" 7.48518
+cap "vp" "trim_0/drain" 42.7186
+cap "trim_0/n1" "trim_0/d_0" 0.0122773
+cap "trim_0/n0" "trim_0/d_2" 0.00061014
+cap "trim_0/n1" "trim_0/d_2" 0.00061014
+cap "trim_0/d_1" "trim_0/d_4" -1.22419
+cap "trim_0/d_0" "trim_0/d_4" 0.159011
+cap "trim_0/d_1" "trim_0/n4" 0.0820295
+cap "trim_0/d_1" "trim_0/d_0" -9.93655
+cap "trim_0/d_0" "trim_0/n4" 0.0434427
+cap "trim_0/d_4" "trim_0/d_2" 0.106252
+cap "trim_0/d_1" "trim_0/d_2" 0.20032
+cap "trim_0/n4" "trim_0/d_2" 0.00215896
+cap "trim_0/d_0" "trim_0/d_2" -3.3572
+cap "trim_0/trim_switch_0/XM1_trims_0/S" "trim_0/d_1" 9.80167
+cap "trim_0/trim_switch_0/XM1_trims_0/S" "trim_0/d_0" 1.23643
+cap "trim_0/trim_switch_0/XM1_trims_0/S" "trim_0/d_2" 0.00215896
+cap "trim_0/n1" "trim_0/d_1" 0.0257331
+cap "trim_0/d_1" "trim_0/n4" 0.687226
+cap "trim_0/d_0" "trim_0/trim_switch_0/XM0_trims_0/a_n5334_n324#" 1.16808
+cap "trim_0/d_0" "trim_0/d_2" 2.84217e-14
+cap "trim_0/trim_switch_0/XM1_trims_0/S" "trim_0/d_1" 9.80167
+cap "trim_0/d_1" "trim_0/d_4" 1.67071
+cap "trim_0/d_0" "trim_0/d_1" 1.22732
+cap "trim_0/d_0" "trim_0/trim_switch_0/XM1_trims_0/S" 1.62384
+cap "trim_0/d_2" "trim_0/n0" 0.0106389
+cap "trim_0/n1" "trim_0/d_1" 0.204024
+cap "trim_0/d_2" "trim_0/trim_switch_0/XM0_trims_0/a_n5334_n324#" 0.707776
+cap "trim_0/trim_switch_0/XM0_trims_0/a_n5334_n324#" "trim_0/d_1" 2.89766
+cap "trim_1/d_2" "trim_1/n2" 0.035833
+cap "trim_1/d_2" "trim_1/trim_switch_0/XM1_trims_0/S" 0.696086
+cap "trim_1/d_2" "trim_1/n2" 0.00215896
+cap "trim_1/d_3" "trim_1/d_2" -2.10932
+cap "trim_1/d_0" "trim_1/d_2" -3.55752
+cap "trim_1/trim_cap_array_0/trim_cap_17/out" "vn" 93.7398
+cap "trim_1/trim_cap_array_0/trim_cap_17/out" "trim_1/trim_cap_array_0/trim_cap_14/in" 0.639214
+cap "trim_1/trim_cap_array_0/trim_cap_17/out" "XMl3_cmp_0/G" 0.0628438
+cap "XMinn_cmp_0/G" "XM1_cmp_0/G" 7.658
+cap "XMl3_cmp_0/D" "XMl3_cmp_0/w_n319_n356#" 29.9765
+cap "trim_1/trim_cap_array_0/trim_cap_17/out" "XMinn_cmp_0/G" 94.6923
+cap "trim_1/trim_cap_array_0/trim_cap_16/in" "XM1_cmp_0/G" 0.152851
+cap "trim_1/trim_cap_array_0/trim_cap_17/out" "trim_1/trim_cap_array_0/trim_cap_13/in" 0.639214
+cap "XMl3_cmp_0/w_n319_n356#" "XM1_cmp_0/G" 61.7343
+cap "trim_1/trim_cap_array_0/trim_cap_17/out" "trim_1/trim_cap_array_0/trim_cap_16/in" 0.114145
+cap "trim_1/trim_cap_array_0/trim_cap_17/out" "XMl3_cmp_0/w_n319_n356#" 54.8374
+cap "XMl3_cmp_0/D" "XM1_cmp_0/G" 0.248506
+cap "XMl3_cmp_0/D" "trim_1/trim_cap_array_0/trim_cap_17/out" 0.130757
+cap "trim_1/trim_cap_array_0/trim_cap_15/in" "XM1_cmp_0/G" 0.217697
+cap "trim_1/trim_cap_array_0/trim_cap_17/out" "trim_1/trim_cap_array_0/trim_cap_11/in" 0.148389
+cap "trim_1/trim_cap_array_0/trim_cap_17/out" "trim_1/trim_cap_array_0/trim_cap_12/in" 0.639214
+cap "XMl3_cmp_0/w_n319_n356#" "XMl3_cmp_0/G" 0.233348
+cap "trim_1/trim_cap_array_0/trim_cap_17/in" "XMl3_cmp_0/w_n319_n356#" 0.289446
+cap "trim_1/trim_cap_array_0/trim_cap_17/out" "trim_1/trim_cap_array_0/trim_cap_15/in" 0.639214
+cap "XMinn_cmp_0/G" "XMl3_cmp_0/w_n319_n356#" 42.7379
+cap "trim_1/trim_cap_array_0/trim_cap_17/out" "XM1_cmp_0/G" 3.91032
+cap "XMl3_cmp_0/D" "XMinn_cmp_0/G" 0.715664
+cap "XM1_cmp_0/G" "XMl3_cmp_0/G" 1.28039
+cap "trim_1/trim_cap_array_0/trim_cap_16/in" "XMl3_cmp_0/w_n319_n356#" 0.20087
+cap "XMl3_cmp_0/G" "XMinn_cmp_0/G" 0.0767297
+cap "XM1_cmp_0/G" "XMl3_cmp_0/G" 1.15017
+cap "XMl3_cmp_0/w_n319_n356#" "XMl3_cmp_0/D" 335.758
+cap "XMl3_cmp_0/D" "XM3_cmp_0/G" 1.15017
+cap "XMl3_cmp_0/w_n319_n356#" "XM3_cmp_0/G" 0.233348
+cap "XM1_cmp_0/G" "XMl3_cmp_0/D" 6.34278
+cap "XMl3_cmp_0/w_n319_n356#" "XM1_cmp_0/G" 0.233348
+cap "XMl3_cmp_0/D" "XMinp_cmp_0/G" 0.0767297
+cap "XMl3_cmp_0/D" "trim_1/trim_cap_array_0/trim_cap_17/out" 0.546036
+cap "XMl3_cmp_0/G" "XMl3_cmp_0/D" 84.4055
+cap "XMl3_cmp_0/w_n319_n356#" "XMl3_cmp_0/G" 166.506
+cap "XMl3_cmp_0/G" "XM3_cmp_0/G" 6.59128
+cap "trim_0/trim_cap_array_0/trim_cap_15/in" "trim_0/trim_cap_array_0/trim_cap_17/out" 0.639214
+cap "XMl3_cmp_0/w_n319_n356#" "XMl3_cmp_0/G" 155.532
+cap "XMinp_cmp_0/G" "XM3_cmp_0/G" 7.658
+cap "trim_0/trim_cap_array_0/trim_cap_17/out" "XMl3_cmp_0/D" 0.0628438
+cap "XMinp_cmp_0/G" "XMl3_cmp_0/w_n319_n356#" 42.7379
+cap "trim_0/trim_cap_array_0/trim_cap_15/in" "XM3_cmp_0/G" 0.217697
+cap "trim_0/trim_cap_array_0/trim_cap_14/in" "trim_0/trim_cap_array_0/trim_cap_17/out" 0.639214
+cap "XMl3_cmp_0/D" "XM3_cmp_0/G" 1.28039
+cap "XMl3_cmp_0/w_n319_n356#" "XMl3_cmp_0/D" 0.233348
+cap "XMinp_cmp_0/G" "XMl3_cmp_0/G" 0.715664
+cap "trim_0/trim_cap_array_0/trim_cap_17/out" "XM3_cmp_0/G" 3.91032
+cap "trim_0/trim_cap_array_0/trim_cap_17/out" "XMl3_cmp_0/w_n319_n356#" 54.8374
+cap "trim_0/trim_cap_array_0/trim_cap_17/out" "trim_0/trim_cap_array_0/trim_cap_12/in" 0.639214
+cap "trim_0/trim_cap_array_0/trim_cap_13/in" "trim_0/trim_cap_array_0/trim_cap_17/out" 0.639214
+cap "trim_0/trim_cap_array_0/trim_cap_17/in" "XMl3_cmp_0/w_n319_n356#" 0.289446
+cap "XMl3_cmp_0/G" "XMl3_cmp_0/D" 3.11329
+cap "XMl3_cmp_0/w_n319_n356#" "XM3_cmp_0/G" 61.7343
+cap "trim_0/trim_cap_array_0/trim_cap_16/in" "trim_0/trim_cap_array_0/trim_cap_17/out" 0.114145
+cap "trim_0/trim_cap_array_0/trim_cap_17/out" "XMl3_cmp_0/G" 0.676792
+cap "trim_0/trim_cap_array_0/trim_cap_17/out" "trim_0/trim_cap_array_0/trim_cap_11/in" 0.148389
+cap "trim_0/trim_cap_array_0/trim_cap_17/out" "XMinp_cmp_0/G" 94.6923
+cap "trim_0/trim_cap_array_0/trim_cap_16/in" "XM3_cmp_0/G" 0.152851
+cap "trim_0/trim_cap_array_0/trim_cap_16/in" "XMl3_cmp_0/w_n319_n356#" 0.20087
+cap "trim_0/trim_cap_array_0/trim_cap_17/out" "vp" 93.7398
+cap "trim_0/d_2" "trim_0/d_0" -3.55752
+cap "trim_0/d_2" "trim_0/d_3" -2.10932
+cap "trim_0/d_2" "trim_0/n2" 0.00215896
+cap "trim_0/d_2" "trim_0/n2" 0.035833
+cap "trim_0/d_2" "trim_0/trim_switch_0/XM1_trims_0/S" 0.696086
+cap "trim_1/d_2" "trim_1/d_3" -2.10932
+cap "vn" "trim_1/trim_cap_array_0/trim_cap_17/out" 15.0653
+cap "XMl3_cmp_0/w_n319_n356#" "XM1_cmp_0/G" 11.8006
+cap "XMl3_cmp_0/w_n319_n356#" "XMl3_cmp_0/D" 2.58625
+cap "XMl3_cmp_0/w_n319_n356#" "XM1_cmp_0/D" 0.651902
+cap "trim_1/trim_cap_array_0/trim_cap_17/out" "vn" 15.0653
+cap "XMl3_cmp_0/w_n319_n356#" "trim_1/trim_cap_array_0/trim_cap_17/out" 1.71271
+cap "XMl3_cmp_0/w_n319_n356#" "XMl3_cmp_0/G" 9.60781
+cap "XMl3_cmp_0/D" "XMl3_cmp_0/w_n319_n356#" 8.41402
+cap "XMl3_cmp_0/w_n319_n356#" "XMl3_cmp_0/G" 2.58625
+cap "vp" "trim_0/trim_cap_array_0/trim_cap_17/out" 15.0653
+cap "XMl3_cmp_0/w_n319_n356#" "XM4_cmp_0/D" 0.651902
+cap "trim_0/trim_cap_array_0/trim_cap_17/out" "XMl3_cmp_0/w_n319_n356#" 1.71271
+cap "XMl3_cmp_0/w_n319_n356#" "XM3_cmp_0/G" 11.8006
+cap "vp" "trim_0/trim_cap_array_0/trim_cap_17/out" 15.0653
+cap "trim_0/d_3" "trim_0/d_2" -2.10932
+merge "XMinn_cmp_0/S" "XMinp_cmp_0/S" -249.938 0 0 0 0 0 0 0 0 -14400 -544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24012 -1320 0 0 0 0 0 0 0 0
+merge "XMinp_cmp_0/S" "XMdiff_cmp_0/a_n52_n100#"
+merge "XMdiff_cmp_0/a_n52_n100#" "m1_n23_n1287#"
+merge "XM4_cmp_0/VSUBS" "XM3_cmp_0/VSUBS" -3046.33 0 0 0 0 0 0 0 0 0 0 -155520 -5184 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -49036 -2684 -151520 -4108 0 0 -940800 -8400 0 0
+merge "XM3_cmp_0/VSUBS" "XMl4_cmp_0/VSUBS"
+merge "XMl4_cmp_0/VSUBS" "XMl3_cmp_0/VSUBS"
+merge "XMl3_cmp_0/VSUBS" "XM1_cmp_0/VSUBS"
+merge "XM1_cmp_0/VSUBS" "XM2_cmp_0/VSUBS"
+merge "XM2_cmp_0/VSUBS" "trim_0/trim_switch_0/XM1_trims_0/S"
+merge "trim_0/trim_switch_0/XM1_trims_0/S" "XMinn_cmp_0/a_n302_252#"
+merge "XMinn_cmp_0/a_n302_252#" "XMinp_cmp_0/a_n302_252#"
+merge "XMinp_cmp_0/a_n302_252#" "trim_1/trim_switch_0/XM1_trims_0/S"
+merge "trim_1/trim_switch_0/XM1_trims_0/S" "trim_0/trim_switch_0/m1_n3220_n554#"
+merge "trim_0/trim_switch_0/m1_n3220_n554#" "trim_0/vss"
+merge "trim_0/vss" "trim_0/VSUBS"
+merge "trim_0/VSUBS" "XMdiff_cmp_0/a_192_n100#"
+merge "XMdiff_cmp_0/a_192_n100#" "XMdiff_cmp_0/a_n280_n100#"
+merge "XMdiff_cmp_0/a_n280_n100#" "XMdiff_cmp_0/a_n424_n324#"
+merge "XMdiff_cmp_0/a_n424_n324#" "XMinn_cmp_0/a_n302_n324#"
+merge "XMinn_cmp_0/a_n302_n324#" "XMinp_cmp_0/a_n302_n324#"
+merge "XMinp_cmp_0/a_n302_n324#" "XMl2_cmp_0/a_n302_n324#"
+merge "XMl2_cmp_0/a_n302_n324#" "XMl1_cmp_0/a_n302_n324#"
+merge "XMl1_cmp_0/a_n302_n324#" "trim_1/VSUBS"
+merge "trim_1/VSUBS" "VSUBS"
+merge "VSUBS" "trim_1/vss"
+merge "trim_1/vss" "trim_1/trim_switch_0/m1_n3220_n554#"
+merge "trim_1/trim_switch_0/m1_n3220_n554#" "vss"
+merge "XM3_cmp_0/G" "XM4_cmp_0/G" -745.895 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32016 -1944 0 0 0 0 0 0 0 0
+merge "XM4_cmp_0/G" "XM1_cmp_0/G"
+merge "XM1_cmp_0/G" "XM2_cmp_0/G"
+merge "XM2_cmp_0/G" "XMdiff_cmp_0/a_52_n183#"
+merge "XMdiff_cmp_0/a_52_n183#" "XMdiff_cmp_0/a_n192_n183#"
+merge "XMdiff_cmp_0/a_n192_n183#" "clkc"
+merge "trim_0/trim_cap_array_0/trim_cap_17/out" "XM4_cmp_0/D" -791.644 0 0 0 0 0 0 0 0 -14400 -544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18860 -1096 -13680 -512 0 0 0 0 0 0
+merge "XM4_cmp_0/D" "XMinp_cmp_0/D"
+merge "XMinp_cmp_0/D" "XMl2_cmp_0/S"
+merge "XMl2_cmp_0/S" "trim_0/trim_cap_array_0/trim_cap_4/out"
+merge "trim_0/trim_cap_array_0/trim_cap_4/out" "trim_0/drain"
+merge "trim_0/drain" "m1_221_n742#"
+merge "XM3_cmp_0/S" "XM4_cmp_0/w_n319_n356#" -5202.76 -1224640 -10560 0 0 0 0 0 0 -201456 -7036 -43200 -1632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -74520 -4344 0 0 0 0 0 0 0 0
+merge "XM4_cmp_0/w_n319_n356#" "XM4_cmp_0/S"
+merge "XM4_cmp_0/S" "XMl3_cmp_0/S"
+merge "XMl3_cmp_0/S" "XM3_cmp_0/w_n319_n356#"
+merge "XM3_cmp_0/w_n319_n356#" "XMl4_cmp_0/w_n319_n356#"
+merge "XMl4_cmp_0/w_n319_n356#" "XMl4_cmp_0/S"
+merge "XMl4_cmp_0/S" "XMl3_cmp_0/w_n319_n356#"
+merge "XMl3_cmp_0/w_n319_n356#" "XM1_cmp_0/S"
+merge "XM1_cmp_0/S" "XM1_cmp_0/w_n319_n356#"
+merge "XM1_cmp_0/w_n319_n356#" "XM2_cmp_0/w_n319_n356#"
+merge "XM2_cmp_0/w_n319_n356#" "XM2_cmp_0/S"
+merge "XM2_cmp_0/S" "vdd"
+merge "XMl3_cmp_0/D" "XMl4_cmp_0/G" -896.199 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25576 -1572 0 0 0 0 0 0 0 0
+merge "XMl4_cmp_0/G" "XM2_cmp_0/D"
+merge "XM2_cmp_0/D" "XMl1_cmp_0/D"
+merge "XMl1_cmp_0/D" "XMl2_cmp_0/G"
+merge "XMl2_cmp_0/G" "outn"
+merge "XM3_cmp_0/D" "XMl3_cmp_0/G" -863.828 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25576 -1572 0 0 0 0 0 0 0 0
+merge "XMl3_cmp_0/G" "XMl4_cmp_0/D"
+merge "XMl4_cmp_0/D" "XMl1_cmp_0/G"
+merge "XMl1_cmp_0/G" "XMl2_cmp_0/D"
+merge "XMl2_cmp_0/D" "outp"
+merge "XMinp_cmp_0/G" "vp" -770.914 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3128 -228 -72000 -1880 0 0 0 0 0 0
+merge "trim_0/d_0" "trimb0" -51.352 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7752 -356 0 0 0 0 0 0
+merge "trim_1/trim_cap_array_0/trim_cap_17/out" "XM1_cmp_0/D" -791.644 0 0 0 0 0 0 0 0 -14400 -544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18860 -1096 -13680 -512 0 0 0 0 0 0
+merge "XM1_cmp_0/D" "XMl1_cmp_0/S"
+merge "XMl1_cmp_0/S" "XMinn_cmp_0/D"
+merge "XMinn_cmp_0/D" "trim_1/trim_cap_array_0/trim_cap_4/out"
+merge "trim_1/trim_cap_array_0/trim_cap_4/out" "trim_1/drain"
+merge "trim_1/drain" "m1_n2297_n802#"
+merge "trim_0/d_1" "trimb1" -131.426 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6764 -330 0 0 0 0 0 0
+merge "trim_0/d_2" "trimb2" -49.2839 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7752 -356 0 0 0 0 0 0
+merge "trim_0/d_3" "trimb3" -56.2065 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7752 -356 0 0 0 0 0 0
+merge "trim_0/d_4" "trimb4" -105.823 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7752 -356 0 0 0 0 0 0
+merge "trim_1/d_0" "trim0" -51.352 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7752 -356 0 0 0 0 0 0
+merge "trim_1/d_1" "trim1" -131.426 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6764 -330 0 0 0 0 0 0
+merge "trim_1/d_2" "trim2" -49.2839 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7752 -356 0 0 0 0 0 0
+merge "trim_1/d_3" "trim3" -56.2065 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7752 -356 0 0 0 0 0 0
+merge "trim_1/d_4" "trim4" -105.823 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7752 -356 0 0 0 0 0 0
+merge "XMinn_cmp_0/G" "vn" -770.914 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3128 -228 -72000 -1880 0 0 0 0 0 0

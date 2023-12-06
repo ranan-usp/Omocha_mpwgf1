@@ -1,0 +1,8 @@
+* NGSPICE file created from cap.ext - technology: gf180mcuD
+
+.subckt cap cap_in cap_out
+C0 cap_out cap_in 0.144794p
+C1 cap_out VSUBS 6.99245f
+C2 cap_in VSUBS 7.27468f
+.ends
+
