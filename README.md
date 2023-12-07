@@ -16,3 +16,6 @@ A SAR ADC is a device used to convert analog signals into digital signals. It op
 ## Applications
 - Widely used in microcontrollers, data acquisition systems, and anywhere precision ADCs are needed.
 - Ideal for applications where power efficiency and moderate speed are required.
+
+## logo
+![logo](./png/logo.png "logo")
