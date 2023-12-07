@@ -2,6 +2,12 @@
 
 // クラシックなSARアルゴリズムとオフセット校正を行うモジュール
 module sarlogic(
+
+    `ifdef USE_POWER_PINS
+        inout vdd,
+        inout vss,
+    `endif
+
     input           clk,        // クロック入力
     input           rstn,       // リセット信号 (負論理)
     input           en,         // 有効化信号

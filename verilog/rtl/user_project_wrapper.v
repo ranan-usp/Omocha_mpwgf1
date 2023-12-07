@@ -77,12 +77,12 @@ saradc saradc (
 `endif
     .vinp(io_in[30]),
     .vinn(io_in[32]),
-    .result(io_out[3:12]),
-    .valid(io_out[2]),
+    .result(la_data_out[63:54]),
+    .valid(la_data_out[53]),
     .cal(io_in[3]),
     .en(io_in[2]),
-    .clk(io_in[1]),
-    .rstn(io_in[0])
+    .clk(wb_clk_i),
+    .rstn(wb_rst_i)
 );
 
 endmodule	// user_project_wrapper

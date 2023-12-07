@@ -1,0 +1,155 @@
+! Switch shorts
+
+! Finished
+
+! Resistor Errors
+
+! Finished
+
+! Power/Ground path through fuse
+
+! Finished
+
+! ... voltage already set
+
+! Finished
+
+! Checking forward bias diode errors: 
+
+! Checking forward bias diode errors: 
+
+! Finished
+
+! Checking nmos source/drain vs bias errors: 
+
+! Checking nmos source/drain vs bias errors: 
+
+! Finished
+
+! Checking nmos gate vs source errors: 
+
+! Checking nmos gate vs source errors: 
+
+! Finished
+
+! Checking pmos source/drain vs bias errors: 
+
+/Xsaradc(saradc)/Xdac_0(dac)/Xbootstrapped_sw_0(bootstrapped_sw)/XXM4_bs_0(XM4_bs)/MX0 M pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u (r=3850)
+G: /Xsaradc/Xdac_0/bootstrapped_sw_0/vg
+ Min: vss@0 r=9800
+ Sim: /Xsaradc/Xdac_0/bootstrapped_sw_0/vg
+ Max: vdd@5000 r=7700
+S: /Xsaradc/Xdac_0/bootstrapped_sw_0/vbsh
+ Min: /Xsaradc/Xdac_0/bootstrapped_sw_0/vbsh=400 r=13650
+ Sim: /Xsaradc/Xdac_0/bootstrapped_sw_0/vbsh
+ Max: vdd@5000 r=3850
+D: vdd
+ Min: vdd@5000 r=0
+ Sim: vdd@5000 r=0
+ Max: vdd@5000 r=0
+B: /Xsaradc/Xdac_0/bootstrapped_sw_0/vbsh
+ Min: /Xsaradc/Xdac_0/bootstrapped_sw_0/vbsh=400 r=13650
+ Sim: /Xsaradc/Xdac_0/bootstrapped_sw_0/vbsh
+ Max: vdd@5000 r=3850
+
+/Xsaradc(saradc)/Xdac_1(dac)/Xbootstrapped_sw_0(bootstrapped_sw)/XXM4_bs_0(XM4_bs)/MX0 M pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u (r=3850)
+G: /Xsaradc/Xdac_1/bootstrapped_sw_0/vg
+ Min: vss@0 r=9800
+ Sim: /Xsaradc/Xdac_1/bootstrapped_sw_0/vg
+ Max: vdd@5000 r=7700
+S: /Xsaradc/Xdac_1/bootstrapped_sw_0/vbsh
+ Min: /Xsaradc/Xdac_1/bootstrapped_sw_0/vbsh=400 r=13650
+ Sim: /Xsaradc/Xdac_1/bootstrapped_sw_0/vbsh
+ Max: vdd@5000 r=3850
+D: vdd
+ Min: vdd@5000 r=0
+ Sim: vdd@5000 r=0
+ Max: vdd@5000 r=0
+B: /Xsaradc/Xdac_1/bootstrapped_sw_0/vbsh
+ Min: /Xsaradc/Xdac_1/bootstrapped_sw_0/vbsh=400 r=13650
+ Sim: /Xsaradc/Xdac_1/bootstrapped_sw_0/vbsh
+ Max: vdd@5000 r=3850
+
+! Checking pmos source/drain vs bias errors: 
+INFO: SUBCKT (XM4_bs)/MX0(pfet_06v0) error count 2/2 checksum()
+
+! Finished
+
+! Checking pmos gate vs source errors: 
+
+! Checking pmos gate vs source errors: 
+
+! Finished
+
+! Logic shorts 1
+
+! Finished
+
+! Logic shorts 2
+
+! Finished
+
+! Checking LDD errors for model: 
+
+! Finished
+
+! Power/Ground path through fuse
+
+! Finished
+
+! ... voltage already set
+
+! Finished
+
+! Checking Vbg overvoltage errors
+
+! Checking Vbg overvoltage errors
+
+! Finished
+
+! Checking Vbs overvoltage errors
+
+! Checking Vbs overvoltage errors
+
+! Finished
+
+! Checking Vds overvoltage errors
+
+! Checking Vds overvoltage errors
+
+! Finished
+
+! Checking Vgs overvoltage errors
+
+! Checking Vgs overvoltage errors
+
+! Finished
+
+! Checking Model errors
+
+! Checking Model errors
+
+! Finished
+
+! Checking nmos possible leak errors: 
+
+! Checking nmos possible leak errors: 
+
+! Finished
+
+! Checking pmos possible leak errors: 
+
+! Checking pmos possible leak errors: 
+
+! Finished
+
+! Checking mos floating input errors:
+
+! Checking mos floating input errors:
+
+! Finished
+
+! Checking expected values:
+
+! Finished
+
