@@ -70,6 +70,7 @@
 + wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
 Xsaradc vss vdd la_data_out[54] la_data_out[55] la_data_out[56] la_data_out[57] la_data_out[58]
 + la_data_out[59] la_data_out[60] la_data_out[61] la_data_out[62] la_data_out[63]
-+ la_data_out[53] io_in[3] io_in[2] wb_clk_i wb_rst_i io_in[30] io_in[32] saradc
++ la_data_out[53] la_data_in[52] la_data_in[51] wb_clk_i wb_rst_i io_in[30] io_in[32]
++ saradc
 .ends
 

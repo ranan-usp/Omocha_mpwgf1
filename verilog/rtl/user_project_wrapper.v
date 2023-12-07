@@ -79,8 +79,8 @@ saradc saradc (
     .vinn(io_in[32]),
     .result(la_data_out[63:54]),
     .valid(la_data_out[53]),
-    .cal(io_in[3]),
-    .en(io_in[2]),
+    .cal(la_data_in[52]),
+    .en(la_data_in[51]),
     .clk(wb_clk_i),
     .rstn(wb_rst_i)
 );
