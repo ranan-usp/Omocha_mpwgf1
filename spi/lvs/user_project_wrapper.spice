@@ -5,6 +5,10 @@
 + result[6] result[7] result[8] result[9] valid cal en clk rstn vinp vinn
 .ends
 
+* Black-box entry subcircuit for anan_logo abstract view
+.subckt anan_logo vdd vss
+.ends
+
 .subckt user_project_wrapper io_in[0] io_in[10] io_in[11] io_in[12] io_in[13] io_in[14]
 + io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21] io_in[22]
 + io_in[23] io_in[24] io_in[25] io_in[26] io_in[27] io_in[28] io_in[29] io_in[2] io_in[30]
@@ -72,5 +76,6 @@ Xsaradc vss vdd la_data_out[54] la_data_out[55] la_data_out[56] la_data_out[57] 
 + la_data_out[59] la_data_out[60] la_data_out[61] la_data_out[62] la_data_out[63]
 + la_data_out[53] la_data_in[52] la_data_in[51] wb_clk_i wb_rst_i io_in[30] io_in[32]
 + saradc
+Xanan_logo vdd vss anan_logo
 .ends
 

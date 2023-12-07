@@ -1,7 +1,7 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "user_project_wrapper")
- (DATE "Thu Dec  7 03:19:27 2023")
+ (DATE "Thu Dec  7 14:57:46 2023")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.4.0")
@@ -12,12 +12,12 @@
   (INSTANCE)
   (DELAY
    (ABSOLUTE
-    (INTERCONNECT io_in[30] saradc.vinp (0.017:0.017:0.017))
-    (INTERCONNECT io_in[32] saradc.vinn (0.011:0.011:0.011))
+    (INTERCONNECT io_in[30] saradc.vinp (0.018:0.018:0.018))
+    (INTERCONNECT io_in[32] saradc.vinn (0.012:0.012:0.012))
     (INTERCONNECT la_data_in[51] saradc.en (0.027:0.027:0.027))
-    (INTERCONNECT la_data_in[52] saradc.cal (0.028:0.028:0.028))
-    (INTERCONNECT wb_clk_i saradc.clk (0.098:0.098:0.098))
-    (INTERCONNECT wb_rst_i saradc.rstn (0.097:0.097:0.097))
+    (INTERCONNECT la_data_in[52] saradc.cal (0.027:0.027:0.027))
+    (INTERCONNECT wb_clk_i saradc.clk (0.097:0.097:0.097))
+    (INTERCONNECT wb_rst_i saradc.rstn (0.096:0.096:0.096))
    )
   )
  )

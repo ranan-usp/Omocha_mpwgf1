@@ -85,6 +85,13 @@ saradc saradc (
     .rstn(wb_rst_i)
 );
 
+anan_logo anan_logo (
+`ifdef USE_POWER_PINS
+	.vdd(vdd),	// User area 1 1.8V power
+	.vss(vss),	// User area 1 digital ground
+`endif
+);
+
 endmodule	// user_project_wrapper
 
 `default_nettype wire

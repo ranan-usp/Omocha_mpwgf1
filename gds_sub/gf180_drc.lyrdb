@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+ <description>DRC Run Report at</description>
+ <original-file/>
+ <generator>drc: script='@1*/home/oe23ranan/.klayout/macros/gf180drc_drc.lydrc*0;30*/home/oe23ranan/.klayout/macros/../drc/rule_decks/main.drc*-29;1011*/home/oe23ranan/.klayout/macros/../drc/rule_decks/comp.drc*-1010;1447*/home/oe23ranan/.klayout/macros/../drc/rule_decks/contact.drc*-1446;1633*/home/oe23ranan/.klayout/macros/../drc/rule_decks/dnwell.drc*-1632;1698*/home/oe23ranan/.klayout/macros/../drc/rule_decks/drc_bjt.drc*-1697;1738*/home/oe23ranan/.klayout/macros/../drc/rule_decks/dualgate.drc*-1737;1825*/home/oe23ranan/.klayout/macros/../drc/rule_decks/dummy_exclude.drc*-1824;1871*/home/oe23ranan/.klayout/macros/../drc/rule_decks/efuse.drc*-1870;2097*/home/oe23ranan/.klayout/macros/../drc/rule_decks/esd.drc*-2096;2215*/home/oe23ranan/.klayout/macros/../drc/rule_decks/hres.drc*-2214;2363*/home/oe23ranan/.klayout/macros/../drc/rule_decks/ldnmos.drc*-2362;2793*/home/oe23ranan/.klayout/macros/../drc/rule_decks/ldpmos.drc*-2792;3219*/home/oe23ranan/.klayout/macros/../drc/rule_decks/lres.drc*-3218;3326*/home/oe23ranan/.klayout/macros/../drc/rule_decks/lvpwell.drc*-3325;3445*/home/oe23ranan/.klayout/macros/../drc/rule_decks/lvs_bjt.drc*-3444;3477*/home/oe23ranan/.klayout/macros/../drc/rule_decks/mcell.drc*-3476;3522*/home/oe23ranan/.klayout/macros/../drc/rule_decks/metal1.drc*-3521;3569*/home/oe23ranan/.klayout/macros/../drc/rule_decks/metal2.drc*-3568;3616*/home/oe23ranan/.klayout/macros/../drc/rule_decks/metal3.drc*-3615;3664*/home/oe23ranan/.klayout/macros/../drc/rule_decks/metal4.drc*-3663;3711*/home/oe23ranan/.klayout/macros/../drc/rule_decks/metal5.drc*-3710;3758*/home/oe23ranan/.klayout/macros/../drc/rule_decks/metaltop.drc*-3757;3839*/home/oe23ranan/.klayout/macros/../drc/rule_decks/metaltop_30k.drc*-3838;3958*/home/oe23ranan/.klayout/macros/../drc/rule_decks/mim_a.drc*-3957;4102*/home/oe23ranan/.klayout/macros/../drc/rule_decks/mim_b.drc*-4101;4247*/home/oe23ranan/.klayout/macros/../drc/rule_decks/nat.drc*-4246;4369*/home/oe23ranan/.klayout/macros/../drc/rule_decks/nplus.drc*-4368;4639*/home/oe23ranan/.klayout/macros/../drc/rule_decks/nwell.drc*-4638;4796*/home/oe23ranan/.klayout/macros/../drc/rule_decks/otp_mk.drc*-4795;4947*/home/oe23ranan/.klayout/macros/../drc/rule_decks/poly2.drc*-4946;5135*/home/oe23ranan/.klayout/macros/../drc/rule_decks/pplus.drc*-5134;5403*/home/oe23ranan/.klayout/macros/../drc/rule_decks/pres.drc*-5402;5511*/home/oe23ranan/.klayout/macros/../drc/rule_decks/sab.drc*-5510;5686*/home/oe23ranan/.klayout/macros/../drc/rule_decks/sram_3p3.drc*-5685;5789*/home/oe23ranan/.klayout/macros/../drc/rule_decks/sram_5p0.drc*-5788;5894*/home/oe23ranan/.klayout/macros/../drc/rule_decks/via1.drc*-5893;6039*/home/oe23ranan/.klayout/macros/../drc/rule_decks/via2.drc*-6038;6187*/home/oe23ranan/.klayout/macros/../drc/rule_decks/via3.drc*-6186;6337*/home/oe23ranan/.klayout/macros/../drc/rule_decks/via4.drc*-6336;6487*/home/oe23ranan/.klayout/macros/../drc/rule_decks/via5.drc*-6486;6638*/home/oe23ranan/.klayout/macros/../drc/rule_decks/ymtp_mk.drc*-6637;'</generator>
+ <top-cell>anan_logo</top-cell>
+ <tags>
+ </tags>
+ <categories>
+ </categories>
+ <cells>
+  <cell>
+   <name>anan_logo</name>
+   <variant/>
+   <references>
+   </references>
+  </cell>
+ </cells>
+ <items>
+ </items>
+</report-database>

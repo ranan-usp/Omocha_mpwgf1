@@ -40,6 +40,8 @@ module user_project_wrapper (user_clock2,
  input [3:0] wbs_sel_i;
 
 
+ anan_logo anan_logo (.vdd(vdd),
+    .vss(vss));
  saradc saradc (.vss(vss),
     .vdd(vdd),
     .valid(la_data_out[53]),

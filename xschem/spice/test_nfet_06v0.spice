@@ -1,4 +1,4 @@
-** sch_path: /home/oe23ranan/pdk/gf180mcuD/libs.tech/xschem/tests/test_nfet_06v0.sch
+** sch_path: /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/xschem/tests/test_nfet_06v0.sch
 **.subckt test_nfet_06v0
 XM1 D G S B nfet_06v0 L=0.70u W=0.30u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
 + pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
