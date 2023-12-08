@@ -1,8 +1,7 @@
 module saradc(
 	inout vdd,
 	inout vss,
-	input vinp,
-	input vinn,
+	input [9:0] user_input,
 	input cal,
 	input en,
 	input clk,

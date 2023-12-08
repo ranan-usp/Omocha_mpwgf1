@@ -1,28 +1,37 @@
 ** sch_path: /home/oe23ranan/gf_analog/xschem/gf_test/inv_tyoketu.sch
 **.subckt inv_tyoketu
-XM2 vin vin vss net1 nfet_06v0 L=0.70u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
+XM2 vout vin vss net1 nfet_06v0 L=0.70u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
 + pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
 + sa=0 sb=0 sd=0 m=1
-XM3 vin vin vdd net2 pfet_06v0 L=0.55u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
+XM3 vout vin vdd net2 pfet_06v0 L=0.55u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
 + pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
 + sa=0 sb=0 sd=0 m=1
-C1 vin vss 1f m=1
+C1 vout vss 1f m=1
+VSS vss GND 0
+VDD vdd GND 6
+VIN vin GND PULSE(0 6 10e-6 1e-9 1e-9 0.5e-6 1e-6)
+XM1 vin2 vdd vout2 vss nfet_06v0 L=0.70u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+XM4 vin2 vss vout2 vdd pfet_06v0 L=0.55u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W'
++ sa=0 sb=0 sd=0 m=1
+C3 vout2 vss 1f m=1
+VIN1 vin2 GND PULSE(0 6 10e-6 1e-9 1e-9 0.5e-6 1e-6)
 **** begin user architecture code
 
-.include /tmp/caravel_tutorial/pdk/models/ngspice/design.ngspice
-.lib /tmp/caravel_tutorial/pdk/models/ngspice/sm141064.ngspice typical
+.include /home/oe23ranan/pdk/models/ngspice/design.ngspice
+.lib /home/oe23ranan/pdk/models/ngspice/sm141064.ngspice typical
 
 
 
-VDD vdd 6 0
-VSS vss 0 0
-VIN vin 0 0
 .control
 save all
-tran 1n 10u
+tran 1n 30u
 .endc
 
 
 **** end user architecture code
 **.ends
+.GLOBAL GND
 .end

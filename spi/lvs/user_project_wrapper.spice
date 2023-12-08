@@ -1,8 +1,10 @@
 * NGSPICE file created from user_project_wrapper.ext - technology: gf180mcuD
 
 * Black-box entry subcircuit for saradc abstract view
-.subckt saradc vss vdd result[0] result[1] result[2] result[3] result[4] result[5]
-+ result[6] result[7] result[8] result[9] valid cal en clk rstn vinp vinn
+.subckt saradc vss vdd user_input[9] user_input[8] user_input[7] user_input[6] user_input[5]
++ user_input[4] user_input[3] user_input[2] user_input[1] user_input[0] result[0]
++ result[1] result[2] result[3] result[4] result[5] result[6] result[7] result[8]
++ result[9] valid cal en clk rstn
 .ends
 
 * Black-box entry subcircuit for anan_logo abstract view
@@ -72,9 +74,10 @@
 + wbs_dat_o[28] wbs_dat_o[29] wbs_dat_o[2] wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3]
 + wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0]
 + wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
-Xsaradc vss vdd la_data_out[54] la_data_out[55] la_data_out[56] la_data_out[57] la_data_out[58]
-+ la_data_out[59] la_data_out[60] la_data_out[61] la_data_out[62] la_data_out[63]
-+ la_data_out[53] la_data_in[52] la_data_in[51] wb_clk_i wb_rst_i io_in[30] io_in[32]
+Xsaradc vss vdd io_in[36] io_in[35] io_in[34] io_in[33] io_in[32] io_in[31] io_in[30]
++ io_in[29] io_in[28] io_in[27] la_data_out[54] la_data_out[55] la_data_out[56] la_data_out[57]
++ la_data_out[58] la_data_out[59] la_data_out[60] la_data_out[61] la_data_out[62]
++ la_data_out[63] la_data_out[53] la_data_in[52] la_data_in[51] wb_clk_i wb_rst_i
 + saradc
 Xanan_logo vdd vss anan_logo
 .ends
