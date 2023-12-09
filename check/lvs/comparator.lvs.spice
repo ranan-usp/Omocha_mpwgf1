@@ -1,0 +1,114 @@
+* NGSPICE file created from comparator.ext - technology: gf180mcuD
+
+.subckt XMdiff_cmp G D S a_n424_n324#
+X0 S G D a_n424_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.7u
+X1 D G S a_n424_n324# nfet_06v0 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM3_trims a_n2052_n100# a_n2668_n324# a_n1808_n100# a_n1948_n183# a_n1564_n100#
++ a_n2524_n100# a_n1704_n183# a_n2296_n100# a_n2192_n183# a_n2436_n183#
+X0 a_n2052_n100# a_n2192_n183# a_n2296_n100# a_n2668_n324# nfet_06v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X1 a_n1564_n100# a_n1704_n183# a_n1808_n100# a_n2668_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.7u
+X2 a_n1808_n100# a_n1948_n183# a_n2052_n100# a_n2668_n324# nfet_06v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X3 a_n2296_n100# a_n2436_n183# a_n2524_n100# a_n2668_n324# nfet_06v0 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM2_trims a_n4456_n324# a_n3948_n183# a_n3808_n100# a_n4280_n100# a_n4052_n100#
++ a_n4192_n183# a_n4456_252#
+X0 a_n4052_n100# a_n4192_n183# a_n4280_n100# a_n4456_n324# nfet_06v0 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.7u
+X1 a_n3808_n100# a_n3948_n183# a_n4052_n100# a_n4456_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.7u
+.ends
+
+.subckt XM1_trims G D a_n5302_n324# S a_n5302_252#
+X0 D G S a_n5302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM4_trims a_436_n100# a_192_n100# a_n1188_n324# a_n296_n100# a_784_n183# a_n192_n183#
++ a_n436_n183# a_540_n183# a_n52_n100# a_924_n100# a_680_n100# a_n1012_n100# a_n784_n100#
++ a_n924_n183# a_n680_n183# a_n540_n100# a_296_n183# a_52_n183#
+X0 a_436_n100# a_296_n183# a_192_n100# a_n1188_n324# nfet_06v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X1 a_n784_n100# a_n924_n183# a_n1012_n100# a_n1188_n324# nfet_06v0 ad=0.26p pd=1.52u as=0.44p ps=2.88u w=1u l=0.7u
+X2 a_192_n100# a_52_n183# a_n52_n100# a_n1188_n324# nfet_06v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X3 a_680_n100# a_540_n183# a_436_n100# a_n1188_n324# nfet_06v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X4 a_924_n100# a_784_n183# a_680_n100# a_n1188_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.26p ps=1.52u w=1u l=0.7u
+X5 a_n52_n100# a_n192_n183# a_n296_n100# a_n1188_n324# nfet_06v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X6 a_n296_n100# a_n436_n183# a_n540_n100# a_n1188_n324# nfet_06v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+X7 a_n540_n100# a_n680_n183# a_n784_n100# a_n1188_n324# nfet_06v0 ad=0.26p pd=1.52u as=0.26p ps=1.52u w=1u l=0.7u
+.ends
+
+.subckt XM0_trims G D a_n5334_252# a_n5334_n324# S
+X0 S G D a_n5334_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt trim_switch d_0 d_4 d_1 d_2 d_3 n1 n4 n0 n2 n3 temp
+XXM3_trims_0 n3 temp temp d_3 n3 n3 d_3 temp d_3 d_3 XM3_trims
+XXM2_trims_0 temp d_2 n2 n2 temp d_2 temp XM2_trims
+XXM1_trims_0 d_1 n1 temp temp temp XM1_trims
+XXM4_trims_0 n4 temp temp temp d_4 d_4 d_4 d_4 n4 n4 temp n4 temp d_4 d_4 n4 d_4 d_4
++ XM4_trims
+XXM0_trims_0 d_0 n0 temp temp temp XM0_trims
+.ends
+
+.subckt trim d_0 d_4 d_1 d_2 d_3 n1 n4 n0 n2 n3 drain vss
+Xtrim_switch_0 d_0 d_4 d_1 d_2 d_3 n1 n4 n0 n2 n3 vss trim_switch
+.ends
+
+.subckt XMinp_cmp G D a_n302_n324# a_n302_252# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM4_cmp G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XMl4_cmp G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XMinn_cmp G D a_n302_n324# a_n302_252# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XMl3_cmp G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XM3_cmp G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XMl2_cmp G D a_n302_n324# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM2_cmp G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XM1_cmp G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XMl1_cmp G D a_n302_n324# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt comparator trim1 trim0 trim2 trim3 trim4 trimb4 trimb1 trimb0 trimb2 trimb3
++ vp vn outp outn diff in ip clkc vss vdd
+XXMdiff_cmp_0 clkc diff vss vss XMdiff_cmp
+Xtrim_0 trimb0 trimb4 trimb1 trimb2 trimb3 trim_0/n1 trim_0/n4 trim_0/n0 trim_0/n2
++ trim_0/n3 ip vss trim
+Xtrim_1 trim0 trim4 trim1 trim2 trim3 trim_1/n1 trim_1/n4 trim_1/n0 trim_1/n2 trim_1/n3
++ in vss trim
+XXMinp_cmp_0 vp ip vss vss diff XMinp_cmp
+XXM4_cmp_0 clkc ip vdd vdd XM4_cmp
+XXMl4_cmp_0 outn outp vdd vdd XMl4_cmp
+XXMinn_cmp_0 vn in vss vss diff XMinn_cmp
+XXMl3_cmp_0 outp outn vdd vdd XMl3_cmp
+XXM3_cmp_0 clkc outp vdd vdd XM3_cmp
+XXMl2_cmp_0 outn outp vss ip XMl2_cmp
+XXM2_cmp_0 clkc outn vdd vdd XM2_cmp
+XXM1_cmp_0 clkc in vdd vdd XM1_cmp
+XXMl1_cmp_0 outp outn vss in XMl1_cmp
+.ends
+

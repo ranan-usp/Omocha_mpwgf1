@@ -1,0 +1,60 @@
+* NGSPICE file created from buffer.ext - technology: gf180mcuD
+
+.subckt XM2_inv G D w_n319_n356# S VSUBS
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+C0 S w_n319_n356# 0.019807f
+C1 S G 0.002389f
+C2 G w_n319_n356# 0.186402f
+C3 D S 0.045397f
+C4 D w_n319_n356# 0.019528f
+C5 D G 0.002389f
+C6 D VSUBS 0.0454f
+C7 S VSUBS 0.0454f
+C8 G VSUBS 0.124686f
+C9 w_n319_n356# VSUBS 1.48703f
+.ends
+
+.subckt XM1_inv G D a_n302_n324# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+C0 D G 0.002868f
+C1 D S 0.038197f
+C2 S G 0.002868f
+C3 D a_n302_n324# 0.065984f
+C4 S a_n302_n324# 0.066063f
+C5 G a_n302_n324# 0.365275f
+.ends
+
+.subckt inv inv_out vdd inv_in vss
+XXM2_inv_0 inv_in inv_out vdd vdd vss XM2_inv
+XXM1_inv_0 inv_in inv_out vss vss XM1_inv
+C0 vdd vss 0.042913f
+C1 inv_out inv_in 0.075645f
+C2 inv_out vdd 0.090362f
+C3 inv_in vdd 0.070585f
+C4 inv_out vss 0.041103f
+C5 inv_in vss 0.036062f
+C6 vdd 0 1.6624f
+C7 inv_out 0 0.399522f
+C8 vss 0 0.289424f
+C9 inv_in 0 0.606504f
+.ends
+
+.subckt buffer vdd vss buf_in buf_out
+Xinv_0 buf_out vdd inv_0/inv_in vss inv
+Xinv_1 inv_0/inv_in vdd buf_in vss inv
+C0 vss buf_out 0.014268f
+C1 vss buf_in 0.036016f
+C2 vss inv_0/inv_in 0.083091f
+C3 vss vdd -0.023127f
+C4 buf_out inv_0/inv_in 0.153015f
+C5 buf_in inv_0/inv_in 0.110773f
+C6 buf_out vdd 0.044081f
+C7 buf_in vdd 0.061071f
+C8 vdd inv_0/inv_in 0.148573f
+C9 buf_in 0 0.67351f
+C10 vdd 0 3.210569f
+C11 buf_out 0 0.459574f
+C12 vss 0 0.494065f
+C13 inv_0/inv_in 0 0.819152f
+.ends
+

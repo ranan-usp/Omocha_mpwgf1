@@ -1,0 +1,792 @@
+* NGSPICE file created from mim_cap_boss.ext - technology: gf180mcuD
+
+.subckt cap_mim_2p0fF_RCWXT2$1 m4_n3120_n3000# m4_n3240_n3120# VSUBS
+X0 m4_n3120_n3000# m4_n3240_n3120# cap_mim_2f0fF c_width=30u c_length=30u
+C0 m4_n3240_n3120# m4_n3120_n3000# 4.27064f
+C1 m4_n3120_n3000# VSUBS 9.333469f
+C2 m4_n3240_n3120# VSUBS 5.38012f
+.ends
+
+.subckt mim_cap_30_30_flip cap_mim_2p0fF_RCWXT2_0/m4_n3240_n3120# cap_mim_2p0fF_RCWXT2_0/m4_n3120_n3000#
++ VSUBS
+Xcap_mim_2p0fF_RCWXT2_0 cap_mim_2p0fF_RCWXT2_0/m4_n3120_n3000# cap_mim_2p0fF_RCWXT2_0/m4_n3240_n3120#
++ VSUBS cap_mim_2p0fF_RCWXT2$1
+C0 cap_mim_2p0fF_RCWXT2_0/m4_n3120_n3000# VSUBS 9.333469f
+C1 cap_mim_2p0fF_RCWXT2_0/m4_n3240_n3120# VSUBS 5.38012f
+.ends
+
+.subckt cap_mim_2p0fF_RCWXT2 m4_n3120_n3000# m4_n3240_n3120# VSUBS
+X0 m4_n3120_n3000# m4_n3240_n3120# cap_mim_2f0fF c_width=30u c_length=30u
+C0 m4_n3240_n3120# m4_n3120_n3000# 4.27064f
+C1 m4_n3120_n3000# VSUBS 9.333469f
+C2 m4_n3240_n3120# VSUBS 5.38012f
+.ends
+
+.subckt mim_cap_30_30 cap_mim_2p0fF_RCWXT2_0/m4_n3240_n3120# cap_mim_2p0fF_RCWXT2_0/m4_n3120_n3000#
++ VSUBS
+Xcap_mim_2p0fF_RCWXT2_0 cap_mim_2p0fF_RCWXT2_0/m4_n3120_n3000# cap_mim_2p0fF_RCWXT2_0/m4_n3240_n3120#
++ VSUBS cap_mim_2p0fF_RCWXT2
+C0 cap_mim_2p0fF_RCWXT2_0/m4_n3120_n3000# VSUBS 9.333469f
+C1 cap_mim_2p0fF_RCWXT2_0/m4_n3240_n3120# VSUBS 5.38012f
+.ends
+
+.subckt mim_cap1 vss vdd VSUBS
+Xmim_cap_30_30_flip_233 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_299 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_222 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_200 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_288 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_211 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_244 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_255 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_277 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_266 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_35 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_24 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_13 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_57 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_46 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_79 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_68 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_213 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_224 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_235 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_202 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_257 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_279 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_246 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_268 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_223 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_234 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_289 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_212 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_201 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_245 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_256 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_267 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_278 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_14 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_25 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_36 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_47 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_58 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_69 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_214 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_225 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_236 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_203 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_258 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_269 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_247 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_202 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_224 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_235 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_213 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_246 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_257 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_268 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_279 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_15 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_26 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_37 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_48 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_59 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_204 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_226 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_237 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_215 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_248 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_259 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_225 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_203 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_236 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_214 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_247 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_269 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_258 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_27 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_38 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_16 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_49 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_205 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_227 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_216 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_238 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_249 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_237 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_215 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_204 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_226 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_248 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_259 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_28 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_39 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_17 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_228 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_206 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_239 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_217 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_238 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_216 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_227 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_205 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_249 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_18 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_29 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_229 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_218 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_207 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_217 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_228 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_239 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_206 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_19 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_208 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_219 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_218 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_207 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_229 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_209 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_219 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_208 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_190 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_209 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_90 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_180 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_191 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_91 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_80 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_190 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_192 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_170 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_181 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_92 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_81 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_70 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_0 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_191 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_180 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_0 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_160 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_182 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_193 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_171 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_60 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_82 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_93 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_71 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_1 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_170 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_192 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_181 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_1 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_172 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_194 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_183 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_161 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_150 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_83 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_94 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_72 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_50 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_61 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_2 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_160 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_171 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_182 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_193 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_310 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_2 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_195 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_162 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_140 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_151 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_173 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_184 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_84 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_95 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_40 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_73 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_51 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_62 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_3 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_150 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_183 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_194 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_161 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_172 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_300 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_311 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_3 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_196 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_174 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_185 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_141 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_130 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_152 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_163 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_85 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_30 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_96 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_41 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_74 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_63 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_52 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_310 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_4 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_195 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_184 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_151 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_140 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_173 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_162 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_312 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_301 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_4 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_131 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_120 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_197 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_153 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_142 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_186 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_175 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_164 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_97 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_20 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_31 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_86 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_42 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_75 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_53 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_64 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_311 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_300 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_5 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_174 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_196 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_141 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_152 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_130 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_163 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_185 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_313 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_302 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_5 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_165 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_198 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_110 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_154 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_121 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_132 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_143 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_187 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_176 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_21 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_32 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_10 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_54 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_43 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_65 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_76 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_98 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_87 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_301 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_312 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_6 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_164 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_197 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_175 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_153 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_131 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_142 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_120 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_186 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_303 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_314 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_6 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_166 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_188 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_199 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_111 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_100 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_155 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_122 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_133 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_144 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_177 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_88 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_22 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_33 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_99 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_11 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_55 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_44 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_66 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_77 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_302 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_313 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_7 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_110 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_121 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_198 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_154 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_132 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_143 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_165 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_187 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_176 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_304 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_315 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_7 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_167 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_112 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_101 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_123 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_156 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_134 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_145 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_189 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_178 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_23 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_34 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_89 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_12 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_45 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_67 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_56 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_78 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_314 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_303 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_8 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_166 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_199 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_111 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_100 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_122 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_144 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_133 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_155 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_188 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_177 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_305 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_316 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_8 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_168 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_113 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_102 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_135 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_146 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_124 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_157 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_179 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_24 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_35 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_13 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_68 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_57 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_46 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_79 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_304 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_315 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_9 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_178 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_101 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_112 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_123 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_134 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_145 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_156 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_189 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_167 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_306 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_317 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_9 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_114 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_103 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_136 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_147 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_125 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_169 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_158 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_14 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_25 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_36 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_47 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_69 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_58 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_305 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_316 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_179 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_168 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_102 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_113 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_146 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_135 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_157 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_124 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_318 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_307 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_115 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_104 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_137 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_148 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_126 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_159 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_15 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_37 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_26 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_48 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_59 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_306 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_317 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_103 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_114 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_147 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_158 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_136 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_125 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_169 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_308 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_319 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_116 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_105 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_127 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_138 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_149 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_16 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_38 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_27 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_49 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_307 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_318 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_115 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_104 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_137 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_126 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_148 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_159 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_309 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_117 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_106 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_139 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_128 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_17 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_39 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_28 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_308 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_319 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_116 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_105 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_127 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_138 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_149 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_107 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_118 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_129 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_90 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_29 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_18 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_309 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_290 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_117 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_106 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_139 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_128 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_119 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_108 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_80 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_91 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_19 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_291 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_280 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_107 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_118 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_129 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_109 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_290 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_81 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_92 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_70 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_281 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_292 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_270 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_119 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_108 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_280 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_291 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_93 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_82 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_60 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_71 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_293 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_282 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_271 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_260 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_109 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_292 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_281 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_270 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_94 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_83 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_50 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_72 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_61 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_294 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_283 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_250 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_272 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_261 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_293 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_282 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_271 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_260 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_95 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_84 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_73 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_51 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_62 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_40 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_240 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_284 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_295 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_262 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_273 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_251 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_294 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_283 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_250 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_272 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_261 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_30 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_85 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_96 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_41 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_74 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_52 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_63 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_230 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_285 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_296 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_263 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_241 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_274 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_252 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_295 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_284 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_251 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_273 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_262 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_240 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_31 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_97 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_86 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_20 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_75 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_42 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_53 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_64 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_297 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_231 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_220 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_286 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_253 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_264 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_242 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_275 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_230 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_296 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_285 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_263 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_252 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_274 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_241 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_98 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_10 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_32 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_87 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_21 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_54 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_43 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_76 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_65 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_298 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_232 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_210 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_221 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_287 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_243 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_265 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_254 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_276 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_297 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_231 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_286 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_220 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_264 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_253 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_275 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_242 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_11 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_22 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_88 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_99 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_33 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_44 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_55 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_77 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_66 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_200 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_222 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_233 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_211 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_288 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_299 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_244 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_255 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_266 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_277 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_flip_221 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_232 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_298 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_210 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_287 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_254 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_276 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_243 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_flip_265 vss vdd VSUBS mim_cap_30_30_flip
+Xmim_cap_30_30_12 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_23 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_89 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_34 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_78 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_56 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_67 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_45 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_223 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_212 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_201 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_234 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_245 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_256 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_289 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_278 vss vdd VSUBS mim_cap_30_30
+Xmim_cap_30_30_267 vss vdd VSUBS mim_cap_30_30
+C0 vss vdd 0.247136p
+C1 vdd VSUBS 5.99376p
+C2 vss VSUBS 3.003762p
+.ends
+
+.subckt cap_mim_2p0fF_DMYL6H m4_n114303_n17580# m4_n114183_n17460# VSUBS
+X0 m4_n114183_n17460# m4_n114303_n17580# cap_mim_2f0fF c_width=100u c_length=100u
+C0 m4_n114183_n17460# m4_n114303_n17580# 8.5013f
+C1 m4_n114183_n17460# VSUBS 85.381996f
+C2 m4_n114303_n17580# VSUBS 17.2586f
+.ends
+
+.subckt mim_cap_100_100 cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580# cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#
++ VSUBS
+Xcap_mim_2p0fF_DMYL6H_0 cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580# cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460#
++ VSUBS cap_mim_2p0fF_DMYL6H
+C0 cap_mim_2p0fF_DMYL6H_0/m4_n114183_n17460# VSUBS 85.381996f
+C1 cap_mim_2p0fF_DMYL6H_0/m4_n114303_n17580# VSUBS 17.2586f
+.ends
+
+.subckt cap_mim_2p0fF_RCWXT2$2 m4_n3148_n3000# m4_n3268_n3120# VSUBS
+X0 m4_n3148_n3000# m4_n3268_n3120# cap_mim_2f0fF c_width=30u c_length=30u
+C0 m4_n3148_n3000# m4_n3268_n3120# 2.57661f
+C1 m4_n3148_n3000# VSUBS 9.60519f
+C2 m4_n3268_n3120# VSUBS 5.38044f
+.ends
+
+.subckt mim_cap_30_30$1 cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120# cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000#
++ VSUBS
+Xcap_mim_2p0fF_RCWXT2_0 cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000# cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120#
++ VSUBS cap_mim_2p0fF_RCWXT2$2
+C0 cap_mim_2p0fF_RCWXT2_0/m4_n3148_n3000# VSUBS 9.60519f
+C1 cap_mim_2p0fF_RCWXT2_0/m4_n3268_n3120# VSUBS 5.38044f
+.ends
+
+.subckt cap_mim_2p0fF_DMYL6H$1 m4_93823_n2660# m4_93943_n2540# VSUBS
+X0 m4_93943_n2540# m4_93823_n2660# cap_mim_2f0fF c_width=100u c_length=100u
+C0 m4_93943_n2540# m4_93823_n2660# 8.5013f
+C1 m4_93943_n2540# VSUBS 85.381996f
+C2 m4_93823_n2660# VSUBS 17.2586f
+.ends
+
+.subckt mim_cap_100_100$1 cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660# cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#
++ VSUBS
+Xcap_mim_2p0fF_DMYL6H_0 cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660# cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540#
++ VSUBS cap_mim_2p0fF_DMYL6H$1
+C0 cap_mim_2p0fF_DMYL6H_0/m4_93943_n2540# VSUBS 85.381996f
+C1 cap_mim_2p0fF_DMYL6H_0/m4_93823_n2660# VSUBS 17.2586f
+.ends
+
+.subckt mim_cap2 vss vdd m4_n189000_n17028# VSUBS
+Xmim_cap_100_100_1 vss vdd VSUBS mim_cap_100_100
+Xmim_cap_100_100_0 vss vdd VSUBS mim_cap_100_100
+Xmim_cap_100_100_2 vss vdd VSUBS mim_cap_100_100
+Xmim_cap_30_30$1_30 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_31 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_100_100_3 vss vdd VSUBS mim_cap_100_100
+Xmim_cap_30_30$1_20 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_0 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_33 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_11 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_32 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_100_100_4 vss vdd VSUBS mim_cap_100_100
+Xmim_cap_30_30$1_21 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_22 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_10 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_1 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_34 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_12 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_23 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_100_100_5 vss vdd VSUBS mim_cap_100_100
+Xmim_cap_30_30$1_2 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_35 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_13 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_24 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_100_100_6 vss vdd VSUBS mim_cap_100_100
+Xmim_cap_30_30$1_3 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_14 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_25 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_4 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_15 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_26 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_5 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_6 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_27 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_16 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_7 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_17 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_28 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_8 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_18 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_29 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_9 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_30_30$1_19 vss vdd VSUBS mim_cap_30_30$1
+Xmim_cap_100_100$1_0 vss vdd VSUBS mim_cap_100_100$1
+Xmim_cap_100_100$1_1 vss vdd VSUBS mim_cap_100_100$1
+Xmim_cap_100_100$1_2 vss vdd VSUBS mim_cap_100_100$1
+Xmim_cap_100_100$1_3 vss vdd VSUBS mim_cap_100_100$1
+Xmim_cap_100_100$1_4 vss vdd VSUBS mim_cap_100_100$1
+Xmim_cap_100_100$1_5 vss vdd VSUBS mim_cap_100_100$1
+Xmim_cap_100_100$1_6 vss vdd VSUBS mim_cap_100_100$1
+C0 m4_n189000_n17028# vdd 27.2825f
+C1 m4_n189000_n17028# vss 7.706069f
+C2 vdd vss 0.319753p
+C3 m4_n189000_n17028# VSUBS 58.2746f
+C4 vdd VSUBS 2.005677p
+C5 vss VSUBS 0.812106p
+.ends
+
+.subckt mim_cap_boss vdd vss
+Xmim_cap1_0 mim_cap2_0/vss vdd VSUBS mim_cap1
+Xmim_cap2_0 mim_cap2_0/vss vdd vss VSUBS mim_cap2
+C0 mim_cap2_0/vss vdd 0.619817p
+C1 vdd vss 0.618248p
+C2 vss VSUBS 0.257806p
+C3 vdd VSUBS 7.991188p
+C4 mim_cap2_0/vss VSUBS 3.944999p
+.ends
+

@@ -1,0 +1,71 @@
+* NGSPICE file created from latch.ext - technology: gf180mcuD
+
+.subckt XM2_x4_latch G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XM1_x4_latch G D a_n302_n324# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt x4_latch inv_out inv_in vdd vss
+XXM2_x4_latch_0 inv_in inv_out vdd vdd XM2_x4_latch
+XXM1_x4_latch_0 inv_in inv_out vss vss XM1_x4_latch
+.ends
+
+.subckt XM2_x3_latch G D w_n319_n356# S
+X0 S G D w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XM1_x3_latch G D a_n319_n324# S
+X0 S G D a_n319_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt x3_latch inv_out vdd inv_in vss
+XXM2_x3_latch_0 inv_in inv_out vdd vdd XM2_x3_latch
+XXM1_x3_latch_0 inv_in inv_out vss vss XM1_x3_latch
+.ends
+
+.subckt XM4_latch G D a_n319_n324# S a_n319_252#
+X0 D G S a_n319_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM2_x2_latch G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XM1_x2_latch G a_n320_n324# D a_n318_252# S
+X0 D G S a_n320_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt x2_latch inv_out vdd inv_in XM1_x2_latch_0/a_n318_252# vss
+XXM2_x2_latch_0 inv_in inv_out vdd vdd XM2_x2_latch
+XXM1_x2_latch_0 inv_in vss inv_out XM1_x2_latch_0/a_n318_252# vss XM1_x2_latch
+.ends
+
+.subckt XM3_latch G D a_n319_n324# S a_n319_252#
+X0 D G S a_n319_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM2_x1_latch G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XM1_x1_latch G D a_n318_n324# S
+X0 D G S a_n318_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt x1_latch inv_out inv_in vdd vss
+XXM2_x1_latch_0 inv_in inv_out vdd vdd XM2_x1_latch
+XXM1_x1_latch_0 inv_in inv_out vss vss XM1_x1_latch
+.ends
+
+.subckt latch vss vdd Q Qn R S
+Xx4_latch_0 XM3_latch_0/G S vdd vss x4_latch
+Xx3_latch_0 XM4_latch_0/G vdd R vss x3_latch
+XXM4_latch_0 XM4_latch_0/G Q vss vss vss XM4_latch
+Xx2_latch_0 Qn vdd Q vss vss x2_latch
+XXM3_latch_0 XM3_latch_0/G Qn vss vss vss XM3_latch
+Xx1_latch_0 Q Qn vdd vss x1_latch
+.ends
+

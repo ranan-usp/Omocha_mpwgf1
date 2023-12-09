@@ -1,0 +1,32 @@
+.include dac_in.lvs.spice
+
+x1 inputp inputm vss vdd input_signal[0] input_signal[1] input_signal[2]
++ input_signal[3] input_signal[4] input_signal[5] input_signal[6] input_signal[7]
++ input_signal[8] input_signal[9] dac_in
+
+VIN input_signal[0] GND PULSE(0 6 10e-6 1e-9 1e-9 0.5e-6 1e-6)
+V1 input_signal[1] GND 6
+V2 input_signal[2] GND 6
+V3 input_signal[3] GND 0
+V4 input_signal[4] GND 6
+V5 input_signal[5] GND 0
+V6 input_signal[6] GND 6
+V7 input_signal[7] GND 0
+V8 input_signal[8] GND 6
+V9 input_signal[9] GND 0
+
+.include /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+
+.control
+save inputp inputm
+tran 1m 30m 5m
+.endc
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
+

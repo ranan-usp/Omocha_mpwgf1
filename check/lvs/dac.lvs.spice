@@ -1,0 +1,95 @@
+* NGSPICE file created from dac.ext - technology: gf180mcuD
+
+.subckt XM1_bs G D a_n302_n324# a_n302_252# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM4_bs G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XMs1_bs G D a_n302_n324# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt bs_cap I1_1_1_R0_BOT I1_1_1_R0_TOP
+X0 I1_1_1_R0_TOP I1_1_1_R0_BOT cap_mim_2f0fF c_width=12.339999u c_length=12.339999u
+.ends
+
+.subckt XM3_bs G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XM1_bs_inv G D a_n302_n324# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM2_bs_inv G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt bs_inv inv_out vdd inv_in vss
+XXM1_bs_inv_0 inv_in inv_out vss vss XM1_bs_inv
+XXM2_bs_inv_0 inv_in inv_out vdd vdd XM2_bs_inv
+.ends
+
+.subckt XMs_bs G D a_n302_n324# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM2_bs G D a_n302_n324# a_n302_252# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XMs2_bs G D a_n302_n324# a_n302_252# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt bootstrapped_sw en enb bs_in bs_out vg vs vbsh vbsl vdd vss
+XXM1_bs_0 vg vbsl vss vss bs_in XM1_bs
+XXM4_bs_0 vg vdd vbsh vbsh XM4_bs
+XXMs1_bs_0 vdd vs vss vg XMs1_bs
+Xbs_cap_0 vbsl vbsh bs_cap
+Xbs_cap_1 vbsl vbsh bs_cap
+XXM3_bs_0 enb vg vbsh vbsh XM3_bs
+Xbs_cap_2 vbsl vbsh bs_cap
+Xbs_cap_4 vbsl vbsh bs_cap
+Xbs_cap_3 vbsl vbsh bs_cap
+Xbs_inv_0 enb vdd en vss bs_inv
+XXMs_bs_0 vg bs_out vss bs_in XMs_bs
+XXM2_bs_0 enb vbsl vss vss vss XM2_bs
+XXMs2_bs_0 enb vss vss vss vs XMs2_bs
+.ends
+
+.subckt inv VSS ZN I VDD VPW VNW VSUBS
+X0 VDD I ZN VNW pfet_06v0 ad=1.2078p pd=4.42u as=0.4575p ps=1.97u w=1.22u l=0.5u
+X1 ZN I VSS VSUBS nfet_06v0 ad=0.2255p pd=1.37u as=0.5084p ps=2.88u w=0.82u l=0.6u
+X2 VSS I ZN VSUBS nfet_06v0 ad=0.8118p pd=3.62u as=0.2255p ps=1.37u w=0.82u l=0.6u
+X3 ZN I VDD VNW pfet_06v0 ad=0.4575p pd=1.97u as=0.7564p ps=3.68u w=1.22u l=0.5u
+.ends
+
+.subckt inv_renketu inv_0/I inv_1/ZN inv_2/I inv_4/I inv_6/I inv_9/ZN inv_6/ZN inv_3/ZN
++ inv_0/ZN inv_10/ZN inv_8/I inv_10/I inv_1/I inv_8/ZN inv_5/ZN inv_3/I inv_2/ZN inv_5/I
++ inv_7/I inv_9/I vdd vss inv_4/ZN inv_7/ZN
+Xinv_10 vss inv_10/ZN inv_10/I vdd inv_10/VPW vdd vss inv
+Xinv_0 vss inv_0/ZN inv_0/I vdd inv_0/VPW vdd vss inv
+Xinv_1 vss inv_1/ZN inv_1/I vdd inv_1/VPW vdd vss inv
+Xinv_2 vss inv_2/ZN inv_2/I vdd inv_2/VPW vdd vss inv
+Xinv_3 vss inv_3/ZN inv_3/I vdd inv_3/VPW vdd vss inv
+Xinv_4 vss inv_4/ZN inv_4/I vdd inv_4/VPW vdd vss inv
+Xinv_5 vss inv_5/ZN inv_5/I vdd inv_5/VPW vdd vss inv
+Xinv_6 vss inv_6/ZN inv_6/I vdd inv_6/VPW vdd vss inv
+Xinv_7 vss inv_7/ZN inv_7/I vdd inv_7/VPW vdd vss inv
+Xinv_8 vss inv_8/ZN inv_8/I vdd inv_8/VPW vdd vss inv
+Xinv_9 vss inv_9/ZN inv_9/I vdd inv_9/VPW vdd vss inv
+.ends
+
+.subckt dac vdd dac_in vss dac_out dum ctl1 ctl2 ctl3 ctl4 ctl5 ctl6 ctl7 ctl8 ctl9
++ ctl10 sample
+Xbootstrapped_sw_0 sample bootstrapped_sw_0/enb dac_in dac_out bootstrapped_sw_0/vg
++ bootstrapped_sw_0/vs bootstrapped_sw_0/vbsh bootstrapped_sw_0/vbsl vdd vss bootstrapped_sw
+Xinv_renketu_0 dum carray_0/n2 ctl10 ctl3 ctl5 carray_0/n8 carray_0/n5 carray_0/n1
++ carray_0/ndum carray_0/n9 ctl7 ctl9 ctl2 carray_0/n7 carray_0/n4 ctl1 carray_0/n0
++ ctl4 ctl6 ctl8 vdd vss carray_0/n3 carray_0/n6 inv_renketu
+.ends
+

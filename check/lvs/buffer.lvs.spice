@@ -1,0 +1,20 @@
+* NGSPICE file created from buffer.ext - technology: gf180mcuD
+
+.subckt XM2_inv G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XM1_inv G D a_n302_n324# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt inv inv_out vdd inv_in vss
+XXM2_inv_0 inv_in inv_out vdd vdd XM2_inv
+XXM1_inv_0 inv_in inv_out vss vss XM1_inv
+.ends
+
+.subckt buffer vdd vss buf_in buf_out
+Xinv_0 buf_out vdd inv_0/inv_in vss inv
+Xinv_1 inv_0/inv_in vdd buf_in vss inv
+.ends
+

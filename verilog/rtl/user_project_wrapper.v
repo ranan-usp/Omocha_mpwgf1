@@ -75,7 +75,7 @@ saradc saradc (
 	.vdd(vdd),	// User area 1 1.8V power
 	.vss(vss),	// User area 1 digital ground
 `endif
-    .user_input(io_in[27:36]),
+    .user_input(io_in[36:27]),
     .result(la_data_out[63:54]),
     .valid(la_data_out[53]),
     .cal(la_data_in[52]),
@@ -87,7 +87,7 @@ saradc saradc (
 anan_logo anan_logo (
 `ifdef USE_POWER_PINS
 	.vdd(vdd),	// User area 1 1.8V power
-	.vss(vss),	// User area 1 digital ground
+	.vss(vss)	// User area 1 digital ground
 `endif
 );
 
