@@ -24,7 +24,7 @@ C4 S a_n302_n324# 0.066063f
 C5 G a_n302_n324# 0.365275f
 .ends
 
-.subckt inv inv_out vdd inv_in vss
+.subckt inv2 inv_out vdd inv_in vss
 XXM2_inv_0 inv_in inv_out vdd vdd vss XM2_inv
 XXM1_inv_0 inv_in inv_out vss vss XM1_inv
 C0 vdd vss 0.042913f
@@ -40,8 +40,8 @@ C9 inv_in 0 0.606504f
 .ends
 
 .subckt buffer vdd vss buf_in buf_out
-Xinv_0 buf_out vdd inv_0/inv_in vss inv
-Xinv_1 inv_0/inv_in vdd buf_in vss inv
+Xinv_0 buf_out vdd inv_0/inv_in vss inv2
+Xinv_1 inv_0/inv_in vdd buf_in vss inv2
 C0 vss buf_out 0.014268f
 C1 vss buf_in 0.036016f
 C2 vss inv_0/inv_in 0.083091f

@@ -1,0 +1,89 @@
+
+.include ./pex/sarlogic.pex.spice
+.include ./pex/dac.pex.spice
+.include ./pex/comparator.pex.spice
+.include ./pex/latch.pex.spice
+.include ./pex/buffer.pex.spice
+
+Xsarlogic ctln0 ctln1 ctln2 ctln3 ctln4 ctln5 ctln6 ctln7 ctln8 ctln9 
++ ctlp0 ctlp1 ctlp2 ctlp3 ctlp4 ctlp5 ctlp6 ctlp7 ctlp8 ctlp9 
++ result0 result1 result2 result3 result4 result5 result6 result7 result8 result9
++ trim0 trim1 trim2 trim3 trim4 trimb0 trimb1 trimb2 trimb3 trimb4
++ rstn en cal clk comp logic_clkc sample valid vdd vss sarlogic 
+
+Xdacp vdd dac_inp vss dac_outp vdd ctlp1 ctlp2 ctlp3 ctlp4 ctlp5 ctlp6 ctlp7 ctlp8 ctlp9
++ ctlp0 sample dac 
+Xdacm vdd dac_inm vss dac_outm vdd ctln1 ctln2 ctln3 ctln4 ctln5 ctln6 ctln7 ctln8 ctln9
++ ctln0 sample dac 
+
+Xcom trim1 trim0 trim2 trim3 trim4 trimb4 trimb1 trimb0 trimb2 trimb3
++ dac_outp dac_outm cmp_outp cmp_outn cmp_clkc vss vdd comparator 
+
+Xlatch vss vdd comp Qn cmp_outn cmp_outp latch 
+
+Xbuf vdd vss logic_clkc cmp_clkc buffer 
+
+VDD vdd GND 5
+VSS vss GND 0
+VEN en GND 5
+Vcal cal GND 0
+Vclk clk GND PULSE(0 5 10e-6 1e-9 1e-9 2e-6 4e-6)
+Vrstn rstn GND PULSE(0 5 10e-6 1e-9 1e-9 99e-6 100e-6)
+VINP dac_inp GND SIN(2.5 2.5 40e6 0 0)
+VINM dac_inm GND SIN(2.5 -2.5 40e6 0 0)
+
+.include /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+.ic v(trim0)=0
+.ic v(trim1)=0
+.ic v(trim2)=0
+.ic v(trim3)=0
+.ic v(trim4)=0
+.ic v(trimb0)=0
+.ic v(trimb1)=0
+.ic v(trimb2)=0
+.ic v(trimb3)=0
+.ic v(trimb4)=0
+.ic v(result0)=0
+.ic v(result1)=0
+.ic v(result2)=0
+.ic v(result3)=0
+.ic v(result4)=0
+.ic v(result5)=0
+.ic v(result6)=0
+.ic v(result7)=0
+.ic v(result8)=0
+.ic v(result9)=0
+.ic v(ctlp0)=0
+.ic v(ctlp1)=0
+.ic v(ctlp2)=0
+.ic v(ctlp3)=0
+.ic v(ctlp4)=0
+.ic v(ctlp5)=0
+.ic v(ctlp6)=0
+.ic v(ctlp7)=0
+.ic v(ctlp8)=0
+.ic v(ctlp9)=0
+.ic v(ctln0)=0
+.ic v(ctln1)=0
+.ic v(ctln2)=0
+.ic v(ctln3)=0
+.ic v(ctln4)=0
+.ic v(ctln5)=0
+.ic v(ctln6)=0
+.ic v(ctln7)=0
+.ic v(ctln8)=0
+.ic v(ctln9)=0
+
+.control
+save dac_inp dac_inm result0 result1 result2 result3 result4 result5 result6 result7 result8 result9
+tran 100e-9 68e-6 uic
+.endc
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
+
