@@ -1,0 +1,63 @@
+* NGSPICE file created from bootstrapped_sw.ext - technology: gf180mcuD
+
+.subckt XM1_bs G D a_n302_n324# a_n302_252# S
+X0 S G D a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM4_bs G D w_n319_n356# S
+X0 S G D w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XMs1_bs G D a_n302_n324# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt bs_cap I1_1_1_R0_BOT I1_1_1_R0_TOP
+X0 I1_1_1_R0_TOP I1_1_1_R0_BOT cap_mim_2f0fF c_width=12.339999u c_length=12.339999u
+.ends
+
+.subckt XM3_bs G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt XM1_bs_inv G D a_n302_n324# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM2_bs_inv G D w_n319_n356# S
+X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
+.ends
+
+.subckt bs_inv inv_out vdd inv_in vss
+XXM1_bs_inv_0 inv_in inv_out vss vss XM1_bs_inv
+XXM2_bs_inv_0 inv_in inv_out vdd vdd XM2_bs_inv
+.ends
+
+.subckt XMs_bs G D a_n302_n324# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XM2_bs G D a_n302_n324# a_n302_252# S
+X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt XMs2_bs G D a_n302_n324# a_n302_252# S
+X0 S G D a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
+.ends
+
+.subckt bootstrapped_sw vbsl vbsh vdd vss en enb bs_in bs_out vg vs
+XXM1_bs_0 vg bs_in vss vss vbsl XM1_bs
+XXM4_bs_0 vg vbsh vbsh vdd XM4_bs
+XXMs1_bs_0 vdd vs vss vg XMs1_bs
+Xbs_cap_0 vbsl vbsh bs_cap
+Xbs_cap_1 vbsl vbsh bs_cap
+XXM3_bs_0 enb vg vbsh vbsh XM3_bs
+Xbs_cap_2 vbsl vbsh bs_cap
+Xbs_cap_4 vbsl vbsh bs_cap
+Xbs_cap_3 vbsl vbsh bs_cap
+Xbs_inv_0 enb vdd en vss bs_inv
+XXMs_bs_0 vg bs_out vss bs_in XMs_bs
+XXM2_bs_0 enb vbsl vss vss vss XM2_bs
+XXMs2_bs_0 enb vs vss vss vss XMs2_bs
+.ends
+

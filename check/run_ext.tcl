@@ -34,8 +34,8 @@ extract all
 extract do all
 #########################
 ext2sim run
-ext2sim rthresh 0.1
-ext2sim cthresh 0.01
+ext2sim rthresh 1
+ext2sim cthresh 0.1
 ext2sim extresist on
 
 #########################
@@ -52,9 +52,9 @@ extresist help
 # ext2spice short resistor
 ext2spice subcircuit on
 ext2spice resistor tee on
-ext2spice cthresh 0.001
+ext2spice cthresh 0.1
 # ext2spice cthresh infinite
-ext2spice rthresh 0.001
+ext2spice rthresh 1
 ext2spice subcircuit on
 ext2spice ngspice
 ext2spice -o $::env(PEX_FILE)

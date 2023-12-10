@@ -1,0 +1,1176 @@
+* NGSPICE file created from phase_inverter.ext - technology: gf180mcuD
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_16 VDD VSS VNW VPW a_36_472# a_1468_375#
++ VSUBS
+X0 VDD a_572_375# a_484_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X1 a_572_375# a_484_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X2 a_124_375# a_36_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X3 a_1468_375# a_1380_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X4 VDD a_1020_375# a_932_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X5 VDD a_1468_375# a_1380_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X6 VDD a_124_375# a_36_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X7 a_1020_375# a_932_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+C0 a_1468_375# VNW 0.18122f
+C1 VDD a_124_375# 0.12673f
+C2 VNW a_572_375# 0.181468f
+C3 a_1020_375# a_932_472# 0.285629f
+C4 VSS a_572_375# 0.134699f
+C5 a_572_375# a_484_472# 0.285629f
+C6 VSS a_932_472# 0.148077f
+C7 a_1380_472# VSS 0.144845f
+C8 VNW VDD 0.217349f
+C9 a_1020_375# VDD 0.129962f
+C10 a_36_472# a_124_375# 0.285629f
+C11 VDD a_484_472# 0.179463f
+C12 a_1468_375# a_1380_472# 0.285629f
+C13 VNW a_124_375# 0.180172f
+C14 a_1468_375# VDD 0.129266f
+C15 VSS a_124_375# 0.134699f
+C16 VDD a_572_375# 0.129962f
+C17 VDD a_932_472# 0.179463f
+C18 VSS a_36_472# 0.147381f
+C19 a_1380_472# VDD 0.179463f
+C20 a_1020_375# VNW 0.181468f
+C21 a_1020_375# VSS 0.134699f
+C22 VSS a_484_472# 0.148077f
+C23 VSS VSUBS 0.642184f
+C24 VDD VSUBS 0.493288f
+C25 VNW VSUBS 3.05206f
+C26 a_1380_472# VSUBS 0.345058f
+C27 a_932_472# VSUBS 0.33241f
+C28 a_484_472# VSUBS 0.33241f
+C29 a_36_472# VSUBS 0.404746f
+C30 a_1468_375# VSUBS 0.233029f
+C31 a_1020_375# VSUBS 0.171606f
+C32 a_572_375# VSUBS 0.171606f
+C33 a_124_375# VSUBS 0.185399f
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__buf_8 Z I VDD VSS VNW VPW a_224_472# VSUBS
+X0 a_224_472# I VDD VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X1 Z a_224_472# VDD VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X2 a_224_472# I VSS VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X3 VSS a_224_472# Z VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X4 VDD a_224_472# Z VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X5 Z a_224_472# VDD VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X6 a_224_472# I VSS VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.3608p ps=2.52u w=0.82u l=0.6u
+X7 Z a_224_472# VSS VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X8 VDD a_224_472# Z VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X9 Z a_224_472# VSS VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X10 Z a_224_472# VSS VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X11 VDD I a_224_472# VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X12 VDD a_224_472# Z VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X13 Z a_224_472# VDD VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X14 VSS a_224_472# Z VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X15 VDD I a_224_472# VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X16 VSS a_224_472# Z VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X17 VDD a_224_472# Z VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X18 VSS a_224_472# Z VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X19 Z a_224_472# VDD VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X20 VSS I a_224_472# VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X21 a_224_472# I VDD VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.5368p ps=3.32u w=1.22u l=0.5u
+X22 VSS I a_224_472# VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X23 Z a_224_472# VSS VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+C0 VSS a_224_472# 0.659695f
+C1 I a_224_472# 0.796069f
+C2 Z a_224_472# 2.29481f
+C3 VNW I 0.55539f
+C4 I VDD 0.1311f
+C5 VDD Z 0.819024f
+C6 VNW a_224_472# 1.14633f
+C7 VDD a_224_472# 0.74621f
+C8 VSS I 0.158668f
+C9 VSS Z 0.70427f
+C10 VNW VDD 0.305516f
+C11 VSS VSUBS 0.910368f
+C12 Z VSUBS 0.18914f
+C13 VDD VSUBS 0.724491f
+C14 I VSUBS 1.16773f
+C15 VNW VSUBS 4.79254f
+C16 a_224_472# VSUBS 2.38465f
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_64 VDD VSS VNW VPW a_36_472# VSUBS
+X0 a_4604_375# a_4516_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X1 VDD a_572_375# a_484_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X2 VDD a_2364_375# a_2276_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X3 a_4156_375# a_4068_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X4 a_5500_375# a_5412_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X5 a_572_375# a_484_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X6 VDD a_5052_375# a_4964_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X7 VDD a_6844_375# a_6756_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X8 VDD a_1916_375# a_1828_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X9 a_124_375# a_36_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X10 a_5052_375# a_4964_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X11 a_1916_375# a_1828_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X12 VDD a_4604_375# a_4516_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X13 a_1468_375# a_1380_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X14 a_2812_375# a_2724_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X15 VDD a_3260_375# a_3172_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X16 a_2364_375# a_2276_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X17 a_5948_375# a_5860_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X18 VDD a_2812_375# a_2724_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X19 a_3260_375# a_3172_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X20 VDD a_1020_375# a_932_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X21 VDD a_5500_375# a_5412_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X22 a_6844_375# a_6756_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X23 a_6396_375# a_6308_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X24 VDD a_6396_375# a_6308_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X25 VDD a_1468_375# a_1380_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X26 VDD a_4156_375# a_4068_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X27 VDD a_5948_375# a_5860_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X28 VDD a_124_375# a_36_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X29 a_3708_375# a_3620_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X30 VDD a_3708_375# a_3620_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X31 a_1020_375# a_932_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+C0 VNW a_1916_375# 0.181468f
+C1 a_2276_472# a_2364_375# 0.285629f
+C2 a_6844_375# a_6756_472# 0.285629f
+C3 VDD a_4156_375# 0.129962f
+C4 VSS a_4964_472# 0.144729f
+C5 VDD a_6396_375# 0.129962f
+C6 VNW a_6844_375# 0.18122f
+C7 VSS a_1828_472# 0.144729f
+C8 VDD a_2276_472# 0.179463f
+C9 VSS a_1916_375# 0.132921f
+C10 VDD a_4604_375# 0.129962f
+C11 VDD a_3620_472# 0.179463f
+C12 VSS a_3172_472# 0.144729f
+C13 VDD a_3260_375# 0.129962f
+C14 VDD a_4516_472# 0.179463f
+C15 VSS a_4068_472# 0.144729f
+C16 VNW a_1468_375# 0.181468f
+C17 a_1828_472# a_1916_375# 0.285629f
+C18 VNW a_1020_375# 0.181468f
+C19 VDD a_5052_375# 0.129962f
+C20 VNW a_5500_375# 0.181468f
+C21 VDD a_3708_375# 0.129962f
+C22 VSS a_5412_472# 0.144729f
+C23 VDD a_5860_472# 0.179463f
+C24 VSS a_1468_375# 0.132921f
+C25 VSS a_1020_375# 0.132921f
+C26 VDD a_2812_375# 0.129962f
+C27 VSS a_5500_375# 0.132921f
+C28 VDD a_5948_375# 0.129962f
+C29 VNW a_2364_375# 0.181468f
+C30 VSS a_6308_472# 0.144729f
+C31 VDD a_6756_472# 0.179463f
+C32 a_1020_375# a_932_472# 0.285629f
+C33 VNW VDD 0.842606f
+C34 VDD a_124_375# 0.12673f
+C35 VNW a_572_375# 0.181468f
+C36 VDD a_2724_472# 0.179463f
+C37 VSS a_2364_375# 0.132921f
+C38 a_4516_472# a_4604_375# 0.285629f
+C39 VDD VSS 0.105475f
+C40 VSS a_572_375# 0.132921f
+C41 VSS a_484_472# 0.144729f
+C42 VDD a_932_472# 0.179463f
+C43 a_3620_472# a_3708_375# 0.285629f
+C44 VNW a_4156_375# 0.181468f
+C45 VDD a_4964_472# 0.179463f
+C46 VNW a_6396_375# 0.181468f
+C47 VSS a_1380_472# 0.144729f
+C48 VDD a_1828_472# 0.179463f
+C49 VDD a_1916_375# 0.129962f
+C50 VNW a_4604_375# 0.181468f
+C51 VSS a_4156_375# 0.132921f
+C52 VDD a_3172_472# 0.179463f
+C53 VDD a_6844_375# 0.129266f
+C54 VSS a_6396_375# 0.132921f
+C55 VSS a_2276_472# 0.144729f
+C56 a_5500_375# a_5412_472# 0.285629f
+C57 a_36_472# a_124_375# 0.285629f
+C58 VSS a_4604_375# 0.132921f
+C59 VNW a_3260_375# 0.181468f
+C60 VDD a_4068_472# 0.179463f
+C61 VSS a_3620_472# 0.144729f
+C62 VSS a_36_472# 0.144033f
+C63 a_5948_375# a_5860_472# 0.285629f
+C64 VNW a_5052_375# 0.181468f
+C65 VSS a_3260_375# 0.132921f
+C66 VNW a_3708_375# 0.181468f
+C67 VDD a_5412_472# 0.179463f
+C68 VSS a_4516_472# 0.144729f
+C69 VDD a_1468_375# 0.129962f
+C70 VDD a_1020_375# 0.129962f
+C71 VNW a_2812_375# 0.181468f
+C72 VNW a_5948_375# 0.181468f
+C73 VSS a_5052_375# 0.132921f
+C74 VDD a_5500_375# 0.129962f
+C75 VSS a_3708_375# 0.132921f
+C76 VDD a_6308_472# 0.179463f
+C77 VSS a_5860_472# 0.144729f
+C78 a_2724_472# a_2812_375# 0.285629f
+C79 a_4068_472# a_4156_375# 0.285629f
+C80 VSS a_2812_375# 0.132921f
+C81 VNW a_124_375# 0.180172f
+C82 VSS a_5948_375# 0.132921f
+C83 a_1380_472# a_1468_375# 0.285629f
+C84 VDD a_2364_375# 0.129962f
+C85 VSS a_6756_472# 0.141496f
+C86 a_5052_375# a_4964_472# 0.285629f
+C87 a_3172_472# a_3260_375# 0.285629f
+C88 VSS a_124_375# 0.132921f
+C89 VDD a_572_375# 0.129962f
+C90 VSS a_2724_472# 0.144729f
+C91 VDD a_484_472# 0.179463f
+C92 a_484_472# a_572_375# 0.285629f
+C93 a_6396_375# a_6308_472# 0.285629f
+C94 VSS a_932_472# 0.144729f
+C95 VDD a_1380_472# 0.179463f
+C96 VSS VSUBS 2.33708f
+C97 VDD VSUBS 1.73533f
+C98 VNW VSUBS 11.406401f
+C99 a_6756_472# VSUBS 0.345058f
+C100 a_6308_472# VSUBS 0.33241f
+C101 a_5860_472# VSUBS 0.33241f
+C102 a_5412_472# VSUBS 0.33241f
+C103 a_4964_472# VSUBS 0.33241f
+C104 a_4516_472# VSUBS 0.33241f
+C105 a_4068_472# VSUBS 0.33241f
+C106 a_3620_472# VSUBS 0.33241f
+C107 a_3172_472# VSUBS 0.33241f
+C108 a_2724_472# VSUBS 0.33241f
+C109 a_2276_472# VSUBS 0.33241f
+C110 a_1828_472# VSUBS 0.33241f
+C111 a_1380_472# VSUBS 0.33241f
+C112 a_932_472# VSUBS 0.33241f
+C113 a_484_472# VSUBS 0.33241f
+C114 a_36_472# VSUBS 0.404746f
+C115 a_6844_375# VSUBS 0.233068f
+C116 a_6396_375# VSUBS 0.171644f
+C117 a_5948_375# VSUBS 0.171644f
+C118 a_5500_375# VSUBS 0.171644f
+C119 a_5052_375# VSUBS 0.171644f
+C120 a_4604_375# VSUBS 0.171644f
+C121 a_4156_375# VSUBS 0.171644f
+C122 a_3708_375# VSUBS 0.171644f
+C123 a_3260_375# VSUBS 0.171644f
+C124 a_2812_375# VSUBS 0.171644f
+C125 a_2364_375# VSUBS 0.171644f
+C126 a_1916_375# VSUBS 0.171644f
+C127 a_1468_375# VSUBS 0.171644f
+C128 a_1020_375# VSUBS 0.171644f
+C129 a_572_375# VSUBS 0.171644f
+C130 a_124_375# VSUBS 0.185708f
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_32 VDD VSS VNW VPW a_36_472# VSUBS
+X0 VDD a_572_375# a_484_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X1 VDD a_2364_375# a_2276_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X2 a_572_375# a_484_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X3 VDD a_1916_375# a_1828_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X4 a_124_375# a_36_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X5 a_1916_375# a_1828_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X6 a_1468_375# a_1380_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X7 a_2812_375# a_2724_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X8 VDD a_3260_375# a_3172_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X9 a_2364_375# a_2276_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X10 VDD a_2812_375# a_2724_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X11 a_3260_375# a_3172_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X12 VDD a_1020_375# a_932_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X13 VDD a_1468_375# a_1380_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X14 VDD a_124_375# a_36_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X15 a_1020_375# a_932_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+C0 a_2812_375# VNW 0.181468f
+C1 a_1020_375# VSS 0.131736f
+C2 a_1828_472# VSS 0.142721f
+C3 a_2276_472# VDD 0.179463f
+C4 a_1916_375# VSS 0.131736f
+C5 a_3260_375# VDD 0.129266f
+C6 a_3172_472# VSS 0.139489f
+C7 VDD a_2724_472# 0.179463f
+C8 a_2812_375# VSS 0.131736f
+C9 VDD a_572_375# 0.129962f
+C10 a_1020_375# VDD 0.129962f
+C11 a_36_472# a_124_375# 0.285629f
+C12 VDD VNW 0.425768f
+C13 a_1828_472# VDD 0.179463f
+C14 a_2364_375# a_2276_472# 0.285629f
+C15 a_124_375# VNW 0.180172f
+C16 a_1916_375# VDD 0.129962f
+C17 VDD a_3172_472# 0.179463f
+C18 a_1468_375# VNW 0.181468f
+C19 VDD a_2812_375# 0.129962f
+C20 a_2364_375# VNW 0.181468f
+C21 a_124_375# VSS 0.131736f
+C22 a_484_472# a_572_375# 0.285629f
+C23 a_1468_375# VSS 0.131736f
+C24 a_1380_472# VSS 0.142721f
+C25 a_1020_375# a_932_472# 0.285629f
+C26 a_2364_375# VSS 0.131736f
+C27 VDD a_124_375# 0.12673f
+C28 a_3260_375# VNW 0.18122f
+C29 a_484_472# VSS 0.142721f
+C30 a_1468_375# VDD 0.129962f
+C31 VDD a_1380_472# 0.179463f
+C32 a_3260_375# a_3172_472# 0.285629f
+C33 a_932_472# VSS 0.142721f
+C34 a_572_375# VNW 0.181468f
+C35 a_2364_375# VDD 0.129962f
+C36 a_1020_375# VNW 0.181468f
+C37 a_2276_472# VSS 0.142721f
+C38 a_1916_375# VNW 0.181468f
+C39 a_1916_375# a_1828_472# 0.285629f
+C40 a_1468_375# a_1380_472# 0.285629f
+C41 VDD a_484_472# 0.179463f
+C42 a_2812_375# a_2724_472# 0.285629f
+C43 a_2724_472# VSS 0.142721f
+C44 a_36_472# VSS 0.142026f
+C45 a_572_375# VSS 0.131736f
+C46 VDD a_932_472# 0.179463f
+C47 VSS VSUBS 1.20585f
+C48 VDD VSUBS 0.907304f
+C49 VNW VSUBS 5.83682f
+C50 a_3172_472# VSUBS 0.345058f
+C51 a_2724_472# VSUBS 0.33241f
+C52 a_2276_472# VSUBS 0.33241f
+C53 a_1828_472# VSUBS 0.33241f
+C54 a_1380_472# VSUBS 0.33241f
+C55 a_932_472# VSUBS 0.33241f
+C56 a_484_472# VSUBS 0.33241f
+C57 a_36_472# VSUBS 0.404746f
+C58 a_3260_375# VSUBS 0.233093f
+C59 a_2812_375# VSUBS 0.17167f
+C60 a_2364_375# VSUBS 0.17167f
+C61 a_1916_375# VSUBS 0.17167f
+C62 a_1468_375# VSUBS 0.17167f
+C63 a_1020_375# VSUBS 0.17167f
+C64 a_572_375# VSUBS 0.17167f
+C65 a_124_375# VSUBS 0.185915f
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__antenna VSS I VDD VNW VPW VSUBS
+D0 VSUBS I diode_nd2ps_06v0 pj=1.86u area=0.2052p
+D1 I VNW diode_pd2nw_06v0 pj=1.86u area=0.2052p
+C0 VSS VSUBS 0.12617f
+C1 I VSUBS 0.139667f
+C2 VNW VSUBS 0.615384f
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_4 VDD VSS VNW VPW a_36_472# VSUBS
+X0 a_124_375# a_36_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X1 VDD a_124_375# a_36_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+C0 a_36_472# VSS 0.150876f
+C1 VDD a_124_375# 0.126034f
+C2 a_124_375# VNW 0.179924f
+C3 a_36_472# a_124_375# 0.285629f
+C4 VSS VSUBS 0.218985f
+C5 VDD VSUBS 0.182777f
+C6 VNW VSUBS 0.96348f
+C7 a_36_472# VSUBS 0.417394f
+C8 a_124_375# VSUBS 0.246306f
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_8 VDD VSS VNW VPW a_36_472# a_572_375# VSUBS
+X0 VDD a_572_375# a_484_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X1 a_572_375# a_484_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X2 a_124_375# a_36_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X3 VDD a_124_375# a_36_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+C0 a_572_375# VNW 0.18122f
+C1 VSS a_484_472# 0.148682f
+C2 VDD a_124_375# 0.12673f
+C3 a_484_472# a_572_375# 0.285629f
+C4 a_572_375# VDD 0.129266f
+C5 VDD VNW 0.11314f
+C6 a_484_472# VDD 0.179463f
+C7 a_124_375# a_36_472# 0.285629f
+C8 VSS a_124_375# 0.136476f
+C9 VSS a_36_472# 0.151218f
+C10 a_124_375# VNW 0.180172f
+C11 VSS VSUBS 0.360066f
+C12 VDD VSUBS 0.286281f
+C13 VNW VSUBS 1.65967f
+C14 a_484_472# VSUBS 0.345058f
+C15 a_36_472# VSUBS 0.404746f
+C16 a_572_375# VSUBS 0.232991f
+C17 a_124_375# VSUBS 0.185089f
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__inv_1 VSS ZN I VDD VNW VPW VSUBS
+X0 ZN I VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=0.6u
+X1 ZN I VDD VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=0.5u
+C0 I ZN 0.262199f
+C1 ZN VSS 0.115297f
+C2 VNW I 0.137757f
+C3 ZN VDD 0.137375f
+C4 VSS VSUBS 0.2316f
+C5 ZN VSUBS 0.113404f
+C6 VDD VSUBS 0.181139f
+C7 I VSUBS 0.341982f
+C8 VNW VSUBS 0.96348f
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__clkinv_1 VDD VSS I ZN VNW VPW VSUBS
+X0 ZN I VSS VSUBS nfet_06v0 ad=0.2112p pd=1.84u as=0.2112p ps=1.84u w=0.48u l=0.6u
+X1 ZN I VDD VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=0.5u
+C0 I ZN 0.47009f
+C1 VNW I 0.135368f
+C2 I VDD 0.157124f
+C3 VSS VSUBS 0.242183f
+C4 VDD VSUBS 0.182097f
+C5 I VSUBS 0.355642f
+C6 VNW VSUBS 0.96348f
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 VSS Z I VDD VNW VPW a_36_113# VSUBS
+X0 VDD I a_36_113# VNW pfet_06v0 ad=0.4015p pd=1.92u as=0.462p ps=2.98u w=1.05u l=0.5u
+X1 Z a_36_113# VDD VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.4015p ps=1.92u w=1.22u l=0.5u
+X2 Z a_36_113# VSS VSUBS nfet_06v0 ad=0.2178p pd=1.87u as=0.153p ps=1.195u w=0.495u l=0.6u
+X3 VSS I a_36_113# VSUBS nfet_06v0 ad=0.153p pd=1.195u as=0.1584p ps=1.6u w=0.36u l=0.6u
+C0 a_36_113# I 0.476912f
+C1 Z VSS 0.136942f
+C2 a_36_113# VSS 0.11114f
+C3 a_36_113# VNW 0.160792f
+C4 VNW I 0.152645f
+C5 a_36_113# Z 0.191876f
+C6 a_36_113# VDD 0.278283f
+C7 VSS VSUBS 0.283681f
+C8 Z VSUBS 0.117185f
+C9 VDD VSUBS 0.180237f
+C10 I VSUBS 0.336876f
+C11 VNW VSUBS 1.31158f
+C12 a_36_113# VSUBS 0.418095f
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__buf_1 VSS Z I VDD VNW VPW VSUBS
+X0 Z a_36_160# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.2344p ps=1.56u w=0.82u l=0.6u
+X1 Z a_36_160# VDD VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.35315p ps=1.96u w=1.22u l=0.5u
+X2 VDD I a_36_160# VNW pfet_06v0 ad=0.35315p pd=1.96u as=0.2486p ps=2.01u w=0.565u l=0.5u
+X3 VSS I a_36_160# VSUBS nfet_06v0 ad=0.2344p pd=1.56u as=0.1584p ps=1.6u w=0.36u l=0.6u
+C0 VDD Z 0.128274f
+C1 VDD a_36_160# 0.2736f
+C2 Z a_36_160# 0.281838f
+C3 I VNW 0.2276f
+C4 VNW a_36_160# 0.170864f
+C5 I a_36_160# 0.545454f
+C6 VSS Z 0.146199f
+C7 I VSS 0.12329f
+C8 VSS VSUBS 0.28275f
+C9 Z VSUBS 0.10469f
+C10 VDD VSUBS 0.178615f
+C11 I VSUBS 0.323491f
+C12 VNW VSUBS 1.31158f
+C13 a_36_160# VSUBS 0.386641f
+.ends
+
+.subckt phase_inverter input_signal[0] input_signal[1] input_signal[2] input_signal[3]
++ input_signal[4] input_signal[5] input_signal[6] input_signal[7] input_signal[8]
++ input_signal[9] output_signal_minus[0] output_signal_minus[1] output_signal_minus[2]
++ output_signal_minus[3] output_signal_minus[4] output_signal_minus[5] output_signal_minus[6]
++ output_signal_minus[7] output_signal_minus[8] output_signal_minus[9] output_signal_plus[0]
++ output_signal_plus[1] output_signal_plus[2] output_signal_plus[3] output_signal_plus[4]
++ output_signal_plus[5] output_signal_plus[6] output_signal_plus[7] output_signal_plus[8]
++ output_signal_plus[9] vdd vss
+XFILLER_0_1_72 vdd vss vdd FILLER_0_1_72/VPW FILLER_0_1_72/a_36_472# FILLER_0_1_72/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xoutput20 output_signal_minus[9] net20 vdd vss vdd output20/VPW output20/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput21 output_signal_plus[0] net21 vdd vss vdd output21/VPW output21/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_9_2 vdd vss vdd FILLER_0_9_2/VPW FILLER_0_9_2/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_7_72 vdd vss vdd FILLER_0_7_72/VPW FILLER_0_7_72/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XANTENNA_input3_I vss input_signal[2] vdd vdd ANTENNA_input3_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+Xoutput22 output_signal_plus[1] net22 vdd vss vdd output22/VPW output22/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput11 output_signal_minus[0] net11 vdd vss vdd output11/VPW output11/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_12_101 vdd vss vdd FILLER_0_12_101/VPW FILLER_0_12_101/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xoutput23 output_signal_plus[2] net23 vdd vss vdd output23/VPW output23/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput12 output_signal_minus[1] net12 vdd vss vdd output12/VPW output12/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_13_66 vdd vss vdd FILLER_0_13_66/VPW FILLER_0_13_66/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_10_12 vdd vss vdd FILLER_0_10_12/VPW FILLER_0_10_12/a_36_472# FILLER_0_10_12/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xoutput24 output_signal_plus[3] net24 vdd vss vdd output24/VPW output24/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_8_107 vdd vss vdd FILLER_0_8_107/VPW FILLER_0_8_107/a_36_472# FILLER_0_8_107/a_572_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xoutput13 output_signal_minus[2] net13 vdd vss vdd output13/VPW output13/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_7_2 vdd vss vdd FILLER_0_7_2/VPW FILLER_0_7_2/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XANTENNA_input1_I vss input_signal[0] vdd vdd ANTENNA_input1_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_1_44 vdd vss vdd FILLER_0_1_44/VPW FILLER_0_1_44/a_36_472# FILLER_0_1_44/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xoutput25 output_signal_plus[4] net25 vdd vss vdd output25/VPW output25/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput14 output_signal_minus[3] net14 vdd vss vdd output14/VPW output14/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_1_12 vdd vss vdd FILLER_0_1_12/VPW FILLER_0_1_12/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Xoutput26 output_signal_plus[5] net26 vdd vss vdd output26/VPW output26/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+X_09_ vss net19 net9 vdd vdd _09_/VPW vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xoutput15 output_signal_minus[4] net15 vdd vss vdd output15/VPW output15/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_4_101 vdd vss vdd FILLER_0_4_101/VPW FILLER_0_4_101/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_7_66 vdd vss vdd FILLER_0_7_66/VPW FILLER_0_7_66/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_10_37 vdd vss vdd FILLER_0_10_37/VPW FILLER_0_10_37/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_16_36 vdd vss vdd FILLER_0_16_36/VPW FILLER_0_16_36/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X_08_ vss net18 net8 vdd vdd _08_/VPW vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xoutput27 output_signal_plus[6] net27 vdd vss vdd output27/VPW output27/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput16 output_signal_minus[5] net16 vdd vss vdd output16/VPW output16/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput28 output_signal_plus[7] net28 vdd vss vdd output28/VPW output28/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+X_07_ vss net17 net7 vdd vdd _07_/VPW vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xoutput17 output_signal_minus[6] net17 vdd vss vdd output17/VPW output17/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_10_28 vdd vss vdd FILLER_0_10_28/VPW FILLER_0_10_28/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_12_107 vdd vss vdd FILLER_0_12_107/VPW FILLER_0_12_107/a_36_472# FILLER_0_12_107/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xoutput29 output_signal_plus[8] net29 vdd vss vdd output29/VPW output29/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+X_06_ vdd vss net6 net16 vdd _06_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Xoutput18 output_signal_minus[7] net18 vdd vss vdd output18/VPW output18/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_4_37 vdd vss vdd FILLER_0_4_37/VPW FILLER_0_4_37/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_11_72 vdd vss vdd FILLER_0_11_72/VPW FILLER_0_11_72/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XANTENNA__04__I vss net4 vdd vdd ANTENNA__04__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+Xoutput19 output_signal_minus[8] net19 vdd vss vdd output19/VPW output19/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+X_05_ vdd vss net5 net15 vdd _05_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+XFILLER_0_16_18 vdd vss vdd FILLER_0_16_18/VPW FILLER_0_16_18/a_36_472# FILLER_0_16_18/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XANTENNA_input8_I vss input_signal[7] vdd vdd ANTENNA_input8_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XANTENNA__15__I vss net6 vdd vdd ANTENNA__15__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+X_04_ vdd vss net4 net14 vdd _04_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+XFILLER_0_0_142 vdd vss vdd FILLER_0_0_142/VPW FILLER_0_0_142/a_36_472# FILLER_0_0_142/a_572_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_5_60 vdd vss vdd FILLER_0_5_60/VPW FILLER_0_5_60/a_36_472# FILLER_0_5_60/a_572_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_7_104 vdd vss vdd FILLER_0_7_104/VPW FILLER_0_7_104/a_36_472# FILLER_0_7_104/a_572_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+X_03_ vdd vss net3 net13 vdd _03_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Xinput1 vss net1 input_signal[0] vdd vdd input1/VPW input1/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_4_107 vdd vss vdd FILLER_0_4_107/VPW FILLER_0_4_107/a_36_472# FILLER_0_4_107/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_5_72 vdd vss vdd FILLER_0_5_72/VPW FILLER_0_5_72/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Xinput2 vss net2 input_signal[1] vdd vdd input2/VPW input2/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+X_02_ vdd vss net2 net12 vdd _02_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_01_ vdd vss net1 net11 vdd _01_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Xinput3 vss net3 input_signal[2] vdd vdd input3/VPW input3/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XANTENNA_input6_I vss input_signal[5] vdd vdd ANTENNA_input6_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_11_66 vdd vss vdd FILLER_0_11_66/VPW FILLER_0_11_66/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xinput4 vss net4 input_signal[3] vdd vdd input4/VPW input4/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+X_00_ vss net20 net10 vdd vdd _00_/VPW vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xinput5 vss net5 input_signal[4] vdd vdd input5/VPW input5/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_11_136 vdd vss vdd FILLER_0_11_136/VPW FILLER_0_11_136/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_14_12 vdd vss vdd FILLER_0_14_12/VPW FILLER_0_14_12/a_36_472# FILLER_0_14_12/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_14_101 vdd vss vdd FILLER_0_14_101/VPW FILLER_0_14_101/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xinput6 vss net6 input_signal[5] vdd vdd input6/VPW input6/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_0_104 vdd vss vdd FILLER_0_0_104/VPW FILLER_0_0_104/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XANTENNA_input4_I vss input_signal[3] vdd vdd ANTENNA_input4_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+Xinput7 vss net7 input_signal[6] vdd vdd input7/VPW input7/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_5_44 vdd vss vdd FILLER_0_5_44/VPW FILLER_0_5_44/a_36_472# FILLER_0_5_44/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xinput10 vss net10 input_signal[9] vdd vdd input10/VPW input10/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_5_12 vdd vss vdd FILLER_0_5_12/VPW FILLER_0_5_12/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Xinput8 vss net8 input_signal[7] vdd vdd input8/VPW input8/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_14_37 vdd vss vdd FILLER_0_14_37/VPW FILLER_0_14_37/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_8_12 vdd vss vdd FILLER_0_8_12/VPW FILLER_0_8_12/a_36_472# FILLER_0_8_12/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xinput9 vss net9 input_signal[8] vdd vdd input9/VPW input9/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_14_115 vdd vss vdd FILLER_0_14_115/VPW FILLER_0_14_115/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_6_101 vdd vss vdd FILLER_0_6_101/VPW FILLER_0_6_101/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_3_104 vdd vss vdd FILLER_0_3_104/VPW FILLER_0_3_104/a_36_472# FILLER_0_3_104/a_572_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XANTENNA_input10_I vss input_signal[9] vdd vdd ANTENNA_input10_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XANTENNA_input2_I vss input_signal[1] vdd vdd ANTENNA_input2_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_2_37 vdd vss vdd FILLER_0_2_37/VPW FILLER_0_2_37/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_14_28 vdd vss vdd FILLER_0_14_28/VPW FILLER_0_14_28/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_0_70 vdd vss vdd FILLER_0_0_70/VPW FILLER_0_0_70/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XANTENNA__02__I vss net2 vdd vdd ANTENNA__02__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+X_19_ vss net30 net10 vdd vdd _19_/VPW _19_/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_8_37 vdd vss vdd FILLER_0_8_37/VPW FILLER_0_8_37/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XANTENNA__05__I vss net5 vdd vdd ANTENNA__05__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_15_72 vdd vss vdd FILLER_0_15_72/VPW FILLER_0_15_72/a_36_472# FILLER_0_15_72/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XANTENNA__13__I vss net4 vdd vdd ANTENNA__13__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_14_107 vdd vss vdd FILLER_0_14_107/VPW FILLER_0_14_107/a_36_472# FILLER_0_14_107/a_572_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_3_60 vdd vss vdd FILLER_0_3_60/VPW FILLER_0_3_60/a_36_472# FILLER_0_3_60/a_572_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+X_18_ vss net29 net9 vdd vdd _18_/VPW _18_/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_15_40 vdd vss vdd FILLER_0_15_40/VPW FILLER_0_15_40/a_36_472# FILLER_0_15_40/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_6_2 vdd vss vdd FILLER_0_6_2/VPW FILLER_0_6_2/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X_17_ vss net28 net8 vdd vdd _17_/VPW _17_/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_8_28 vdd vss vdd FILLER_0_8_28/VPW FILLER_0_8_28/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_3_72 vdd vss vdd FILLER_0_3_72/VPW FILLER_0_3_72/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_10_101 vdd vss vdd FILLER_0_10_101/VPW FILLER_0_10_101/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_16_ vss net27 net7 vdd vdd _16_/VPW _16_/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_15_64 vdd vss vdd FILLER_0_15_64/VPW FILLER_0_15_64/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_9_72 vdd vss vdd FILLER_0_9_72/VPW FILLER_0_9_72/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_9_104 vdd vss vdd FILLER_0_9_104/VPW FILLER_0_9_104/a_36_472# FILLER_0_9_104/a_572_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_6_107 vdd vss vdd FILLER_0_6_107/VPW FILLER_0_6_107/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_15_ vss net26 net6 vdd vdd _15_/VPW _15_/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_15_2 vdd vss vdd FILLER_0_15_2/VPW FILLER_0_15_2/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_4_2 vdd vss vdd FILLER_0_4_2/VPW FILLER_0_4_2/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X_14_ vss net25 net5 vdd vdd _14_/VPW _14_/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XANTENNA_input9_I vss input_signal[8] vdd vdd ANTENNA_input9_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_12_12 vdd vss vdd FILLER_0_12_12/VPW FILLER_0_12_12/a_36_472# FILLER_0_12_12/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_2_101 vdd vss vdd FILLER_0_2_101/VPW FILLER_0_2_101/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_13_ vss net24 net4 vdd vdd _13_/VPW _13_/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_15_56 vdd vss vdd FILLER_0_15_56/VPW FILLER_0_15_56/a_36_472# FILLER_0_15_56/a_572_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+X_12_ vss net23 net3 vdd vdd _12_/VPW _12_/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_3_44 vdd vss vdd FILLER_0_3_44/VPW FILLER_0_3_44/a_36_472# FILLER_0_3_44/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_0_12 vdd vss vdd FILLER_0_0_12/VPW FILLER_0_0_12/a_36_472# FILLER_0_0_12/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_13_2 vdd vss vdd FILLER_0_13_2/VPW FILLER_0_13_2/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_2_2 vdd vss vdd FILLER_0_2_2/VPW FILLER_0_2_2/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_3_12 vdd vss vdd FILLER_0_3_12/VPW FILLER_0_3_12/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_9_66 vdd vss vdd FILLER_0_9_66/VPW FILLER_0_9_66/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_11_ vss net22 net2 vdd vdd _11_/VPW _11_/a_36_113# vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XANTENNA_input7_I vss input_signal[6] vdd vdd ANTENNA_input7_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_13_104 vdd vss vdd FILLER_0_13_104/VPW FILLER_0_13_104/a_36_472# FILLER_0_13_104/a_572_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_12_37 vdd vss vdd FILLER_0_12_37/VPW FILLER_0_12_37/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_10_107 vdd vss vdd FILLER_0_10_107/VPW FILLER_0_10_107/a_36_472# FILLER_0_10_107/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+X_10_ vss net21 net1 vdd vdd _10_/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_1
+XFILLER_0_0_36 vdd vss vdd FILLER_0_0_36/VPW FILLER_0_0_36/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_15_8 vdd vss vdd FILLER_0_15_8/VPW FILLER_0_15_8/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_16_70 vdd vss vdd FILLER_0_16_70/VPW FILLER_0_16_70/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_11_2 vdd vss vdd FILLER_0_11_2/VPW FILLER_0_11_2/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_12_28 vdd vss vdd FILLER_0_12_28/VPW FILLER_0_12_28/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_16_104 vdd vss vdd FILLER_0_16_104/VPW FILLER_0_16_104/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_8_101 vdd vss vdd FILLER_0_8_101/VPW FILLER_0_8_101/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XANTENNA_input5_I vss input_signal[4] vdd vdd ANTENNA_input5_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_6_37 vdd vss vdd FILLER_0_6_37/VPW FILLER_0_6_37/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_5_104 vdd vss vdd FILLER_0_5_104/VPW FILLER_0_5_104/a_36_472# FILLER_0_5_104/a_572_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_2_107 vdd vss vdd FILLER_0_2_107/VPW FILLER_0_2_107/a_36_472# FILLER_0_2_107/a_1468_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_13_72 vdd vss vdd FILLER_0_13_72/VPW FILLER_0_13_72/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XANTENNA__06__I vss net6 vdd vdd ANTENNA__06__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XANTENNA__11__I vss net2 vdd vdd ANTENNA__11__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_0_28 vdd vss vdd FILLER_0_0_28/VPW FILLER_0_0_28/a_36_472# vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_1_60 vdd vss vdd FILLER_0_1_60/VPW FILLER_0_1_60/a_36_472# FILLER_0_1_60/a_572_375#
++ vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xoutput30 output_signal_plus[9] net30 vdd vss vdd output30/VPW output30/a_224_472#
++ vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XANTENNA__14__I vss net5 vdd vdd ANTENNA__14__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+C0 vdd FILLER_0_10_37/a_36_472# 0.108844f
+C1 vdd output15/a_224_472# 0.106428f
+C2 net9 net28 0.24858f
+C3 vdd input_signal[5] 0.10807f
+C4 output_signal_plus[2] net6 0.39846f
+C5 output_signal_minus[8] output_signal_minus[9] 0.328708f
+C6 vdd output_signal_minus[8] 0.451417f
+C7 net10 output30/a_224_472# 0.121547f
+C8 input_signal[8] FILLER_0_15_8/a_36_472# 0.197185f
+C9 output_signal_plus[1] net17 0.114015f
+C10 vdd output_signal_plus[9] 0.181616f
+C11 input_signal[6] net7 0.233494f
+C12 net4 net5 0.724249f
+C13 net6 net26 0.269871f
+C14 vdd FILLER_0_4_37/a_36_472# 0.10831f
+C15 net25 output_signal_plus[2] 0.169713f
+C16 vdd FILLER_0_12_107/a_36_472# 0.110178f
+C17 vdd input_signal[1] 0.289969f
+C18 output_signal_minus[4] net4 0.141656f
+C19 net9 output29/a_224_472# 0.111864f
+C20 net9 output_signal_plus[7] 0.679572f
+C21 net21 net5 0.155363f
+C22 net25 net26 0.611858f
+C23 net10 net30 2.434557f
+C24 output_signal_minus[4] net21 0.300374f
+C25 net2 net19 0.963184f
+C26 net20 _17_/a_36_113# 0.139977f
+C27 output_signal_plus[3] output_signal_plus[4] 0.138344f
+C28 vdd FILLER_0_16_70/a_36_472# 0.115025f
+C29 input_signal[8] net10 0.137832f
+C30 vdd net10 1.003458f
+C31 vdd net22 0.193304f
+C32 output20/a_224_472# net1 0.114068f
+C33 vdd output_signal_plus[3] 0.152275f
+C34 vdd input6/a_36_113# 0.120999f
+C35 output_signal_minus[2] net5 0.249844f
+C36 output_signal_plus[2] net18 0.319854f
+C37 vdd net5 2.279909f
+C38 net9 net29 0.382716f
+C39 vdd FILLER_0_14_37/a_36_472# 0.108844f
+C40 vdd output_signal_minus[4] 0.437957f
+C41 net8 net26 0.317682f
+C42 output_signal_minus[8] net5 0.370182f
+C43 net4 input_signal[3] 0.176165f
+C44 net29 output_signal_plus[7] 0.66687f
+C45 net10 output_signal_plus[9] 0.130261f
+C46 vdd input1/a_36_113# 0.102561f
+C47 vdd net6 2.230738f
+C48 output21/a_224_472# output27/a_224_472# 0.219442f
+C49 vdd FILLER_0_6_37/a_36_472# 0.10831f
+C50 net2 net3 0.285453f
+C51 output_signal_plus[5] output_signal_plus[4] 0.147694f
+C52 net10 input9/a_36_113# 0.18911f
+C53 input_signal[5] net6 0.154964f
+C54 vdd output_signal_plus[5] 0.127396f
+C55 vdd input4/a_36_113# 0.121449f
+C56 output_signal_plus[1] output_signal_minus[1] 0.176107f
+C57 output_signal_minus[3] net4 0.171411f
+C58 net25 vdd 0.422708f
+C59 net9 output_signal_plus[8] 0.117587f
+C60 net15 net2 0.172728f
+C61 vdd FILLER_0_5_72/a_36_472# 0.109579f
+C62 vdd input5/a_36_113# 0.121506f
+C63 net15 output14/a_224_472# 0.16627f
+C64 vdd net23 0.273556f
+C65 vdd input_signal[4] 0.128179f
+C66 net4 net19 0.151561f
+C67 output_signal_plus[8] output_signal_plus[7] 0.171782f
+C68 vdd output16/a_224_472# 0.14761f
+C69 net14 net2 0.120439f
+C70 net21 net18 0.121907f
+C71 vdd input_signal[3] 0.191982f
+C72 net20 net2 0.456826f
+C73 net21 output27/a_224_472# 0.166209f
+C74 net21 net17 1.66841f
+C75 vdd output19/a_224_472# 0.155541f
+C76 output_signal_minus[8] output18/a_224_472# 0.115179f
+C77 vdd input3/a_36_113# 0.121003f
+C78 vdd FILLER_0_14_107/a_36_472# 0.110617f
+C79 vdd FILLER_0_0_70/a_36_472# 0.109853f
+C80 net19 net21 0.128015f
+C81 vdd net8 2.044431f
+C82 net4 net13 0.152144f
+C83 net18 output_signal_plus[4] 0.266951f
+C84 vdd output22/a_224_472# 0.157202f
+C85 output_signal_minus[2] net18 0.118532f
+C86 vdd net18 1.437655f
+C87 vdd output24/a_224_472# 0.165069f
+C88 output_signal_minus[3] output_signal_minus[2] 0.140198f
+C89 output_signal_minus[2] net17 0.123667f
+C90 vdd output_signal_minus[3] 0.273026f
+C91 vdd net17 1.363583f
+C92 output_signal_plus[3] net6 0.398979f
+C93 net4 net3 3.156494f
+C94 output_signal_minus[9] net1 0.15211f
+C95 vdd net1 1.971103f
+C96 net21 output_signal_minus[6] 0.491295f
+C97 vdd net19 0.830474f
+C98 net7 output25/a_224_472# 0.171365f
+C99 net2 net16 0.391549f
+C100 output_signal_minus[8] net17 0.113708f
+C101 net28 output25/a_224_472# 0.12295f
+C102 net20 net26 0.184979f
+C103 net8 output26/a_224_472# 0.176642f
+C104 net7 net26 0.161007f
+C105 vdd output_signal_minus[7] 0.53571f
+C106 vdd output_signal_minus[6] 0.31108f
+C107 net23 net5 0.476815f
+C108 net14 net4 0.364663f
+C109 input_signal[4] net5 0.32954f
+C110 vdd net13 0.186524f
+C111 net20 net4 0.18426f
+C112 vdd net27 0.351819f
+C113 output19/a_224_472# net5 0.128014f
+C114 net21 output_signal_plus[6] 0.112218f
+C115 output_signal_minus[8] output_signal_minus[7] 0.515416f
+C116 output_signal_minus[2] net3 0.152514f
+C117 net25 net6 0.321844f
+C118 output_signal_minus[8] output_signal_minus[6] 0.165904f
+C119 vdd net3 1.548303f
+C120 vdd FILLER_0_13_2/a_36_472# 0.105578f
+C121 _18_/a_36_113# net30 0.201005f
+C122 vdd output28/a_224_472# 0.110606f
+C123 net6 net23 0.15773f
+C124 vdd FILLER_0_10_107/a_36_472# 0.110617f
+C125 net2 net24 0.287692f
+C126 output_signal_plus[3] net18 0.107889f
+C127 vdd output12/a_224_472# 0.137446f
+C128 net21 net28 0.129159f
+C129 vdd net15 0.264485f
+C130 net18 net5 0.130623f
+C131 output_signal_minus[3] net5 0.101323f
+C132 vdd FILLER_0_15_2/a_36_472# 0.10601f
+C133 output26/a_224_472# net27 0.227699f
+C134 vdd FILLER_0_8_107/a_36_472# 0.110317f
+C135 vdd output_signal_plus[6] 0.512148f
+C136 net19 net22 0.466752f
+C137 net25 net23 0.187331f
+C138 net4 net16 0.88854f
+C139 output_signal_minus[4] output_signal_minus[3] 0.324744f
+C140 output17/a_224_472# output18/a_224_472# 0.185233f
+C141 input_signal[2] net2 0.204298f
+C142 net20 output_signal_minus[9] 0.136507f
+C143 vdd net20 1.606974f
+C144 net7 output_signal_plus[4] 0.256241f
+C145 output_signal_minus[1] output_signal_minus[2] 0.253585f
+C146 vdd net7 1.882731f
+C147 vdd output_signal_minus[1] 0.25191f
+C148 output24/a_224_472# net6 0.17689f
+C149 net17 net6 0.172972f
+C150 vdd net28 0.377565f
+C151 vdd FILLER_0_16_36/a_36_472# 0.104943f
+C152 net8 output_signal_plus[5] 0.253985f
+C153 output_signal_minus[8] net20 0.915677f
+C154 vdd FILLER_0_0_36/a_36_472# 0.106034f
+C155 output_signal_plus[5] net18 0.150908f
+C156 output21/a_224_472# net29 0.102793f
+C157 net12 _12_/a_36_113# 0.146173f
+C158 net21 output_signal_plus[7] 0.368064f
+C159 vdd FILLER_0_11_72/a_36_472# 0.108637f
+C160 net25 net18 0.135194f
+C161 output29/a_224_472# net30 0.148069f
+C162 vdd FILLER_0_0_104/a_36_472# 0.112334f
+C163 output17/a_224_472# net18 0.104017f
+C164 vdd FILLER_0_16_104/a_36_472# 0.114072f
+C165 vdd net9 1.307286f
+C166 net3 net5 1.049906f
+C167 output26/a_224_472# net28 0.219393f
+C168 vdd net16 0.305391f
+C169 net18 _16_/a_36_113# 0.152085f
+C170 net17 output16/a_224_472# 0.212108f
+C171 vdd output29/a_224_472# 0.100233f
+C172 vdd output_signal_plus[7] 0.303346f
+C173 net11 net21 0.293785f
+C174 vdd FILLER_0_4_2/a_36_472# 0.105578f
+C175 net15 net5 0.406952f
+C176 output_signal_plus[1] output_signal_plus[2] 0.186309f
+C177 vdd FILLER_0_4_107/a_36_472# 0.110317f
+C178 net24 net21 0.521439f
+C179 output_signal_plus[5] net27 0.157485f
+C180 vdd input7/a_36_113# 0.12101f
+C181 output_signal_minus[3] net18 0.162335f
+C182 net17 net18 0.540896f
+C183 output24/a_224_472# net17 0.12199f
+C184 vdd FILLER_0_8_37/a_36_472# 0.108844f
+C185 vdd net11 0.423997f
+C186 vdd output_signal_minus[5] 0.328106f
+C187 output_signal_minus[1] net5 0.332908f
+C188 output_signal_minus[6] output16/a_224_472# 0.105215f
+C189 vdd net29 0.203096f
+C190 output_signal_minus[2] net24 0.102232f
+C191 vdd net24 0.376215f
+C192 net3 net23 0.166374f
+C193 output_signal_plus[5] output_signal_plus[6] 0.13932f
+C194 net20 net6 1.070977f
+C195 vdd input10/a_36_113# 0.107237f
+C196 input_signal[3] net3 0.120616f
+C197 net6 net7 0.580399f
+C198 net10 net9 1.858695f
+C199 output12/a_224_472# net23 0.11967f
+C200 vdd input8/a_36_113# 0.120837f
+C201 vdd FILLER_0_7_72/a_36_472# 0.108637f
+C202 output_signal_plus[8] net30 0.603273f
+C203 net8 net27 0.16387f
+C204 vdd input_signal[2] 0.32843f
+C205 net10 output_signal_plus[7] 0.455107f
+C206 output_signal_minus[0] output_signal_minus[9] 0.65109f
+C207 net16 net5 0.17731f
+C208 vdd output_signal_minus[0] 0.291987f
+C209 output_signal_plus[5] net28 0.145667f
+C210 output_signal_minus[7] net1 0.480451f
+C211 output_signal_plus[1] net21 0.100575f
+C212 vdd output_signal_plus[8] 0.659222f
+C213 net25 net7 0.44239f
+C214 net19 net13 0.109721f
+C215 vdd FILLER_0_2_107/a_36_472# 0.108263f
+C216 net2 net4 0.839309f
+C217 output_signal_minus[1] net23 0.156466f
+C218 input_signal[8] input_signal[9] 0.472617f
+C219 vdd input_signal[9] 0.217952f
+C220 net19 net3 0.10888f
+C221 net8 input_signal[7] 0.353802f
+C222 net8 output_signal_plus[6] 0.419279f
+C223 net15 net18 0.722542f
+C224 net15 output_signal_minus[3] 0.110724f
+C225 vdd output_signal_plus[1] 0.249902f
+C226 net15 net17 0.159456f
+C227 vdd _15_/a_36_113# 0.118116f
+C228 output_signal_plus[8] output_signal_plus[9] 0.551989f
+C229 net2 net21 0.111253f
+C230 output_signal_minus[6] output_signal_minus[7] 0.214325f
+C231 net10 net29 1.423466f
+C232 vdd FILLER_0_12_37/a_36_472# 0.108844f
+C233 output_signal_minus[5] net5 0.440158f
+C234 vdd FILLER_0_15_72/a_36_472# 0.112218f
+C235 net20 net8 0.406419f
+C236 net20 net18 0.104462f
+C237 output_signal_minus[4] output_signal_minus[5] 0.115171f
+C238 net18 net7 0.226887f
+C239 output_signal_minus[1] net18 0.303139f
+C240 net17 net7 0.11878f
+C241 net20 net1 2.433093f
+C242 input_signal[0] net1 0.207716f
+C243 vdd net2 2.106998f
+C244 net8 net9 0.867795f
+C245 FILLER_0_7_104/a_572_375# net5 0.207187f
+C246 net20 output_signal_minus[7] 0.174901f
+C247 net2 FILLER_0_4_107/a_1468_375# 0.118948f
+C248 vdd FILLER_0_3_72/a_36_472# 0.109729f
+C249 net9 output27/a_224_472# 0.176269f
+C250 vdd output_signal_plus[0] 0.123495f
+C251 net11 output17/a_224_472# 0.128071f
+C252 net10 input_signal[9] 0.339232f
+C253 vdd output_signal_plus[2] 0.272722f
+C254 vdd input2/a_36_113# 0.104921f
+C255 vdd FILLER_0_6_107/a_36_472# 0.112159f
+C256 net15 output12/a_224_472# 0.145749f
+C257 vdd output13/a_224_472# 0.141765f
+C258 vdd FILLER_0_1_72/a_36_472# 0.109729f
+C259 vdd FILLER_0_6_2/a_36_472# 0.105578f
+C260 net27 net28 0.301563f
+C261 net12 net20 0.166903f
+C262 net19 output_signal_plus[7] 0.210079f
+C263 vdd net26 0.260202f
+C264 vdd FILLER_0_9_72/a_36_472# 0.108637f
+C265 output_signal_plus[9] output_signal_plus[0] 0.433936f
+C266 net16 _14_/a_36_113# 0.137199f
+C267 net11 net18 0.319133f
+C268 net18 output_signal_minus[5] 0.420191f
+C269 net17 output_signal_minus[5] 0.149064f
+C270 net2 net22 0.208356f
+C271 output_signal_plus[1] net6 0.266874f
+C272 vdd net4 1.572923f
+C273 vdd FILLER_0_9_2/a_36_472# 0.105264f
+C274 output_signal_plus[6] net28 0.16562f
+C275 output22/a_224_472# net24 0.220782f
+C276 net11 net1 0.198927f
+C277 net2 net5 0.380222f
+C278 vdd FILLER_0_13_72/a_36_472# 0.108638f
+C279 vdd FILLER_0_2_2/a_36_472# 0.106171f
+C280 net5 output14/a_224_472# 0.120448f
+C281 output_signal_minus[4] net2 0.664575f
+C282 net12 net16 0.405943f
+C283 vdd FILLER_0_15_56/a_36_472# 0.122339f
+C284 output_signal_minus[2] net21 0.100524f
+C285 vdd net21 1.197471f
+C286 net19 net24 0.13814f
+C287 output_signal_plus[3] output_signal_plus[2] 0.22563f
+C288 net11 output_signal_minus[7] 0.562775f
+C289 net9 output_signal_plus[6] 0.334772f
+C290 output_signal_minus[8] net21 0.116523f
+C291 vdd net30 0.461606f
+C292 output_signal_minus[6] output_signal_minus[5] 0.357719f
+C293 vdd FILLER_0_11_2/a_36_472# 0.105578f
+C294 vdd output23/a_224_472# 0.147266f
+C295 vdd output_signal_plus[4] 0.184117f
+C296 output_signal_plus[6] output_signal_plus[7] 0.27768f
+C297 vdd FILLER_0_7_2/a_36_472# 0.105401f
+C298 net14 net16 0.383359f
+C299 output13/a_224_472# net5 0.130298f
+C300 vdd output_signal_minus[2] 0.319435f
+C301 input_signal[8] vdd 0.141473f
+C302 output11/a_224_472# net20 0.125198f
+C303 output_signal_plus[3] net26 0.350581f
+C304 net20 net16 0.473117f
+C305 vdd FILLER_0_2_37/a_36_472# 0.109127f
+C306 output_signal_plus[9] vss 0.405805f
+C307 net30 vss 1.30414f
+C308 output30/a_224_472# vss 2.434601f
+C310 FILLER_0_1_60/a_36_472# vss 0.407263f
+C311 FILLER_0_1_60/a_572_375# vss 0.254574f
+C313 FILLER_0_0_28/a_36_472# vss 0.424906f
+C322 FILLER_0_13_72/a_36_472# vss 0.415873f
+C334 FILLER_0_2_107/a_36_472# vss 0.413257f
+C335 FILLER_0_2_107/a_1468_375# vss 0.24369f
+C340 FILLER_0_5_104/a_36_472# vss 0.410889f
+C341 FILLER_0_5_104/a_572_375# vss 0.249887f
+C358 FILLER_0_6_37/a_36_472# vss 0.446096f
+C375 input_signal[4] vss 1.247059f
+C376 FILLER_0_8_101/a_36_472# vss 0.423424f
+C378 FILLER_0_16_104/a_36_472# vss 0.425296f
+C380 FILLER_0_12_28/a_36_472# vss 0.425395f
+C397 FILLER_0_11_2/a_36_472# vss 0.408581f
+C414 FILLER_0_16_70/a_36_472# vss 0.429713f
+C423 FILLER_0_15_8/a_36_472# vss 0.40747f
+C439 FILLER_0_0_36/a_36_472# vss 0.437752f
+C448 net21 vss 1.956451f
+C453 FILLER_0_10_107/a_36_472# vss 0.413139f
+C454 FILLER_0_10_107/a_1468_375# vss 0.243852f
+C473 FILLER_0_12_37/a_36_472# vss 0.447577f
+C491 FILLER_0_13_104/a_36_472# vss 0.411703f
+C492 FILLER_0_13_104/a_572_375# vss 0.25017f
+C494 input_signal[6] vss 1.179258f
+C495 net22 vss 1.237957f
+C496 _11_/a_36_113# vss 0.437095f
+C497 FILLER_0_9_66/a_36_472# vss 0.425205f
+C506 FILLER_0_3_12/a_36_472# vss 0.407776f
+C522 FILLER_0_2_2/a_36_472# vss 0.408737f
+C546 FILLER_0_13_2/a_36_472# vss 0.408581f
+C566 FILLER_0_0_12/a_36_472# vss 0.406548f
+C567 FILLER_0_0_12/a_1468_375# vss 0.291133f
+C574 FILLER_0_3_44/a_36_472# vss 0.41167f
+C575 FILLER_0_3_44/a_1468_375# vss 0.287259f
+C579 net23 vss 1.360286f
+C580 _12_/a_36_113# vss 0.424895f
+C582 FILLER_0_15_56/a_36_472# vss 0.403547f
+C583 FILLER_0_15_56/a_572_375# vss 0.290693f
+C585 net24 vss 1.333857f
+C586 _13_/a_36_113# vss 0.469366f
+C587 FILLER_0_2_101/a_36_472# vss 0.423771f
+C592 FILLER_0_12_12/a_36_472# vss 0.407787f
+C593 FILLER_0_12_12/a_1468_375# vss 0.291881f
+C597 input_signal[8] vss 1.234047f
+C598 net25 vss 1.447568f
+C599 _14_/a_36_113# vss 0.426025f
+C607 FILLER_0_4_2/a_36_472# vss 0.408673f
+C616 FILLER_0_15_2/a_36_472# vss 0.4231f
+C618 net26 vss 1.428789f
+C619 _15_/a_36_113# vss 0.46837f
+C620 FILLER_0_6_107/a_36_472# vss 0.427063f
+C623 FILLER_0_9_104/a_36_472# vss 0.41165f
+C624 FILLER_0_9_104/a_572_375# vss 0.25109f
+C633 FILLER_0_9_72/a_36_472# vss 0.415873f
+C642 FILLER_0_15_64/a_36_472# vss 0.421692f
+C644 net27 vss 1.33333f
+C645 _16_/a_36_113# vss 0.423308f
+C646 FILLER_0_10_101/a_36_472# vss 0.423764f
+C655 FILLER_0_3_72/a_36_472# vss 0.416116f
+C664 FILLER_0_8_28/a_36_472# vss 0.425794f
+C666 _17_/a_36_113# vss 0.426785f
+C674 FILLER_0_6_2/a_36_472# vss 0.408673f
+C686 FILLER_0_15_40/a_36_472# vss 0.411995f
+C687 FILLER_0_15_40/a_1468_375# vss 0.288579f
+C691 _18_/a_36_113# vss 0.42374f
+C693 FILLER_0_3_60/a_36_472# vss 0.407263f
+C694 FILLER_0_3_60/a_572_375# vss 0.254892f
+C697 FILLER_0_14_107/a_36_472# vss 0.412998f
+C698 FILLER_0_14_107/a_572_375# vss 0.30533f
+C703 FILLER_0_15_72/a_36_472# vss 0.4146f
+C704 FILLER_0_15_72/a_1468_375# vss 0.252733f
+C708 net5 vss 3.171133f
+C724 FILLER_0_8_37/a_36_472# vss 0.449284f
+C741 _19_/a_36_113# vss 0.443847f
+C742 FILLER_0_0_70/a_36_472# vss 0.428778f
+C744 FILLER_0_14_28/a_36_472# vss 0.426175f
+C761 FILLER_0_2_37/a_36_472# vss 0.451256f
+C778 input_signal[1] vss 1.077806f
+C780 FILLER_0_3_104/a_36_472# vss 0.41165f
+C781 FILLER_0_3_104/a_572_375# vss 0.25109f
+C783 FILLER_0_6_101/a_36_472# vss 0.423318f
+C785 FILLER_0_14_115/a_36_472# vss 0.449039f
+C787 input9/a_36_113# vss 0.418606f
+C791 FILLER_0_8_12/a_36_472# vss 0.407883f
+C792 FILLER_0_8_12/a_1468_375# vss 0.291783f
+C811 FILLER_0_14_37/a_36_472# vss 0.450529f
+C828 input8/a_36_113# vss 0.46218f
+C836 FILLER_0_5_12/a_36_472# vss 0.407873f
+C845 input_signal[9] vss 1.750877f
+C846 input10/a_36_113# vss 0.462031f
+C850 FILLER_0_5_44/a_36_472# vss 0.410642f
+C851 FILLER_0_5_44/a_1468_375# vss 0.287259f
+C855 input7/a_36_113# vss 0.462188f
+C856 input_signal[3] vss 1.010588f
+C857 FILLER_0_0_104/a_36_472# vss 0.425761f
+C859 input6/a_36_113# vss 0.462188f
+C860 FILLER_0_14_101/a_36_472# vss 0.423764f
+C865 FILLER_0_14_12/a_36_472# vss 0.407787f
+C866 FILLER_0_14_12/a_1468_375# vss 0.291063f
+C870 FILLER_0_11_136/a_36_472# vss 0.421095f
+C872 input5/a_36_113# vss 0.462205f
+C873 net10 vss 2.157633f
+C874 input4/a_36_113# vss 0.462201f
+C875 FILLER_0_11_66/a_36_472# vss 0.425205f
+C877 input_signal[5] vss 1.32071f
+C878 net3 vss 2.384244f
+C879 input3/a_36_113# vss 0.462184f
+C880 net2 vss 3.38813f
+C881 input2/a_36_113# vss 0.461966f
+C889 FILLER_0_5_72/a_36_472# vss 0.414431f
+C901 FILLER_0_4_107/a_36_472# vss 0.412595f
+C902 FILLER_0_4_107/a_1468_375# vss 0.241948f
+C906 net1 vss 1.83604f
+C907 input1/a_36_113# vss 0.46182f
+C908 net13 vss 1.204896f
+C910 FILLER_0_7_104/a_36_472# vss 0.41165f
+C911 FILLER_0_7_104/a_572_375# vss 0.244875f
+C914 FILLER_0_5_60/a_36_472# vss 0.407006f
+C915 FILLER_0_5_60/a_572_375# vss 0.254749f
+C918 FILLER_0_0_142/a_36_472# vss 0.409555f
+C919 FILLER_0_0_142/a_572_375# vss 0.258541f
+C921 net14 vss 1.185082f
+C922 input_signal[7] vss 1.044541f
+C926 FILLER_0_16_18/a_36_472# vss 0.407893f
+C927 FILLER_0_16_18/a_1468_375# vss 0.28854f
+C931 net15 vss 1.184586f
+C932 output_signal_minus[8] vss 1.122171f
+C933 net19 vss 2.178702f
+C934 output19/a_224_472# vss 2.431075f
+C935 net4 vss 2.759121f
+C951 FILLER_0_11_72/a_36_472# vss 0.415779f
+C983 FILLER_0_4_37/a_36_472# vss 0.447838f
+C1000 output_signal_minus[7] vss 0.274217f
+C1001 net18 vss 1.925324f
+C1002 output18/a_224_472# vss 2.463949f
+C1003 net6 vss 2.585433f
+C1004 output_signal_plus[8] vss 0.64573f
+C1005 net29 vss 1.637627f
+C1006 output29/a_224_472# vss 2.403936f
+C1010 FILLER_0_12_107/a_36_472# vss 0.412184f
+C1011 FILLER_0_12_107/a_1468_375# vss 0.243384f
+C1015 FILLER_0_10_28/a_36_472# vss 0.426175f
+C1017 output_signal_minus[6] vss 0.610572f
+C1018 net17 vss 1.557929f
+C1019 output17/a_224_472# vss 2.439832f
+C1020 net7 vss 2.274916f
+C1021 output_signal_plus[7] vss 0.809631f
+C1022 net28 vss 1.264877f
+C1023 output28/a_224_472# vss 2.451366f
+C1024 output_signal_minus[5] vss 0.420391f
+C1025 net16 vss 1.278708f
+C1026 output16/a_224_472# vss 2.411456f
+C1027 output_signal_plus[6] vss 0.462068f
+C1028 output27/a_224_472# vss 2.441884f
+C1029 net8 vss 2.050051f
+C1037 FILLER_0_16_36/a_36_472# vss 0.432767f
+C1061 FILLER_0_10_37/a_36_472# vss 0.450529f
+C1078 FILLER_0_7_66/a_36_472# vss 0.425205f
+C1080 FILLER_0_4_101/a_36_472# vss 0.423424f
+C1082 output_signal_minus[4] vss 0.438303f
+C1083 output15/a_224_472# vss 2.457798f
+C1084 net9 vss 2.388747f
+C1085 output_signal_plus[5] vss 0.628454f
+C1086 output26/a_224_472# vss 2.407613f
+C1094 FILLER_0_1_12/a_36_472# vss 0.407776f
+C1103 output_signal_minus[3] vss 0.543172f
+C1104 output14/a_224_472# vss 2.413605f
+C1105 output_signal_plus[4] vss 0.442006f
+C1106 output25/a_224_472# vss 2.415915f
+C1110 FILLER_0_1_44/a_36_472# vss 0.41167f
+C1111 FILLER_0_1_44/a_1468_375# vss 0.286942f
+C1115 vdd vss 0.39933p
+C1116 input_signal[0] vss 1.802519f
+C1132 FILLER_0_7_2/a_36_472# vss 0.408581f
+C1149 output_signal_minus[2] vss 0.566155f
+C1150 output13/a_224_472# vss 2.428023f
+C1152 FILLER_0_8_107/a_36_472# vss 0.412454f
+C1153 FILLER_0_8_107/a_572_375# vss 0.255691f
+C1155 output_signal_plus[3] vss 0.604963f
+C1156 output24/a_224_472# vss 2.405173f
+C1160 FILLER_0_10_12/a_36_472# vss 0.407787f
+C1161 FILLER_0_10_12/a_1468_375# vss 0.291504f
+C1165 FILLER_0_13_66/a_36_472# vss 0.425239f
+C1167 output_signal_minus[1] vss 0.580262f
+C1168 net12 vss 1.150216f
+C1169 output12/a_224_472# vss 2.407854f
+C1170 output_signal_plus[2] vss 0.613956f
+C1171 output23/a_224_472# vss 2.420832f
+C1172 FILLER_0_12_101/a_36_472# vss 0.423318f
+C1174 output_signal_minus[0] vss 2.173901f
+C1175 net11 vss 1.536046f
+C1176 output11/a_224_472# vss 2.409127f
+C1177 output_signal_plus[1] vss 0.63321f
+C1178 output22/a_224_472# vss 2.423755f
+C1179 input_signal[2] vss 1.040925f
+C1187 FILLER_0_7_72/a_36_472# vss 0.415873f
+C1211 FILLER_0_9_2/a_36_472# vss 0.408581f
+C1228 output_signal_plus[0] vss 1.372481f
+C1229 output21/a_224_472# vss 2.447125f
+C1230 output_signal_minus[9] vss 0.550324f
+C1231 net20 vss 3.111761f
+C1232 output20/a_224_472# vss 2.438489f
+C1236 FILLER_0_1_72/a_36_472# vss 0.415882f
+C1237 FILLER_0_1_72/a_1468_375# vss 0.252653f
+.ends
+
+

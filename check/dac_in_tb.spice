@@ -1,28 +1,42 @@
-.include dac_in.lvs.spice
 
-x1 inputp inputm vss vdd input_signal[0] input_signal[1] input_signal[2]
-+ input_signal[3] input_signal[4] input_signal[5] input_signal[6] input_signal[7]
-+ input_signal[8] input_signal[9] dac_in
+.include ./pex/phase_inverter.pex.spice
+.include ./pex/carray_in.pex.spice
+.include ./pex/bootstrapped_sw.pex.spice
 
-VIN input_signal[0] GND PULSE(0 6 10e-6 1e-9 1e-9 0.5e-6 1e-6)
-V1 input_signal[1] GND 6
-V2 input_signal[2] GND 6
-V3 input_signal[3] GND 0
-V4 input_signal[4] GND 6
-V5 input_signal[5] GND 0
-V6 input_signal[6] GND 6
-V7 input_signal[7] GND 0
-V8 input_signal[8] GND 6
-V9 input_signal[9] GND 0
+Xpi in0 in1 in2 in3 in4 in5 in6 in7 in8 in9
++ outm0 outm1 outm2 outm3 outm4 outm5 outm6 outm7 outm8 outm9
++ outp0 outp1 outp2 outp3 outp4 outp5 outp6 outp7 outp8 outp9
++ vdd vss phase_inverter
+
+Xci_p outp1 outp2 outp3 outp4 outp5 outp6 outp7 outp8 outp9 outp0 vss dac_outp carray_in
+Xci_m outm1 outm2 outm3 outm4 outm5 outm6 outm7 outm8 outm9 outm0 vss dac_outm carray_in
+
+* Xbs_p vdd vss en dac_outp bs_outp bootstrapped_sw
+* Xbs_m vdd vss en dac_outm bs_outm bootstrapped_sw
+
+VEN en GND PULSE(0 6 1e-6 1e-9 1e-9 0.5e-6 1e-6)
+VIN in0 GND PULSE(0 6 1u 1e-9 1e-9 0.0009765625e-5 0.001953125e-5)
+VDD vdd GND 6
+VSS vss GND 0
+V1 in1 GND PULSE(0 6 1u 1e-9 1e-9 0.001953125e-5 0.003906325e-5)
+V2 in2 GND PULSE(0 6 1u 1e-9 1e-9 0.003906325e-5 0.078125e-5)
+V3 in3 GND PULSE(0 6 1u 1e-9 1e-9 0.078125e-5 0.15625e-5)
+V4 in4 GND PULSE(0 6 1u 1e-9 1e-9 0.15625e-5 0.3125e-5)
+V5 in5 GND PULSE(0 6 1u 1e-9 1e-9 0.3125e-5 0.625e-5)
+V6 in6 GND PULSE(0 6 1u 1e-9 1e-9 0.625e-5 1.25e-5)
+V7 in7 GND PULSE(0 6 1u 1e-9 1e-9 1.25e-5 2.5e-5)
+V8 in8 GND PULSE(0 6 1u 1e-9 1e-9 2.5e-5 5e-5)
+V9 in9 GND PULSE(0 6 1u 1e-9 1e-9 5e-5 10e-5)
 
 .include /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
 
-
 .control
-save inputp inputm
-tran 1m 30m 5m
+set gmin=1.0e-20
+save dac_outp dac_outm
+tran 1n 110u
+plot dac_outp dac_outm
 .endc
 
 **** end user architecture code

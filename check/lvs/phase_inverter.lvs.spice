@@ -1,0 +1,292 @@
+* NGSPICE file created from phase_inverter.ext - technology: gf180mcuD
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_16 VDD VSS VNW VPW VSUBS
+X0 VDD a_572_375# a_484_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X1 a_572_375# a_484_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X2 a_124_375# a_36_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X3 a_1468_375# a_1380_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X4 VDD a_1020_375# a_932_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X5 VDD a_1468_375# a_1380_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X6 VDD a_124_375# a_36_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X7 a_1020_375# a_932_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__buf_8 Z I VDD VSS VNW VPW VSUBS
+X0 a_224_472# I VDD VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X1 Z a_224_472# VDD VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X2 a_224_472# I VSS VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X3 VSS a_224_472# Z VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X4 VDD a_224_472# Z VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X5 Z a_224_472# VDD VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X6 a_224_472# I VSS VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.3608p ps=2.52u w=0.82u l=0.6u
+X7 Z a_224_472# VSS VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X8 VDD a_224_472# Z VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X9 Z a_224_472# VSS VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X10 Z a_224_472# VSS VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X11 VDD I a_224_472# VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X12 VDD a_224_472# Z VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X13 Z a_224_472# VDD VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X14 VSS a_224_472# Z VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X15 VDD I a_224_472# VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X16 VSS a_224_472# Z VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X17 VDD a_224_472# Z VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X18 VSS a_224_472# Z VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X19 Z a_224_472# VDD VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.3782p ps=1.84u w=1.22u l=0.5u
+X20 VSS I a_224_472# VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X21 a_224_472# I VDD VNW pfet_06v0 ad=0.3782p pd=1.84u as=0.5368p ps=3.32u w=1.22u l=0.5u
+X22 VSS I a_224_472# VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+X23 Z a_224_472# VSS VSUBS nfet_06v0 ad=0.2132p pd=1.34u as=0.2132p ps=1.34u w=0.82u l=0.6u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_64 VDD VSS VNW VPW VSUBS
+X0 a_4604_375# a_4516_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X1 VDD a_572_375# a_484_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X2 VDD a_2364_375# a_2276_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X3 a_4156_375# a_4068_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X4 a_5500_375# a_5412_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X5 a_572_375# a_484_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X6 VDD a_5052_375# a_4964_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X7 VDD a_6844_375# a_6756_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X8 VDD a_1916_375# a_1828_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X9 a_124_375# a_36_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X10 a_5052_375# a_4964_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X11 a_1916_375# a_1828_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X12 VDD a_4604_375# a_4516_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X13 a_1468_375# a_1380_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X14 a_2812_375# a_2724_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X15 VDD a_3260_375# a_3172_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X16 a_2364_375# a_2276_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X17 a_5948_375# a_5860_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X18 VDD a_2812_375# a_2724_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X19 a_3260_375# a_3172_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X20 VDD a_1020_375# a_932_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X21 VDD a_5500_375# a_5412_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X22 a_6844_375# a_6756_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X23 a_6396_375# a_6308_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X24 VDD a_6396_375# a_6308_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X25 VDD a_1468_375# a_1380_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X26 VDD a_4156_375# a_4068_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X27 VDD a_5948_375# a_5860_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X28 VDD a_124_375# a_36_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X29 a_3708_375# a_3620_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X30 VDD a_3708_375# a_3620_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X31 a_1020_375# a_932_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__antenna VSS I VDD VNW VPW VSUBS
+D0 VSUBS I diode_nd2ps_06v0 pj=1.86u area=0.2052p
+D1 I VNW diode_pd2nw_06v0 pj=1.86u area=0.2052p
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_32 VDD VSS VNW VPW VSUBS
+X0 VDD a_572_375# a_484_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X1 VDD a_2364_375# a_2276_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X2 a_572_375# a_484_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X3 VDD a_1916_375# a_1828_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X4 a_124_375# a_36_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X5 a_1916_375# a_1828_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X6 a_1468_375# a_1380_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X7 a_2812_375# a_2724_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X8 VDD a_3260_375# a_3172_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X9 a_2364_375# a_2276_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X10 VDD a_2812_375# a_2724_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X11 a_3260_375# a_3172_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X12 VDD a_1020_375# a_932_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X13 VDD a_1468_375# a_1380_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X14 VDD a_124_375# a_36_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X15 a_1020_375# a_932_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_4 VDD VSS VNW VPW VSUBS
+X0 a_124_375# a_36_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X1 VDD a_124_375# a_36_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__fillcap_8 VDD VSS VNW VPW VSUBS
+X0 VDD a_572_375# a_484_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+X1 a_572_375# a_484_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X2 a_124_375# a_36_472# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=1u
+X3 VDD a_124_375# a_36_472# VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=1u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__inv_1 VSS ZN I VDD VNW VPW VSUBS
+X0 ZN I VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.3608p ps=2.52u w=0.82u l=0.6u
+X1 ZN I VDD VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=0.5u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__clkinv_1 VDD VSS I ZN VNW VPW VSUBS
+X0 ZN I VSS VSUBS nfet_06v0 ad=0.2112p pd=1.84u as=0.2112p ps=1.84u w=0.48u l=0.6u
+X1 ZN I VDD VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.5368p ps=3.32u w=1.22u l=0.5u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 VSS Z I VDD VNW VPW VSUBS
+X0 VDD I a_36_113# VNW pfet_06v0 ad=0.4015p pd=1.92u as=0.462p ps=2.98u w=1.05u l=0.5u
+X1 Z a_36_113# VDD VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.4015p ps=1.92u w=1.22u l=0.5u
+X2 Z a_36_113# VSS VSUBS nfet_06v0 ad=0.2178p pd=1.87u as=0.153p ps=1.195u w=0.495u l=0.6u
+X3 VSS I a_36_113# VSUBS nfet_06v0 ad=0.153p pd=1.195u as=0.1584p ps=1.6u w=0.36u l=0.6u
+.ends
+
+.subckt gf180mcu_fd_sc_mcu7t5v0__buf_1 VSS Z I VDD VNW VPW VSUBS
+X0 Z a_36_160# VSS VSUBS nfet_06v0 ad=0.3608p pd=2.52u as=0.2344p ps=1.56u w=0.82u l=0.6u
+X1 Z a_36_160# VDD VNW pfet_06v0 ad=0.5368p pd=3.32u as=0.35315p ps=1.96u w=1.22u l=0.5u
+X2 VDD I a_36_160# VNW pfet_06v0 ad=0.35315p pd=1.96u as=0.2486p ps=2.01u w=0.565u l=0.5u
+X3 VSS I a_36_160# VSUBS nfet_06v0 ad=0.2344p pd=1.56u as=0.1584p ps=1.6u w=0.36u l=0.6u
+.ends
+
+.subckt phase_inverter input_signal[0] input_signal[1] input_signal[2] input_signal[3]
++ input_signal[4] input_signal[5] input_signal[6] input_signal[7] input_signal[8]
++ input_signal[9] output_signal_minus[0] output_signal_minus[1] output_signal_minus[2]
++ output_signal_minus[3] output_signal_minus[4] output_signal_minus[5] output_signal_minus[6]
++ output_signal_minus[7] output_signal_minus[8] output_signal_minus[9] output_signal_plus[0]
++ output_signal_plus[1] output_signal_plus[2] output_signal_plus[3] output_signal_plus[4]
++ output_signal_plus[5] output_signal_plus[6] output_signal_plus[7] output_signal_plus[8]
++ output_signal_plus[9] vdd vss
+XFILLER_0_1_72 vdd vss vdd FILLER_0_1_72/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xoutput20 output_signal_minus[9] net20 vdd vss vdd output20/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_9_2 vdd vss vdd FILLER_0_9_2/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xoutput21 output_signal_plus[0] net21 vdd vss vdd output21/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XANTENNA_input3_I vss input_signal[2] vdd vdd ANTENNA_input3_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_7_72 vdd vss vdd FILLER_0_7_72/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Xoutput11 output_signal_minus[0] net11 vdd vss vdd output11/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput22 output_signal_plus[1] net22 vdd vss vdd output22/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput12 output_signal_minus[1] net12 vdd vss vdd output12/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput23 output_signal_plus[2] net23 vdd vss vdd output23/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_12_101 vdd vss vdd FILLER_0_12_101/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_13_66 vdd vss vdd FILLER_0_13_66/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_10_12 vdd vss vdd FILLER_0_10_12/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xoutput13 output_signal_minus[2] net13 vdd vss vdd output13/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_8_107 vdd vss vdd FILLER_0_8_107/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xoutput24 output_signal_plus[3] net24 vdd vss vdd output24/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XANTENNA_input1_I vss input_signal[0] vdd vdd ANTENNA_input1_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_7_2 vdd vss vdd FILLER_0_7_2/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_1_44 vdd vss vdd FILLER_0_1_44/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xoutput14 output_signal_minus[3] net14 vdd vss vdd output14/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput25 output_signal_plus[4] net25 vdd vss vdd output25/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_1_12 vdd vss vdd FILLER_0_1_12/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_4_101 vdd vss vdd FILLER_0_4_101/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Xoutput15 output_signal_minus[4] net15 vdd vss vdd output15/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput26 output_signal_plus[5] net26 vdd vss vdd output26/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+X_09_ vss net19 net9 vdd vdd _09_/VPW vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_7_66 vdd vss vdd FILLER_0_7_66/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_10_37 vdd vss vdd FILLER_0_10_37/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_16_36 vdd vss vdd FILLER_0_16_36/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X_08_ vss net18 net8 vdd vdd _08_/VPW vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xoutput16 output_signal_minus[5] net16 vdd vss vdd output16/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput27 output_signal_plus[6] net27 vdd vss vdd output27/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput17 output_signal_minus[6] net17 vdd vss vdd output17/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+Xoutput28 output_signal_plus[7] net28 vdd vss vdd output28/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+X_07_ vss net17 net7 vdd vdd _07_/VPW vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+XFILLER_0_10_28 vdd vss vdd FILLER_0_10_28/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_12_107 vdd vss vdd FILLER_0_12_107/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xoutput18 output_signal_minus[7] net18 vdd vss vdd output18/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+X_06_ vdd vss net6 net16 vdd _06_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Xoutput29 output_signal_plus[8] net29 vdd vss vdd output29/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+XFILLER_0_4_37 vdd vss vdd FILLER_0_4_37/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XANTENNA__04__I vss net4 vdd vdd ANTENNA__04__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+Xoutput19 output_signal_minus[8] net19 vdd vss vdd output19/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+X_05_ vdd vss net5 net15 vdd _05_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+XFILLER_0_11_72 vdd vss vdd FILLER_0_11_72/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_16_18 vdd vss vdd FILLER_0_16_18/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+X_04_ vdd vss net4 net14 vdd _04_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+XANTENNA__15__I vss net6 vdd vdd ANTENNA__15__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XANTENNA_input8_I vss input_signal[7] vdd vdd ANTENNA_input8_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_0_142 vdd vss vdd FILLER_0_0_142/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_5_60 vdd vss vdd FILLER_0_5_60/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Xinput1 vss net1 input_signal[0] vdd vdd input1/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+X_03_ vdd vss net3 net13 vdd _03_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+XFILLER_0_7_104 vdd vss vdd FILLER_0_7_104/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_4_107 vdd vss vdd FILLER_0_4_107/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xinput2 vss net2 input_signal[1] vdd vdd input2/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_5_72 vdd vss vdd FILLER_0_5_72/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X_02_ vdd vss net2 net12 vdd _02_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X_01_ vdd vss net1 net11 vdd _01_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Xinput3 vss net3 input_signal[2] vdd vdd input3/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XANTENNA_input6_I vss input_signal[5] vdd vdd ANTENNA_input6_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+Xinput4 vss net4 input_signal[3] vdd vdd input4/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_11_66 vdd vss vdd FILLER_0_11_66/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_00_ vss net20 net10 vdd vdd _00_/VPW vss gf180mcu_fd_sc_mcu7t5v0__inv_1
+Xinput5 vss net5 input_signal[4] vdd vdd input5/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_11_136 vdd vss vdd FILLER_0_11_136/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_14_12 vdd vss vdd FILLER_0_14_12/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xinput6 vss net6 input_signal[5] vdd vdd input6/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_14_101 vdd vss vdd FILLER_0_14_101/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_0_104 vdd vss vdd FILLER_0_0_104/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XANTENNA_input4_I vss input_signal[3] vdd vdd ANTENNA_input4_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_5_44 vdd vss vdd FILLER_0_5_44/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Xinput7 vss net7 input_signal[6] vdd vdd input7/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+Xinput10 vss net10 input_signal[9] vdd vdd input10/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_5_12 vdd vss vdd FILLER_0_5_12/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Xinput8 vss net8 input_signal[7] vdd vdd input8/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_8_12 vdd vss vdd FILLER_0_8_12/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_14_37 vdd vss vdd FILLER_0_14_37/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Xinput9 vss net9 input_signal[8] vdd vdd input9/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_14_115 vdd vss vdd FILLER_0_14_115/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_3_104 vdd vss vdd FILLER_0_3_104/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_6_101 vdd vss vdd FILLER_0_6_101/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XANTENNA_input2_I vss input_signal[1] vdd vdd ANTENNA_input2_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XANTENNA_input10_I vss input_signal[9] vdd vdd ANTENNA_input10_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_2_37 vdd vss vdd FILLER_0_2_37/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_0_70 vdd vss vdd FILLER_0_0_70/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XANTENNA__02__I vss net2 vdd vdd ANTENNA__02__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_14_28 vdd vss vdd FILLER_0_14_28/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XANTENNA__05__I vss net5 vdd vdd ANTENNA__05__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_8_37 vdd vss vdd FILLER_0_8_37/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X_19_ vss net30 net10 vdd vdd _19_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XANTENNA__13__I vss net4 vdd vdd ANTENNA__13__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_15_72 vdd vss vdd FILLER_0_15_72/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_14_107 vdd vss vdd FILLER_0_14_107/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_3_60 vdd vss vdd FILLER_0_3_60/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+X_18_ vss net29 net9 vdd vdd _18_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_6_2 vdd vss vdd FILLER_0_6_2/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_15_40 vdd vss vdd FILLER_0_15_40/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_3_72 vdd vss vdd FILLER_0_3_72/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_8_28 vdd vss vdd FILLER_0_8_28/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_17_ vss net28 net8 vdd vdd _17_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_10_101 vdd vss vdd FILLER_0_10_101/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_16_ vss net27 net7 vdd vdd _16_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_9_72 vdd vss vdd FILLER_0_9_72/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_15_64 vdd vss vdd FILLER_0_15_64/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_6_107 vdd vss vdd FILLER_0_6_107/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_9_104 vdd vss vdd FILLER_0_9_104/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+X_15_ vss net26 net6 vdd vdd _15_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_15_2 vdd vss vdd FILLER_0_15_2/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_4_2 vdd vss vdd FILLER_0_4_2/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X_14_ vss net25 net5 vdd vdd _14_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XANTENNA_input9_I vss input_signal[8] vdd vdd ANTENNA_input9_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_12_12 vdd vss vdd FILLER_0_12_12/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_2_101 vdd vss vdd FILLER_0_2_101/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+X_13_ vss net24 net4 vdd vdd _13_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_15_56 vdd vss vdd FILLER_0_15_56/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_3_44 vdd vss vdd FILLER_0_3_44/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+X_12_ vss net23 net3 vdd vdd _12_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_0_12 vdd vss vdd FILLER_0_0_12/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_13_2 vdd vss vdd FILLER_0_13_2/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_2_2 vdd vss vdd FILLER_0_2_2/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_3_12 vdd vss vdd FILLER_0_3_12/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X_11_ vss net22 net2 vdd vdd _11_/VPW vss gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+XFILLER_0_9_66 vdd vss vdd FILLER_0_9_66/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XANTENNA_input7_I vss input_signal[6] vdd vdd ANTENNA_input7_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_10_107 vdd vss vdd FILLER_0_10_107/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_13_104 vdd vss vdd FILLER_0_13_104/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XFILLER_0_12_37 vdd vss vdd FILLER_0_12_37/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X_10_ vss net21 net1 vdd vdd _10_/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_1
+XFILLER_0_0_36 vdd vss vdd FILLER_0_0_36/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_15_8 vdd vss vdd FILLER_0_15_8/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XFILLER_0_16_70 vdd vss vdd FILLER_0_16_70/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_11_2 vdd vss vdd FILLER_0_11_2/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XFILLER_0_12_28 vdd vss vdd FILLER_0_12_28/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_6_37 vdd vss vdd FILLER_0_6_37/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+XANTENNA_input5_I vss input_signal[4] vdd vdd ANTENNA_input5_I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_8_101 vdd vss vdd FILLER_0_8_101/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_16_104 vdd vss vdd FILLER_0_16_104/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_2_107 vdd vss vdd FILLER_0_2_107/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+XFILLER_0_5_104 vdd vss vdd FILLER_0_5_104/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XANTENNA__11__I vss net2 vdd vdd ANTENNA__11__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_13_72 vdd vss vdd FILLER_0_13_72/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+XANTENNA__06__I vss net6 vdd vdd ANTENNA__06__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+XFILLER_0_0_28 vdd vss vdd FILLER_0_0_28/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+XFILLER_0_1_60 vdd vss vdd FILLER_0_1_60/VPW vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+XANTENNA__14__I vss net5 vdd vdd ANTENNA__14__I/VPW vss gf180mcu_fd_sc_mcu7t5v0__antenna
+Xoutput30 output_signal_plus[9] net30 vdd vss vdd output30/VPW vss gf180mcu_fd_sc_mcu7t5v0__buf_8
+.ends
+

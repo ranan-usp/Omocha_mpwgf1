@@ -1,0 +1,28 @@
+
+.include ./pex/bootstrapped_sw.pex.spice
+
+Xbs_p vdd vss en bs_inp bs_outp bootstrapped_sw
+Xbs_m vdd vss en bs_inm bs_outm bootstrapped_sw
+COUTP bs_outp GND 5p
+COUTM bs_outm GND 5p
+
+VEN en GND PULSE(0 6 0 1e-9 1e-9 0.05e-6 0.1e-6)
+VDD vdd GND 6
+VSS vss GND 0
+VINP bs_inp GND SIN(3 3 1e6 0 0)
+VINM bs_inm GND SIN(3 -3 1e6 0 0)
+
+.include /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+.control
+set gmin=1.0e-20
+tran 1n 3u
+.endc
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
+

@@ -1,21 +1,16 @@
-# SAR ADC (Successive Approximation Register Analog-to-Digital Converter)
+# 10-Bit SAR ADC Project
 
 ## Overview
-A SAR ADC is a device used to convert analog signals into digital signals. It operates on the principle of successive approximation, making it highly efficient for many applications due to its balance of speed, accuracy, and power consumption.
+This project presents the design of a 10-bit Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC) aimed at achieving high-precision analog-to-digital conversion. This SAR ADC is intended for digital signal processing applications where accurate conversion of analog signals into digital data is crucial.
 
-## Working Principle
-- **Successive Approximation**: The SAR ADC uses a binary search algorithm to convert the analog input to a digital output.
-- **Register and Comparator**: Central to its operation are a comparator and a digital-to-analog converter (DAC), along with a successive approximation register (SAR).
-- **Conversion Process**: During each step of the conversion process, the SAR adjusts its output to get closer to the input signal, eventually reaching an accurate digital representation.
+## Circuit
+To realize digital input and output capabilities, we integrated a 10-bit Capacitive Digital-to-Analog Converter (CDAC) circuit into the input stage. This CDAC circuit features precise capacitor matching and a low-noise design, essential for maximizing the performance of our SAR ADC.
 
-## Key Features
-- **Speed**: Offers a good trade-off between conversion speed and resolution.
-- **Power Efficiency**: Generally more power-efficient compared to other types like flash ADCs.
-- **Accuracy**: Provides high accuracy, making it suitable for precision applications.
+![circuit](./png/circuit.png "circuit")
 
-## Applications
-- Widely used in microcontrollers, data acquisition systems, and anywhere precision ADCs are needed.
-- Ideal for applications where power efficiency and moderate speed are required.
-
-## logo
+## Logo Design
+Additionally, we created an original logo to symbolize the uniqueness of this project. The logo is designed to represent the innovative nature and technical expertise of our work.
 ![logo](./png/logo.png "logo")
+
+## Future Outlook
+Moving forward, we aim to continue evaluating and improving the performance of this SAR ADC, striving for even greater efficiency. We also plan to explore its applicability across various applications.
