@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -34,7 +35,7 @@ N 430 -150 460 -150 {lab=cal}
 N 430 -50 460 -50 {lab=rstn}
 N 120 -130 150 -130 {lab=clkc}
 N 120 -170 150 -170 {lab=trimb[4:0]}
-N 120 -280 150 -280 {lab=dvdd}
+N 120 -280 150 -280 {lab=vdd}
 N 120 -240 150 -240 {lab=dvss}
 N 120 -50 150 -50 {lab=valid}
 C {devices/noconn.sym} 430 -170 0 0 {name=l12}
@@ -63,13 +64,12 @@ C {xschem/symbols/devices/ipin.sym} 460 -80 2 0 {name=p11 lab=result[9:0]}
 C {xschem/symbols/devices/ipin.sym} 460 -50 2 0 {name=p13 lab=rstn}
 C {devices/code.sym} -180 -130 0 0 {name=INCLUDES only_toplevel=false 
 format="tcleval(@value )"
-value=".include \\\\$::DESIGN_PATH\\\\/sar_10b/control/cmos_cells_digital.sp
-.include \\\\$::DESIGN_PATH\\\\/sar_10b/control/sarlogic.sp
+value=".include /home/oe23ranan/check/pex/sarlogic.pex.spice
 "}
 C {xschem/symbols/devices/noconn.sym} 150 -280 0 1 {name=l1}
-C {xschem/symbols/devices/iopin.sym} 120 -280 0 1 {name=p14 lab=dvdd}
+C {xschem/symbols/devices/iopin.sym} 120 -280 0 1 {name=p14 lab=vdd}
 C {xschem/symbols/devices/noconn.sym} 150 -240 0 1 {name=l2}
-C {xschem/symbols/devices/iopin.sym} 120 -240 0 1 {name=p15 lab=dvss}
+C {xschem/symbols/devices/iopin.sym} 120 -240 0 1 {name=p15 lab=vss}
 C {xschem/symbols/devices/opin.sym} 120 -50 2 0 {name=p16 lab=valid
 }
 C {devices/noconn.sym} 150 -50 2 0 {name=l1[7:0]}

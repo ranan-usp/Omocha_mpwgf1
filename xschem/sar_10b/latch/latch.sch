@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -56,29 +57,31 @@ C {devices/lab_wire.sym} 590 -780 1 0 {name=l6 sig_type=std_logic lab=vdd}
 C {logic/inv_lvt.sym} 300 -740 0 0 {name=x4}
 C {devices/lab_wire.sym} 190 -740 3 0 {name=l7 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 190 -780 3 1 {name=l8 sig_type=std_logic lab=vdd}
-C {sky130_primitives/nfet_01v8_lvt.sym} 290 -760 0 0 {name=M3
-L=0.4
-W=1
+C {symbols/nfet_06v0.sym} 290 -760 0 0 {name=M1
+L=0.70u
+W=1u
 nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
-spiceprefix=X}
-C {sky130_primitives/nfet_01v8_lvt.sym} 490 -760 0 1 {name=M1
-L=0.4
-W=1
+model=nfet_06v0
+spiceprefix=X
+}
+C {symbols/nfet_06v0.sym} 490 -760 0 1 {name=M2
+L=0.70u
+W=1u
 nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
-spiceprefix=X}
+model=nfet_06v0
+spiceprefix=X
+}

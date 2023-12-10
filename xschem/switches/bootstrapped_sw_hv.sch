@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -73,103 +74,107 @@ C {devices/lab_wire.sym} 540 -600 0 0 {name=l8 sig_type=std_logic lab=vbsh}
 C {devices/lab_wire.sym} 520 -410 0 0 {name=l12 sig_type=std_logic lab=vbsl}
 C {devices/lab_wire.sym} 1140 -600 0 0 {name=l13 sig_type=std_logic lab=vs}
 C {devices/lab_wire.sym} 940 -220 3 0 {name=l14 sig_type=std_logic lab=vss}
-C {sky130_primitives/cap_mim_m3_1.sym} 540 -500 0 0 {name=Cbs[4:0] model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X ic=0
-}
-C {xschem/symbols/sky130_primitives/pfet_g5v0d10v5.sym} 430 -620 1 0 {name=M3
-L=0.5
-W=1
+C {symbols/nfet_06v0.sym} 940 -240 1 0 {name=Ms
+L=0.70u
+W=1u
 nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_g5v0d10v5
+model=nfet_06v0
 spiceprefix=X
 }
-C {xschem/symbols/sky130_primitives/pfet_g5v0d10v5.sym} 660 -620 3 1 {name=M4
-L=0.5
-W=1
+C {symbols/pfet_06v0.sym} 430 -620 3 1 {name=M4
+L=0.55u
+W=1u
 nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=pfet_g5v0d10v5
+model=pfet_06v0
 spiceprefix=X
 }
-C {xschem/symbols/sky130_primitives/nfet_g5v0d10v5.sym} 940 -240 1 0 {name=Ms
-L=0.5
-W=1
+C {symbols/pfet_06v0.sym} 660 -620 3 1 {name=M3
+L=0.50u
+W=0.30u
 nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_g5v0d10v5
+model=pfet_06v0
 spiceprefix=X
 }
-C {xschem/symbols/sky130_primitives/nfet_g5v0d10v5.sym} 560 -310 0 1 {name=M1
-L=0.5
-W=1
+C {symbols/nfet_06v0.sym} 1190 -620 3 1 {name=Ms2
+L=0.70u
+W=1u
 nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_g5v0d10v5
+model=nfet_06v0
 spiceprefix=X
 }
-C {xschem/symbols/sky130_primitives/nfet_g5v0d10v5.sym} 430 -430 1 0 {name=M2
-L=0.5
-W=1
+C {symbols/nfet_06v0.sym} 1080 -620 3 1 {name=Ms1
+L=0.70u
+W=1u
 nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_g5v0d10v5
+model=nfet_06v0
 spiceprefix=X
 }
-C {xschem/symbols/sky130_primitives/nfet_g5v0d10v5.sym} 1190 -620 1 0 {name=Ms2
-L=0.5
-W=1
+C {symbols/nfet_06v0.sym} 560 -310 2 0 {name=M1
+L=0.70u
+W=1u
 nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_g5v0d10v5
+model=nfet_06v0
 spiceprefix=X
 }
-C {xschem/symbols/sky130_primitives/nfet_g5v0d10v5.sym} 1080 -620 1 0 {name=Ms1
-L=0.5
-W=1
+C {symbols/nfet_06v0.sym} 430 -430 1 0 {name=M2
+L=0.70u
+W=1u
 nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
 sa=0 sb=0 sd=0
-model=nfet_g5v0d10v5
+model=nfet_06v0
 spiceprefix=X
 }
+C {symbols/cap_mim_2p0fF.sym} 540 -500 0 0 {name=C1
+W=12.339999u
+L=12.339999u
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
