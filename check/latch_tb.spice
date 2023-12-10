@@ -1,0 +1,23 @@
+
+.include ./pex/latch.pex.spice
+
+Xlatch vss vdd Q Qn R S latch 
+VS S GND PULSE(0 6 0.025e-6 1e-9 1e-9 0.05e-6 0.1e-6)
+VR R GND PULSE(0 6 0.025e-6 1e-9 1e-9 0.5e-6 1e-6)
+VDD vdd GND 6
+VSS vss GND 0
+
+.include /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+.control
+set gmin=1.0e-20
+tran 1n 3u
+.endc
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
+

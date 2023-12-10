@@ -1,0 +1,35 @@
+
+.include ./pex/comparator.pex.spice
+
+Xcom trim1 trim0 trim2 trim3 trim4 trimb4 trimb1 trimb0 trimb2 trimb3
++ vp vn outp outn clkc vss vdd comparator 
+VCLK clkc GND PULSE(0 6 0.025e-6 1e-9 1e-9 0.05e-6 0.1e-6)
+VDD vdd GND 6
+VSS vss GND 0
+Vtrim0 trim0 GND 0
+Vtrim1 trim1 GND 0
+Vtrim2 trim2 GND 0
+Vtrim3 trim3 GND 0
+Vtrim4 trim4 GND 6
+Vtrimb0 trimb0 GND 6
+Vtrimb1 trimb1 GND 6
+Vtrimb2 trimb2 GND 6
+Vtrimb3 trimb3 GND 6
+Vtrimb4 trimb4 GND 0
+VINP vp GND SIN(3 3 1e6 0 0)
+VINM vn GND SIN(3 -3 1e6 0 0)
+
+.include /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+.control
+set gmin=1.0e-20
+tran 1n 3u
+.endc
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
+

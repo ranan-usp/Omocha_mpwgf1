@@ -351,7 +351,7 @@ C5 G a_n302_n324# 0.368221f
 .ends
 
 .subckt comparator trim1 trim0 trim2 trim3 trim4 trimb4 trimb1 trimb0 trimb2 trimb3
-+ vp vn outp outn diff in ip clkc vss vdd
++ vp vn outp outn clkc vss vdd
 XXMdiff_cmp_0 clkc diff vss vss XMdiff_cmp
 Xtrim_0 trimb0 trimb4 trimb1 trimb2 trimb3 trim_0/n1 trim_0/n4 trim_0/n0 trim_0/n3
 + ip trim_0/n2 vss trim
