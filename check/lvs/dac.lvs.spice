@@ -13,7 +13,8 @@ X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
 .ends
 
 .subckt bs_cap I1_1_1_R0_BOT I1_1_1_R0_TOP
-X0 I1_1_1_R0_TOP I1_1_1_R0_BOT cap_mim_2f0fF c_width=12.339999u c_length=12.339999u
+*X0 I1_1_1_R0_TOP I1_1_1_R0_BOT cap_mim_2f0fF c_width=12.339999u c_length=12.339999u
+CX I1_1_1_R0_TOP I1_1_1_R0_BOT 4.836p
 .ends
 
 .subckt XM3_bs G D w_n319_n356# S
@@ -91,5 +92,18 @@ Xbootstrapped_sw_0 sample bootstrapped_sw_0/enb dac_in dac_out bootstrapped_sw_0
 Xinv_renketu_0 dum carray_0/n2 ctl10 ctl3 ctl5 carray_0/n8 carray_0/n5 carray_0/n1
 + carray_0/ndum carray_0/n9 ctl7 ctl9 ctl2 carray_0/n7 carray_0/n4 ctl1 carray_0/n0
 + ctl4 ctl6 ctl8 vdd vss carray_0/n3 carray_0/n6 inv_renketu
+C57 carray_0/n0 dac_out 1.750611f
+C58 carray_0/ndum dac_out 1.640173f
+C85 carray_0/n1 dac_out 3.367623f
+C82 carray_0/n2 dac_out 6.640605f
+C74 carray_0/n3 dac_out 13.201303f
+C70 carray_0/n4 dac_out 26.32268f
+C2 carray_0/n5 dac_out 52.565514f
+C45 dac_out carray_0/n6 0.105055p
+C40 carray_0/n7 dac_out 0.210031p
+C5 carray_0/n8 dac_out 0.420151p
+C31 carray_0/n9 dac_out 0.846161p
+C86 bootstrapped_sw_0/vbsh dac_out 0.280658f
+C110 dac_out vss -0.684032p
 .ends
 

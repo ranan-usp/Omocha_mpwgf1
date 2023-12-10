@@ -718,11 +718,11 @@ X26 a_1697_156# a_1040_527# VSS VSUBS nfet_06v0 ad=86.399994f pd=0.84u as=93.599
 X27 a_3081_151# SETN a_2449_156# VSUBS nfet_06v0 ad=48.6f pd=0.645u as=0.3123p ps=2.38u w=0.405u l=0.6u
 .ends
 
-.subckt sarlogic ctln[0] ctln[1] ctln[2] ctln[3] ctln[4] ctln[5] ctln[6] ctln[7] ctln[8]
-+ ctln[9] ctlp[0] ctlp[1] ctlp[2] ctlp[3] ctlp[4] ctlp[5] ctlp[6] ctlp[7] ctlp[8]
-+ ctlp[9] vdd vss cal clk clkc comp en result[0] result[1] result[2] result[3] result[4]
-+ result[5] result[6] result[7] result[8] result[9] rstn sample trim[0] trim[1] trim[2]
-+ trim[3] trim[4] trimb[0] trimb[1] trimb[2] trimb[3] trimb[4] valid
+.subckt sarlogic ctln[0] ctln[1] ctln[2] ctln[3] ctln[4] ctln[5] ctln[6] ctln[7] ctln[8] ctln[9] 
++ ctlp[0] ctlp[1] ctlp[2] ctlp[3] ctlp[4] ctlp[5] ctlp[6] ctlp[7] ctlp[8] ctlp[9] 
++ result[0] result[1] result[2] result[3] result[4] result[5] result[6] result[7] result[8] result[9] 
++ trim[0] trim[1] trim[2] trim[3] trim[4] trimb[0] trimb[1] trimb[2] trimb[3] trimb[4] 
++ rstn en cal clk comp clkc sample valid vdd vss 
 XFILLER_0_17_200 vdd vss FILLER_0_17_200/VPW vdd vss gf180mcu_fd_sc_mcu7t5v0__fillcap_8
 XANTENNA_fanout56_I vss net57 vdd ANTENNA_fanout56_I/VPW vdd vss gf180mcu_fd_sc_mcu7t5v0__antenna
 X_432_ _021_ mask\[3\] net63 vss net80 vdd _432_/VPW vdd vss gf180mcu_fd_sc_mcu7t5v0__dffrnq_1

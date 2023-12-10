@@ -5,15 +5,18 @@
 .include ./pex/latch.pex.spice
 .include ./pex/buffer.pex.spice
 
+.subckt saradc result0 result1 result2 result3 result4 result5 result6 result7 result8 result9 
++ sar_inp sar_inm vdd vss rstn en cal clk valid
+
 Xsarlogic ctln0 ctln1 ctln2 ctln3 ctln4 ctln5 ctln6 ctln7 ctln8 ctln9 
 + ctlp0 ctlp1 ctlp2 ctlp3 ctlp4 ctlp5 ctlp6 ctlp7 ctlp8 ctlp9 
 + result0 result1 result2 result3 result4 result5 result6 result7 result8 result9
 + trim0 trim1 trim2 trim3 trim4 trimb0 trimb1 trimb2 trimb3 trimb4
 + rstn en cal clk comp logic_clkc sample valid vdd vss sarlogic 
 
-Xdacp vdd dac_inp vss dac_outp vdd ctlp1 ctlp2 ctlp3 ctlp4 ctlp5 ctlp6 ctlp7 ctlp8 ctlp9
+Xdacp vdd sar_inp vss dac_outp vdd ctlp1 ctlp2 ctlp3 ctlp4 ctlp5 ctlp6 ctlp7 ctlp8 ctlp9
 + ctlp0 sample dac 
-Xdacm vdd dac_inm vss dac_outm vdd ctln1 ctln2 ctln3 ctln4 ctln5 ctln6 ctln7 ctln8 ctln9
+Xdacm vdd sar_inm vss dac_outm vdd ctln1 ctln2 ctln3 ctln4 ctln5 ctln6 ctln7 ctln8 ctln9
 + ctln0 sample dac 
 
 Xcom trim1 trim0 trim2 trim3 trim4 trimb4 trimb1 trimb0 trimb2 trimb3
@@ -23,29 +26,55 @@ Xlatch vss vdd comp Qn cmp_outn cmp_outp latch
 
 Xbuf vdd vss logic_clkc cmp_clkc buffer 
 
+.ends
+
+Xsar result0 result1 result2 result3 result4 result5 result6 result7 result8 result9 
++ inp inm vdd vss rstn en cal clk valid saradc
+
 VDD vdd GND 5
 VSS vss GND 0
 VEN en GND 5
 Vcal cal GND 0
 Vclk clk GND PULSE(0 5 10e-6 1e-9 1e-9 2e-6 4e-6)
 Vrstn rstn GND PULSE(0 5 10e-6 1e-9 1e-9 99e-6 100e-6)
-VINP dac_inp GND SIN(2.5 2.5 40e6 0 0)
-VINM dac_inm GND SIN(2.5 -2.5 40e6 0 0)
+VINP inp GND SIN(2.5 2.5 1e6 0 0)
+VINM inm GND SIN(2.5 -2.5 1e6 0 0)
+Cvalid valid GND 1f m=1
 
 .include /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
 
-.ic v(trim0)=0
-.ic v(trim1)=0
-.ic v(trim2)=0
-.ic v(trim3)=0
-.ic v(trim4)=0
-.ic v(trimb0)=0
-.ic v(trimb1)=0
-.ic v(trimb2)=0
-.ic v(trimb3)=0
-.ic v(trimb4)=0
+* normal setup
+*----------------------------------------
+*.options method = gear
+*.options gmin   = 1e-15
+*.options abstol = 1e-14
+*.options chtol  = 1e-18
+*.options reltol = 100e-6
+*----------------------------------------
+
+*----------------------------------------
+* extracted logic setup
+*----------------------------------------
+*.options method = gear
+*.options gmin   = 1e-12
+*.options abstol = 1e-10
+*.options chtol  = 1e-12
+*.options reltol = 100e-3
+*-------------------------
+
+
+.ic v(Xsar.trim0)=0
+.ic v(Xsar.trim1)=0
+.ic v(Xsar.trim2)=0
+.ic v(Xsar.trim3)=0
+.ic v(Xsar.trim4)=0
+.ic v(Xsar.trimb0)=0
+.ic v(Xsar.trimb1)=0
+.ic v(Xsar.trimb2)=0
+.ic v(Xsar.trimb3)=0
+.ic v(Xsar.trimb4)=0
 .ic v(result0)=0
 .ic v(result1)=0
 .ic v(result2)=0
@@ -56,30 +85,32 @@ VINM dac_inm GND SIN(2.5 -2.5 40e6 0 0)
 .ic v(result7)=0
 .ic v(result8)=0
 .ic v(result9)=0
-.ic v(ctlp0)=0
-.ic v(ctlp1)=0
-.ic v(ctlp2)=0
-.ic v(ctlp3)=0
-.ic v(ctlp4)=0
-.ic v(ctlp5)=0
-.ic v(ctlp6)=0
-.ic v(ctlp7)=0
-.ic v(ctlp8)=0
-.ic v(ctlp9)=0
-.ic v(ctln0)=0
-.ic v(ctln1)=0
-.ic v(ctln2)=0
-.ic v(ctln3)=0
-.ic v(ctln4)=0
-.ic v(ctln5)=0
-.ic v(ctln6)=0
-.ic v(ctln7)=0
-.ic v(ctln8)=0
-.ic v(ctln9)=0
+.ic v(Xsar.ctlp0)=0
+.ic v(Xsar.ctlp1)=0
+.ic v(Xsar.ctlp2)=0
+.ic v(Xsar.ctlp3)=0
+.ic v(Xsar.ctlp4)=0
+.ic v(Xsar.ctlp5)=0
+.ic v(Xsar.ctlp6)=0
+.ic v(Xsar.ctlp7)=0
+.ic v(Xsar.ctlp8)=0
+.ic v(Xsar.ctlp9)=0
+.ic v(Xsar.ctln0)=0
+.ic v(Xsar.ctln1)=0
+.ic v(Xsar.ctln2)=0
+.ic v(Xsar.ctln3)=0
+.ic v(Xsar.ctln4)=0
+.ic v(Xsar.ctln5)=0
+.ic v(Xsar.ctln6)=0
+.ic v(Xsar.ctln7)=0
+.ic v(Xsar.ctln8)=0
+.ic v(Xsar.ctln9)=0
+
 
 .control
-save dac_inp dac_inm result0 result1 result2 result3 result4 result5 result6 result7 result8 result9
-tran 100e-9 68e-6 uic
+set gmin=1.0e-20
+*save dac_inp dac_inm result0 result1 result2 result3 result4 result5 result6 result7 result8 result9
+tran 0.01e-6 10e-6 uic
 .endc
 
 **** end user architecture code

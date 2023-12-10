@@ -1,0 +1,56 @@
+
+.include ./pex/dac.pex.spice
+
+Xdacp vdd inp vss dac_outp vdd ctlp1 ctlp2 ctlp3 ctlp4 ctlp5 ctlp6 ctlp7 ctlp8 ctlp9
++ ctlp0 sample dac 
+Xdacm vdd inm vss dac_outm vdd ctln1 ctln2 ctln3 ctln4 ctln5 ctln6 ctln7 ctln8 ctln9
++ ctln0 sample dac 
+
+* Xinv_renketu_0 dum carray_0/n2 ctlp10 ctlp3 ctlp5 carray_0/n8 carray_0/n5 carray_0/n1
+* + carray_0/ndum carray_9 ctlp7 ctlp9 ctlp2 carray_0/n7 carray_0/n4 ctlp1 carray_0/n0
+* + ctlp4 ctlp6 ctlp8 vdd vss carray_0/n3 carray_0/n6 inv_renketu
+
+VDD vdd GND 5
+VSS vss GND 0
+VINP inp GND SIN(2.5 2.5 5e6 0 0)
+VINM inm GND SIN(2.5 -2.5 5e6 0 0)
+
+Vsample sample GND PULSE(0 5 0 1e-9 1e-9 0.2e-6 0.4e-6)
+
+Vctlp0 ctlp0 GND 0
+Vctlp1 ctlp1 GND 0
+Vctlp2 ctlp2 GND 0
+Vctlp3 ctlp3 GND 0
+Vctlp4 ctlp4 GND 0
+Vctlp5 ctlp5 GND 0
+Vctlp6 ctlp6 GND 0
+Vctlp7 ctlp7 GND 0
+Vctlp8 ctlp8 GND 0
+Vctlp9 ctlp9 GND 0
+
+Vctln0 ctln0 GND 0
+Vctln1 ctln1 GND 0
+Vctln2 ctln2 GND 0
+Vctln3 ctln3 GND 0
+Vctln4 ctln4 GND 0
+Vctln5 ctln5 GND 0
+Vctln6 ctln6 GND 0
+Vctln7 ctln7 GND 0
+Vctln8 ctln8 GND 0
+Vctln9 ctln9 GND 0
+
+.include /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /tmp/caravel_tutorial/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_typical
+
+.control
+set gmin=1.0e-20
+*save dac_inp dac_inm result0 result1 result2 result3 result4 result5 result6 result7 result8 result9
+tran 1n 5u
+.endc
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
+

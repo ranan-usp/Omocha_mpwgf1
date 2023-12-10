@@ -1,0 +1,5 @@
+* NGSPICE file created from carray.ext - technology: gf180mcuD
+
+.subckt carray n9 n0 n8 n7 n6 n5 n4 n3 n2 n1 ndum carray_out
+.ends
+
