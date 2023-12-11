@@ -64,7 +64,13 @@ Trimming and Offset Correction: Utilizes trimming values (trim, trimb) for fine-
 |![logic_result1](./png/sarlogic1.png "logic_result1")|![logic_result2](./png/sarlogic2.png "logic_result2")|
 
 ### layout
-![circuit](./png/circuit.png "circuit")
+|layout|
+|---|
+|![circuit](./png/circuit.png "circuit")|
+
+|result1|result2|
+|---|---|
+|![adc_result1](./png/adc_result.png "adc_result")|![adc_result2](./png/adc_result3.png "adc_result2")|
 
 ## Logo Design
 Additionally, we created an original logo to symbolize the uniqueness of this project. The logo is designed to represent the innovative nature and technical expertise of our work.
