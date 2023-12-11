@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -39,7 +40,7 @@ C {sar_10b/unitcap/unitcap.sym} 1160 -230 0 0 {name=xc4[15:0]}
 C {sar_10b/unitcap/unitcap.sym} 940 -230 0 0 {name=xc5[31:0]}
 C {sar_10b/unitcap/unitcap.sym} 720 -230 0 0 {name=xc6[63:0]}
 C {sar_10b/unitcap/unitcap.sym} 500 -230 0 0 {name=xc7[127:0]}
-C {devices/iopin.sym} 2420 -340 0 0 {name=p1 lab=top}
+C {devices/iopin.sym} 2420 -340 0 0 {name=p1 lab=carray_top}
 C {devices/iopin.sym} 520 -190 1 0 {name=p2 lab=n7}
 C {devices/iopin.sym} 740 -190 1 0 {name=p4 lab=n6}
 C {devices/iopin.sym} 960 -190 1 0 {name=p5 lab=n5}
@@ -57,3 +58,4 @@ C {sar_10b/unitcap/unitcap.sym} 60 -230 0 0 {name=xc9[511:0]
 }
 C {devices/iopin.sym} 80 -190 1 0 {name=p10 lab=n9
 }
+C {devices/iopin.sym} 630 -440 2 0 {name=p13 lab=vss}

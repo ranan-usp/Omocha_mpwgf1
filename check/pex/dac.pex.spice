@@ -345,7 +345,7 @@ C20 n6 carray_out 0.105055p
 C31 n7 carray_out 0.210031p
 C11 n8 carray_out 0.420151p
 C45 n9 carray_out 0.846153p
-*C55 carray_out vss 0.118526p
+C55 carray_out vss 0.118526p
 
 C21 n7 n2 0.485242f
 C22 n0 n1 8.469266f

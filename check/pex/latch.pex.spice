@@ -2,178 +2,96 @@
 
 .subckt XM2_x4_latch G D w_n319_n356# S VSUBS
 X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
-C0 S D 0.045397f
-C1 G w_n319_n356# 0.186402f
-C2 w_n319_n356# S 0.019807f
-C3 G S 0.002389f
-C4 w_n319_n356# D 0.019528f
-C5 G D 0.002389f
-C6 D VSUBS 0.0454f
-C7 S VSUBS 0.0454f
-C8 G VSUBS 0.124686f
-C9 w_n319_n356# VSUBS 1.48703f
+C0 w_n319_n356# G 0.186402f
+C1 G VSUBS 0.124686f
+C2 w_n319_n356# VSUBS 1.48703f
 .ends
 
 .subckt XM1_x4_latch G D a_n302_n324# S
 X0 D G S a_n302_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
-C0 S G 0.002868f
-C1 G D 0.002868f
-C2 S D 0.038197f
-C3 D a_n302_n324# 0.065984f
-C4 S a_n302_n324# 0.066063f
-C5 G a_n302_n324# 0.365275f
+C0 G a_n302_n324# 0.365275f
 .ends
 
 .subckt x4_latch inv_out inv_in vdd vss
 XXM2_x4_latch_0 inv_in inv_out vdd vdd vss XM2_x4_latch
 XXM1_x4_latch_0 inv_in inv_out vss vss XM1_x4_latch
-C0 inv_out vdd 0.090362f
-C1 vss inv_in 0.036044f
-C2 vdd inv_in 0.070585f
-C3 vdd vss 0.042913f
-C4 inv_out inv_in 0.075645f
-C5 inv_out vss 0.041091f
-C6 vdd 0 1.6624f
-C7 inv_out 0 0.399533f
-C8 vss 0 0.289424f
-C9 inv_in 0 0.606521f
+C0 vdd 0 1.6624f
+C1 inv_out 0 0.399533f
+C2 vss 0 0.289424f
+C3 inv_in 0 0.606521f
 .ends
 
 .subckt XM2_x3_latch G D w_n319_n356# S VSUBS
 X0 S G D w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
-C0 w_n319_n356# D 0.019528f
-C1 w_n319_n356# G 0.186402f
-C2 D G 0.002389f
-C3 w_n319_n356# S 0.019807f
-C4 D S 0.045397f
-C5 S G 0.002389f
-C6 S VSUBS 0.0454f
-C7 D VSUBS 0.0454f
-C8 G VSUBS 0.124686f
-C9 w_n319_n356# VSUBS 1.48703f
+C0 w_n319_n356# G 0.186402f
+C1 G VSUBS 0.124686f
+C2 w_n319_n356# VSUBS 1.48703f
 .ends
 
 .subckt XM1_x3_latch G D a_n319_n324# S
 X0 S G D a_n319_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
-C0 G S 0.002868f
-C1 G D 0.002868f
-C2 S D 0.038197f
-C3 S a_n319_n324# 0.066063f
-C4 D a_n319_n324# 0.065984f
-C5 G a_n319_n324# 0.365275f
+C0 G a_n319_n324# 0.365275f
 .ends
 
 .subckt x3_latch inv_out vdd inv_in vss
 XXM2_x3_latch_0 inv_in inv_out vdd vdd vss XM2_x3_latch
 XXM1_x3_latch_0 inv_in inv_out vss vss XM1_x3_latch
-C0 inv_in vss 0.036044f
-C1 inv_out vdd 0.090362f
-C2 inv_out vss 0.041091f
-C3 inv_in inv_out 0.075645f
-C4 vss vdd 0.041623f
-C5 inv_in vdd 0.070585f
-C6 vdd 0 1.658401f
-C7 vss 0 0.284019f
-C8 inv_out 0 0.399533f
-C9 inv_in 0 0.606521f
+C0 vdd 0 1.658401f
+C1 vss 0 0.284019f
+C2 inv_out 0 0.399533f
+C3 inv_in 0 0.606521f
 .ends
 
 .subckt XM4_latch G D a_n319_n324# S a_n319_252#
 X0 D G S a_n319_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
-C0 S G 0.002868f
-C1 D S 0.038197f
-C2 D G 0.002868f
-C3 D a_n319_n324# 0.065984f
-C4 S a_n319_n324# 0.065984f
-C5 G a_n319_n324# 0.365186f
+C0 G a_n319_n324# 0.365186f
 .ends
 
 .subckt XM2_x2_latch G D w_n319_n356# S VSUBS
 X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
-C0 w_n319_n356# S 0.019528f
-C1 S G 0.002389f
-C2 D S 0.045397f
-C3 w_n319_n356# G 0.186194f
-C4 w_n319_n356# D 0.019528f
-C5 D G 0.002389f
-C6 D VSUBS 0.0454f
-C7 S VSUBS 0.0454f
-C8 G VSUBS 0.124686f
-C9 w_n319_n356# VSUBS 1.48655f
+C0 w_n319_n356# G 0.186194f
+C1 G VSUBS 0.124686f
+C2 w_n319_n356# VSUBS 1.48655f
 .ends
 
 .subckt XM1_x2_latch G a_n320_n324# D a_n318_252# S
 X0 D G S a_n320_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
-C0 S G 0.002868f
-C1 D S 0.038197f
-C2 D G 0.002868f
-C3 D a_n320_n324# 0.065984f
-C4 S a_n320_n324# 0.065984f
-C5 G a_n320_n324# 0.365186f
+C0 G a_n320_n324# 0.365186f
 .ends
 
 .subckt x2_latch inv_out vdd inv_in XM1_x2_latch_0/a_n318_252# vss
 XXM2_x2_latch_0 inv_in inv_out vdd vdd vss XM2_x2_latch
 XXM1_x2_latch_0 inv_in vss inv_out XM1_x2_latch_0/a_n318_252# vss XM1_x2_latch
-C0 vss vdd 0.040272f
-C1 inv_in inv_out 0.075645f
-C2 inv_out vdd 0.089967f
-C3 vss inv_out 0.038009f
-C4 inv_in vdd 0.070339f
-C5 inv_in vss 0.034813f
-C6 vdd 0 1.678276f
-C7 inv_out 0 0.40245f
-C8 vss 0 0.292283f
-C9 inv_in 0 0.607553f
+C0 vdd 0 1.678276f
+C1 inv_out 0 0.40245f
+C2 vss 0 0.292283f
+C3 inv_in 0 0.607553f
 .ends
 
 .subckt XM3_latch G D a_n319_n324# S a_n319_252#
 X0 D G S a_n319_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
-C0 D G 0.002868f
-C1 S D 0.038197f
-C2 S G 0.002868f
-C3 D a_n319_n324# 0.065984f
-C4 S a_n319_n324# 0.065984f
-C5 G a_n319_n324# 0.365186f
+C0 G a_n319_n324# 0.365186f
 .ends
 
 .subckt XM2_x1_latch G D w_n319_n356# S VSUBS
 X0 D G S w_n319_n356# pfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.55u
-C0 w_n319_n356# D 0.019528f
-C1 D G 0.002389f
-C2 S D 0.045397f
-C3 w_n319_n356# G 0.186194f
-C4 w_n319_n356# S 0.019528f
-C5 S G 0.002389f
-C6 D VSUBS 0.0454f
-C7 S VSUBS 0.0454f
-C8 G VSUBS 0.124686f
-C9 w_n319_n356# VSUBS 1.48655f
+C0 w_n319_n356# G 0.186194f
+C1 G VSUBS 0.124686f
+C2 w_n319_n356# VSUBS 1.48655f
 .ends
 
 .subckt XM1_x1_latch G D a_n318_n324# S
 X0 D G S a_n318_n324# nfet_06v0 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=0.7u
-C0 G S 0.002868f
-C1 G D 0.002868f
-C2 D S 0.038197f
-C3 D a_n318_n324# 0.065984f
-C4 S a_n318_n324# 0.065984f
-C5 G a_n318_n324# 0.365186f
+C0 G a_n318_n324# 0.365186f
 .ends
 
 .subckt x1_latch inv_out inv_in vdd vss
 XXM2_x1_latch_0 inv_in inv_out vdd vdd vss XM2_x1_latch
 XXM1_x1_latch_0 inv_in inv_out vss vss XM1_x1_latch
-C0 vdd inv_in 0.070339f
-C1 vdd vss 0.042519f
-C2 inv_out vdd 0.089967f
-C3 inv_in vss 0.034813f
-C4 inv_out inv_in 0.075645f
-C5 inv_out vss 0.038009f
-C6 vdd 0 1.676557f
-C7 inv_out 0 0.40245f
-C8 vss 0 0.30318f
-C9 inv_in 0 0.607553f
+C0 vdd 0 1.676557f
+C1 inv_out 0 0.40245f
+C2 vss 0 0.30318f
+C3 inv_in 0 0.607553f
 .ends
 
 .subckt latch vss vdd Q Qn R S
@@ -183,35 +101,22 @@ XXM4_latch_0 XM4_latch_0/G Q vss vss vss XM4_latch
 Xx2_latch_0 Qn vdd Q vss vss x2_latch
 XXM3_latch_0 XM3_latch_0/G Qn vss vss vss XM3_latch
 Xx1_latch_0 Q Qn vdd vss x1_latch
-C0 Qn XM4_latch_0/G 0.043999f
-C1 Qn XM3_latch_0/G 0.080688f
-C2 vdd XM4_latch_0/G 0.186732f
-C3 vdd XM3_latch_0/G 0.186837f
-C4 Q R 0.008667f
-C5 Qn S 0.008621f
-C6 vss XM4_latch_0/G 0.103577f
-C7 Q Qn 0.886677f
-C8 vdd S 0.069238f
-C9 vss XM3_latch_0/G 0.103577f
-C10 vdd R 0.069238f
-C11 vdd Q 0.457389f
-C12 vss S 0.034158f
-C13 vdd Qn 0.134494f
-C14 vss R 0.034158f
-C15 vss Q 0.14016f
-C16 S XM3_latch_0/G 0.091043f
-C17 R XM4_latch_0/G 0.091043f
-C18 vss Qn 0.167238f
-C19 Q XM4_latch_0/G 0.080738f
-C20 Q XM3_latch_0/G 0.04404f
-C21 vss vdd 0.035019f
-C22 vdd 0 9.513767f
-C23 Qn 0 0.887927f
-C24 vss 0 1.296609f
-C25 Q 0 0.846126f
-C26 XM4_latch_0/G 0 0.717123f
-C27 R 0 0.592286f
-C28 XM3_latch_0/G 0 0.717027f
-C29 S 0 0.592286f
+C0 vss XM4_latch_0/G 0.103577f
+C1 XM3_latch_0/G vdd 0.186837f
+C2 vss Qn 0.167238f
+C3 vss Q 0.14016f
+C4 Q Qn 0.886677f
+C5 XM4_latch_0/G vdd 0.186732f
+C6 vdd Qn 0.134494f
+C7 vss XM3_latch_0/G 0.103577f
+C8 Q vdd 0.457389f
+C9 vdd 0 9.513767f
+C10 Qn 0 0.887927f
+C11 vss 0 1.296609f
+C12 Q 0 0.846126f
+C13 XM4_latch_0/G 0 0.717123f
+C14 R 0 0.592286f
+C15 XM3_latch_0/G 0 0.717027f
+C16 S 0 0.592286f
 .ends
 

@@ -1,11 +1,11 @@
-path = "sarlogic.pex.spice"
+path = "saradc.pex.spice"
 
 with open(path,'r') as fr:
     s = fr.read()
 lines = s.split('\n')
 
 
-path2 = "sarlogic.pex.spice2"
+path2 = "saradc.pex.spice"
 with open(path2,'w') as fw:
     for line in lines:
         if '**FLOATING' in line:
