@@ -37,8 +37,8 @@ VEN en GND 5
 Vcal cal GND 0
 Vclk clk GND PULSE(0 5 10e-6 1e-9 1e-9 0.025e-6 0.05e-6)
 Vrstn rstn GND PULSE(0 5 5e-6 1e-9 1e-9 99e-6 100e-6)
-VINP inp GND SIN(2.5 2.5 0.1e6 0 0)
-VINM inm GND SIN(2.5 -2.5 0.1e6 0 0)
+VINP inp GND PULSE(0 5 0 25e-6 0 0 25e-6)
+VINM inm GND PULSE(5 0 0 25e-6 0 0 25e-6)
 Cvalid valid GND 1f m=1
 B1 result GND V=(v(result9)*0.5+v(result8)*0.25+v(result7)*0.125+v(result6)*0.0625+v(result5)*0.03125+v(result4)*0.015625+v(result3)*0.0078125+v(result2)*0.00390625+v(result1)*0.001953125+v(result0)*0.0009765625)*(v(valid)/5)
 
