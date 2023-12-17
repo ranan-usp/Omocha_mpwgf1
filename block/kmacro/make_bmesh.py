@@ -247,7 +247,7 @@ def create_Mos():
 
     name = "100_55_1_pfet_06v0"
     # name = "100_70_1_nfet_06v0"
-    M = 3
+    M = 10
 
     sub_cell = make_subcell(mos_cell,name)
 
@@ -283,17 +283,19 @@ def create_Mos():
     )
 
     mos_cell.insert(array_cell)
-    
     for layer_index,contents in left_data.items():
         for point in contents:
             create_Box2(mos_cell,layer_index,point[0],point[1])
-
     for layer_index,contents in right_data.items():
         for point in contents:
             point = np.array(point) + [(2*M-2)*DBU,0]
             create_Box2(mos_cell,layer_index,point[0],point[1])
+    mos_cell.flatten(2)
 
-    
+    cell_copy = make_subcell(TOP_CELL,'mos_copy')
+    # cell_copy.copy_instances(mos_cell).transform(Trans(Point(30*DBU,0)) * Trans.R180)
+    cell_copy.copy_shapes(mos_cell).transform(Trans(Point(0,10*DBU)) * Trans.R180)
+    # cell_copy.copy_shapes(mos_cell)
 
 
 if __name__ == '__main__':
