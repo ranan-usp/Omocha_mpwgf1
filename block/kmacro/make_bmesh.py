@@ -13,7 +13,7 @@ from collections import defaultdict
 class OriginalError(Exception):
     pass
 
-# データ保存関連
+# json data
 def save_json(data,save_path):
 
     # dictをjsonで保存
@@ -29,7 +29,7 @@ def load_json(path):
         data = json.load(fr)
     return data
 
-# layer mapを取得
+# layer map
 def get_layer_map():
 
     global LAYOUT
@@ -44,6 +44,8 @@ def get_layer_map():
 
 # layout structure
 def get_structure():
+
+    # https://www.klayout.de/doc/code/class_Path.html
 
     global TOP_CELL
 
@@ -101,7 +103,15 @@ def get_DBU_size(size):
 
     return size*DBU
 
-# box
+# get coordinate
+def get_pos(cell):
+
+    temp = cell.bbox()
+    p1,p2 = temp.p1,temp.p2
+
+    return (p1.x+p2.x)//2,(p1.y+p2.y)//2
+
+# box pattern1
 def create_Box(cell,index,point,width,height):
 
     point = get_DBU_point(point)
@@ -114,7 +124,7 @@ def create_Box(cell,index,point,width,height):
     
     cell.shapes(index).insert(Box.new(points[0],points[1],points[2],points[3]))
 
-# box
+# box pattern2
 def create_Box2(cell,index,p1,p2):
 
     cell.shapes(index).insert(Box.new(p1[0],p1[1],p2[0],p2[1]))
@@ -140,7 +150,7 @@ def create_Text(cell,index,point,string):
     cell.shapes(index).insert(Text.new(string,point[0],point[1]))
 
 # via
-def create_via(cell,point):
+def create_via(cell,point,layers = [0],rot = 0):
 
     m1_index = LAYOUT.layer(LayerInfo.new(34,0))
     m2_index = LAYOUT.layer(LayerInfo.new(36,0))
@@ -155,15 +165,42 @@ def create_via(cell,point):
 
     m_width = 0.38
     m_height = 0.90
-
-    create_Box(cell,m2_index,point,m_width,m_height)
-    create_Box(cell,m3_index,point,m_width,m_height)
-
     via_size = 0.26
-    upper_point = [point[0],point[1]+m_height/4]
-    create_Box(cell,v2_index,upper_point,via_size,via_size)
-    under_point = [point[0],point[1]-m_height/4]
-    create_Box(cell,v2_index,under_point,via_size,via_size)
+
+    for layer in layers:
+
+        if layer == 1:
+            under_index = m1_index
+            upper_index = m2_index
+            via_index = v1_index
+        elif layer == 2:
+            under_index = m2_index
+            upper_index = m3_index
+            via_index = v2_index
+        elif layer == 3:
+            under_index = m3_index
+            upper_index = m4_index
+            via_index = v3_index
+
+        if rot == 0:
+
+            create_Box(cell,under_index,point,m_width,m_height)
+            create_Box(cell,upper_index,point,m_width,m_height)
+
+            upper_point = [point[0],point[1]+m_height/4]
+            create_Box(cell,via_index,upper_point,via_size,via_size)
+            under_point = [point[0],point[1]-m_height/4]
+            create_Box(cell,via_index,under_point,via_size,via_size)
+
+        elif rot == 90:
+
+            create_Box(cell,under_index,point,m_height,m_width)
+            create_Box(cell,upper_index,point,m_height,m_width)
+
+            upper_point = [point[0]+m_height/4,point[1]]
+            create_Box(cell,via_index,upper_point,via_size,via_size)
+            under_point = [point[0]-m_height/4,point[1]]
+            create_Box(cell,via_index,under_point,via_size,via_size)
 
 # cdac
 def create_Cdac():
@@ -229,7 +266,7 @@ def create_Cdac():
         point = [current_x,current_y]
         create_Box(CELL,m_index,point,width,current_h)
         point = [current_x,current_y+current_h/2]
-        create_via(CELL,point)
+        create_via(CELL,point,layers = [2])
         paths[wait[x]].append(point)
 
     for path in paths:
@@ -239,7 +276,7 @@ def create_Cdac():
         create_Path(CELL,m3_index,path,width)
 
 # mos
-def create_Mos(cell,layout_data,offset):
+def create_Mos(cell,layout_data,offset,r = False):
 
     global DBU
 
@@ -257,29 +294,73 @@ def create_Mos(cell,layout_data,offset):
                 else:
                     right_data[layer_index].append([points[:2],points[2:]])
             else:
+                
+                if r == True:
+                    p2 = np.array(points[:2])*np.array([1,-1]) + np.array(offset)*DBU
+                    p1 = np.array(points[2:])*np.array([1,-1]) + np.array(offset)*DBU
 
-                p1 = np.array(points[:2]) + np.array(offset)*DBU
-                p2 = np.array(points[2:]) + np.array(offset)*DBU
+                else:
+                    p1 = np.array(points[:2]) + np.array(offset)*DBU
+                    p2 = np.array(points[2:]) + np.array(offset)*DBU
                 create_Box2(cell,layer_index,p1,p2)
 
     return left_data,right_data
 
 # mos
-def create_MultiMos(name,M,N):
+def create_MultiMos(M,N):
 
     global TOP_CELL,LAYOUT
 
-    dummy_cell = make_subcell(TOP_CELL,'dummy')
-    dummy2_cell = make_subcell(TOP_CELL,'dummy2')
-    layout_data = load_json("/home/oe23ranan/Omocha_mpwgf1/block/json/"+name+".json")
+    pfet_name = "100_55_1_pfet_06v0"
+    nfet_name = "100_70_1_nfet_06v0"
+
+    pdummy_cell = make_subcell(TOP_CELL,'pdummy')
+    pdummy2_cell = make_subcell(TOP_CELL,'pdummy2')
+    pconnect_cell = make_subcell(TOP_CELL,'pconnect')
+    ndummy_cell = make_subcell(TOP_CELL,'ndummy')
+    ndummy2_cell = make_subcell(TOP_CELL,'ndummy2')
+    nconnect_cell = make_subcell(TOP_CELL,'nconnect')
+
+    pfet_data = load_json("/home/oe23ranan/Omocha_mpwgf1/block/json/"+pfet_name+".json")
+    nfet_data = load_json("/home/oe23ranan/Omocha_mpwgf1/block/json/"+nfet_name+".json")
 
     mos_data = {
-        'mos1':{'m':3,'x':4,'y':0},
-        'mos2':{'m':5,'x':11,'y':0},
-        'mos3':{'m':3,'x':4,'y':1},
-        'mos4':{'m':3,'x':9,'y':2},
+        'mos1':{'t':'nfet','m':2,'x':6,'y':0,'r':True},
+        'mos2':{'t':'nfet','m':1,'x':4,'y':1,'r':False},
+        'mos3':{'t':'nfet','m':1,'x':5,'y':1,'r':False},
+        'mos4':{'t':'nfet','m':1,'x':6,'y':1,'r':False},
+        'mos5':{'t':'nfet','m':1,'x':7,'y':1,'r':False},
+
+        'mos6':{'t':'pfet','m':1,'x':5,'y':2,'r':True},
+        'mos7':{'t':'pfet','m':1,'x':6,'y':2,'r':True},
+
+        'mos8':{'t':'pfet','m':1,'x':0,'y':2,'r':True},
+        'mos9':{'t':'pfet','m':1,'x':1,'y':2,'r':True},
+
+        'mos10':{'t':'pfet','m':1,'x':10,'y':2,'r':True},
+        'mos11':{'t':'pfet','m':1,'x':11,'y':2,'r':True},
     }   
 
+    
+
+    dummy_flg = {
+        pdummy_cell:0,
+        pdummy2_cell:0,
+        pconnect_cell:0,
+        ndummy_cell:0,
+        ndummy2_cell:0,
+        nconnect_cell:0
+    }
+    dummy_pos = {
+        pdummy_cell:[0,0],
+        pdummy2_cell:[0,0],
+        pconnect_cell:[0,0],
+        ndummy_cell:[0,0],
+        ndummy2_cell:[0,0],
+        nconnect_cell:[0,0]
+    }
+
+    y_space = [0,0,1]
 
     mos_area = set()
     skip_gate = list()
@@ -287,73 +368,152 @@ def create_MultiMos(name,M,N):
         mos_cell = make_subcell(TOP_CELL,name)
 
         for multi in range(contents['m']):
-            offset = (2*(contents['x']-contents['m']//2 + multi),7*contents['y'])
+            offset = (2*(contents['x']-contents['m']//2 + multi),7*contents['y'] + y_space[contents['y']])
             skip_gate.append(offset)
-            left_data,right_data = create_Mos(mos_cell,layout_data,offset) 
-
-    dummy_flg = 0
+            layout_data = pfet_data if contents['t'] == 'pfet' else nfet_data
+            left_data,right_data = create_Mos(mos_cell,layout_data,offset,r = contents['r']) 
+    
     for j in range(N):
 
+        if j in [0,1]:
+            dummy_cell = ndummy_cell
+            dummy2_cell = ndummy2_cell
+            connect_cell = nconnect_cell
+        else:
+            dummy_cell = pdummy_cell
+            dummy2_cell = pdummy2_cell
+            connect_cell = pconnect_cell
+
+        # dummy
         for i in range(M):
 
-            offset = (2*i,7*j)
+            offset = (2*i,7*j + y_space[j])
             barea = set([(offset[0] + dx,offset[1] + dy) for dx in range(-2,3) for dy in range(-2,3)])
             mos_area |= barea
 
             if offset in skip_gate:
                 continue
 
-            target_cell = dummy_cell
-
-            if target_cell != dummy_cell:
-                # left_data,right_data = create_Mos(target_cell,layout_data,offset) 
-                pass
-            elif dummy_flg == 0 and target_cell == dummy_cell:
-                left_data,right_data = create_Mos(target_cell,layout_data,offset)
-                dummy_flg = 1
+            if dummy_flg[dummy_cell] == 0:
+                left_data,right_data = create_Mos(dummy_cell,nfet_data,offset)
+                dummy_pos[dummy_cell] = get_pos(dummy_cell)
+                dummy_flg[dummy_cell] = 1
             else:
-                LAYOUT.cell(TOP_CELL.name).insert(CellInstArray(target_cell,Trans(Point(offset[0]*DBU,offset[1]*DBU))))
+                origin_pos = dummy_pos[dummy_cell]
+                LAYOUT.cell(TOP_CELL.name).insert(CellInstArray(dummy_cell,Trans(Point(-1*origin_pos[0]+offset[0]*DBU,-1*origin_pos[1]+offset[1]*DBU))))
+        
+        # connect
+        for i in range(M*2):
+            offset = (i,7*j + y_space[j])
+            width = 0.3
+            if dummy_flg[connect_cell] == 0:
+                for point in [[offset[0],offset[1]-2],[offset[0],offset[1]+2]]:
+                    if connect_cell == nconnect_cell:
+                        create_Box(connect_cell,contact_index,point,0.22,0.22)
+                        create_Box(connect_cell,m1_index,point,width,1.0)
+                        create_Box(connect_cell,m1_index,point,1.0,width)
+                    elif connect_cell == pconnect_cell:
+                        create_Box(connect_cell,contact_index,point,0.22,0.22)
+                        create_Box(connect_cell,m1_index,point,1.0,width)
+                        create_Box(connect_cell,v1_index,point,0.22,0.22)
+                        create_Box(connect_cell,m2_index,point,width,1.0)
+                        create_Box(connect_cell,m2_index,point,1.0,width)
+                dummy_pos[connect_cell] = get_pos(connect_cell)
+                dummy_flg[connect_cell] = 1
+            else:
+                origin_pos = dummy_pos[connect_cell]
+                LAYOUT.cell(TOP_CELL.name).insert(CellInstArray(connect_cell,Trans(Point(-1*origin_pos[0]+offset[0]*DBU,-1*origin_pos[1]+offset[1]*DBU))))
 
-        # dummy
-        if j == 0:
+        # side dummy
+        if dummy_flg[dummy2_cell] == 0:
             for layer_index,contents in left_data.items():
                 for point in contents:
+                    point = np.array(point) + [0,(7*j+ + y_space[j])*DBU]
                     create_Box2(dummy2_cell,layer_index,point[0],point[1])
             for layer_index,contents in right_data.items():
                 for point in contents:
-                    point = np.array(point) + [(2*M-2)*DBU,0]
+                    point = np.array(point) + [(2*M-2)*DBU,(7*j+ + y_space[j])*DBU]
                     create_Box2(dummy2_cell,layer_index,point[0],point[1])
+            dummy_pos[dummy2_cell] = get_pos(dummy2_cell)
+            dummy_flg[dummy2_cell] = 1
         else:
-            LAYOUT.cell(TOP_CELL.name).insert(CellInstArray(dummy2_cell,Trans(Point(0,offset[1]*DBU))))
+            origin_pos = dummy_pos[dummy2_cell]
+            LAYOUT.cell(TOP_CELL.name).insert(CellInstArray(dummy2_cell,Trans(Point(0,-1*origin_pos[1]+offset[1]*DBU))))
 
-        if j == 0:
-
-            point = [0,0]
-            mesh_cell = create_Mesh(point,0.5)
-            print(mesh_cell.prop_id)
-
-        for y in range(-3,4):
-            for x in range(-3,2*M + 2):
-                point = (x,y+j*7)
-                if point not in mos_area:
-                    LAYOUT.cell(TOP_CELL.name).insert(CellInstArray(mesh_cell,Trans(Point(point[0]*DBU,point[1]*DBU))))
-                
-    top_cell_bbox = TOP_CELL.bbox()
-    TOP_CELL.transform(Trans(Point(-1*(top_cell_bbox.p2.x +  top_cell_bbox.p1.x)/2,0)))
-
-    LAYOUT.delete_property(0)
-
-def create_Mesh(point,width):
+    create_Meshes(M,N,mos_area,y_space)
+        
+    origin_pos = get_pos(TOP_CELL)
+    TOP_CELL.transform(Trans(Point(-1*origin_pos[0],-1*origin_pos[1])))
+    # TOP_CELL.transform(DTrans(0,0))
+    
+# mesh structure
+def create_Mesh(cell_name,point,width,mode = 'full'):
 
     global TOP_CELL
-    sub_cell = make_subcell(TOP_CELL,'mesh')
+    sub_cell = make_subcell(TOP_CELL,cell_name)
 
-    create_Box(sub_cell,m1_index,point,width,1.0)
-    create_Box(sub_cell,m1_index,point,1.0,width)
-    create_Box(sub_cell,m2_index,point,width,1.0)
-    create_Box(sub_cell,m2_index,point,1.0,width)
+    if mode == 'full':
+        create_Box(sub_cell,m1_index,point,width,1.0)
+        create_Box(sub_cell,m1_index,point,1.0,width)
+        create_Box(sub_cell,m2_index,point,width,1.0)
+        create_Box(sub_cell,m2_index,point,1.0,width)
+    elif mode == 'half':
+        create_Box(sub_cell,m1_index,point,width,1.0)
+        create_Box(sub_cell,m1_index,point,1.0,width)
 
     return sub_cell
+
+# mesh
+def create_Meshes(M,N,mos_area,y_space):
+
+    global LAYOUT,TOP_CELL
+
+    temp = sorted(list(mos_area))
+    min_x,min_y = temp[0]
+    max_x,max_y = temp[-1]
+
+    flg = 0
+    for y in range(min_y - 1, max_y + 2):
+        for x in range(min_x - 1, max_x + 2):
+            point = (x,y)
+            if flg == 0:
+                mesh_cell = create_Mesh('mesh',point,0.5)
+                flg = 1
+            else:
+                origin_pos = get_pos(mesh_cell)
+                if point not in mos_area:
+                    LAYOUT.cell(TOP_CELL.name).insert(CellInstArray(mesh_cell,Trans(Point(-1*origin_pos[0]+point[0]*DBU,-1*origin_pos[1]+point[1]*DBU))))
+
+# routing
+def routing(data_path):
+
+    routing_data = load_json(data_path)
+
+    offset = [0,0]
+
+    for layer,contents in routing_data.items():
+
+        print(layer)
+
+        if layer == "36,0":
+            layer = "46,0"
+        elif layer == "34,0":
+            layer = "42,0"
+        elif layer == "35,0":
+            layer = "40,0"
+
+        print("->",layer)
+
+        l1,l2 = layer.split(',')
+        layer_index = LAYOUT.layer(LayerInfo.new(int(l1),int(l2)))
+        for points in contents:
+            p1 = np.array(points[:2]) + np.array(offset)*DBU
+            p2 = np.array(points[2:]) + np.array(offset)*DBU
+            create_Box2(TOP_CELL,layer_index,p1,p2)
+
+
+                    
+                    
 
 if __name__ == '__main__':
 
@@ -385,6 +545,7 @@ if __name__ == '__main__':
     m3_index = LAYOUT.layer(LayerInfo.new(42,0))
     m4_index = LAYOUT.layer(LayerInfo.new(46,0))
     m5_index = LAYOUT.layer(LayerInfo.new(81,0))
+    contact_index = LAYOUT.layer(LayerInfo.new(33,0))
     v1_index = LAYOUT.layer(LayerInfo.new(35,0))
     v2_index = LAYOUT.layer(LayerInfo.new(38,0))
     v3_index = LAYOUT.layer(LayerInfo.new(40,0))
@@ -392,6 +553,6 @@ if __name__ == '__main__':
     v5_index = LAYOUT.layer(LayerInfo.new(82,0))
     cap_index = LAYOUT.layer(LayerInfo.new(117,5))
 
-    name = "100_55_1_pfet_06v0"
-    # name = "100_70_1_nfet_06v0"
-    create_MultiMos(name,20,3)
+    # get_structure()
+    create_MultiMos(12,3)
+    routing("/home/oe23ranan/Omocha_mpwgf1/block/json/Route.json")
