@@ -239,19 +239,9 @@ def create_Cdac():
         create_Path(CELL,m3_index,path,width)
 
 # mos
-def create_Mos():
+def create_Mos(cell,layout_data,offset):
 
-    global TOP_CELL,LAYOUT
-
-    mos_cell = make_subcell(TOP_CELL,'mos')
-
-    name = "100_55_1_pfet_06v0"
-    # name = "100_70_1_nfet_06v0"
-    M = 10
-
-    sub_cell = make_subcell(mos_cell,name)
-
-    layout_data = load_json("/home/oe23ranan/Omocha_mpwgf1/block/json/"+name+".json")
+    global DBU
 
     left_data = defaultdict(list)
     right_data = defaultdict(list)
@@ -261,42 +251,109 @@ def create_Mos():
         layer_index = LAYOUT.layer(LayerInfo.new(int(l1),int(l2)))
         for points in contents:
             middle_x = points[2] + points[0]
-
-            print(middle_x)
-
             if abs(middle_x) >= 3910:
-
                 if middle_x <= -3910:
                     left_data[layer_index].append([points[:2],points[2:]])
                 else:
                     right_data[layer_index].append([points[:2],points[2:]])
-                
             else:
-                create_Box2(sub_cell,layer_index,points[:2],points[2:])
 
-    array_cell = CellInstArray(
-        sub_cell.cell_index(),
-        Trans(Point(0,0)),
-        Vector(0,0),
-        Vector(2*DBU,0),
-        1,M
-    )
+                p1 = np.array(points[:2]) + np.array(offset)*DBU
+                p2 = np.array(points[2:]) + np.array(offset)*DBU
+                create_Box2(cell,layer_index,p1,p2)
 
-    mos_cell.insert(array_cell)
-    for layer_index,contents in left_data.items():
-        for point in contents:
-            create_Box2(mos_cell,layer_index,point[0],point[1])
-    for layer_index,contents in right_data.items():
-        for point in contents:
-            point = np.array(point) + [(2*M-2)*DBU,0]
-            create_Box2(mos_cell,layer_index,point[0],point[1])
-    mos_cell.flatten(2)
+    return left_data,right_data
 
-    cell_copy = make_subcell(TOP_CELL,'mos_copy')
-    # cell_copy.copy_instances(mos_cell).transform(Trans(Point(30*DBU,0)) * Trans.R180)
-    cell_copy.copy_shapes(mos_cell).transform(Trans(Point(0,10*DBU)) * Trans.R180)
-    # cell_copy.copy_shapes(mos_cell)
+# mos
+def create_MultiMos(name,M,N):
 
+    global TOP_CELL,LAYOUT
+
+    dummy_cell = make_subcell(TOP_CELL,'dummy')
+    dummy2_cell = make_subcell(TOP_CELL,'dummy2')
+    layout_data = load_json("/home/oe23ranan/Omocha_mpwgf1/block/json/"+name+".json")
+
+    mos_data = {
+        'mos1':{'m':3,'x':4,'y':0},
+        'mos2':{'m':5,'x':11,'y':0},
+        'mos3':{'m':3,'x':4,'y':1},
+        'mos4':{'m':3,'x':9,'y':2},
+    }   
+
+
+    mos_area = set()
+    skip_gate = list()
+    for name,contents in mos_data.items():
+        mos_cell = make_subcell(TOP_CELL,name)
+
+        for multi in range(contents['m']):
+            offset = (2*(contents['x']-contents['m']//2 + multi),7*contents['y'])
+            skip_gate.append(offset)
+            left_data,right_data = create_Mos(mos_cell,layout_data,offset) 
+
+    dummy_flg = 0
+    for j in range(N):
+
+        for i in range(M):
+
+            offset = (2*i,7*j)
+            barea = set([(offset[0] + dx,offset[1] + dy) for dx in range(-2,3) for dy in range(-2,3)])
+            mos_area |= barea
+
+            if offset in skip_gate:
+                continue
+
+            target_cell = dummy_cell
+
+            if target_cell != dummy_cell:
+                # left_data,right_data = create_Mos(target_cell,layout_data,offset) 
+                pass
+            elif dummy_flg == 0 and target_cell == dummy_cell:
+                left_data,right_data = create_Mos(target_cell,layout_data,offset)
+                dummy_flg = 1
+            else:
+                LAYOUT.cell(TOP_CELL.name).insert(CellInstArray(target_cell,Trans(Point(offset[0]*DBU,offset[1]*DBU))))
+
+        # dummy
+        if j == 0:
+            for layer_index,contents in left_data.items():
+                for point in contents:
+                    create_Box2(dummy2_cell,layer_index,point[0],point[1])
+            for layer_index,contents in right_data.items():
+                for point in contents:
+                    point = np.array(point) + [(2*M-2)*DBU,0]
+                    create_Box2(dummy2_cell,layer_index,point[0],point[1])
+        else:
+            LAYOUT.cell(TOP_CELL.name).insert(CellInstArray(dummy2_cell,Trans(Point(0,offset[1]*DBU))))
+
+        if j == 0:
+
+            point = [0,0]
+            mesh_cell = create_Mesh(point,0.5)
+            print(mesh_cell.prop_id)
+
+        for y in range(-3,4):
+            for x in range(-3,2*M + 2):
+                point = (x,y+j*7)
+                if point not in mos_area:
+                    LAYOUT.cell(TOP_CELL.name).insert(CellInstArray(mesh_cell,Trans(Point(point[0]*DBU,point[1]*DBU))))
+                
+    top_cell_bbox = TOP_CELL.bbox()
+    TOP_CELL.transform(Trans(Point(-1*(top_cell_bbox.p2.x +  top_cell_bbox.p1.x)/2,0)))
+
+    LAYOUT.delete_property(0)
+
+def create_Mesh(point,width):
+
+    global TOP_CELL
+    sub_cell = make_subcell(TOP_CELL,'mesh')
+
+    create_Box(sub_cell,m1_index,point,width,1.0)
+    create_Box(sub_cell,m1_index,point,1.0,width)
+    create_Box(sub_cell,m2_index,point,width,1.0)
+    create_Box(sub_cell,m2_index,point,1.0,width)
+
+    return sub_cell
 
 if __name__ == '__main__':
 
@@ -335,12 +392,6 @@ if __name__ == '__main__':
     v5_index = LAYOUT.layer(LayerInfo.new(82,0))
     cap_index = LAYOUT.layer(LayerInfo.new(117,5))
 
-    create_Mos()
-
-    
-    
-
-
-    
-
-
+    name = "100_55_1_pfet_06v0"
+    # name = "100_70_1_nfet_06v0"
+    create_MultiMos(name,20,3)
