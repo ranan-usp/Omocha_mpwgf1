@@ -5,6 +5,7 @@
 from pya import *
 import re
 import json
+import copy
 import sys
 import pprint
 import numpy as np
@@ -50,14 +51,38 @@ def get_structure():
     global TOP_CELL
 
     save_data = dict()
+    text_data = dict()
+
+    width = 0.3*DBU
     for index,layer in get_layer_map().items():
         
         sel = TOP_CELL.shapes(index)
         p_list = list()
         for temp in sel.each():
-            p1,p2 = temp.bbox().p1,temp.bbox().p2
-            p_list.append([p1.x,p1.y,p2.x,p2.y])
+            if temp.is_path():
+                # width = temp.path.width
+                path = [[v.x,v.y] for v in temp.path.each_point()]
+                length = len(path)
+                for idx in range(length-1):
+                    p1 = copy.deepcopy(path[idx])
+                    p2 = copy.deepcopy(path[idx+1])
+                    if p1[0] == p2[0] and p1[1] == p2[1]:
+                        continue
+                    p1,p2 = sorted([p1,p2])
+                    p1 = np.array(p1) - width/2
+                    p2 = np.array(p2) + width/2
+                    p_list.append([p1[0],p1[1],p2[0],p2[1]])
+            elif temp.is_text():
+                text = temp.text
+                string = text.string
+                px = text.x
+                py = text.y
+                text_data[string] = [layer,px,py]
+            else:
+                p1,p2 = temp.bbox().p1,temp.bbox().p2
+                p_list.append([p1.x,p1.y,p2.x,p2.y])
         save_data[layer] = p_list
+        save_data['text'] = text_data
 
     save_json(save_data,"/home/oe23ranan/Omocha_mpwgf1/block/json/"+TOP_CELL.name+".json")
 
@@ -145,7 +170,7 @@ def create_Path(cell,index,path,width):
 # text
 def create_Text(cell,index,point,string):
 
-    point = get_DBU_point(point)
+    # point = get_DBU_point(point)
 
     cell.shapes(index).insert(Text.new(string,point[0],point[1]))
 
@@ -325,23 +350,21 @@ def create_MultiMos(M,N):
     nfet_data = load_json("/home/oe23ranan/Omocha_mpwgf1/block/json/"+nfet_name+".json")
 
     mos_data = {
-        'mos1':{'t':'nfet','m':2,'x':6,'y':0,'r':True},
-        'mos2':{'t':'nfet','m':1,'x':4,'y':1,'r':False},
-        'mos3':{'t':'nfet','m':1,'x':5,'y':1,'r':False},
-        'mos4':{'t':'nfet','m':1,'x':6,'y':1,'r':False},
-        'mos5':{'t':'nfet','m':1,'x':7,'y':1,'r':False},
+        'Mdiff':{'t':'nfet','m':2,'x':6,'y':0,'r':True},
+        'Ml1':{'t':'nfet','m':1,'x':4,'y':1,'r':False},
+        'Minn':{'t':'nfet','m':1,'x':5,'y':1,'r':False},
+        'Minp':{'t':'nfet','m':1,'x':6,'y':1,'r':False},
+        'Ml2':{'t':'nfet','m':1,'x':7,'y':1,'r':False},
 
-        'mos6':{'t':'pfet','m':1,'x':5,'y':2,'r':True},
-        'mos7':{'t':'pfet','m':1,'x':6,'y':2,'r':True},
+        'M1':{'t':'pfet','m':1,'x':5,'y':2,'r':True},
+        'M2':{'t':'pfet','m':1,'x':6,'y':2,'r':True},
 
-        'mos8':{'t':'pfet','m':1,'x':0,'y':2,'r':True},
-        'mos9':{'t':'pfet','m':1,'x':1,'y':2,'r':True},
+        'Ml3':{'t':'pfet','m':1,'x':1,'y':2,'r':True},
+        'Ml4':{'t':'pfet','m':1,'x':2,'y':2,'r':True},
 
-        'mos10':{'t':'pfet','m':1,'x':10,'y':2,'r':True},
-        'mos11':{'t':'pfet','m':1,'x':11,'y':2,'r':True},
+        'M3':{'t':'pfet','m':1,'x':9,'y':2,'r':True},
+        'M4':{'t':'pfet','m':1,'x':10,'y':2,'r':True},
     }   
-
-    
 
     dummy_flg = {
         pdummy_cell:0,
@@ -360,7 +383,7 @@ def create_MultiMos(M,N):
         nconnect_cell:[0,0]
     }
 
-    y_space = [0,0,1]
+    y_space = [1,0,1]
 
     mos_area = set()
     skip_gate = list()
@@ -384,6 +407,8 @@ def create_MultiMos(M,N):
             dummy2_cell = pdummy2_cell
             connect_cell = pconnect_cell
 
+        dummy_rot = Trans.R0
+
         # dummy
         for i in range(M):
 
@@ -395,7 +420,8 @@ def create_MultiMos(M,N):
                 continue
 
             if dummy_flg[dummy_cell] == 0:
-                left_data,right_data = create_Mos(dummy_cell,nfet_data,offset)
+                layout_data = nfet_data if dummy_cell == ndummy_cell else pfet_data
+                left_data,right_data = create_Mos(dummy_cell,layout_data,offset)
                 dummy_pos[dummy_cell] = get_pos(dummy_cell)
                 dummy_flg[dummy_cell] = 1
             else:
@@ -407,22 +433,29 @@ def create_MultiMos(M,N):
             offset = (i,7*j + y_space[j])
             width = 0.3
             if dummy_flg[connect_cell] == 0:
-                for point in [[offset[0],offset[1]-2],[offset[0],offset[1]+2]]:
+                for idx,point in enumerate([[offset[0],offset[1]-2],[offset[0],offset[1]+2]]):
                     if connect_cell == nconnect_cell:
                         create_Box(connect_cell,contact_index,point,0.22,0.22)
                         create_Box(connect_cell,m1_index,point,width,1.0)
                         create_Box(connect_cell,m1_index,point,1.0,width)
                     elif connect_cell == pconnect_cell:
+
+                        if idx == 0:
+                            point[1] += 0.045
+                        else:
+                            point[1] -= 0.045
                         create_Box(connect_cell,contact_index,point,0.22,0.22)
                         create_Box(connect_cell,m1_index,point,1.0,width)
-                        create_Box(connect_cell,v1_index,point,0.22,0.22)
-                        create_Box(connect_cell,m2_index,point,width,1.0)
+                        create_Box(connect_cell,v1_index,point,0.26,0.26)
+                        create_Box(connect_cell,m2_index,point,width,1.09)
                         create_Box(connect_cell,m2_index,point,1.0,width)
                 dummy_pos[connect_cell] = get_pos(connect_cell)
                 dummy_flg[connect_cell] = 1
             else:
                 origin_pos = dummy_pos[connect_cell]
-                LAYOUT.cell(TOP_CELL.name).insert(CellInstArray(connect_cell,Trans(Point(-1*origin_pos[0]+offset[0]*DBU,-1*origin_pos[1]+offset[1]*DBU))))
+                LAYOUT.cell(TOP_CELL.name).insert(
+                    CellInstArray(connect_cell,
+                                  Trans(Point(-1*origin_pos[0]+offset[0]*DBU,-1*origin_pos[1]+offset[1]*DBU))))
 
         # side dummy
         if dummy_flg[dummy2_cell] == 0:
@@ -440,7 +473,9 @@ def create_MultiMos(M,N):
             origin_pos = dummy_pos[dummy2_cell]
             LAYOUT.cell(TOP_CELL.name).insert(CellInstArray(dummy2_cell,Trans(Point(0,-1*origin_pos[1]+offset[1]*DBU))))
 
-    create_Meshes(M,N,mos_area,y_space)
+    create_Meshes(mos_area)
+
+    # routing("/home/oe23ranan/Omocha_mpwgf1/block/json/Route.json")
         
     origin_pos = get_pos(TOP_CELL)
     TOP_CELL.transform(Trans(Point(-1*origin_pos[0],-1*origin_pos[1])))
@@ -464,7 +499,7 @@ def create_Mesh(cell_name,point,width,mode = 'full'):
     return sub_cell
 
 # mesh
-def create_Meshes(M,N,mos_area,y_space):
+def create_Meshes(mos_area):
 
     global LAYOUT,TOP_CELL
 
@@ -473,7 +508,7 @@ def create_Meshes(M,N,mos_area,y_space):
     max_x,max_y = temp[-1]
 
     flg = 0
-    for y in range(min_y - 1, max_y + 2):
+    for y in range(min_y - 1 - 2, max_y + 2 + 1):
         for x in range(min_x - 1, max_x + 2):
             point = (x,y)
             if flg == 0:
@@ -493,27 +528,21 @@ def routing(data_path):
 
     for layer,contents in routing_data.items():
 
-        print(layer)
+        if layer == 'text':
+            for string,content in contents.items():
+                layer = content[0]
+                l1,l2 = layer.split(',')
+                layer_index = LAYOUT.layer(LayerInfo.new(int(l1),int(l2)))
+                point = np.array(content[1:3]) + np.array(offset)*DBU
+                create_Text(TOP_CELL,layer_index,point,string)
+        else:
 
-        if layer == "36,0":
-            layer = "46,0"
-        elif layer == "34,0":
-            layer = "42,0"
-        elif layer == "35,0":
-            layer = "40,0"
-
-        print("->",layer)
-
-        l1,l2 = layer.split(',')
-        layer_index = LAYOUT.layer(LayerInfo.new(int(l1),int(l2)))
-        for points in contents:
-            p1 = np.array(points[:2]) + np.array(offset)*DBU
-            p2 = np.array(points[2:]) + np.array(offset)*DBU
-            create_Box2(TOP_CELL,layer_index,p1,p2)
-
-
-                    
-                    
+            l1,l2 = layer.split(',')
+            layer_index = LAYOUT.layer(LayerInfo.new(int(l1),int(l2)))
+            for points in contents:
+                p1 = np.array(points[:2]) + np.array(offset)*DBU
+                p2 = np.array(points[2:]) + np.array(offset)*DBU
+                create_Box2(TOP_CELL,layer_index,p1,p2)
 
 if __name__ == '__main__':
 
@@ -556,3 +585,6 @@ if __name__ == '__main__':
     # get_structure()
     create_MultiMos(12,3)
     routing("/home/oe23ranan/Omocha_mpwgf1/block/json/Route.json")
+
+    
+    
